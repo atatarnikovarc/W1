@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Windows-1251" ?>
+<!--DOCTYPE Inventory SYSTEM "inventory1.dtd"-->
+<Inventory>
+	<melody>
+		<id>0004</id>
+		<mnem>HH'</mnem>
+		<title>Test0000</title>
+		<author>219</author>
+		<textauthor>2</textauthor>
+		<musicauthor>3222</musicauthor>
+		<genre>9</genre>
+		<price>8</price>
+		<copyr>294</copyr>
+		<lft>0</lft>
+		<quality>5</quality>
+		<expdate>31.12.2010</expdate>
+		<bestgenre>0</bestgenre>
+		<bestfile>3321b</bestfile>
+    </melody>	
+</Inventory>

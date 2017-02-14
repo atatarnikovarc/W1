@@ -1,0 +1,5 @@
+test plan design rules
+
+1. name of test plan must be corresponding to file representing this test plan
+2. have to define set of rules for values in test plans
+3. existence must be checked by rather by assertion then by value assertions

@@ -1,0 +1,56 @@
+<flights>
+	<flight number="F111">
+		<passenger name="Pass1">
+			<luggage id="555"/>
+		</passenger>
+	</flight>
+	<flight number="F112">
+		<passenger name="Pass1">
+			<luggage id="666"/>
+		</passenger>
+		<passenger name="Pass2">
+			<luggage id="1"/>
+		</passenger>
+		<passenger name="Pass1">
+			<luggage id="2"/>
+		</passenger>
+	</flight>
+	<flight number="F113">
+		<passenger name="Pass4">
+			<luggage id="11"/>
+		</passenger>
+		<passenger name="Pass5">
+			<luggage id="12"/>
+		</passenger>
+		<passenger name="Pass6">
+			<luggage id="13"/>
+		</passenger>
+		<passenger name="Pass7">
+			<luggage id="14"/>
+		</passenger>
+		<passenger name="Pass8">
+			<luggage id="15"/>
+		</passenger>
+		<passenger name="Pass9">
+			<luggage id="16"/>
+		</passenger>
+		<passenger name="Pass10">
+			<luggage id="17"/>
+		</passenger>
+		<passenger name="Pass11">
+			<luggage id="18"/>
+		</passenger>
+		<passenger name="Pass12">
+			<luggage id="19"/>
+		</passenger>
+		<passenger name="Pass13">
+			<luggage id="20"/>
+		</passenger>
+		<passenger name="Pass14">
+			<luggage id="21"/>
+		</passenger>
+		<passenger name="Pass15">
+			<luggage id="22"/>
+		</passenger>
+	</flight>
+</flights>

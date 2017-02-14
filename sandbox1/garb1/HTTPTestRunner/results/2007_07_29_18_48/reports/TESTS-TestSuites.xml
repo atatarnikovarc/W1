@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="3" hostname="acer-1a70f7763e" id="0" name="TestExecutor" package="test" tests="4" time="0.687" timestamp="2007-07-29T14:48:24">
+      <properties>
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.boot.library.path" value="C:\tools\Java\jdk1.6.0\jre\bin" />
+
+          <property name="java.vm.version" value="1.6.0-b105" />
+
+          <property name="ant.version" value="Apache Ant version 1.7.0 compiled on December 13 2006" />
+
+          <property name="ant.java.version" value="1.6" />
+
+          <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+
+          <property name="java.vendor.url" value="http://java.sun.com/" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="user.country" value="RU" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.os.patch.level" value="Service Pack 2" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="user.dir" value="C:\projects\stacksoft\home\HTTPTestRunner" />
+
+          <property name="java.runtime.version" value="1.6.0-b105" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="basedir" value="C:\projects\stacksoft\home\HTTPTestRunner" />
+
+          <property name="java.endorsed.dirs" value="C:\tools\Java\jdk1.6.0\jre\lib\endorsed" />
+
+          <property name="os.arch" value="x86" />
+
+          <property name="java.io.tmpdir" value="C:\DOCUME~1\test-tav\LOCALS~1\Temp\" />
+
+          <property name="ant.core.lib" value="C:\projects\stacksoft\home\HTTPTestRunner\lib\ant.jar" />
+
+          <property name="line.separator" value=" " />
+
+          <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="user.variant" value="" />
+
+          <property name="os.name" value="Windows XP" />
+
+          <property name="DSTAMP" value="20070729" />
+
+          <property name="ant.project.name" value="Onyma Http Test Runner" />
+
+          <property name="sun.jnu.encoding" value="Cp1251" />
+
+          <property name="TODAY" value="July 29 2007" />
+
+          <property name="java.library.path" value="C:\tools\Java\jdk1.6.0\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Intel\Wireless\Bin\;C:\Program Files\MySQL\MySQL Server 5.0\bin;c:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\CVSNT\;C:\Python25;C:\tools\Java\jdk1.6.0\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Intel\Wireless\Bin\;C:\Program Files\MySQL\MySQL Server 5.0\bin;c:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\PROGRA~1\COMMON~1\MUVEET~1\030625" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="50.0" />
+
+          <property name="lib.dir" value="C:\projects\stacksoft\home\HTTPTestRunner\lib" />
+
+          <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+
+          <property name="dest.dir" value="C:\projects\stacksoft\home\HTTPTestRunner\build\framework" />
+
+          <property name="os.version" value="5.1" />
+
+          <property name="ant.file" value="C:\projects\stacksoft\home\HTTPTestRunner\build.xml" />
+
+          <property name="config.dir" value="C:\projects\stacksoft\home\HTTPTestRunner\config" />
+
+          <property name="results.path" value="2007_07_29_18_48" />
+
+          <property name="user.home" value="C:\Documents and Settings\test-tav" />
+
+          <property name="root.dir" value="C:\projects\stacksoft\home\HTTPTestRunner" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="java.specification.version" value="1.6" />
+
+          <property name="file.encoding" value="Cp1251" />
+
+          <property name="TSTAMP" value="1848" />
+
+          <property name="user.name" value="test-tav" />
+
+          <property name="java.class.path" value="C:\tools\Java\jdk1.6.0/lib/tools.jar;./lib/junit.jar;./lib/ant.jar;./lib/ant-launcher.jar;./lib/ant-junit.jar;./lib/ant-trax.jar;./config" />
+
+          <property name="java.vm.specification.version" value="1.0" />
+
+          <property name="java.home" value="C:\tools\Java\jdk1.6.0\jre" />
+
+          <property name="sun.arch.data.model" value="32" />
+
+          <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="user.language" value="ru" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="java.vm.info" value="mixed mode, sharing" />
+
+          <property name="java.version" value="1.6.0" />
+
+          <property name="java.ext.dirs" value="C:\tools\Java\jdk1.6.0\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="result.dir" value="C:\projects\stacksoft\home\HTTPTestRunner\results" />
+
+          <property name="sun.boot.class.path" value="C:\tools\Java\jdk1.6.0\jre\lib\resources.jar;C:\tools\Java\jdk1.6.0\jre\lib\rt.jar;C:\tools\Java\jdk1.6.0\jre\lib\sunrsasign.jar;C:\tools\Java\jdk1.6.0\jre\lib\jsse.jar;C:\tools\Java\jdk1.6.0\jre\lib\jce.jar;C:\tools\Java\jdk1.6.0\jre\lib\charsets.jar;C:\tools\Java\jdk1.6.0\jre\classes" />
+
+          <property name="java.vendor" value="Sun Microsystems Inc." />
+
+          <property name="deploy.dir" value="C:\projects\stacksoft\home\HTTPTestRunner\dist" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="src.dir" value="C:\projects\stacksoft\home\HTTPTestRunner\src" />
+
+          <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+
+          <property name="ant.file.Onyma Http Test Runner" value="C:\projects\stacksoft\home\HTTPTestRunner\build.xml" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+
+      </properties>
+
+      <testcase classname="test.ToBeRunTC" name="testSomeTest" time="0.0" />
+
+      <testcase classname="test.ToBeRunTC" name="testSomeMome" time="0.016">
+          <failure message="expected:&lt;1&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;1&gt; but was:&lt;2&gt;
+	at test.ToBeRunTC.testSomeMome(Unknown Source)
+</failure>
+
+      </testcase>
+
+      <testcase classname="test.TestExecutor" name="testExec" time="0.0">
+          <failure message="expected:&lt;1&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;1&gt; but was:&lt;2&gt;
+	at test.TestExecutor.testExec(Unknown Source)
+</failure>
+
+      </testcase>
+
+      <testcase classname="test.TestExecutor" name="testConfig" time="0.015">
+          <failure message="expected:&lt;true&gt; but was:&lt;null&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;true&gt; but was:&lt;null&gt;
+	at test.TestExecutor.testConfig(Unknown Source)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>

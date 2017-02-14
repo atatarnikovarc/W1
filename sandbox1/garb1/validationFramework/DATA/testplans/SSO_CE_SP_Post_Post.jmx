@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<testelement class="org.apache.jmeter.testelement.TestPlan">
+<testelement class="org.apache.jmeter.config.Arguments" name="TestPlan.user_defined_variables">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.control.gui.TestPlanGui</property>
+<collection class="java.util.LinkedList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="TestPlan.thread_groups"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.testelement.TestPlan</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestPlan.serialize_threadgroups">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">SSO_CE_SP_Post_Post</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestPlan.functional_mode">false</property>
+</testelement>
+<node>
+<testelement class="org.apache.jmeter.threads.ThreadGroup">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.threads.gui.ThreadGroupGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.LongProperty" name="ThreadGroup.start_time">1086863981000</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.threads.ThreadGroup</property>
+<testelement class="org.apache.jmeter.control.LoopController" name="ThreadGroup.main_controller">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.control.gui.LoopControlPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="LoopController.loops">1</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.control.LoopController</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Loop Controller</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="LoopController.continue_forever">false</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Thread Group</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.LongProperty" name="ThreadGroup.end_time">1086863981000</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ThreadGroup.num_threads">1</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ThreadGroup.scheduler">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ThreadGroup.ramp_time">1</property>
+</testelement>
+<node>
+<testelement class="org.apache.jmeter.protocol.http.control.CookieManager">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.CookiePanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.protocol.http.control.CookieManager</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">HTTP Cookie Manager</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="CookieManager.clearEachIteration">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="CookieManager.cookies"/>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.samplers.HttpClientSampler">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpClientSampler.urlVariableName">QueryStringConstructorPreProcessor.output</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.path">${__property(ta1.saml2.sp.startsso)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.samplers.HttpClientSampler</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.encoded_path">${__property(ta1.saml2.sp.startsso)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.method">GET</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpClientSampler.ResultVariableName">SampleResultObjectVariable</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="HTTPSampler.use_keepalive">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.protocol">${__property(ta1.protocol)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="HTTPSampler.follow_redirects">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.port">${__property(ta1.port)}</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="HTTPsampler.Arguments">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.LinkedList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.protocol.http.util.HTTPArgument" name="">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">${__property(sso_idp_ce_sp_post_post)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="HTTPArgument.use_equals">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">PartnerIdpId</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="HTTPArgument.always_encode">true</property>
+</testelement>
+<testelement class="org.apache.jmeter.protocol.http.util.HTTPArgument" name="">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">${__property(SpSessionAuthnAdapterId)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="HTTPArgument.use_equals">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">SpSessionAuthnAdapterId</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="HTTPArgument.always_encode">false</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.mimetype"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.HttpClientSamplerGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.FILE_FIELD"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">HTTP Client Sampler</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.domain">${__property(ta1.hostname)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpClientSampler.noofredirects">1</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.FILE_NAME"/>
+</testelement>
+<node>
+<testelement class="org.sourceid.conformance.assertions.StringComparatorAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.StringComparatorAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.StringComparatorAssertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">StringComparator Assertion - redundant</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="StringComparatorAssertion.appendPrefix">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="StringComparatorAssertion.inputHashMap2">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="StringComparatorAssertion.input">responseID</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="StringComparatorAssertion.inputHashMap">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="StringComparatorAssertion.match">AuthnRequestSignatureURI</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="StringCompartorAssertion.notEquals">false</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.InputElementMapperPreProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.InputElementMapperPreProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.InputElementMapperPreProcessor</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="InputElementMapperPreProcessor.hashMapTable">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="entityIdentifier">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:nameid-format:entity</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">entityIdentifier</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="persistentIdentifier">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">persistentIdentifier</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="transientIdentifier">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:nameid-format:transient</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">transientIdentifier</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">InputElement Mapper PreProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.assertions.ValueAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.ValueAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.ValueAssertion</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="ValueProcessor.isRegexList"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Value Assertion - PF side config dependent</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="ValueProcessor.logmap">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Arguments" name="ValueProcessor.hashmapcmp">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnRequestVersionVar">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">2.0</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnRequestVersionVar</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnRequestDestinationVar">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">${__property(ta1.protocol)}://${__property(ta1.server_sampler_hostname)}:${__property(ta1.port)}${__property(ta1.saml2.idp.destination)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnRequestDestinationVar</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ValueProcessor.hashMapVar">XMLHashMap</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.assertions.TimeFormatAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.TimeFormatAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.TimeFormatAssertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Time Format Assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TimeFormatAssertion.inputmap">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="TimeFormatAssertion.timefields">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="AuthnRequestIssueInstantVar">AuthnRequestIssueInstantVar</property>
+</collection>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.assertions.ExistenceAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.ExistenceAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistenceAssertion.resultVar"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.ExistenceAssertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Existence Assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistenceAssertion.isCheckCountOnly">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistenceAssertion.isExistenceOnly">false</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="ExistenceAssertion.elementMapHashMap">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="ExistenceAssertion.countGuiHashMap">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="responseID">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">1</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">responseID</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnRequestVersionVar">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">1</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnRequestVersionVar</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnRequestIssueInstantVar">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">1</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnRequestIssueInstantVar</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnRequestIssuerVar">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">1</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnRequestIssuerVar</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistenceAssertion.inputHashMapVariableName">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistenceAssertion.countInputHashMap"/>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.assertions.ExistsComplexCheckAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.ExistsComplexCheckAssertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.maxLength">1024</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.conditionalValue">entityIdentifier</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.input">NameIDPolicy</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.ExistsComplexCheckAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistsComplexCheckAssertion.conditionalNotEmpty">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistsComplexCheckAssertion.notEmpty">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">ExistsComplexCheck Assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.hashMap1">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.conditional">NameIDPolicyFormat</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.value"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.hashMap2">XmlHashMap</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.assertions.ExistsComplexCheckAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.ExistsComplexCheckAssertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.maxLength">256</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.conditionalValue">persistentIdentifier</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.input">NameIDPolicy</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.ExistsComplexCheckAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistsComplexCheckAssertion.conditionalNotEmpty">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistsComplexCheckAssertion.notEmpty">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">ExistsComplexCheck Assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.hashMap1">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.conditional">NameIDPolicyFormat</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.value"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.hashMap2">XmlHashMap</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.assertions.ExistsComplexCheckAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.ExistsComplexCheckAssertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.maxLength">256</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.conditionalValue">transientIdentifier</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.input">NameIDPolicy</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.ExistsComplexCheckAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistsComplexCheckAssertion.conditionalNotEmpty">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistsComplexCheckAssertion.notEmpty">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">ExistsComplexCheck Assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.hashMap1">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.conditional">NameIDPolicyFormat</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.value"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.hashMap2">XmlHashMap</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.assertions.ExistsComplexCheckAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.ExistsComplexCheckAssertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.maxLength">1024</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.conditionalValue">entityIdentifier</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.input">AuthnRequestIssuerVar</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.ExistsComplexCheckAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistsComplexCheckAssertion.conditionalNotEmpty">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistsComplexCheckAssertion.notEmpty">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">ExistsComplexCheck Assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.hashMap1">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.conditional">AuthnReqIssuerFormat</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.value"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsComplexCheckAssertion.hashMap2">XmlHashMap</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.assertions.RegexValueAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.RegexValueAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="RegexValueAssertion.input">AuthnReqIssuerFormat</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.RegexValueAssertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="RegexValueAssertion.notWhitespace">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">RegexValue Assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="RegexValueAssertion.inputHashmap">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="RegexValueAssertion.notEmpty">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="RegexValueAssertion.responseCode">urn:oasis:names:tc:SAML:2.0:nameid-format:entity</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.assertions.ExistsCheckAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.ExistsCheckAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsCheckAssertion.hashMap1">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.ExistsCheckAssertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsCheckAssertion.input">AuthnReqSubjectSubjectConfirm</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ExistsCheckAssertion.notExists">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">ExistsCheck Assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsCheckAssertion.hashMap2">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ExistsCheckAssertion.conditional">AuthnReqSubject</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.assertions.ValueAssertion">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.ValueAssertionGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.assertions.ValueAssertion</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="ValueProcessor.isRegexList"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Value Assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="ValueProcessor.logmap">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Arguments" name="ValueProcessor.hashmapcmp">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="verifResult">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">verifResult</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ValueProcessor.hashMapVar">signVerifHashMap</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.XmlSignatureVerifyingPostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.XmlSignatureVerifyingPostProcessor</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="XMLSignature.xpathCollection">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="//samlp:AuthnRequest">//samlp:AuthnRequest</property>
+</collection>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="XMLSignature.schemas">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="../scriptpacks/saml2_0/schema/sstc-saml-schema-assertion-2.0.xsd">../scriptpacks/saml2_0/schema/sstc-saml-schema-assertion-2.0.xsd</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="../scriptpacks/saml2_0/schema/sstc-saml-schema-protocol-2.0.xsd">../scriptpacks/saml2_0/schema/sstc-saml-schema-protocol-2.0.xsd</property>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignatureVerifying.resultHashmap">signVerifHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.messagetosign">decodedmessage</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.XMLSignatureVerifyingPostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignatureVerifying.resultVariable">verifResult</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.keystorepass">${__property(keystore.access.pwd)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">XML Signature Verifying PostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.keystore">${__property(ta1.keystore_path)}/${__property(verifying.keystore)}</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="XMLSignature.prefixes">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="saml">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">saml</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="samlp">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:protocol</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">samlp</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="ds">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2000/09/xmldsig#</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">ds</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="xenc">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2001/04/xmlenc#</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">xenc</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="xs">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2001/XMLSchema/</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">xs</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.publicverificationkeyname">${__property(verifying.cert.alias)}</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.XmlExtractorPostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.XmlExtractorPostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.XmlExtractorPostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Xml Extractor Postprocessor</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="XmlExtractor.searchvariableslist">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="responseID">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/@ID</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">responseID</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnRequestVersionVar">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/@Version</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnRequestVersionVar</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnRequestIssueInstantVar">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/@IssueInstant</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnRequestIssueInstantVar</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnRequestDestinationVar">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/@Destination</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnRequestDestinationVar</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnRequestIssuerVar">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/saml:Issuer</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnRequestIssuerVar</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnRequestSignatureURI">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/ds:Signature/ds:SignedInfo/ds:Reference/@URI</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnRequestSignatureURI</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnReqIssuerFormat">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/saml:Issuer/@Format</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnReqIssuerFormat</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="NameIDPolicyFormat">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/samlp:NameIDPolicy/@Format</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">NameIDPolicyFormat</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="NameIDPolicy">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/samlp:NameIDPolicy</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">NameIDPolicy</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnReqSubject">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/saml:Subject</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnReqSubject</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="AuthnReqSubjectSubjectConfirm">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:AuthnRequest/saml:Subject/saml:SubjectConfirmationData</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">AuthnReqSubjectSubjectConfirm</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Arguments" name="XmlExtractor.prefixes">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="saml">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">saml</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="samlp">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:protocol</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">samlp</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="ds">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2000/09/xmldsig#</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">ds</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="SOAP-ENV">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://schemas.xmlsoap.org/soap/envelope/</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">SOAP-ENV</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="xs">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2001/XMLSchema</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">xs</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XmlExtractor.messagetype"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XmlExtractor.hashmap">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XmlExtractor.variablename">decodedmessage</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.Base64DecodePostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.Base64DecodePostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.Base64DecodePostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Base64DecodePostProcessor.inputHashMapName"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Base64DecodePostProcessor.inputVariableName">SAMLrequest</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Base64 Decode Post Processor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Base64DecodeostProcessor.outputVariableName">decodedmessage</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.HashmapExtractPostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.HashmapExtractorPostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.HashmapExtractPostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Hashmap extractor Post Processor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HashmapExtractorPostProcessor.inputHashMap">URLExtractorPostProcessor.output</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="HashmapExtractorPostProcessor.hashMap">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="SAMLRequest">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">SAMLrequest</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">SAMLRequest</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="RelayState">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">RelayState</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">RelayState</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.FormExtractorPostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.FormExtractorPostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.FormExtractorPostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Form Extractor PostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="FormExtractorAdaptor.parameters">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="SAMLRequest">SAMLRequest</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="RelayState">RelayState</property>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="FormExtractorAdaptor.outputvariable">URLExtractorPostProcessor.output</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="FormExtractorAdaptor.inputvariable">SampleResultObjectVariable</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.URLExtractorPostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.URLExtractorPostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.URLExtractorPostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="URLExtractorPostProcessor.inputVariableName">SampleResultObjectVariable</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">URL Extractor Post Processor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="URLExtractorPostProcessor.outputHashmapName">URLExtractorPostProcessor.output</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.apache.jmeter.reporters.ResultCollector">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.visualizers.ViewResultsFullVisualizer</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.reporters.ResultCollector</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">View Results Tree</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="filename"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ResultCollector.error_logging">false</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.apache.jmeter.reporters.ResultCollector">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.visualizers.AssertionVisualizer</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.reporters.ResultCollector</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Assertion Results</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="filename"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ResultCollector.error_logging">false</property>
+</testelement>
+</node>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.samplers.HttpClientSampler">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpClientSampler.urlVariableName"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.path">${__property(ta1.saml2.sp.acs)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.samplers.HttpClientSampler</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.encoded_path">${__property(ta1.saml2.sp.acs)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.method">POST</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpClientSampler.ResultVariableName">SampleResultObjectVariable</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="HTTPSampler.use_keepalive">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.protocol">${__property(ta1.protocol)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="HTTPSampler.follow_redirects">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.port">${__property(ta1.port)}</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="HTTPsampler.Arguments">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.LinkedList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.mimetype"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.HttpClientSamplerGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.FILE_FIELD"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">HTTP Client Sampler</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.domain">${__property(ta1.hostname)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpClientSampler.noofredirects">1</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HTTPSampler.FILE_NAME"/>
+</testelement>
+<node>
+<testelement class="org.sourceid.conformance.processor.MessageDataPreProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.MessageDataPreProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.MessageDataPreProcessor</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="DynamicMessageDataInputPreProcess.userInputTable">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="responceIssuer">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">${__property(sso_idp_ce_sp_post_post)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">responceIssuer</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="responceDestination">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">${__property(ta1.protocol)}://${__property(ta1.hostname)}:${__property(ta1.port)}${__property(ta1.saml2.sp.acs)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">responceDestination</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Message Data PreProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageDataPreProcessor.inputForm">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageDataPreProcessor.outputHashmap">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.MessageGeneratorPreProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.MessageGeneratorPreProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.messagedatafilename">ResponceData.xml</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.casenumber"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="MessageGenerator.errantcase">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.variablename">ResponseVariable</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.hashmap">XMLHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.messagedatafilepath">${__property(ta1.data_path)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.MessageGeneratorPreProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="MessageGenerator.indexcase">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.xquery"/>
+<testelement class="org.apache.jmeter.config.Arguments" name="MessageGenerator.namespace">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">MessageGenerator PreProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.templatefilename">SSOResponceTemplate.xml</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.templatefilepath">${__property(ta1.template_path)}</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.XmlSignaturePreProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.XmlSignaturePreProcessor</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="XMLSignature.xpathCollection">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="//samlp:Response/saml:Assertion">//samlp:Response/saml:Assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="/samlp:Response">/samlp:Response</property>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignaturePreProcessor.signedXMLMessage">SignedResponseVariable</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="XMLSignature.schemas">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="../scriptpacks/saml2_0/schema/sstc-saml-schema-assertion-2.0.xsd">../scriptpacks/saml2_0/schema/sstc-saml-schema-assertion-2.0.xsd</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="../scriptpacks/saml2_0/schema/sstc-saml-schema-protocol-2.0.xsd">../scriptpacks/saml2_0/schema/sstc-saml-schema-protocol-2.0.xsd</property>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.privatesigningkeypass">${__property(keystore.access.pwd)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.publicsigningkeyname">${__property(signing.cert.alias)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="XMLSignature.includepublickey">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.messagetosign">ResponseVariable</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.privatemessagekeyname"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.XMLSignaturePreProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="XMLSignature.includesignature">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.keystorepass">${__property(keystore.access.pwd)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">XML Signature Preprocessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.privatemessagekeypass"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.privatesigningkeyname">${__property(signing.cert.alias)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.keystore">${__property(ta1.keystore_path)}/${__property(signing.keystore)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="XMLSignature.produceInvalidSignatures">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.publicmessagekeyname"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="XMLSignature.replacesigningcertificate">false</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="XMLSignature.prefixes">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="saml">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">saml</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="samlp">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:protocol</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">samlp</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="ds">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2000/09/xmldsig#</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">ds</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="xenc">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2001/04/xmlenc#</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">xenc</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="xs">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2001/XMLSchema</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">xs</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.Base64EncodePreProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.Base64EncodePreProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Base64EncodePreProcessor.outputVariableName">SAMLResponse</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.Base64EncodePreProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Base64 Encode Pre Processor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Base64EncodePreProcessor.inputVariableName">SignedResponseVariable</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.FormBuilderPreProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.FormBuilderPreProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.FormBuilderPreProcessor</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="FormBuilderAdaptor.parameters">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="SAMLResponse">SAMLResponse</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="RelayState">RelayState</property>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Form Builder PreProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.apache.jmeter.reporters.ResultCollector">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.visualizers.ViewResultsFullVisualizer</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.reporters.ResultCollector</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">View Results Tree</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="filename"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ResultCollector.error_logging">false</property>
+</testelement>
+</node>
+</node>
+</node>
+</node>

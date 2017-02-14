@@ -1,0 +1,14 @@
+<reqmappings>
+  <requirementmapping>
+     <mappingname>sso_mapping</mappingname>
+     <filename>ValidationReport-SSO--formalization.xls</filename>
+     <worksheet>report</worksheet>
+     <firstrequirementX>4</firstrequirementX>
+     <firstrequirementY>22</firstrequirementY>
+     <lefttestplanX>7</lefttestplanX>
+     <lefttestplanY>0</lefttestplanY>
+     <righttestplanX>18</righttestplanX>
+     <righttestplanY>0</righttestplanY>
+     <presentcolumn>19</presentcolumn>
+  </requirementmapping>
+</reqmappings>

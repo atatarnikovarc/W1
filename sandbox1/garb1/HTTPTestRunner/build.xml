@@ -1,0 +1,106 @@
+<project name="Onyma Http Test Runner" default="buildFramework">
+
+	<!--
+		Paths
+	-->
+	<property name="root.dir" location="./" />
+
+	<!-- to build framework itself-->
+	<property name="lib.dir" location="${root.dir}/lib/" />
+	<property name="config.dir" location="${root.dir}/config/" />
+	<property name="src.dir" location="${root.dir}/src/" />
+	<property name="dest.dir" location="${root.dir}/build/framework" />
+	<property name="deploy.dir" location="${root.dir}/dist/" />
+
+	<!-- for test reports -->
+	<property name="result.dir" location="${root.dir}/results/" />
+	
+	<!-- 
+		classpath 
+	-->
+	<path id="all.libs">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+
+	<!--
+		Framework
+	-->
+	<target name="init">
+		<delete dir="${dest.dir}" />
+		<mkdir dir="${dest.dir}" />
+		<delete dir="${deploy.dir}" />
+		<mkdir dir="${deploy.dir}" />
+	</target>
+
+	<target name="buildFramework" depends="init">
+		<javac srcdir="${src.dir}" destdir="${dest.dir}">
+			<classpath refid="all.libs" />
+		</javac>
+		<jar jarfile="${deploy.dir}/framework.jar" basedir="${dest.dir}">
+		</jar>
+	</target>
+
+	<!--
+		Test
+	-->
+	<target name="runSuite" depends="timestamp, report">
+	</target>
+
+	<target name="timestamp">
+		<tstamp>
+			<format property="results.path" pattern="yyyy_MM_dd_HH_mm" unit="hour" />
+		</tstamp>
+	</target>
+
+	<target name="report">
+		<mkdir dir="${result.dir}/${results.path}/reports" />
+		<junitreport todir="${result.dir}/${results.path}/reports">
+			<fileset dir="${result.dir}/${results.path}/reports">
+				<include name="TEST-*.xml" />
+			</fileset>
+
+			<report format="frames" styledir="${config.dir}/etc" todir="${result.dir}/${results.path}/reports" />
+		</junitreport>
+	</target>
+
+	<!--
+	targets below to learn how to run tests using application specific ant, junit, and junitrepor tasks
+	-->
+
+	<target name="run_all_tests" depends="buildFramework">
+		<java classname="test.TestExecutor">
+			<classpath>
+				<path refid="all.libs" />
+				<fileset dir="${deploy.dir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	</target>
+
+	<target name="run_ju" depends="timestamp, buildFramework">
+		<mkdir dir="${result.dir}/${results.path}/reports" />
+		<junit>
+			<formatter type="xml" />
+			<test name="test.TestExecutor" todir="${result.dir}/${results.path}/reports" />
+			<classpath>
+				<path refid="all.libs" />
+				<fileset dir="${deploy.dir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</junit>
+
+		<junitreport todir="${result.dir}/${results.path}/reports">
+			<fileset dir="${result.dir}/${results.path}/reports">
+				<include name="TEST-*.xml" />
+			</fileset>
+
+			<report format="frames" styledir="${config.dir}/etc" todir="${result.dir}/${results.path}/reports" />
+		</junitreport>
+	</target>
+</project>
+

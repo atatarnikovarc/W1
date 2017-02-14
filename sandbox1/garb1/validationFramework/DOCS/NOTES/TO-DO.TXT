@@ -1,0 +1,5 @@
+Preparation steps before testing by CE could be performed
+1. setting up CE app.properties 
+2. setting up PF config - meta-data.xml and local-meta-data.xml
+3. thus - necessary to add some parameters in CE app.properties in order to
+   have correct values for comparation in assertions in test plans

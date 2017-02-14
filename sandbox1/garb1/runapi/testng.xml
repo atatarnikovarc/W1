@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+<suite name="XTONES_WEB_API">
+  <test name="WEB_API_ALL_TESTS">
+    <classes>
+     <class name="main.RunAll" />
+    </classes>
+  </test>
+</suite>

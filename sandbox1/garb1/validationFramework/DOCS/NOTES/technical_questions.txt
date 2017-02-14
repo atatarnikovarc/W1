@@ -1,0 +1,1 @@
+1. to investigate the way of access to inherited fields and methods

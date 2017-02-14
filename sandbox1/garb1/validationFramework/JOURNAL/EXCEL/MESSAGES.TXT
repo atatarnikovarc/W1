@@ -1,0 +1,6 @@
+[java] Warning:  Object record is not associated with a drawing  record - ignoring
+
+[java] Warning:  Cell at H9 not present - adding a blank
+
+[java] Warning:   cannot find comment for note id 562...ignoring
+

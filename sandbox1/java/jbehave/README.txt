@@ -1,0 +1,1 @@
+Use ./run.sh command to run selenium tests

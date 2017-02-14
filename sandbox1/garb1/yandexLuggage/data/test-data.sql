@@ -1,0 +1,15 @@
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (1,2,2,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (2,2,1,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (666,2,2,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (11,2,0,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (12,0,1,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (13,22,212,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (14,2,2,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (15,2,1,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (16,2,2,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (17,2,2,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (18,2,1,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (19,2,2,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (20,2,2,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (21,2,1,0);
+insert into Luggage (id, hand_luggage, luggage, isProcessed) values (22,0,0,0);

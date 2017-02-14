@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<testelement class="org.apache.jmeter.testelement.TestPlan">
+<testelement class="org.apache.jmeter.config.Arguments" name="TestPlan.user_defined_variables">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.control.gui.TestPlanGui</property>
+<collection class="java.util.LinkedList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="TestPlan.thread_groups"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.testelement.TestPlan</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestPlan.serialize_threadgroups">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">SLO_CE_SP_Artifact_Post</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestPlan.functional_mode">false</property>
+</testelement>
+<node>
+<testelement class="org.apache.jmeter.threads.ThreadGroup">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.threads.gui.ThreadGroupGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.LongProperty" name="ThreadGroup.start_time">1086863981000</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.threads.ThreadGroup</property>
+<testelement class="org.apache.jmeter.control.LoopController" name="ThreadGroup.main_controller">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.control.gui.LoopControlPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="LoopController.loops">1</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.control.LoopController</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Loop Controller</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="LoopController.continue_forever">false</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Thread Group</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.LongProperty" name="ThreadGroup.end_time">1086863981000</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ThreadGroup.num_threads">1</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="ThreadGroup.scheduler">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="ThreadGroup.ramp_time">1</property>
+</testelement>
+<node>
+<testelement class="org.sourceid.conformance.samplers.HttpServerSampler">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.privatesslkeypass">${__property(keystore.access.pwd)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.privatesslkey">${__property(ssl.srv.cert.alias)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.port">${__property(ta1.server_sampler_port)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.samplers.HttpServerSampler</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.protocol">${__property(ta1.server_sampler_soap_sampler_protocol)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.ip">${__property(ta1.server_sampler_hostname)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.contenttype">text/xml</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.publicsslkey">${__property(ssl.srv.cert.alias)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.statuscode">200</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="HttpServerSampler.useraccounts">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="username">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">${__property(slo_idp_ce_sp_artifact_post_user)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">username</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="password">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">pass</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">password</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.sslkeyfile">${__property(ta1.keystore_path)}/${__property(ssl.srv.keystore)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.sslkeyfilepass">${__property(keystore.access.pwd)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.HttpServerSamplerGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">SOAP Artifact Request to SP</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.requestvariable">SampleResultObjectVariable</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.context">${__property(ta1.server_sampler_context)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.clientauthentication">${__property(ta1.server_sampler_ssl_client_auth_type)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="HttpServerSampler.responsevariable">ResponseVariable</property>
+</testelement>
+<node>
+<testelement class="org.sourceid.conformance.processor.InputElementMapperPreProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.InputElementMapperPreProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.InputElementMapperPreProcessor</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="InputElementMapperPreProcessor.hashMapTable">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="entityIdentifier">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:nameid-format:entity</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">entityIdentifier</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">InputElement Mapper PreProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.HttpResponseNotifyingPostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.HttpResponseNotifyingPostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.HttpResponseNotifyingPostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Http Response Notifying Post Processor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.IntermediateContextPostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.IntermediateContextPostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.IntermediateContextPostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">IntermediateContext PostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="IntermediateContextProcessor.outputVariableName">LogoutRequestHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="IntermediateContextProcessor.inputVariableName"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.XmlExtractorPostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.XmlExtractorPostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.XmlExtractorPostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Xml Extractor Postprocessor</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="XmlExtractor.searchvariableslist">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="LogoutRequestID">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">//samlp:LogoutRequest/@ID</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">LogoutRequestID</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Arguments" name="XmlExtractor.prefixes">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="saml">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">saml</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="samlp">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:protocol</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">samlp</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="ds">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2000/09/xmldsig#</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">ds</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="SOAP-ENV">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://schemas.xmlsoap.org/soap/envelope/</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">SOAP-ENV</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="xs">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2001/XMLSchema</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">xs</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XmlExtractor.messagetype"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XmlExtractor.hashmap">LogoutRequestHashMap</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XmlExtractor.variablename">ResponseVariable</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.MessageGeneratorPostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.MessageGeneratorPostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.messagedatafilename">SLORequest.xml</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.casenumber"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="MessageGenerator.errantcase">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.variablename">ResponseVariable</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.hashmap">messageDataHM</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.messagedatafilepath">${__property(ta1.data_path)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.MessageGeneratorPostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="MessageGenerator.indexcase">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.xquery"/>
+<testelement class="org.apache.jmeter.config.Arguments" name="MessageGenerator.namespace">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">MessageGenerator PostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.templatefilename">SOAPEnvelopTemplate.xml</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.templatefilepath">${__property(ta1.template_path)}</property>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.XmlSignaturePostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.XmlSignaturePostProcessor</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="XMLSignature.xpathCollection">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="/samlp:ArtifactResponse/samlp:LogoutRequest">/samlp:ArtifactResponse/samlp:LogoutRequest</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="/samlp:ArtifactResponse">/samlp:ArtifactResponse</property>
+</collection>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="XMLSignature.schemas">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="../scriptpacks/saml2_0/schema/sstc-saml-schema-assertion-2.0.xsd">../scriptpacks/saml2_0/schema/sstc-saml-schema-assertion-2.0.xsd</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="../scriptpacks/saml2_0/schema/sstc-saml-schema-protocol-2.0.xsd">../scriptpacks/saml2_0/schema/sstc-saml-schema-protocol-2.0.xsd</property>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.privatesigningkeypass">${__property(keystore.access.pwd)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.publicsigningkeyname">${__property(signing.cert.alias)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="XMLSignature.includepublickey">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.messagetosign">SignedArtifactResolveVariable</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.privatemessagekeyname"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.sourceid.conformance.gui.XMLSignaturePostProcessorGui</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="XMLSignature.includesignature">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.keystorepass">${__property(keystore.access.pwd)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">XML Signature Postprocessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.privatemessagekeypass"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.privatesigningkeyname">${__property(signing.cert.alias)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.keystore">${__property(ta1.keystore_path)}/${__property(signing.keystore)}</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignaturePostProcessor.signedXMLMessage">SignedArtifactResolveVariable</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="XMLSignature.produceInvalidSignatures">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="XMLSignature.publicmessagekeyname"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="XMLSignature.replacesigningcertificate">false</property>
+<testelement class="org.apache.jmeter.config.Arguments" name="XMLSignature.prefixes">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.gui_class">org.apache.jmeter.config.gui.ArgumentsPanel</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.apache.jmeter.config.Arguments</property>
+<collection class="java.util.ArrayList" propType="org.apache.jmeter.testelement.property.CollectionProperty" name="Arguments.arguments">
+<testelement class="org.apache.jmeter.config.Argument" name="saml">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:assertion</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">saml</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="samlp">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">urn:oasis:names:tc:SAML:2.0:protocol</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">samlp</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="ds">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2000/09/xmldsig#</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">ds</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="xenc">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2001/04/xmlenc#</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">xenc</property>
+</testelement>
+<testelement class="org.apache.jmeter.config.Argument" name="xs">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.metadata">=</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.value">http://www.w3.org/2001/XMLSchema</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="Argument.name">xs</property>
+</testelement>
+</collection>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.name">Argument List</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+</testelement>
+</testelement>
+</node>
+<node>
+<testelement class="org.sourceid.conformance.processor.MessageGeneratorPostProcessor">
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="TestElement.test_class">org.sourceid.conformance.processor.MessageGeneratorPostProcessor</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.messagedatafilename">SLORequest.xml</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="TestElement.enabled">true</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.casenumber"/>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.BooleanProperty" name="MessageGenerator.errantcase">false</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.variablename">SignedArtifactResolveVariable</property>
+<property xml:space="preserve" propType="org.apache.jmeter.testelement.property.StringProperty" name="MessageGenerator.hashmap">messageDataHM</property>
+<property xml:space="preserve" pÿş< F o l d e r >  
+         < D i r   F o l d e r = " C : \ D o c u m e n t s   a n d   S e t t i n g s \ ;045;5F\ >8  4>:C<5=BK\ >O  <C7K:0"   N a m e = " "   M o d = " 1 2 8 0 7 8 4 2 2 7 8 0 0 0 0 0 0 0 "   D i r t y = " 0 " / >  
+         < D i r   F o l d e r = " C : \ D o c u m e n t s   a n d   S e t t i n g s \ ;045;5F\ >8  4>:C<5=BK\ >8  2845>70?8A8"   N a m e = " "   M o d = " 1 2 7 9 0 8 9 5 1 8 6 0 0 0 0 0 0 0 "   D i r t y = " 0 " >  
+                 < D i r   N a m e = " R e c o r d e d   T V "   M o d = " 1 2 7 9 0 8 9 5 1 8 6 0 0 0 0 0 0 0 "   D i r t y = " 0 " / >  
+         < / D i r >  
+         < D i r   F o l d e r = " C : \ D o c u m e n t s   a n d   S e t t i n g s \ A l l   U s e r s \ >:C<5=BK\ >O  <C7K:0"   N a m e = " "   M o d = " 1 2 6 9 5 1 8 1 3 7 6 0 0 0 0 0 0 0 "   D i r t y = " 0 " >  
+                 < D i r   N a m e = " S a m p l e   P l a y l i s t s "   M o d = " 1 2 8 0 0 6 5 9 8 9 4 0 0 0 0 0 0 0 "   D i r t y = " 0 " >  
+                         < D i r   N a m e = " 0 0 0 6 0 B 1 E "   M o d = " 1 2 6 9 5 1 8 1 4 8 6 0 0 0 0 0 0 0 "   D i r t y = " 0 " / >  
+                 < / D i r >  
+                 < D i r   N a m e = " 1@07FK  <C7K:8"   M o d = " 1 2 6 9 5 1 8 1 4 3 8 0 0 0 0 0 0 0 "   D i r t y = " 0 " / >  
+                 < D i r   N a m e = " M y   P l a y l i s t s "   M o d = " 1 2 6 9 5 1 8 1 4 8 6 0 0 0 0 0 0 0 "   D i r t y = " 0 " / >  
+                 < D i r   N a m e = " S y n c   P l a y l i s t s "   M o d = " 1 2 8 0 0 6 5 9 8 9 4 0 0 0 0 0 0 0 "   D i r t y = " 0 " >  
+                         < D i r   N a m e = " 7 3 5 9 4 7 7 B "   M o d = " 1 2 8 0 0 6 5 9 8 7 0 0 0 0 0 0 0 0 "   D i r t y = " 0 " / >  
+                 < / D i r >  
+         < / D i r >  
+         < D i r   F o l d e r = " C : \ D o c u m e n t s   a n d   S e t t i n g s \ A l l   U s e r s \ >:C<5=BK\ >8  2845>70?8A8"   N a m e = " "   M o d = " 1 2 8 0 0 6 5 9 9 7 2 0 0 0 0 0 0 0 "   D i r t y = " 0 " / >  
+ < / F o l d e r >  
+                                                                                                                                                                                                                                                                                                                                                                                                                     1" />
+        <node name="Properties" opcode="create" >
+          <node name="Format" opcode="create" type="string" value="PCMU,L8,L16,MPA,G726-24,G726-40" />
+          <node name="Protocol" opcode="create" type="string" value="RTP/AVP" />
+        </node> <!-- Properties -->
+
+      </node> <!-- RTP/AVP -->
+
+      <node name="RTP/FEC" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{02DEFE42-F8FC-11d2-8670-00C04F6890ED}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Format" opcode="create" type="string" value="parityfec" />
+          <node name="Protocol" opcode="create" type="string" value="RTP/AVP" />
+        </node> <!-- Properties -->
+
+      </node> <!-- RTP/FEC -->
+
+      <node name="RTP/WMS-FEC" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{EDAB8E6B-746C-40db-A885-9E4A9EEF27A2}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Format" opcode="create" type="string" value="wms-fec" />
+          <node name="Protocol" opcode="create" type="string" value="RTP/AVP" />
+        </node> <!-- Properties -->
+
+      </node> <!-- RTP/WMS-FEC -->
+
+    </node> <!-- Object Store -->
+
+    <node name="Shared Properties" opcode="create" />
+  </node> <!-- Data Protocol -->
+
+  <node name="Feedback Protocol" opcode="create" >
+    <node name="Object Store" opcode="create" >
+      <node name="RTCP" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{ecfddc81-184e-11d3-ae84-00a0c95ec3f0}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Format" opcode="create" type="string" value="x-wms-rtx" />
+          <node name="Protocol" opcode="create" type="string" value="RTP/AVP" />
+        </node> <!-- Properties -->
+
+      </node> <!-- RTCP -->
+
+    </node> <!-- Object Store -->
+
+    <node name="Shared Properties" opcode="create" />
+  </node> <!-- Feedback Protocol -->
+
+  <node name="Network Source" opcode="create" >
+    <node name="Object Store" opcode="create" >
+      <node name="WMS Http Network Source" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{566A2EFF-5651-4020-AC1A-EB48E4571EA3}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Source Type" opcode="create" type="string" value="HTTP" />
+          <node name="DefaultHttpServerPort" opcode="create" type="int32" value="0x50" />
+          <node name="DefaultHttpServerSSLPort" opcode="create" type="int32" value="0x1bb" />
+          <node name="PacketBuffers" opcode="create" type="int32" value="0x8" />
+          <node name="EnableHTTP1_1" opcode="create" type="int32" value="0x1" />
+          <node name="OpenTimeout" opcode="create" type="int32" value="0x1e" />
+          <node name="SecondSegmentTimeout" opcode="create" type="int32" value="0x64" />
+          <node name="ControlAdapter" opcode="create" type="string" value="" />
+          <node name="PercentBWUsageForAccelStreaming" opcode="create" type="int32" value="0x55" />
+          <node name="Proxy Setting" opcode="create" type="int32" value="0x3" />
+          <node name="ProxyHostName" opcode="create" type="string" value="" />
+          <node name="ProxyPort" opcode="create" type="int32" value="0x50" />
+          <node name="ProxyBypassForLocal" opcode="create" type="int32" value="0x0" />
+        </node> <!-- Properties -->
+
+      </node> <!-- WMS Http Network Source -->
+
+      <node name="WMS Mms Network Source" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{DCF6C8B2-F6C0-461b-82DA-35945EADF54A}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Source Type" opcode="create" type="string" value="MMS,MMST,MMSU" />
+          <node name="DefaultServerPort" opcode="create" type="int32" value="0x6db" />
+          <node name="MaxReadHeaderRetries" opcode="create" type="int32" value="0x4" />
+          <node name="PacketBuffers" opcode="create" type="int32" value="0x8" />
+          <node name="DropProb" opcode="create" type="int32" value="0x0" />
+          <node name="DropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="FirstDropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="DropBurstDuration" opcode="create" type="int32" value="0x0" />
+          <node name="PacketPairDropProb" opcode="create" type="int32" value="0x0" />
+          <node name="NackAlgorithm" opcode="create" type="int32" value="0x2" />
+          <node name="NackRateMultiplier" opcode="create" type="int32" value="0x1" />
+          <node name="NackBurst" opcode="create" type="int32" value="0x5dc" />
+          <node name="NackTraceInterval" opcode="create" type="int32" value="0x3e8" />
+          <node name="NackRetry" opcode="create" type="int32" value="0x1" />
+          <node name="IgnoreServerVersion" opcode="create" type="int32" value="0x0" />
+          <node name="EnableMmsDistribution" opcode="create" type="int32" value="0x0" />
+          <node name="AssertStrangeErrors" opcode="create" type="int32" value="0x0" />
+          <node name="InactivityTimeout" opcode="create" type="int32" value="0x5a" />
+          <node name="OpenTimeout" opcode="create" type="int32" value="0x20" />
+          <node name="PercentBWUsageForAccelStreaming" opcode="create" type="int32" value="0x55" />
+          <node name="FunnelAdapter" opcode="create" type="string" value="" />
+          <node name="ControlAdapter" opcode="create" type="string" value="" />
+          <node name="Proxy Setting" opcode="create" type="int32" value="0x0" />
+          <node name="ProxyHostName" opcode="create" type="string" value="" />
+          <node name="ProxyPort" opcode="create" type="int32" value="0x6db" />
+          <node name="ProxyBypassForLocal" opcode="create" type="int32" value="0x0" />
+        </node> <!-- Properties -->
+
+      </node> <!-- WMS Mms Network Source -->
+
+      <node name="WMS Msbd Network Source" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{FB74F625-7D25-4455-B840-7B870B5B9322}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Source Type" opcode="create" type="string" value="ASFM" />
+          <node name="PacketBuffers" opcode="create" type="int32" value="0x8" />
+          <node name="DropProb" opcode="create" type="int32" value="0x0" />
+          <node name="DropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="FirstDropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="DropBurstDuration" opcode="create" type="int32" value="0x0" />
+          <node name="McastTimeout" opcode="create" type="int32" value="0x3a98" />
+          <node name="EnableIGMPv3" opcode="create" type="int32" value="0x1" />
+        </node> <!-- Properties -->
+
+      </node> <!-- WMS Msbd Network Source -->
+
+      <node name="WMS Network Source" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{ad763fa6-3b90-41ab-bd44-4f832beee55f}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Source Type" opcode="create" type="string" value="RTSP,XSDP,RTP,RTSPA,RTSPT,RTSPU,RTSPM" />
+          <node name="EnableATM" opcode="create" type="int32" value="0x1" />
+          <node name="MaximumMTU" opcode="create" type="int32" value="0x0" />
+          <node name="FirewallTimeout" opcode="create" type="int32" value="0x14" />
+          <node name="OpenTimeout" opcode="create" type="int32" value="0x1e" />
+          <node name="RtxDropProb" opcode="create" type="int32" value="0x0" />
+          <node name="DropProb" opcode="create" type="int32" value="0x0" />
+          <node name="DropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="FirstDropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="DropBurstDuration" opcode="create" type="int32" value="0x0" />
+          <node name="PacketPairDropProb" opcode="create" type="int32" value="0x0" />
+          <node name="NackAlgorithm" opcode="create" type="int32" value="0x2" />
+          <node name="NackRateMultiplier" opcode="create" type="int32" value="0x1" />
+          <node name="NackBurst" opcode="create" type="int32" value="0x5dc" />
+          <node name="NackTraceInterval" opcode="create" type="int32" value="0x3e8" />
+          <node name="NackRetry" opcode="create" type="int32" value="0x1" />
+          <node name="BurstProtection" opcode="create" type="int32" value="0x0" />
+          <node name="EmulateNetworkDisconnect" opcode="create" type="int32" value="0x0" />
+          <node name="AssertStrangeErrors" opcode="create" type="int32" value="0x0" />
+          <node name="PercentBWUsageForAccelStreaming" opcode="create" type="int32" value="0x55" />
+          <node name="Proxy Setting" opcode="create" type="int32" value="0x0" />
+          <node name="ProxyHostName" opcode="create" type="string" value="" />
+          <node name="ProxyPort" opcode="create" type="int32" value="0x22a" />
+          <node name="ProxyBypassForLocal" opcode="create" type="int32" value="0x0" />
+          <node name="PktGracePeriodAtEOSForBPP" opcode="create" type="int32" value="0x3e8" />
+          <node name="PktGracePeriodAtEOSForODP" opcode="create" type="int32" value="0x9c4" />
+        </node> <!-- Properties -->
+
+      </node> <!-- WMS Network Source -->
+
+    </node> <!-- Object Store -->
+
+    <node name="Shared Properties" opcode="create" >
+      <node name="Local" opcode="create" />
+      <node name="Bandwidth_2" opcode="create" type="int32" value="0x595296e" />
+      <node name="Bandwidth_1" opcode="create" type="int32" value="0x2516d07" />
+      <node name="IP Address" opcode="create" type="string" value="213.248.29.3" />
+      <node name="Bandwidth_3" opcode="create" type="int32" value="0x0" />
+      <node name="Bandwidth_4" opcode="create" type="int32" value="0x7c5fa15" />
+      <node name="Bandwidth_5" opcode="create" type="int32" value="0x34f6e1f" />
+      <node name="Bandwidth_6" opcode="create" type="int32" value="0x910713f" />
+      <node name="Bandwidth_7" opcode="create" type="int32" value="0x2218bf0" />
+      <node name="Bandwidth_8" opcode="create" type="int32" value="0x5dd7cab" />
+      <node name="Bandwidth_9" opcode="create" type="int32" value="0x406c4b6" />
+      <node name="Bandwidth_10" opcode="create" type="int32" value="0x7361c" />
+      <node name="Bandwidth_11" opcode="create" type="int32" value="0x0" />
+    </node> <!-- Shared Properties -->
+
+  </node> <!-- Network Source -->
+
+</document>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        PS ÿÿÿÿ                      Controls¨ÿÿÿnk  
+0{u|ùÆ    ĞoT         ÿÿÿÿÿÿÿÿ   0ÆH PS ÿÿÿÿ                            0Øÿÿÿvk   € P    l Control Typer v Øÿÿÿvk   €        D Multiple Itemsa Øÿÿÿvk   €       S Channel Count l Øÿÿÿvk   €ÿÿ      S Channel       0 Øÿÿÿvk   €ÿÿ      i Channel       1    lh (pT ŸÛñ¨ÿÿÿnk  
+0{u|ùÆ    ĞoT         ÿÿÿÿÿÿÿÿ    I PS ÿÿÿÿ                           1Øÿÿÿvk   €      ; Control Type€í; Øÿÿÿvk   €          Multiple Items_MØÿÿÿvk   €       T Channel Count R Øÿÿÿvk   €        R Channel       0 Øÿÿÿvk   €        T Channel       13¨ÿÿÿnk  
+0{u|ùÆ    x"1        À¬T ÿÿÿÿ   x*I PS ÿÿÿÿ                          8àÿÿÿvk   €       ÛñLineIdÛñØÿÿÿvk   €        ÛñControl CountŸÛñàÿÿÿvk   €         SourceIdàÿÿÿvk   €         DestId  (ÿÿÿlh €4S ŸÛñHsS ŸÛñ@OT ŸÛñaT ŸÛñ0dT ŸÛñˆfT ŸÛñ jT ŸÛñğnT ŸÛñxrT ŸÛñX#1 0   P'1 1    +1 2   ø.1 3   ø21 4   ˜51 5   p91 6   ˆ>1 7   xB1 8   N I T U M   S H A R E D \ A U P D A T E   @ ¨ 	 D : \ D I S T ¨ÿÿÿnk  æ.& Ç    LS         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf ¨ÿÿÿnk  @n.& Ç    øªS         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf ¨ÿÿÿnk  @n.& Ç     QS         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf ¨ÿÿÿnk  šĞ.& Ç    xªN         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf ¨ÿÿÿnk  šĞ.& Ç    XíP         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf ¨ÿÿÿnk  DÜE/Ç    ¨ñ@        HÁT ÿÿÿÿ   ğiG è  ÿÿÿÿ          J   Ò      NOD32krn   .SYS¨ÿÿÿnk  šĞ.& Ç     ]S         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf ¨ÿÿÿnk  ô2.& Ç    0BP         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf €üÿÿ%SystemRoot%\system32\mswsock.dll                                                                                                                                                                                                                                                     0_sÂÏ•È €_H¡’Š                                                úÿÿÿ             ú      M S A F D   N e t B I O S   [ \ D e v i c e \ N e t B T _ T c p i p _ { 6 E 5 2 F 7 5 6 - D 1 C E - 4 A 1 8 - A 0 0 F - 3 1 2 B C D D B B 8 C C } ]   S E Q P A C K E T   6                                                                                                                                                                                                                                                                                                                                                     y S €üÿÿ%SystemRoot%\system32\mswsock.dll                                                                                                                                                                                                                                   	                 0_sÂÏ•È €_H¡’‹                                                úÿÿÿ             ú      M S A F D   N e t B I O S   [ \ D e v i c e \ N e t B T _ T c p i p _ { 6 E 5 2 F 7 5 6 - D 1 C E - 4 A 1 8 - A 0 0 F - 3 1 2 B C D D B B 8 C C } ]   D A T A G R A M   6                                                                                                                                                                                                                                                                                                                                                       i d €üÿÿ%SystemRoot%\system32\mswsock.dll                                                                                                                                                                                                                                                     0_sÂÏ•È €_H¡’Œ                                                ùÿÿÿ             ú      M S A F D   N e t B I O S   [ \ D e v i c e \ N e t B T _ T c p i p _ { 2 2 A 1 D 2 4 9 - 2 E 4 E - 4 9 D F - 9 1 A 5 - B A E E D 4 3 E 0 E F 0 } ]   S E Q P A C K E T   7                                                                                                                                                                                                                                                                                                                                                     m   Pÿÿÿ €   œ      0        € ÿ           `       ı            ÿ                            ı          #                  €?8 P   hÚ; ØV= ˆ–= nF F p·@ ¨ŞG HüJ XIL ˆbL ˆnL €YL XnL ğ~L `ØG øDL (uL    ns  ¨ÿÿÿnk  ;™§âoÇ    èuT         ÿÿÿÿÿÿÿÿ   @ÁT ¸H ÿÿÿÿ           ¨          Securityàÿÿÿvk ¨   ğ‚T     d SecurityPÿÿÿ €   œ      0        € ÿ           `       ı            ÿ                            ı          #                    P ğÿÿ    )   S[³Í¯bYE”@:Z0T   (   m s _ w z c s v c     Y0ûÎéP-F)0F4øG   (   m s _ s t e e l h e a d     ‰w/xïE¤Bàı"Ö   8   m s _ r a s s r v     u›gSÏñVM¶Éš°¢VZh   (   m s _ r a s m a n     ¬y™W¦JK¼tÖ¼Ï   8   m s _ r a s c l i     í{zRê B§ÂJS›“       m s _ s e r v e r     Üº|”‹ÕÇM¸fÊÔèJ®     m s _ p s c h e d     «)pjN» @†ÌlĞgÁ   (   m s _ g p c     c©·²è÷D«ÚFå;¡   (   m s _ a l g     1w!k@ºŸ?ª¾ËÅ   (   m s _ n e t b i o s     Ã¤½PeOºM·Ã5`   (   m s _ r s v p     -À~¬½A«óíôÂ6ÖE   €   m s _ m s c l i e n t     ¤Kd‘+;Kºı»eH      m s _ w e b c l i e n t     ¿G|šdC­Û~=§¥   (   m s _ n w s p x     f˜'Ï€†MµMú	‘E    0  m s _ n w n b     ş)»Bâ}OŒ>µµ£&   €  m s _ n w i p x     q^è TÏÀK©_ŒÇÆÔÜZ       o s a _ n d i s f i l t e r     ½'%ŸA¸B¦ Äœ^Ñ       o s a n e t m n t     Oe#ñ½}7@‰ûÍÕG       a e g i s p     Ğdi\9„D¾uÆnIË«i       s y m b l _ s 2 4 t r a n s     zSñù“B…øs¡M3t–   (   m s _ p p p o e     „<Ô¥ã‡~G¥ŠïúòÊ   8   m s _ p p t p     ŒY€Ù_LfEŠê¸YvKÕ   8   m s _ l 2 t p     ¤à…ŠÍÂM”¯¯A/«x   (   m s _ n d i s w a n     WÑ…@/uFEµ7İÆÒıŸ’   (   m s _ n d i s u i o     ó3K’dA’O°ÜA€W   8   m s _ n e t b t _ s m b     ×ÿg'˜äK—ç|ÓÚ†l   (   m s _ n e t b t     ï‘W‹L™vcÅ³5ñÃ       m s _ t c p i p     *dhÖD’hNE²=   (   m s _ i r d a     ©Qt66¸O›ÀJ-Ñ¦ŸM      * s m c f 0 1 0   A C P I \ S M C F 0 1 0 \ 5 & 1 9 0 7 E 2 1 B & 0   ĞeˆŸBâL‘Î÷ÚJÊ¿       v 1 3 9 4 \ n i c 1 3 9 4   V 1 3 9 4 \ N I C 1 3 9 4 \ 8 C B 6 2 D C 0 9 F 0 0   öµOÙµ1I¸m‘çÁX­    „   p c i \ v e n _ 8 0 8 6 & d e v _ 4 2 2 2 & s u b s y s _ 1 0 0 1 8 0 8 6   P C I \ V E N _ 8 0 8 6 & D E V _ 4 2 2 2 & S U B S Y S _ 1 0 0 1 8 0 8 6 & R E V _ 0 2 \ 4 & 2 0 9 7 5 6 8 0 & 0 & 0 0 E 1   §Oío{³\D¾êÓ•JÇ›    „   p c i \ v e n _ 1 4 e 4 & d e v _ 1 6 9 d   P C I \ V E N _ 1 4 E 4 & D E V _ 1 6 9 D & S U B S Y S _ 0 0 9 4 1 0 2 5 & R E V _ 2 1 \ 4 & 2 8 0 3 E 7 C 1 & 0 & 0 0 E 2   óåÂ4ìCM‚ø%­]¦ß    *   s w \ { e e a b 7 7 9 0 - c 5 1 4 - 1 1 d 1 - b 4 2 b - 0 0 8 0 5 f c 1 2 7 0 e }   S W \ { E E A B 7 7 9 0 - C 5 1 4 - 1 1 D 1 - B 4 2 B - 0 0 8 0 5 F C 1 2 7 0 E } \ A S Y N C M A C   Dıöîú^F£kº>—@y    )   m s _ n d i s w a n i p   R O O T \ M S _ N D I S W A N I P \ 0 0 0 0   µ„%Ç®ìM§@Üv.L    )   m s _ p t i m i n i p o r t   R O O T \ M S _ P T I M I N I P O R T \ 0 0 0 0   ¿i(¸•E¦}ºñÂ«IÊ    )   m s _ p p p o e m i n i p o r t   R O O T \ M S _ P P P O E M I N I P O R T \ 0 0 0 0   5D d“¥L–-‘&,cK    )   m s _ p p t p m i n i p o r t   R O O T \ M S _ P P T P M I N I P O R T \ 0 0 0 0   øbvÇGo¿L sP¾u™5    )   m s _ l 2 t p m i n i p o r t   R O O T \ M S _ L 2 T P M I N I P O R T \ 0 0 0 0   y\İäóm H½Ñ'İ-±5    "   s w \ { 4 8 9 2 6 4 7 6 - 2 c a e - 4 d e d - a 8 6 e - 7 3 d d e b e d 6 7 7 9 }   S W \ { 4 8 9 2 6 4 7 6 - 2 C A E - 4 D E D - A 8 6 E - 7 3 D D E B E D 6 7 7 9 } \ N D I S I P   uæŠ0Î°‰N¸£X
+W­    )   m s _ i r d a m i n i p o r t   R O O T \ M S _ I R D A M I N I P O R T \ 0 0 0 0       -                                           "   	      	                                       '                                      '                   '                               '      !      #      $      %      &      (                   '                               '      "                                                                                                                                                                                           	                 
+                                                                                                                                                                                                                                                                                                  M     vk   €        LegacyM  ÿÿÿ8A?5BG5@  02B>- ?>4:;NG5=89  C40;5==>3>  4>ABC?0  ¨ÿÿÿnk  Œ©.& Ç    »P         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf ¨ÿÿÿnk  Œ©.& Ç    5S         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf ¨ÿÿÿnk  æ.& Ç    H8S         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf ¨ÿÿÿnk  æ.& Ç    ;S         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf        àÿÿÿvk J   •T     T klop šT °ÿÿÿC : \ W I N D O W S \ s y s t e m 3 2 \ d r i v e r s \ k l o p . s y s   T ¨ÿÿÿnk  nèıŠâÆ    HgS         ÿÿÿÿÿÿÿÿ   øßT ¸H ÿÿÿÿ           ¨         Securityàÿÿÿvk ¨   ˜QT     yNSecurity   vk øşÿÿ                                                                                       €          Š   C : \ D O C U M E N T S   A N D   S E T T I N G S \ A L L   U S E R S \ A P P L I C A T I O N   D A T A \ K A S P E R S K Y   L A B \ *     Pê< 0ÿÿÿ                                                                                       €          R   C : \ D O C U M E ~ 1 \ A L L U S E ~ 1 \ A P P L I C ~ 1 \ K A S P E R ~ 1 \ *   1 1 D Øÿÿÿvk	 è   øÔT     F 000000002 D 1 } Øÿÿÿvk	 ¸   èÕT     !000000003@B=Øÿÿÿvk	 ¾   ¨ÖT     5000000004>9AØÿÿÿvk	 ¼   p×T     = 000000005? PÑ? àÿÿÿvk J   ¨ßT     T klin€˜T Øÿÿÿvk	 À   0ØT     S 000000006  A8Øÿÿÿvk	 ¾   øØT     ? 000000007á? à	@ Øÿÿÿvk	    `ÛT     T 000000010˜T ø˜T Øÿÿÿvk	 ¾   ÀÙT     l 000000008 s p e Øÿÿÿvk	 Ğ   ˆÚT     P 000000009 . e x Øÿÿÿvk	     ˜ÜT     T 000000012˜T ø˜T    Ğ˜T Øÿÿÿvk	 Š   ÜT     S 000000011       Øÿÿÿvk	 Î    ŞT     T 000000014˜T ø˜T ğÿÿÿlh ğWT íî„Øÿÿÿvk	 ¼   @İT     a 000000013 k y   Øÿÿÿvk	 Ì   °šT     T 000000016˜T ø˜T ğÿÿÿlh heT ŸÛñ    ™T Øÿÿÿvk	 Ê   ØŞT     a 000000015 a t i Øÿÿÿvk	 Ä   ÈœT     T 000000018˜T ø˜T àÿÿÿvk J   PFT     T klop šT 0ÿÿÿ                                                                                  l   \ R E G I S T R Y \ M A C H I N E \ S Y S T E M \ C O N T R O L S E T 0 0 1 \ S E R V I C E S \ A V P \ *   Øÿÿÿvk	 È   ¨›T       000000017     0ÿÿÿ                                                                                  h   \ R E G I S T R Y \ M A C H I N E \ S Y S T E M \ C O N T R O L S E T 0 0 1 \ S E R V I C E S \ A V P   >=Øÿÿÿvk	 Î   àT     T 000000020˜T ø˜T Øÿÿÿvk	 Ê   ¸4T     T 000000021›T hšT 8ÿÿÿ                                                                                  d   \ R E G I S T R Y \ M A C H I N E \ S Y S T E M \ C O N T R O L S E T * \ S E R V I C E S \ K L 1   Øÿÿÿvk	 È   ¸T     =0000000191KB0ÿÿÿ                                                                                   h   \ R E G I S T R Y \ M A C H I N E \ S Y S T E M \ C O N T R O L S E T * \ S E R V I C E S \ K L 1 \ *   40Øÿÿÿvk	 Î   ¨6T     T 000000023˜T ø˜T Øÿÿÿvk	 Ê   è7T     T 000000024›T hšT    xœT (ÿÿÿ      #                                                                            n   \ R E G I S T R Y \ M A C H I N E \ S Y S T E M \ C O N T R O L S E T 0 0 1 \ S E R V I C E S \ K L O P \ *     =5Øÿÿÿvk	 ¼   è5T       000000022B  7àÿÿÿvk œ   @JT       SpuAĞ2T hbin  T  @                      €üÿÿC:\WINDOWS\system32\imon.dll .dll                                                                                                                                                                                                                                   f                 ÚØ¤(éoL©&¦lÇ­2$                                                                        N O D 3 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       s y ¸ÿÿÿD L L H O S T . E X E , M M C . E X E , R U N D L L 3 2 . E X E           00000 8         ÿÿÿnk  j½ù(Ç    ø>        h­T ÿÿÿÿ   İJ ¸œ
+ ÿÿÿÿ             Û      LEGACY_VSTOR2}H ¨ÿÿÿnk  R¨ãE/Ç     ¤T         ÿÿÿÿÿÿÿÿ   X&I ¸œ
+ ÿÿÿÿ          N          0000;  şÿÿM e m o r y S t i c k 0   M e m o r y S t i c k 1   M e m o r y S t i c k 2   S D 0   S D 1   S D 2   S D 3   M M C 0   M M C 1   M M C 2   M M C 3   S m a r t M e d i a 0   S m a r t M e d i a 1   S m a r t M e d i a 2   X D 0   X D 1   X D 2   M e m o r y S t i c k P r o 0   M e m o r y S t i c k P r o 1   M e m o r y S t i c k P r o 2         şÿÿ>72>;O5B  W i n d o w s - ?@>3@0<<0<  A>74020BL,   ?>;CG0BL  4>ABC?  8  87<5=OBL  D09;K,   E@0=OI85AO  2  =B5@=5B5.   A;8  MB0  A;C610  >AB0=>2;5=0,   MB8  DC=:F88  =5  4>ABC?=K.   A;8  MB0  A;C610  >B:;NG5=0,   ;N1K5  A;C61K,   :>B>@K5  O2=>  7028AOB  >B  =55,   =5  <>3CB  1KBL  70?CI5=K.      €; ğs;  j; €üÿÿ%SystemRoot%\system32\mswsock.dll                                                                                                                                                                                                                                   	                 0_sÂÏ•È €_H¡’‰                                                ûÿÿÿ             ú      M S A F D   N e t B I O S   [ \ D e v i c e \ N e t B T _ T c p i p _ { 4 1 4 7 5 5 C D - 3 B 6 9 - 4 2 E 4 - 8 E 8 0 - 0 9 7 F B 6 5 3 E 3 C 4 } ]   D A T A G R A M   5                                                                                                                                                                                                                                                                                                                                                       D n  ÿÿÿnk  aäoÇ    èÉH         ÿÿÿÿÿÿÿÿ   è¼S XîK ÿÿÿÿ        "   x        000000000032     ÿÿÿnk  aäoÇ    èÉH         ÿÿÿÿÿÿÿÿ   ğËS XîK ÿÿÿÿ        "   x         000000000033/(c7 ÿÿÿnk  aäoÇ    èÉH         ÿÿÿÿÿÿÿÿ   @  XîK ÿÿÿÿ        "   x  !      000000000034/(c7   (‚T ğÿÿÿlh ÀOT ø†ód¨ÿÿÿnk  ô2.& Ç    €YP         ÿÿÿÿÿÿÿÿ    ÿÿÿÿ¸œ
+ ÿÿÿÿ                       LogConf @   V M n c   l o s s l e s s   c o d e c   [ V M n c ]   >9Ağÿÿÿlh `¤T @!& ğÿÿ    )   S[³Í¯bYE”@:Z0T   (   m s _ w z c s v c     Y0ûÎéP-F)0F4øG   (   m s _ s t e e l h e a d     ‰w/xïE¤Bàı"Ö   8   m s _ r a s s r v     u›gSÏñVM¶Éš°¢VZh   (   m s _ r a s m a n     ¬y™W¦JK¼tÖ¼Ï   8   m s _ r a s c l i     í{zRê B§ÂJS›“       m s _ s e r v e r     Üº|”‹ÕÇM¸fÊÔèJ®     m s _ p s c h e d     «)pjN» @†ÌlĞgÁ   (   m s _ g p c     c©·²è÷D«ÚFå;¡   (   m s _ a l g     1w!k@ºŸ?ª¾ËÅ   (   m s _ n e t b i o s     Ã¤½PeOºM·Ã5`   (   m s _ r s v p     -À~¬½A«óíôÂ6ÖE   €   m s _ m s c l i e n t     ¤Kd‘+;Kºı»eH      m s _ w e b c l i e n t     ¿G|šdC­Û~=§¥   (   m s _ n w s p x     f˜'Ï€†MµMú	‘E    0  m s _ n w n b     ş)»Bâ}OŒ>µµ£&   €  m s _ n w i p x     q^è TÏÀK©_ŒÇÆÔÜZ       o s a _ n d i s f i l t e r     ½'%ŸA¸B¦ Äœ^Ñ       o s a n e t m n t     Oe#ñ½}7@‰ûÍÕG       a e g i s p     Ğdi\9„D¾uÆnIË«i       s y m b l _ s 2 4 t r a n s     zSñù“B…øs¡M3t–   (   m s _ p p p o e     „<Ô¥ã‡~G¥ŠïúòÊ   8   m s _ p p t p     ŒY€Ù_LfEŠê¸YvKÕ   8   m s _ l 2 t p     ¤à…ŠÍÂM”¯¯A/«x   (   m s _ n d i s w a n     WÑ…@/uFEµ7İÆÒıŸ’   (   m s _ n d i s u i o     ó3K’dA’O°ÜA€W   8   m s _ n e t b t _ s m b     ×ÿg'˜äK—ç|ÓÚ†l   (   m s _ n e t b t     ï‘W‹L™vcÅ³5ñÃ       m s _ t c p i p     *dhÖD’hNE²=   (   m s _ i r d a     ©Qt66¸O›ÀJ-Ñ¦ŸM      * s m c f 0 1 0   A C P I \ S M C F 0 1 0 \ 5 & 1 9 0 7 E 2 1 B & 0   ĞeˆŸBâL‘Î÷ÚJÊ¿       v 1 3 9 4 \ n i c 1 3 9 4   V 1 3 9 4 \ N I C 1 3 9 4 \ 8 C B 6 2 D C 0 9 F 0 0   öµOÙµ1I¸m‘çÁX­    „   p c i \ v e n _ 8 0 8 6 & d e v _ 4 2 2 2 & s u b s y s _ 1 0 0 1 8 0 8 6   P C I \ V E N _ 8 0 8 6 & D E V _ 4 2 2 2 & S U B S Y S _ 1 0 0 1 8 0 8 6 & R E V _ 0 2 \ 4 & 2 0 9 7 5 6 8 0 & 0 & 0 0 E 1   §Oío{³\D¾êÓ•JÇ›    „   p c i \ v e n _ 1 4 e 4 & d e v _ 1 6 9 d   P C I \ V E N _ 1 4 E 4 & D E V _ 1 6 9 D & S U B S Y S _ 0 0 9 4 1 0 2 5 & R E V _ 2 1 \ 4 & 2 8 0 3 E 7 C 1 & 0 & 0 0 E 2   óåÂ4ìCM‚ø%­]¦ß    *   s w \ { e e a b 7 7 9 0 - c 5 1 4 - 1 1 d 1 - b 4 2 b - 0 0 8 0 5 f c 1 2 7 0 e }   S W \ { E E A B 7 7 9 0 - C 5 1 4 - 1 1 D 1 - B 4 2 B - 0 0 8 0 5 F C 1 2 7 0 E } \ A S Y N C M A C   Dıöîú^F£kº>—@y    )   m s _ n d i s w a n i p   R O O T \ M S _ N D I S W A N I P \ 0 0 0 0   µ„%Ç®ìM§@Üv.L    )   m s _ p t i m i n i p o r t   R O O T \ M S _ P T I M I N I P O R T \ 0 0 0 0   ¿i(¸•E¦}ºñÂ«IÊ    )   m s _ p p p o e m i n i p o r t   R O O T \ M S _ P P P O E M I N I P O R T \ 0 0 0 0   5D d“¥L–-‘&,cK    )   m s _ p p t p m i n i p o r t   R O O T \ M S _ P P T P M I N I P O R T \ 0 0 0 0   øbvÇGo¿L sP¾u™5    )   m s _ l 2 t p m i n i p o r t   R O O T \ M S _ L 2 T P M I N I P O R T \ 0 ñ!ûQ?+ïC+äRd*Ãd’ÆXhÉ‚îò¹‘Eçk70RI,Ñ†gÛ>%4_|k2ì­:OĞÆº]·ïV;ÏaÀ/×gS9U"|åúNùÇêk¢“?J„97gñ-a˜${ág.Ğ¤'#ú‘=F’	£ÕÚÿWìU@õsvR·‚E%YÄ0o˜EœôÓ(—yØUa*…­áP„8J…íîaÊT—î– Nm(¡œ¥ò¹ …!ÆnTÜÁ•Yb*ûğ;²á´ïHõ;¦â`¾—ûP[S­æ¿Õ7Ò®Ïå½
+Í™ÄBb,#“ ü%„¤F4’$óºWlgW2Óéo	²ìtş†İOã„ìV«Âš´I v™pEoåwµùuzÅ·¬JFÑízçîqç1·nª—«aƒ·3ÖÌL²ø„ã]NÏ%½ª¶¶ÂÊˆ‘ç2±­iñôøQ%Õí"vcêÜ¤4'!şÌŒƒñÆåg;pü£-@} 2ä5#ÌN´H©ÉüA5'şßª"Óq@¢#$¡ÎTz†ÖàXC­-¹ïøÂPw­³èé5 Uå3_áÊ™#JFGßpÃ­q¤„%Ûà¨VíÑHŒYú°ãÄNõ6be-Õ£^"úrÖ­˜_ºOø–¬…Ô]+U¦©ñk¹®ò&ÒßÉA¯£ğâ»†Ôwğ *Îl¡Ë`8·ãQ7"d1ŸaŸ•edZÁ‡È]ïÚÏˆøñA«ò:(s†êÑ¿ù´iõ?RG~ä4»œÒe§ÿøĞ¹«€š“s³ÁöTã+=±Õ¿ (€4×ÛÍZáÔ††y5¥’"˜²"à¸EËìÍ|qò%æ	äfãCO=£ˆF¿Ç³Z#8#b‰nÖ —²ÎĞÙ±¡»Œ;ˆ8jÖ&ÜDãÃµ
+§' DùÙy‡W&¡GÜØÜ3øîÒÊt3ByòÈ ?’üĞWå.-Q³jÈå`¹ñ}$Ro½ŒoÑïGî¬Qœ„3Œjpu˜Ÿø
+ıxgM.k’h¸ÌVøI®şaG}íq¥jŸ{’Å)ìæä–iø½c«6l,`?™qu6+è…â€®B• „5†q}§izHa{á@K3Ê±,€-m¥&‚ªƒkyÂ)^ªLXNu±(ÁÔ¡×¡øãkl‚-‹y)CÀ‚¬şNwu<ëÅ@
+aİ±×­?ªE±®ôCSêÈ{’í>Çvô³*Ò2lı$ÿ¨w}X´"-@ş‚¤¶%h¤šb0¨ßõÚ~o”•_˜?ù›|¤ÌÙ­éóæ+Ÿm²šÖî6…Å®à)Ôìy$Õåt‡Ô%–~e¼¹a))iJÄ Tƒ§iß.d «HÔJ.¥_ç{Ê‰¯!¹%tÄÅ©‡XTé6ARÎL){ñÀva®—Åe¡Ë6ègïÆ¼Qªší‹x°oãñÒ½÷ï;ôİQŸ¡‡va=vƒ\Bm»ˆ}pbÆ5É‰¬:»}Õúu!2é7©j¥Ù‚­ &Ö.h+üÔˆÅ48®•v	ŠkÃJÒ–}è$o‡y™Ñ£dX¢4‚àb*!1•ßŞõ<]y±¬Ëädğ×–æZÍ »oãç5G¸jåŞc¬Èû…Ö@“ŸÛmã%	UŒ»¸0›?ŠIÎ¬Æ‚ş´ï[œP“ô L§ùUÇá§ˆOãj“"'ÆÁb™+şÜZ²‹ÆY t4¾vÜƒñ¡d¢5R.jA®¯!]{íÓ”ÌÔNQäÓmÜ*sİ*jĞ~§¯z4ó²h˜İà56¹¨L?ŸA‹<û¾…uÄCZ"JÑYø™ÛDúÚz/p²àoıãwV©‘>2Ü.h-K9¹{ú}fò[w°I`càd7İBØÖŠˆ(„ KsªÕM›ÓHkÄ§ÆßSè¬.OÛèV9¡“,{à¯²“• ˆıEŠM´ñB]P1œp&Vq¨Ê›ø®vİ	ÛzaÖõ[ï„¥µ¶œ›ˆB'—t^¤/^¢æG#äã±mÇ5)İ>¼†ë¥úà†K“ ,î€e¸€¯Ä´•’íOóí:xµ|~60e²Û_ë½hÌlD*_Z
+PY|~c!5,OË’l»#ª©J›6e1«çF ¿Â¾ôGúì’}4%&äiôÒjäzÖû
+(ĞODK¨r•#If¾²¸¬CMnÓP"XOù&3xÒ±Òš(+ş*Š ¤ø•8Ã35xpl¶PG[oaò»ºç>ßwà¨ÃçâıQœá#ŠUH“{_Nzm#¹v?mo©´|4 ;NÄúÉò;;õ,G·8ô@ıªçHªŒ¥ƒ‡¾}/;­©÷ˆ»Àğ±;˜E`c¼6]4–DğŒ9ıÀaG‡´-¾µ%¡O¸a!¥Í@éGs…—¸I¢Î{Ú‰	µAeôÆfÔJEÕ±j/ûÊĞ?.T9ÙÌ"‘è›3ÊºiğOnGtwH\€Á›…Fkå11j~.¶ûƒ%Á¸y´xAî4„8y„W¶²`'öş² +rs{MËñ)±Í¤¨³Ï¶æS’¢ÜóÛ|Ùº4×Ğx@Ø>à×ä =iˆô°™ÉÏ.yM‘j(X´1¦ékÁ£<wIÈÀß‚åÇ»³8lA&­‹ÛHI3lT¨‘’ªZî–%-~á~¢FÛgaÙ_™‚Æ¸~¥bé¿X+1©i;rLa˜Hr®_ôé–L±ç«üKøËCuÚ5¾·ÀPåìªûÿNût² €âÈ¿Jš¹èß5k°fJo°Ü¿”|pÉ =×µ²LDŠÜà†©È;*Ê½ccqúNPÆ1£’›fSò f;%°"cÔ?.kPÒı^®2}3ã’Ì½3á]Oc€áU]CÉÿñÄ³V¼®:=Š~6®SKÕŒUQ&$_f‘kv›ƒ¹©¥ºß#.yR»&Ÿ ±­f{¸¬6³û)¢â<Ü—F}",ÑéäË(I"²IÚñ0ÂbĞ ùbU­æûöOİ¼î[ŠµÅ£ıÊ3ÿŸÒ¸Xù2>“‡“º‹…ØúBDî,I'Hc4×vÓPÏ/İ8y+×;]–NxÿóÕIøóCÜëô¼ƒµú+­Årß:dgÑÕu0˜\#}z‹*ãß½áYàá á¾Å0Ü«şzÖ.ÔèıÛ0ÑñÃK›VìLá7ˆìE¥±¾Šİ1 >í(wÎï‡p®¼–ÊÜÅŸ—L×•TÊòÊ©»¾ª«GsªÉ¦{æÉ™O|ĞzÔ‹”’³õÈTÙäSŒNV¤ènhá2nKÖ2-|¨USpçÌ¸§êÏ.89 r„7jz¶©[‡ÖÂƒ£ëí÷eY;+)K™Xe(&Bn$-—T©<9g^ß÷Û¶äXÔœŠ’I®¯¹f_œDiPCßûwß™–D´4j’wÙ'úA3õ{Ï×UïÅW¶€mÎgƒÁÓ‰`«>æ¸w1$JN¡%y™HÍ8æâyÚ†Û
+tbDòı+5(yİ9šÂÌ'ƒï.AËíé8ÎI7ÔUš’G4ó,T<ªÙ,P…–8]¥§/ÎR†6ÁX3®çøÉÛÚØõcQïU„˜p|³ğŠ÷l[ôç*WqAAª¿dK‰óÃÿq'5ß«K‰‹KÙ5Ğ(‰P†KÙ:kbE-O±ÒfóX½’)­ÆÅ¾Ş8§µ4ÿJ\Vh(OaxAn•ôcvl'GJa^îü7üş	ˆ)Ÿ*­O)Â<éÿnïÿ¤¹æ«†ı,ãVu“<«F¹’ø€w&¢³w{6_oß	ŞĞ•‹tšÚ—DñGO]ı+5\ã÷ƒN¶‘õ«ÁuÃ2¼·
+2«3PB†9ÆP ÿ!ÇÇmJƒÜ<‹j)ˆ¦ºmü÷±Ì¤ÍM¹3‹æ·W½Ë~ÁdñÿfÚ5“¶—z¢ş¤½ö¤¥ƒÜĞ[Vgo™á+>pœÁ;T"h{¸‰æ¢s(¸ş‹ÿB¿{âjåRÚ±}(Û7ŞxË¶Õl_	·]°7AÓ
+‘Ä,ÇB”8—`¨¥¹ãéõ—Æ_NÑÜ*èña—Œ/«{¿^|A±•ùt!}À¨æj¢OÏóh
+ò-¬]"{<|äìä^6)\1ëE¢™¹¯uìââ–›„¾ºéÊ—÷›½(Å%¦màq:i°ÿÒ—0¢—qÔ]·z$åÑ5>GÕI›6:ÏÔ“}_Œî‘è Œş2…Hà£°f®…s?;¶f÷„Ğ2wáxˆÚÉs<A°"ŠıT',v¬¥ú¯–Irdd›õ8&yÑÏD¥Æ'a2Èo‰Ï¥-íµã=ñ0’("0L¡®¶ˆƒ×({Ÿ»ğ`jÈl„dúti çÙAUæ]Æ—UËâ±0JØ5œó™†£eà‚ÙÌç‡ï­¨¸ “GºoFø7²¸–\Z_®@(_MlJ
+†=P^8¦êûxˆÀYš)åâ—íP,¿‘1<ïË.SÉ0÷#mÁw¾Š7‚ÆäB¦ÒÚÁË•9­©Ëì(R¿1Sÿ› ”£G*bÌo³	uïmxÏ”7ìMÈyŠ¦TS›;ÖI]4©’€Ì‹­Vú0âf¯ô1g,êtd¾Öl·ÙIX‰8µº(7ĞÓy³…ù^ Şhò?!RVÙ9 *ãDÁò,ğË8á´62}[Mô>[Íh}»rjKjíÄÖï¥îf¸‹¬ö= 	Õƒ­Àb'w-–&Vpm°Ô²:²'ØŸ~š³Ç6òÚ¿]ujô5'–>uLágÅ6…²ß]ymQYp-8ø@•0`Ö·S¯ëaà|P°¼Ë‚LúôÉ,Wa¥*yvâ[»¾Ãzb»K÷ûİ CÅÆ]÷Ê»T·<#r¸ô+sJÛ;¹¼`Ì¬M„Y\ôÛ\‹_’[ØÕjÒÑ¡…,©Âp•³©„5šÒEÒ•B2ß¾',°…Jšä?ä„™eÔ'Ò†º$DÖ #)ÕëÏİvTQîYĞ§ı™¿&ş™¨HÈÔÀtEãF¨DL|’¬¹ìbSyÑÆ/?÷f›ŒÈà _£‹­éDN œPl•]š·´q÷X‰Euz'‹ÜÙ2Éæ*EUğºÈÛ>¢ßòw¶|2qÂAïQzK Á4; j<#ù¬LxuqÄ£>?ğŸí–n³ÛFoiD	ÆVŞUğ£Ú³áÊË|›Îq»°e6†<IG¼†8
+ÃZÅVÉâ|Ù·ôsRÜğâ¿Xø{’*7¡Ì*é»‰É3ÏSqãv±‘o ôhÓ#÷u_Úªzo›d¬kòÙã"</ÂÜi#ÿÉÙI¸˜èiÄ™mzÙµûÎ'ÏX2.‡HF³ôå¸şéaâÂßJb%çºu-*'eÙÎó‚)Şqì—=“ÉÇxL¶Q¸wûõAiE^qĞÍ¢İxË1-³¢ûéC„·VFÁcÊM£ñ9}4˜ê›Pc·J+$%GÃéÆ¦ÅåÅ1,QÀMw i)ü}›õV«‰=[­5c^Í‡Ö$4(B™},iKÆhÜ7ÚN¹¡mÃÈ‘f©@¶l9¦*A­$®±#àŠ/¸‰Ã×|3F~°ÅI´‡[Š\,ë‡·ªtíã5H	_˜›„ùı¯¬üX›—Ë¦\èíØ‘gú¾¢¸C0Ó	”1<”QGĞÚ2ƒ«;ªÒ¸ßcÕ66Û³»NÆ<1µ›øòöÇ,†VR}cÜÛm¢ÇÅü oß8e]“V’i¶‡şıŸ¡4™$áI_üzit4
+L€ÜoF´îÙÏ@1ÈÜ²°sóX&‰Ãß…,wï·€×³QÁË‹ãŞŞ\İ¯êJ&f:³µŒ/MGùiJa¸/Ÿˆ‹•È_kÍz~”F„·Ùˆ0àûD UÕ,éî™^Q™êÎúrÅÊèÆ×5—£M½õçü^—(‡´eˆt\´6tˆeÔ…èu~x`×mÎï†mqªTĞü¯üuãö #¡@2æ¯±éEÅûB¥JªOú–Y2~en †~äÆSóEª]€ÎëN7»Îì-îX\
+™ğs>wÎ“;¢dÿİ-^í˜ta4Ø…¥=l7º•éÄÒ£¸ÈƒcÃ="~ŞTyüñ-Çb‡0&GN§à¦dO•Dl¼RX#*àb ”Ï¼GŞ@ÃÚ¹qrjÔ¨ÿ7BÛË$ã tKô.íÁ¹5ƒT°•tb†]©Ötràö|·[Ï?¨Ê™´RBr%øÇ3,”†_÷K5ÉãÚ´·½Iÿ·ÑZ× 4`€VP7ñ½#\%¬¡_	™Âğ…NŠªÖÈ¹Ú‡ÿóšWÓgñ
+…ÚÛï'Ä§Ğ7ùæC³Gv¯¥5‹ŸUï6ª^aôî•æmmnº¼ä›.K›¦Î]áËnğ™l´>·$T•LuûSÔ6ùÉ5Šó“\°<Éjùö®ÔÃƒlQ(êËßséyX|_ßfy7dĞ^.•ûı{ãŞUËH»¢†`Ì&õOÈZ+Š}UGÑ'¹üÉ°¬´RäâøË$ah@pH@o×ot`)ç óè¢yÜ+‰s„è^nC"G=/bdl7.İyn2¼T<4NLhÉAØ„Äğ—2lz|ó°Ù<‚ù&ƒÁNÄ.ùfx~$ÚÕ •İ8WËµ˜dÒL›ÒÚ—Ì°_ìwbæƒõ2»÷Ò•u\Ì»‚`£³´%¢&xdÃn›~ÜHP=*›rŞ¦ÜIE#×W^åcšhO±¿¬kwu
+yÙP›™õõªL¤k^ˆ…İö”ò´ä8ßŒfà¼Zá9ã¬‡OıXÁ vßû™EmäÆÓ‰ı<Íz´¹‘KùşÕ0#±Ğ%P ƒrwÕ­Xg·3ûÿ!-g5ÎÙõ;*3'ø»ßC®àÓ‹¡ÜAìê¯äsœ‚98/>mt¸U4£ìÈi‹\©!#¾F¥K1#ˆW9“@fTˆL6Èl%9¼†;\ré‹Ú§p"Ïíƒõn¥bÃRp¯»nÄSÀ!
+-ëGÓr¤uDË—àh"Á
+í‰à«ø§”|o°¶Õ#,eî¨™ÙÇnl«g·™¸üŸÛ#ßÚ(jÒC¥Ö˜–óş’¢¯ğzòÂù6ÜÑ	lÔÿ‰ûÕjTùÅıZ|	üÇs¹w±È›|Y³#y‹¢*‘S"<i+2f¯a”Ö™q¦µ3»5{)Î‹i¢´Á*¤M1ëßúŞ§9õó¢kñã‹ËÄ·3È&_7aØb‡Eq‹Dµ
+ÖhòwòzujF5Í¿Ke%[_Ç_Uà!Â˜ß±âĞ¬ĞÉN´
+
+çXÓ6¬kcA-ı	Š‰›,ÑB7y+
+§îDcÛÜ'²0 x¡ºZùnY¾‰§Ä’õ‰Ü­çJøĞeHpFH_9j	Íjnb`fQ»öZß FÅy'¯"K•Ëß©¸G0½?3Ó®È'ä»KãL\Øì´CRÿz‚løjš1‚}$¶m$Ã$+6z6D}E‚¸±CìëïwÉ"è„™â¸Üë¤Êñ0`KÂMI _É’¶ÇqÕs¡WÍB±Œ^q'(®'ÀëÈ÷O?yáè¨{ô„:å!âz¾Éy6Õ5»¼­:„ÏÓß½d´òzø®¾»'¢ÓhğÃãwFP³=¶ç”éŠSìé¿í×v…òèu6½é,'ÌWaAÕÎ5!ÊæËğô>j‹ÏšVñ›%‚'©Æ~lJ6dšZ,mƒÍ–É¾÷ë«wj*(KÌ´YÃì£œŠ”z*XM9,â´+§ÎŞ–CØ´ò“€Ô_=àĞû¼rø›Ó¿¹¬-fâ8ö*™ÖQÇ¼3­Uèœo+`Î‘H"9"ü£:3_çõ²ng}ë?Oƒös*Î}ÿ?|ß‚†R8Ÿ9âñ’È`XŒ\ODbXÍD÷§EK2Ÿ$àÿÍ+bqyK/z?F;grXEåªéË})9ºH‚¥“T$èõŸ7WÉÌo>eI}Ûª©â”ID:ÈéÕ½|¼ŞMÊ`§~õ9.mµÁÜ}7K÷ì«f®1\-åãÆK%öÇœ„éYÿƒ	ÚÅ—ÓOû¾:ª‘D9IAÊW	‰òËEn—ExëùÍ†’ºÁè7Bt·ñü”YıàëıouÁhäI*Ÿ‘T3Ù'NßgHömû*˜SQ¼„WÏeî<k•i
+Lîä.†À¢ •á[["İÊ™/àR˜|Gdêm…€€®Ë§RbÅşšáŞİ0õŒg>|×&µu6Üª+D`å_»·ÂmZûœ[9„áÌß|
+1¹{ÒÕ¿1&¦.ÊNHdÁ53Ÿ˜"¦—»jÕÅQà’šKF½gs~ê>•QÌÿëéß•ù¶_Îø»M¯Xá5N’ga„°ã÷–®0l,Ã×2±‚"cÀÃ©ëèN²„¥C	ÜQ¨Ätâ"¼Sä½Sm:”ñ–>,Yx®U,”™Ú`¨|—Òh¢®h†Š^A‹•ä	Øğ±åæí´@¢(ºèÃ„"û*»B+œÉ¸ôø»ã‚c=4È+dİ7¹ËbÓJÏè¥ÂJ&Ú5Ş—IÜ/Ì¨Ö„
+ØÄÂ\Äã¹”-
+zY.3)6ÌÈ²$PÅı¶»…Ûë©Ì¬`êhØ'ÆÑ§ZÒ4"¡Åû¬‡Áãë;—]öÄ‡Ú=Zâv¥ñÙ6tÍ)Ò ®æ9â\#hâFªdgØ-yx"Ï¶ãöa©Æ'Îğ>x --¤ÀxœÊ³áOøÎ«<ö$÷Nnã„mÉaH¾$§ P`œ›yøÿaƒÃøD¼0|<Bù¾¾I·W Ø ÔÃ(n¾’BÍĞ?|(ÑæF,‡ã~®˜–6ïXwUú¸eßÜ`ç«¹‘ÖŠºAy8÷t:àÒW‹¸ã·ĞôVX:ÆBôFáëgI±Â§¾šr¤¢šµ÷!Û9"{ #s3FöÀ¡´˜ô_ÌjîıT¹BaŠIj•1Í“ÿ’ÛÁ'»Ú6Éá…´Ï†ÇªóaáªÓ!<†kWnÁÇúÍÙ±òü '’ı÷ï„›¦Áw´,‘mW8Ş\! -gç¾M5êuğCbCîéb§ı…û”h0d;èf€CNR@8o,2““Òƒ€wI·Mëò­H:
+¡ëª¹,àë™1jª3œ²}×•Ñ¡T,RQ'ÙOIˆeôqŒvy¶q$`;¹’3,]ŞëB…ƒD²Zô\L@ÿ [¸Œ^Ï„4!ÔØ	 ^)ğ‡Ù5Óh€'û‘ÓB$,%!ÍŞ·AÄä:ey+Y·³_Àt„úªo”AVğš¼@|Ç”ïlù_¬äæÖÜ|úÀ~ ú¬Lÿ]^ç±l.á°w/ÔF‚(ÎKÅàGí“@sºöVxÎ	1e|ögYŒÊ8jNÙa6ğ|Æú°ãHg4÷>ù3Yj‰kâ¡ä#«
+ç¡~Çœƒ‡¿ƒ°vø/í™¾23èÃæ×Eíİû8Yƒ¼aeÑ¤@G’J«­>¿)üBæÄÈÂMm1É‰sH5!˜,!-ï]º—l'3±öšl&4úv!°µÓ¿ˆSšHÍm¦]ô2tğß±²N2áU	›1rŞœ¿&ıåÙàˆ-É#:î«?që@Q;Q‚y—*bËSsãozucRıP?yæ"Õåvh—Ü‹uÜ\ãUˆbÆ…ŒÌáÔqçaè§át¢çÃú#ÇÅÇQê<ÜÅy ø…ŸP¸ö
+VôJ
+§ªG&B-í›ÚŒ7%*İ°\¥bwŠT€Æsr{û·‘ÓRÈ§“‹R%Î$%™Ï‹©!íü·’ï¢Ç	~Érübl…NR‚2JN–¹mâ†}_hv¹9Ä`]2Õfo£6uèËdƒhò›Åé°¨ LÜ“ÄŠà€Ê‹’®78Jh¾V0àÔE„»Á‡DG.á6×‘pƒ:1÷8m¡Ã&<Ì@3O+×‘Á( ¶$w‰ô¹ˆ§Á²¡²•¡m™xÀå?RøY]æp9åyìè¥wõh±!“YŸ¥Äa©l*JÁ_xM†‹5)àq,‘®P2ù«[‡ù½êÓÒªsc[±¼7rÒsåî&¢"ÄÛMcØ¶ô±uƒâ´Q¿—dŸ8Œßêä#`ÔÉ‰@k@ïPå ®›)¥fšN(E‡ØÚúñ"ÛX²kVêÛbÕ@+£¦[;àÅ¿İ­YcÅD­ÿàÁâ¡ÌŸìŠİ^^b
+PKbAãüN%oÌî@@rÅ„¦;½=šü/¬y/iÍ¯¥ÓvÊu»p¿´ºk¯Âk]Š’;æ„)‰œ—¢”Ò`_±$ù<8HmÅ‚}øÌ$ÈŞ‰^–\|¿æà˜’Ê>U4»?“ñÖ`@BTêúµYK,îQ±9N¹ZŸ{õùºÚ³¾İÛl­h(ÿ½Bìt8©M¨ÀQ¯ÜëO/Wré€.>|
+[‹„Ø:!öljŞÂëªÀ?òB¢€ú2˜ü~cóh„‰&gr@Ğ¿sñKb§[ğçsMh=Æá§›9í¬"àèË¸³M*6aYwÍaŒZcºÑTX¥‘âJ JËIWî’~–‚ä¬ˆªE'Tá¥4ÂÜMéòb…’+SƒÛÆ"w)KÕ‡ÄÕKœıu•°Z ¡¸c“®÷~ïàeïös\­¼S««_ŒZpGmE‘`Vô4Éá‚Î2ìÍéı8ròVÍÚ­ÇZ¢`‘ê´måşH«ÉVO.×d¹Šè@m]#öíã^.˜°Şã™F}“>7zx}@f.•ÄÛÔ\¨í*{s\»J	º‰NZ?õZà2—~â3ËÄ”kl®'ÚÚ¬dîÿFéû«ø•ÿ¡ÒpƒT<.hÛh(Üu˜áYD7ÖıOã3òÄ¥.?»¬¯Ë'èP^“êm*‹±ˆ+Š½Tâ:KïPÀ[ÑÎPú\}è°Îœ ÍD
+9½æ¶Š¤zØ[½•Ògiµ—HæÓ²ìz“bÇK$D¶bƒm9î-¡ißËXëHJ¯ùgà_5a‡gÈ½*èºaäĞ&°Ï0—!")¬N‹Q­Õëy€Lv !¾3ågDWŸÊğ¹ÂâXÙŒ]çIg‘çx!ÍÄJj%=0fTìMvğšÉºLA‡ê‚ÎÅ|(_ÕµğZÒå0õÒã¨k™†SeLÉ_Œxgz Æ¶”EŸD9ğš˜È’H°
+ò¦Ü$•3oIdøù¥«sQYâÚ×ÙòVäì¥"ÿ´¹°ûü¶6ìIó•3+îÆL«_ï]DÊ¿ÔO±µ9ıŠ÷»w+$Ä?µ—S6½\PoFª3x‚$JW˜½Slş‡TuÛĞ7ÿù×3×œíÑq@À®GÄ,+`áZSYU¹9™öëjZ‹İTuë0¹õQà¸ùÛ ]&ÀµlÔ¹Ğš‘i–I¸Èşò"åù¶é}®«!ík¼i"#Z 4ç[K¥ØŞÉ
+ñœ5	ÆlÕèy3Fó>’§õá°ÂcüCÁ&lßH¦MºK,±<ô)©¾ñºC]•ˆ+4õIšâzÀdA£ã@ãƒ.¡E»½ôˆ²æ¿²’5@ Ê–„ŒSchùŸ’­us5Êîß‡?2ìÿUÏ×27¾H÷ÒÛœè=8ä¦ÖêrZ‘\ÒúœŒZf`˜ùò3x'Ş½*‘3`œ¸•1Váâcó+l»~ş?¾„XtºÆ&#ÜÎbYô9×Âàg]Æ³Ø1J$±Ë¿¬6$¤ÊÆÑRàå¬=@w:*BŞBNûÅ_ˆx,}ß	~BUV3Ş4Ìpÿ=íìğÖx·wı=,´¢£Lé`cË êã¹»DímJ²=	ÕÁHx=Ôº÷c¢ºà¼½UÁ=ù÷ê˜‘§ÃoD‡
+ÄÜ•,ğ±ı[¨cÑs[ı•33ßrñRLäµíÔÙ€‚Ÿ#ÎØJùÖÿ«W'ŞyÌ™Ñl]3ßéÈ½³Î×¹_£sØ½#N¯û}‰-æ¡‹q08úPd-ÜôÚ-åÛ4fø/@üÇ“Àˆ
+Ó&Ø@1hfÁ 9Ä»¥Šù0|İ½Zfûc”&†gAY' Eï~£Şcjf<«(îrbí†"<¨…–ïc\›ö{=ŸÈÑr	ƒ0—üŒÂcÓ1vÚ±Ì)˜Iæ¤)!ÛŒ=²¢ÀñL…ªªAá
+¤ÓûÁ¿‰á,ú‚¬ú}rÍı¦ÿd&m—ğ‰JGÛ«qdşÃgF¥Zñ@bŠ¤ IÂÙC¬«è—R&ŠW°ZâùİAºoq –	@³ouWb¥¸í©GŸkKTÛ²HìXAÙ´(iØ€ übZŒªsôóıóüDÚØ6ûì»²päé£‹¹£uÁŸê£møã¾Ö»o_ ¬ë£öšR\Ã+Rø4!9?eQœ~«·´ä<™KÅe¹¥ô={ P…Ï¡Fºà,(z¬øÏ‚+Zè°£‰Àä'(®ğ²Ğd\ï –+Ø—«bŞZ?L§@¸çlÊú­li™ùyÌri”ín_[»!­ÆÁæ¨:\´rÁ-dâ®»pÿa…H±›õİ°Ê<M&JìùM¹Dºf87òÔÕ&„0 IÒåÆG  Ú£Ó	3ëÌ%ËJÛc½\*’-bºw‡"±´C³åŒwbğŸß>@9ø:ôÕÃ¤eEºÉª8÷wœ ƒÔÆğÏà» £}‚„•õM¹;è«\gFr´æGw0jAi£U¼–&\	'§Éú€@œ\1ùBî ÏĞhÙ=8èùa#ÖyGY)eâàì o.Ê™9çÒbvQŒŞHUïïe»ÁéJo‚ş@´ş˜áaaµàC.‘|ª†ÒÄÀJzƒ“°îÀĞ‹ºw«ûF:î4ú¯Z(#©Öª/‘DØ #4ÛètıAu®ñkF½‰)!˜ˆ±¸ùYÂ't.ÃzşÁÂ%m²(Ù'ê—Rså)‘$[úrwäYb@Å§OàRÈùÊ™ã*Àú,	áKäôÃJB5ebKÒQ.ò¾zaê›Ùİ8T Ñ‚nïªÂ›ŠFl½E;a¨5+è1Nˆ´ÏªöH-]Q¹OHß.bæ‹á	`à½ÉüI@W ]¼}üêöÚ=Ï	k)ôh:Áì.Ñ§Œö½‚¸¼ƒ:™D›­é*„9<ñ0ûŸjfÉz?•gFŠûwªÒ_a!ÏÛFĞeâœÌEÌ@*¼¡ rÌ©h« Ş6‹HÚ?±ıRn(^’ö‰må&;qÈ|ÏyÜ ’¹3ŞàQ¼¼ïYÑ8&–¹Y9j{3ğQ}­Zjü£ÅàxĞh.Á…w; Ôx/8‘Î²NŸŞ°œ_{ı4M(ò®5Šv‚¢£h£u\ëo‘\è
+'~Î*Ã¤ÄŠ˜%ídƒrZÑPU€ü^m3÷!®,î9ÑjÌ…Y-„Â¨Ê/®FÆëÑBnúã4,V|>î™GXÀŒúà‘?Úø¶O?®‚rìvÎXœ8Ò¸±7ÂDdŞÛ²'Q ènÍµ[ Q_(O˜òÍÁxÙ¡8{Ò“]`˜4†…À*2¥ƒ±¯ú(^
+Ç±ãœš)ğI±ZE^zñ¨~’Šƒ	y^#&ı‰†èø2s¦É5puH¼ªZ°ÅÍÄ2dTP2–9œ¬1Ü
+—“ËóÚ!a „5„Âl£a‘2éÌQ#æöÿË¡˜Üú3:FÂûÆ¹™Ô¼‚Ä>ï2§tñ ”àÑÍ¹Š±ï¢¬‹Ë±\ÏÕšïHO h|T‹mPJ[QİGZOuK…Éî"3Y(€H” ÛÛË°}¥rŠ1T™yƒ_‰ÈöoÔ^ğ¯¬w) ®ê	j”ÈÕbs`izÑb^È›ÀhÕzÜàxà–©`Í—¡‰ÌÏ’ªWÊ-Ø‡šÙÂAı C”°Ò‘Î;k"9s~Á3»y)[®5í…[hùå¯²7Y‘Áb$˜wÙnU	níz”'=c¸šúÛ±XR#üo ¯L’%İÉÕ8UÌÌ™fIz&¥™y²¼Œ]h«íj†fMcÑGCÉ}õsÙkT1R`
+ KíaÄÒ`K(è¨Ë–Ì‰ğU¹´ŞØX"Ä)®Ãcy‰ ÁáIÿ‹ê•&0m±UØ-¾O­ßÌ¶•F,ÚÙ›‰}©şJC éˆA7«z´¥çÄ™[ˆ3>L_s÷]%[Ã3õ„<ıp œÉÀÒ·^ÑPâ9¢åH¾•/:T¨!b) iC(Ò†Ê&	ÃÊ¼¡Óä±Æ/ÅÛ )fjÁ¾Ç°ìà‹¼%¢öŒÔhĞ3†I‘n“ğĞ!«)%èOR•sÀ¸ºñ³Ö)¨á¿C©Öq¸qR˜pƒsÆ·xå öv „—ÍâùõìLWl
+ëî*£¡NJhºõlyS`m©şyGÎ¼ºÊëÀeî‘9øp €Tc"©sÒ++ü?N–dÿH­«›»èÈÿë„ÑØŸ©t×•.6÷>®4¹2DfŸ=Å/éyKã…#Àš Oãæ* šÁæ‰ô‚z%ÌGÈNJGóZ´siòÛå+Ø­VOT!ø~œ&$³Ÿ£*5 U¶{Ã!mÀ,İÑ©a¸Ä0íÂ2®Ø‚•¶,÷·´¥ZmÜ!D‹êBê£wğ¦¯Ó,m;!¾Dfçô£ÕxÉÑmüòHÖF¦y=2—òö[1Jq CkÀ2-`_eîúyÖæ¡>¶Üùf¯Îäu·_ÆğpôlÆ{Ë4=N§ék‡«—kÎ®ø¦CBËIôíÈ}	d„Ô",™ÛK C5ög#ç"çŞšt¸ÆÔ,£Q;ßŠ|ƒ3ræê'¤C ²-¹²"wúÚ""l’]_Ç®ó.¨ û3÷Â~ŠkØ*M}Ù§«Šêv¶c¸¸&/(ùé×é( sÜŒX‘k^×Ôs§Ì±9Tç×ëö€æyÀ^ÿ˜ï%’§&bÀüC÷P(M…z´ĞeÈşîS.ä‘ÎËõu%Fÿ¿oÆ~1pŠÎ~‡ÒÔ|7fŠ17½„¬¸ğğÂw5 L?‰ˆ8m38·¡TÂxHfwœŒ#f	€Ş ]Dò–~ãÆ$:/Ty{@äi¼ —e[ê‘Òàé´ÿ’ºª£Íîã)ùĞì6üÓvş±ü-9K/oúÀOCF1õ{È }ùT4ôõkªyÅh‡sXäcIUµ*RÔt¯pEé¤°ù\'äH…“A‡ıçÛ
+qô$ák’é³ğ¶Ü¬5«r÷¤„ÊôÔ’)İî¢;	ŠG*öé[T=ôfÉOIçìLº/j»·+ëÆ¹ÓÍ‘µác£Ïü®Xp<–(Ï ¾ÒY×DaÖü¤Áwe@ Ó`¦qbI5„.†[l}ù†}£÷ F^uâÆ˜Şgº%¹OÓpcD¾CÚeÏ@"§ØÈş?$Zv°¦÷ƒ½%-H.ç{`ë;‘¾ú6ŠR§®È‚&m¤aÁ&ñËŠQ‰ƒÿ¿€ÏîúU/MH§XY<ë‰CÏ;âÕ)ÏÖÎ^WáO7
+;4ìxxy²°÷nÄÀBƒõé"«–“şGÑ'_fÇîçÚöÆƒøÌ	¡Š¹è~Ò¾;›$1ö¸cL
+Û¨9ÊÖ€ow_;›Ç)«z«ôD'Lš»kìtUé„ù6z½ş`ËHsWr±âr`óÂ2ln7óaze¸é£†¦z¶°Vc¼×F…·]5´‹¥–pË0ÙéåDKqo¢*-Ä²ÕS¿§WºÙ,Z_{ìÅû‹yÄîaödwZDûûã³“aTLCæ»¦tê?<côï˜¤­©4Ê®-ºx˜†˜›Û@+@Ÿà×º~/Ò±M?³„›*{Ú@á@ƒKÖG%œÑQ¤ƒî:Z`Ñ
+»iá®û(Ïÿ’:¦áiÆ‘Èåôµò”:®{™A*ˆWT		â|ãn{Óoš!åèàUëX{šŸ™>1€Ñ
+ÜÏ|êmúL‘< @qFI‘ä¢½ÄN¬­°Ölsğ×ˆÍş –g÷>û—ÔÈÀäò	oV¼Ğk_ "A~Q@‰¤ş°lÑí¬B5«È{~FJ/1ÍÕ¾ä¨M³ÌFU(ãBÃBÅ{ÿp³RÃÛiÊãñ'ö¨‘Àó@Tà{¹7ºbÖîàÑ=	g ”w£1h,CW5í_C÷ópk1¾DÓ64K±¼^m;mŒ81{ MÇHÜTıÇ–ëdoêâ½Óz'øçbWğ]Ëlàb¶òyj±ÕA˜¡ºïÍá¹¬‹¨»Øu×ªDdüŞš*«ÍK%FÇ¨Ú	‘o„½QJ]ò}ÃòæÈõù5J4Y#h€¶HZ"á—\c8ø"%ÈjaIûcCoW¡fÌèkQìfË•ímQö€×¢¹±¯ˆk»âq^¶qìoUXNi‹p/ÀwãôÆ?Eœ$yü˜®z&aŒtß4˜nbZÇ5DçhIijB#Áˆ°é,w?˜êi›ÜƒU~Ş–~¯÷áËd7?´Œæ¤î¨Ô.L†ºPn—ğTk7ÈÜôâË[+ı^ù	….NœşWÀç×FW`Q‘&„Ã»2™¬zŒƒºcú€Rø¡–ê,%c‚‹õo–¼*óØì˜ÄÏcRƒÍŠĞËÌ+N´™J0êçÓ†¬«ÏĞşkcˆ`	ìà*SªA+ÄÌC[Éşg”mÓ\!\™IÔ×}|Â“àí!M¾A(îÂ’BøEš1±‚"Ù¡OÉXß3éÒ!­—§|Z9é`ˆ*ºÊ=£f‡¸xz­ãL×$LÄÛDsF™sª&ŸğË”FÆnH-ÁUU¶PšóL¨ò¹¢àA¨wQ¸éòÑ¾ôìòáŠ›ˆ4ïF85ıš
+]íA6ÑèÏšX`\!Á°.B6jyø–øÂ‘ùö*“%HÀÍ;EZ(„÷î<2èXÅ!Å/æH9‚$2šGoåÿ«ĞŒ \$åßNWÎSLQæH°ikiAİÇ·›û™îë‹4[Ó9“˜TJ“¦İ%3Ù™­=š<i† t3¢õŸÂ>'/ÛL‰ñ¡"ÅáSıdlô—ñ³ØimítÜÈÇMv -ŸiDWW¹êŞæ–ûu±È1…in‹ŒâYİÁÏEÃÊ…ëe¨™+‘*Î¼h¡¡gòşPü•ğ5û¦b¨Ü[c‰”WŞ4ÇÒ•¦”L¤¯î©İÍÿ¾©†u‚¼ÎÆE‡û.;·Ói®[‡õ 2”Åy>‡è”ƒl"R{¬_U„,ƒMáÑ€«’P§Ğ¨£ºš0©ëØ½¤94ÔE+Ç-—Ou=	‘ÂXò 2¬J$Ş´Ğ¹ó€;AÁîK''àïXÄ®ıw8P»ÜF³‹‡öf6dÈÓl›ÈY¹ªĞî|CÁà‚É»Lœş|HW×˜a¥tR+ùs¤‘cjQo¹~Õè¥¡8%3’P½Âb2¤Ä”£/ù&¤N,ÕÅ¥Ò;ğÔ ª,éÛVÔ±jéÖ`–ÑêÇbNÆŠ|EJ‡Á¤¶QbÛPt´˜ˆ™h:(ëjv,QBpEã'~ùã?›	¢¥x@x}]ˆEw¡÷ÇÉµÊªƒpzçD=”µ/hz$ÆJŠYı{“Ë]ú7÷6†ˆ¶Ú¦&€|[ÿ¢(¶Mìú×H‹0v|ßwzÉ=ÂY´&SÎŞĞæIj&i$Í[VD0u‡r¾]H!]\´ü_B¶ùµÙaäòP¸…ş	Ü÷(¡ùºÚäv/Ï¶Æ¸/¸ÜÅélÚtÄ2¢§#…¯´^cµéX%ç!©ã å³r33&êÀOÌ¸«Úÿı)¦ğŒŞÙo¯1é×âø±9
+nE@†QÌŒ/t™GfvüxNO§sjZU,ÜûêQûµ“VÆj½,‹LA« ÃB–ÓBoø]f«l?"ô°Íİ5v¹NGâAB¡ùıE²¾F	˜~L…”ä™¿üSÑ «9!–V¾‘™Sy}Ñ>–Øö²3³Õ#fxuÉ‰0ô#N^ÃÍegs/‚…	vÎùşc|~ày]ö	TìôáU;hÑ“<ëÌëŒŠúe‡C0H¶¶ÃHÕ=Lëáû±üh·Ã˜°î²6Ğb€ ıÚœ\fî¢Ÿõ—öê:¶Îº«HONamÃ¤ÊyØÉ™–ó˜jg{,Wù V@puûÅÆd÷«i¨_ŞE:ï68çĞiß<‹bfŒ+9HÂzn7·ñ ÑıäÜWÕæˆˆqr- uød£•z'V¬iÍ4A×µ:QˆlÕW*D|Âë9ğê¹İ6j@ ™‰6iÿàO9á*¡†ï\g®fp(ÙlÌµK¦Å¯`#˜ôòØ;š®D˜¦¹ùÃ½ÑiEÛµJ º¤ÖO¾ÃmFŸÀÙA\Ppš£ZÃF´ÁÆú3“õ7Ó;:±¸VĞîhÚŞ¥:kq¼¯<}ÿ‹db»qÉŸ—/ƒâªwT’óÉ¿!ÒA/’bNŞË'ç›¡z20Uw¿{Å`ÔöYPÌˆ!òÆ—©¡{A|#½DÀÜ İqôf¡3ø= gG4A-ŸLo|S½‘?Œ-ñÓ×ŸI`Ë¡–9,ë·ûşì'ê×¯pîÈHà¥Ö@ã›Ü<…¥Fı½ØFÛâht²>pÂÕDğ(Ãî‚÷¨½ãƒ8:ï‡0çÖÒ™ÔK«);*Q+?áëµjÇ«l ô_)ªØ„úl2Õ›ái‡u¢“œX ˜o;"LÍä`°ñX°jGá[øSj˜Ÿ›´'! öÊ8ıFš#òÃ¯İú»}–v´öO£Ía&3 ¡8¡@)¯$«7^uÖ}bûû9š!\BÔ½H›0U9ì†-„6˜8ú}ûóJK„Œ|=¬tôÁciú·­·®AnäpŠïn„ˆ-_„DÇÌ‡ æ3]_¼'’*àÅˆ;%#‡ÌÃ~òômá3‡¥‘ñşeo¹¸W^'Q3˜7NmpUa' ¶¿æfÂ9ØÆàÚÇ‰'˜oøG¾içrK8›fËÇ%p•sTÍÑêá¶9Äjã†ÂÌH™÷¶æ%Ì`Ó±‹nèµºÁS¨İï¬·>g( AÈ‘¢ÛM´ ¥ş‹{›EAå ñŠn¹ (D˜D›¤â%Ù!#Z|Š<™ _iÃ’ÀĞß*4kÇÒ`ø]TS.dè`kšlaÀc+÷[íâ0Z1jÏ‰ÙÿÃ¢ñ¨iFu ØLBq“Ğ––'.^Ÿcøª	JÉî7ºqŒ?ŠÂ•íUÉÚş{gÓê<zó*H±ÕŠ 	’àÔw˜vÑm?ßGòÊ
+~Lû$8­h]•!b™=9ÖÖÇ,ë; Öp2ãØÍ(±§æ:Âfdhcß‹h:{×"(±¼ñh‘ıv±»â¿´?<şK/²¸Òí#Œ, Ì ñ'ñ ëJkëç-Ø‰#Øê¼šø f6mt›xŠj¶Ûé›Öªs™ÛqÎ`ã‚Ñ‹aì–2?
+%ÌºÂŸÊmß;à§3yËÃ_ìxæu]Q/¯á¬ÒjŒ‡ß`ÏÎ,,r„i^-¨ËL=}—4¿P  8¶’ˆüúR¹Ôúœ÷'.QœFÈÒ`÷¯$¾«u›»î7]Ej.İ„ğ`†¾ÛF•}=ç@°[!$Ì‚BŞÖ¹´ˆú=©"_=VÊM±Êİ«Ó¹OyÁq_öv³«ÅmjWOm;*Ğc^·ï¸Eg!ğ^`Ö:+[%¹1ƒU/¹ïßNxr<‘FØ3ò;˜?ä‡şr=„¶™/ÛR½ëbfh²`AéF§x!‹#¿¸’”jÕKJ:u….ÏmD3Nm	£²SpòÅ‹¥FB¥¦[ÚÚUÄ°9ƒ?3Ãz £å$¨F6jL–3˜î1ÀPœ·™©\-CãÒĞ
+ßÇ@‚ÓCÎ¿˜¬@«ÄœmOÛ˜¢æ!¼Z}­…. O˜®-CÄf­N\[“®ên°I	â¦.XxuY^l÷V{BÁ¼oƒèØ9½¯ òÒx–99}%3Y´ròô; Á9ezÄ:#’¸|–øICHc¸}§•¿¯IP¨±÷Wës*µf9è|Î{îtÃm²ó½éúŞ­Š¸ÊK?¨>–‹%N‹ c?iÄE/ÑÑ™}2»v]¢¦¨« ªúõq·­¤mê0Û8'RÜ#)…˜Äˆ?í…ï+ÿ¨^U¾¶y+h(;­£2öŞúQ"¤ÚT¥ÒjßCüæ‡¾­E%RqmUsÅ5ØŒ2óƒ÷b¶¬”€¸˜\à!™¡!àtª?Ìê‚d“%¡;½­Ø3Ö6{ML¢.
+”vsXèV}ëÆ )„pÏß8	ö·RA%.~©5™ sÍ„y»#Æ\×š×WQká Êr­ï¯ôÜï­£ã®Y±q©æF”©ıx}À©Hö¥Êtğ\€Y-ŒÉ‚»Ğ‘5ôÔ¸¦SrŒNw5şW˜mìe+ö9,©»
+Ÿm“At¦Z6À3(jøS‘¬ë|Åp,Ş’”q­TúÓ=Moù[!·å bçñ&Ô]¥NGÒ8¿]Z‹ß2bÎSBÅÜ«øŒŞVÇ	~õÂ¨m@4o‹GæÎ^êVë§ÓóÈ@Ü/Ë‡–üñø}w–Û# 7ò£3şí‰2¯k# Òæ›[×Äñ,ÙZI7½=Y)60Lt÷jÛ)¡º3[Ó¶kò_c}ŒwúÂøàZM‘Sëô-ñËKReo8_½¿ó±­Ê¡™"’ë<zä¹—z¢7D”imC°Ã.ËWR;ìväÓ|÷f*©Uñ|£9qi‚HÓª?é¸ ²”“¦¥u
+ö}«T›-$q›®ÓÛó–A¥®‡+¿½Ìµ1	Ù€šÆu¬²ñ.Håş^ÔÉ¨wWiø‹.ôíö!àE¬«´[nºû ³(%uÈôŸä(ê$ÀPG¬œ¥©„}ãjkä¼ş8Ig•KæsÁNmÌrTbÿnd"^íø„½T!Ñ*<İ&ld—ø®;ÑvL,Î9múÃğtõé°›ã¾mÛj¨-=´½Ó„M—LŞ„ÂÇ«(çÖå!ƒC²Ü"ó™/Çşı³ÿ‘ÂHƒM¶\9«rD^¤1ŠÖJ(ŞïêÁD÷‚ú¶,WŸŞ•ï¡5¬“c^kàî8Ç™&¹ÎçµÜÍ=G w£ºñ:Ô†IÒûúõ»'X¼Ñy­jÄ°¹†şJÌÚ}'‹èW#ÍÈ)´ä$¬wT5íéÿLëùÖì>!ÄóÒ¤–0™=ù#,5Íã•8Å–-q'RQ{–à e5£^‚Âö 6F^îÓéP0£¯È,j³Ä¾{óZTÛe*«ÌE»& Ò:VŞ¸@<d\Ü¤ÕÁº?Núw¥©€ü‚§İ—ù‹9IUvÚJÚşTĞô}_`Fi1;ğ•j–ç¦ˆ5ˆ–ïVä$¢8Ş‰;¹Ø:L¢Ù+ËuœØ£d°Å ”;×ĞãôÃ=Ã)f£…Ÿı$Òñ¡KÎæV5Ø6HZ—vşŸÓ_oM"èÒÛÙ™¾×5&mO”+~GtŒMâxLCÔS%—œws,çÈ¦œş¦e9úÖq³ÉÙÏÉ»:¼DÃhJšÔÎ³¢:6Ir¶]¢e_"! o<Ğ/âH|ş›3:)Ò§‡ä=òÆÙƒ'ûœF3öÓ¾ùZ/“è®I¬·{u*Aà©‰Z$–BI¶eDÜU¬€ş¤-9ØĞ•]¨âhŠ”Ğ –Ÿ(ë¶„ÀÏSÈDÄìêqïÂÚjdeT³°Œ,r+‘|gLµ#²e2|Çƒp‰Kìş·”ûyæ„á¥»ÈrN+)ÂMÒ8æ!V¤$w¿ DÃ,b‡º;EI…[L|HÂşº	å>·¶å_ÖÓx[ÏF#Ë:ËÕyï¦¼0^ÆÁ¼šUŠ•ÖdşfGUÈñÇ¼…‡ö÷®á}á&øÆ0­3,üäûı×|çÎ3¿pŒ<ÂˆHúÛ^Ü8ôˆVãy2îuúŸğ‚‡rîá&Ù5’òOXëÒê*ûgüY`˜ˆêßH]i¾º˜ßË;SÄ?Q*c7øxTsãe­’â×Çl¾+/\Ğñ
+ü¶ÕrİI¾0kßÇèu.BºLÔ<DYâğ]ªå³I[#ºPmoûy¾p—![;Ğo
+rEî…÷êªz‚ÈdIÔa»h‚9m½¬Çö`|EıQ…oQD¶Àó©DÏÏö¥ yõbD€);£Üó/¬~òJŒJÍ ¹Òy¼Ë–Å´ıØ?İÛ-òKÍ4æ‡,> 9?H‡×yì1‘2å&–éğŒÅ¡õ)WÿKU°¹¹ˆ ²¢Á=„
+E€2xF*±ÉÄ7„ãNpİ(Kõ Ò`ì›Ñèñ,‚•
+BÌĞ¾á ?ˆÏ]A#uî$¾ÆNó|¢Æ«0F‡^îô-ÀJjg
+—£V•ÓÉ­ö[¡½#s'OmûodUåaèÅ)ÔŠØµÃVR¸Ğ³
+ìU÷š1É»pñˆíÒ’i¾Ÿª·äOÉ&ƒãz@szóV£<¾yÂ)èr }0ÎJ•HJå»»w.a(Ò©ÄZÊ†^ı²ï~®V†¾æ0{ÂÀ¼µ¯ŸUù[%0®–óY¸óôz°HŸ3ò¤6¼SÇ$LD3,fü4¼CƒøúŠ£/Õöå—&5Q+¦8¶NF4q?Î÷#Í?qïyî4Ú
+‡îTNsc1…TÖÏÂNw—-eìoB#fZP·ĞGW6İOq<Í®É=hñØ7a˜…/·#dø•ì§İ‚çİ{6¿Ürê)Ã“GÙ>‡RÇ©<Qk¨2’Ë}„ÀsÖkĞş§¡1e* ¬£SÊì1V&£)¿ÚĞvÆğrPW±qîÇd‚ëµ\Eõ6ÿ±Í¤wêöÀëeKƒÆèûØ³.Cçd	 ¢—ÉuLßÛ‹Û.ãå(. ãMµ“…°8î¤Œ!÷ë—¥ •ìá’G`4˜³¬:ûĞ´8kì4AÇ½–|ÎËƒZ57ë!¨j×$$¦Îi¤#ïÖîÓåC0¸%å"vPû÷=‘<i†@Zi¤¤,ğ‚ËÎûvôAÓ‰¿»ù`í##øPÌ¢	İZ?•¤ e†ì§5´Ä÷œ;E˜ER»{¦ÿn¼¨&Eµ †&¦_ís„£Q_^üé’ÚN_© 5Õ‘›~w$s@–·²“sª~^•¼£ÙrıŸ«[ƒ‹èB#0….Ì+
+@gÑ_ú-´³î¶ç	©l³à8N!¾ºwg4ø•¥«(AcüZÀiiÕãf >¬,K@¯¢Ø˜¼–hÔÛw*ùîıh"8¿–ç*èÀ&zœÀªÁõ¾ù`–MAAÉ¯Jô«VóÖh,{OöªP>òP¶æÊÜÿ¡-¾ìpú›G#ùI ¹õD[M‚DÎğ¦õãFîWÎ()Òij–ÎÅ*ë;#,–ˆ›¼#¾ñöfD'ÜgÜF”/oµäA	ÍR½ïöeü›Ô*Z¡³œãÇ¼vô‡T›3	³ìƒEíŠú¾	İ~*i	4w•¦z0ÀäÚ©‰	u­×Ìc)UŸÖa~ƒğiœ*™,+GAcïÔ)şOı™>#ïù¿!¤ò[f¼Ñ‚@¶eU—§xçIğÕ«ê?uĞ;ö9<Z–Y‘€Ãqï”#9Ñ£¯
+LâªeÜá
+ãÏj@p7?]·óxt<gÁGuáŸñîÅnğ Æ½ŞÅ0}Ì_†²ÀcÀr†^nÚL¾‘XŞ Ÿ»?mÀjèº*HÈŸ†ê"âGÒNÿØõ–x¹8ŠP-9~²#ºÂb÷äÏP#Ófc–®Ûƒ@·c(Poò]xÈ%â&üaÆßÆªú›K{n†İÌce Š¡Uê—¼+ä6G[†_‰¡^”ÿË|¹¬n3¦,taÆ8ŠM‚³§(ÃiyUáwÏíÍuåîˆZAò“wü çLl5…?@ÅëšaEì‹ªÒ–çaÎ+%aªµÈìãÅìıY B–v¤<¥µ¥™ámš·£âÀvÏÖfT»Ê‹uÕšÔ¶§ëI)t#WWŒ4/Z]Ä)'‡.±2Û ”{¦Êağ^Íy°ØçØ!¿)›¶Ãîı‘'¹İ—"cp¸¤À{yµh@Ûì]+^¾¿£ìóœ´šÛFŒå÷½{7¶o¤”Piëd-³{áF	şHòÖ´˜ªÜ¿Ïkše+_¡f©Be—æ’ó•¢Ò
+9¸‘Íd·#•¹œ‘Ğ‰x<?ƒ½¯÷Ë¬ú·yDf@§úÍg_k;5¾BiL¸Ë„Ø¿‚xÔŞ­û ÿ~eÃ¬×ëL®oŒsôôâs~¸ú€ã±§¦]aüæ³#«gh™ÚÊÊîÙ	ëúa •ÅÜ‚9È:3¥Ş›ƒ5‡8›§ æËgWiçêé7§³-ÉıRÊÛòÜìJµµj£€jô‚™¿PxoÈ9"ËÓ(ØnÚœEÍ™Q¿E?æÒpãd³Ûrª'.¢/0È¥n†Ó ÓC,ob>Û`—@nôû
+'yÿóŒw÷Y…úù0ŠÈP£>yhMCŸ¦!l ¥me÷ü‚.ï*˜_âyù)ØşCzŞ<oæ!ú‰„„ÃQ.u³Û4æOå2¹wÈÑğ È/)ó´¸h	JÚ%ÏáÅ»`ŞF·F8‡:ÄY×"ÏÏñ½Ã¡õj¯ñÿ¿Ü9z;äĞƒ˜İ…âNõ6×ØQ*V¨'ZèøWÍö{í‘…D¬Êl _uØYG¡úpõƒ€ôas©6¶øğåzÆ§bRıôÍÓ:™àÃT^Š¹yQj‰pBRYŒ#çk±†¼Ì­5iö}¶m*IÕô"›$Dê¦.ºä YEÖD«¶RûÈÎ% t/ëOÈ¥‘º¬4ä©ƒúXv»935f©˜RÇ¤^Ù	‹•„,nXCjI8OñqÉÜC/kûúĞ”¼ª×“Š¯Â–œuxÔ€@ØÊC/›I3–}5:.Yõ+!àºÅ?IÌ°š&œî´;¹QÛÅ¯iUÌƒÆR³æø¨ÔcâWö&f´% ‹ÿ·7W÷Bíşfõg¢ˆM§ïN[İrıú|ÃŸø/wğpZÚzØz²|ƒÉ¢SçP< `@ì6^7ã–*^µ)Â¥"äìÏ}ùŠ{g}EŞè¦LD3Ä"\®gµ2Û!ÈnÏ	+V‘±°2Pß¦\¦oÜ ö8P¡#ÍöJgSj):¯¾dÔDlÑ™ên_E*é˜U·kw‰õüXÌÙAúÃ8íçÛhT+¼g¡e ›h/ù¥a*«õ>ƒÛÔçnn™B*İ[ú©?@ÒşÍÁ7´©ñf’áÔ?’æ[B¡'Ò®Œàfw	Ÿ2ñÒÂñÌÍ<Ñ¼]Aš‚¶˜_×cVK#ÿ†•ãçÈpşÙ÷zR¡Àè³05 ^:ûoÉÑx¼lE£òERk0ÁxÎTå×İZÚG®H sQ@“´ w±e³ì”¹C†Ê”.²¢Wëß±1½eßé<™îå5Ï-ÕñÉ+–”€±ïø,–]®Şğ³ˆòİF8!ñ€xûªÄ2}v‰1P4ÿqÉİo7@§â¹ünf§õ‘ˆÉ¹®/z¥«pN/EõE,QŒÊÂ)I„÷ÊhŸˆSª/úìÉnïTõŠT¹æÕÿ¦ÑaŞèé†4¹üîÜ÷Û•KSËŠ–Ôásåö6ô½{Çp,Ø¹à˜Åƒ-…¬0"eâbk¾ó[ÖZ…Ãz‚AEİšË
+¹¬ZYÉªv^×¸fÚ[jó†Ù**ÃNµêG?~ÖµBjU€zœ¥<±1 Î¹»cÙë©÷©3™½Î•òG¬ø¶g»ÄSs÷ÔßR¥Æ–ù5wY6' ™„«ùö¡;Ë0tôÙi²•²@^=­Ü«kôf$=®Î 7¤è,¿Õ4¼Œ+j³‚¿`¶z>(Ï4‹ipié3 Ñwé5…,ş±ŸÀŸ=¸'(åf?a0âHÖ×¾¯ Œ#)lã2sYÙ§6¡j!;ÿî}â0X7M}\ì@0ø†·_ä­õãş‘Nî±mòš¦=6p˜ö}-F¯ğ¸r	/ùÃpJûÒ£v@ßå·Ş¾\Ãµ4|âÈˆí;ÚƒjõEE[”íE‰c©ÈA»™+µwı‰ÂhÅñèqkJêM!aFË[o•?£Ê¥æŠc’ÿ‚%ÍËwG¡uğ§‰ûí§²÷Qüÿ™i8æ]/º”åF‰”~<k“I/lŸ¹¶[ên4ÆÚ]PĞóì,­©Ÿ¸ 8¾~8€ZCé.Â…[p`u
+_½5(Ù›Ì¤Å–Nk(oÉöÕƒØnj´P‹…¿*2 0orÑì1¬-Å­æhçÉê±€%&ƒÃƒËûÛ•V…W“’¸éæT|ìÛÔ6êoÃK+[V¹P×…€:­C-+=ÑŒœµVFÇjÏæp„Æ'ÂÚ©g6yß´^ÄPÇ`uRÏëÚ+D¦w…C„6Dü‚Wg4¦£éj;‡Œ+˜lXòÄ/ĞM$§WímV¾7âL^YÜU‘ÿ>"ƒ<¡‡¬š ouÙÎgæ¢êà’È–»†(û1°Õ-mÖû¯$¸m˜Úo’ÖO²”G6é¿z’…µİ=ÆttµµóIKßRõ™ê™
+j	ãg[:-©VL×ƒâèú3ƒ©#hQˆågçy=ÂÎÛE¿ 
+m¼ÊÈË`Ì\ºÅXÑvb7ÉR üOh…ˆa¸ÃººrØåˆ:M›ÃŒ\Šë	Üè.gßPwû"¢y’ofæÎÿ¾9NX—™úüænrKk´·'\DÒŞ†Cå¸ ®ŞÊñÔ·˜é´«R×ç3ªî†Ñõ¯J;%“WG‰f‡ÍHV…Ÿ|[JcdÁ×Ë¼ı£8i°ZI#²çÒ]¤ú'Q¤6
+Õ“GÆ#ëØ{ç:"Ì½®öN:½Æ¢°G*9üá3_œÊÂ«Êo	PvE×0ß¶§Ö±šèa"ñ# sßÄ ¼A[Ø¬ôCŸ‹}Í%b±C+–~Êk…\SEUßÔÙİâK@’æ¥x£•—[ÎË^4I¦¯”?tß'ªÄ€-Rg+Ko×çíÛ~yPNDlÁÒz!u‡eOÑó0ÃToØÌÍ$°
+ ñTĞAÙªEå:9Ã$;@rÛÈÙêı!ğB˜£D?hñ4è©àé:æb8
+º_ƒš÷“íb¬."F—'ÂÚ¿è9|¡.‚ƒ¿GŒxÆt%È¡¢¢…}‚Ş'-1S²ÂjÛVŒEs‹nÜí×0ÍûÑ¿^Ò÷Æ9ŞGa‰õµğÙf ”ƒâ¶¦SdçmÙ'ûeŞXa!Üå_3ààÿï2…<ßªÑópáM
+ë}Şo(¶¹ø,¶¿çC^_à’¹DİÄåúœNÃ—Ú”~‡Õi.f98¯ë÷ä1¯˜¸LÎJ†Ø.$›U Q6K=[£°ˆoî9y[÷ğÄØÔr[n˜¬É`“5¨+iĞÀ˜³5¯tÛC[½£’7ˆèLåd‰cûœ´íV<«ÓK¥7Â´Ş;ÑÇÍ>UÌÙ&[]âŒ¬N†Á€qòÿ=G½ıD"ëªÎgyO½
+ÚD†¦¸c•ŠÉD^¢·Ãl€ÙDî¿ªœ1CÇïˆ³¦1M¨Ô&kkr±rÕßc_×ôZÖo]Çúi^¤Rcø§¬ËPC,şø²Ã
+­0h/\6ïÇ˜ÖĞ	7Â&ğ£†§Ó¤îÑƒŠ÷~[Ÿ
+ôÊ‡z%._T
+ ˜jÿİ6GZC|*-Ï3ñÌè±¤Ú3OÃ2#¸ciLQW·¤}*golSFü6³ĞN-”$vÕ†á™¶@ã~tğ_I?|úY€‹êÕ	5—\,5q%¡v“™÷a’b€à|Ñıw[dü+ãppş¨€IïNËSù¯©0b<PpBdıß¤é½ó1,Lr¦,K£s5DO«¾ÿ/½HR;ÏÂ¶D@®Óøóõ¢ŞØB>6š®ÃœÔM¾Zt¥4‹6w¬“1Áß ÇSìÄİ½\áÇ)èV
+™v‡·È;ÂÙıÀiVÃçêåÇzÙş§a±ˆvÜÁwÕü´
+è­Cé_uÚı Q,Dê1Ø` ŸUÖ´Ùy\q}cf2Ç"òQ8£ÙNá7,›j)nä„=ø FkôÊõ€CpºKĞšâôRêQ¶ÀAúw,Š.ø>ö¤g^Á2B¾Ó‰CHøºœ{€ï„F
+§kÔˆ÷Xè³@/ï'Ò2LÀ«;§×z‡ú¦`8Û	)ê-Ï×²Z8Vûßì¶˜ıaòzLMRb1;%î4˜ıÈâUyö¯Sp	ŠDr¥aÕñ¸¤3¨ñ—¢Ûè¦­9V˜&1!’¾Œˆfğ™7ÜÿÆÅùMgC:¦[wig\ş
+!!3m‡ÙxÔÂn.éÄ+É¡@+ÁÃ‹u?0áñ$e}'’&\Ù¡ÛÕÌ5¿Ò½œÖ¢,iy^2„¦†ğ.%ÿ€Sê¬,ÿn
+46H×XA.¾}»ñ¥ÑàA’i¾?ªj§÷Iƒè,İì›ç#Æ]ó=ÍŠrSwI‚œXs>eb¼8»Öñè
+î
+bÚj8Êë)”ÃœÛéÁ#J‹Fú«brñ$K¹ªÂ˜#CBã7{òßÖğ‚®ò\é"¤M‡&z ›!©ÌÉ~$ÉVç ®¿½Å	QZÈ‹h¡³-áˆ$×J,oO‘{	7ı©ŠÉ-îEâ† y;<î¯á¹–œt=)“Ó'ÉDÆs
+h‹#Îöâ3mL±z@÷ğ#ù÷l1<oâtF}W5#3;ÍÎ'Ù¶³ÓT˜^	{İöR„TÉ¯òmÍ”{ Š‘„<ÖÏRC­ÑzkDTÃE6QÔ
+òcé±Väef²­è‡gSÂ½ÉM^à¦©‡"u³@£Ìû ƒ,³¾`í¸ƒ2@/I‹= Nà–`Í2Ø°bŒÃo£ìÈaİâ(¤ã ƒ&]N{#)K¸Û@vvXœ¥£Ş˜.±az_×º-/ôqpvòúÔ\s×xÊÀnğø”»ĞĞÒı=×®g1áRÛ¯…m”`>Ã_.¬|:Â¿Ÿu{åWw'6ÄŠ+óó’‰ü†fFaò÷1Êq	äw·AÔòWvñ#ÇU“ç»3/“Šô²ì¾K?^ŒæÂ´R·Üü¶õäádj8	±æ22Û”bñ“‰¨qµ^V7Ô”ZJ@ÓôzêB²UD§ÜãÓ3øö}ÍæÖ -‚ù"|9ÑKñªå±y2¼Á@©>„À®*;ó¿Ùà‡fXĞPøÜzÅlaTÃëbJÊ¸Çº¢ÈªNŸ7 Q6Û)AbÅ2“™’$ÈQ¤…•a -…0ğåFû½“¿EúzÂ!ØW5ºjWÓÍmÁG×L%–'ò¨£²¶²›8Érøç227lßØE§¥âİB9îù2>iZ³=#ë/L©ƒé”Y3%6ÔÂzó„-5Xj®Î`½…—¹+ø<ZE:8\Ğó˜§êÔ«ÄÉ.Qbw8'JsG>u~4~µs%8á—¼½×‡‘s¿æK¦³ùŒq“Ò~M
+EÂæläuó$)ÃqoÀê\±ãUÕø%R°dÔ…×Ê¯³ûâ+*†8.åÒs½QSzaJ}|–6÷ß¿Ò™ï4à÷aº«Åæv67øxŸ\7D/Ü_ÿdkpÔÊ²ûÿ÷)_±/2g3Ô§.”¸(Ó÷=êÍj¤&F^'nÈáèfÔ4BÂØû¿=û~M½—akÌ˜£QÑ›“ûú3İkı%ºÎ¢Ú¿—†îrÁ=4Ş˜QÒ…bjâÂœ,çÍ=ìÓQã•˜H®f†qw*÷t‰<İxßCU]¬_†ªíŒÆ°2¶#Lãºymgh7#RBæùn‡Âz(¬R-tâ
+â‚ş-®™ÀJwô‡s™Ak¯“Ry8€^·±ìA øer§Ó´HM¨k›Tû¹˜G"T*èX
+:äV7D=7µşošĞ‘æìI;GŒ¼Ç[‘*VÎ°Kˆ&Ö	XÂ&n=è©Õ¯Œ9ƒÁ‡o{h!Ó™®eñ_¦Şôü /§î‘Ù*øìtnEü\bƒÓ“rÂÇ<}DÁQ7×ˆĞ{/œtíQ`BŠ} r¶]Ä/ñÀ²}r~4²TêoÂêÆu'tr’p]UŞÿjÔàÖ—ˆíVzK]] SÁ`Î€ìÓñœ=;[óå,ø’MQàÍó¬g"c†Ë/UBwü6!;¤j½a6(®¸Ñ0G@¶-õİ©w«x‘-o¿TuøÕ
+£ÜaZ=/U=,àšÉ*»ÇOÜİáÍË¨CÅÏ6È…¯Î‰PE32zA—ìeƒuØ©*¯«åDú£„µ†ßeâÛjŒÚÊ!Y8¶A(¿ïQÓmØGÊv”ÉXYdg¢tU¬ô„õ{:œ’«£€Åc|Meo%©‹½¯»ÿ-¥2ãå®k,-bE)â¬F}&°Ñ‘ü`À8³^*&‹R9Ø©¹ÆiWUD¶R’8—[4Ü7õŠéö:Õî¼”eNûy’_6e@nìwkµ,y7Cÿ0úØÜÛîYÇvŞYn¡Şqâ\vÊ´fSD²¤ò¹şyn\¢ú=Am2] 0{gd&‰‘<¤ØLÇC£g^İ$+Ìî§âü¸+i¹‡Ludšº¥zw_bvrÛ}JGØ®YĞëªÇËèñ6—n,;Ò°»ÅfA°2.
+	íüi{×šÖHâ 9…Ù@ŠSÔÅ39j¤ +¼·Â\¢mö„éÕšã‰Ïš¾íáÿâ{æáXÒ×óåîZ^ûƒˆ"—Ëb æ€8U·e\ÍBˆE‰‰ÉÕvÂî‹:ŠÕÉã5Ò#Ó!Tg	¹Pò—VˆÏŞyùîûFÃ”—f:õ˜-ñí4àÑCEÍ±gwLÓú>X©…Ÿû…m«÷äx–RªÓ¾ÿÔçˆ=	”?"YÆüÄ–ÄJoğ×5Ñ%@šÆÕcg÷?ĞŠãQ¾’ëÚ.t#äÕŞ]İ.7Ó™—³B³X¨¸è’L¡–Â‡ÑD!È×ájÙä&ä¢3
+­•œ¥Óˆë=ğğô[ ^İ1"ò'â Í4z‚šû4éä¥ÖL”<(‚Rû|ÑL0µU˜ViÛnrnçÙÔ­Kv}Òe„Ü6CT½ô[5¨Å`‰O/í‚U|€êåÔqtáÅ-Iä­GĞÖÕ––İ®	# Â„kAHÁÎ”ï>î¨©:}áÃ›‹7ßÒ}óÖºœ>t¬ô³½ˆªcşI½!òãG¬öÌ	¦»h<$Wãù3™›\w~øk—­›áQ‰NÎß„¾„í„Ÿõï/Ì;»9|.İJïm˜8??€ìäu¶ñŠp×Ï	y/E›lÕ>‚¯&Q$MÏ>©D%@Uíj—+ğyÔö®;Ó0Âm>cê¯[İlb€ÍhØKø4>fù[üÉı^|²’œáy	ã„”93ß)BÒ†dá®ô2‡FÕ!Bœ|#4‰ĞÔ|æœ7åàê ÙÂX/tÇdÜi:|Å*O’\sC,{¥—¸))èß¶»Œ´|_ì½®wÏÔÔ’õŒ—µ©Lèª'.C,µ!ğ’,µîwæ™È$ák>äÈ’ ‰à›¸àCšûbYå†ãİX•ÙO¼
+r ›MÔ)–j…î®¢Êî`°¹@JúS¡È¿Ï`ÌòÉP:„ó$jùØ¥pšêÛõ¼óÑ@,5ğ®‚À‚W©_Æ(>ƒ"AÏynt¶á„Øû
+zâ&Îm¥“PÚĞ#æMcGÛ±ú>(
+B„'`ÚÍL¿;áÛ'½Y6™ÅÈ½nÙn¨ª«AMq›I!êj«oü*®+U<ä£	¿jxÎªß~şù|‹iyt‰ŒókP-5ŞCG]
+k°¨“"Ø”„F¥°”TœMD¦vñhZf[Æ—Iÿå¬4ëã›çÒô’]ÜˆÓ°ÚzM²K3‰÷l.ıT¶ã®êBó‡ç€ ÙàPWù_J3DªÓù”ˆ‹ßË½Uç«!óˆùù¼rL`Wh­ô‘áÆÿ¼Gä¨z™Ï­U|ën>2òEkCEz¿ñLğª"¦Ğkt¡f 0ÓP)"_–¸1ØY2§hÔÎM×¼€ÖÌ>-êÕ°y*€–òE©yuÒ·l‘…k­İÒÉÜ*á¯”Ï96æçùkÈnŒ×•%Ä; 1İØÌf{î»èøÕ0­oZ†wèfÁ>ïÿ¤Px‘Ï¡Å/¾âë(ÖmÏÙå)n¸â†¼Æc+	eıaĞ7wè[&q7ßõfzƒv9îâ¿gá;¬ÙcFl»;ç%íÇõ,äïÂñÖœ})(ú^G+‡ó®$VTÑÏ…Vf£ÕÙ* àCfäÁ¢l¡Ã}~ßÖéÂk„”H	Bú`¶ôeù`©À:¥7zÑÈıÅœ@pY_”«ï9¯“µÔjÂ+I]Ts|y‹¾÷J#mÀI C"²ağ’µ(;mÅ8:¼Ô©™UqlÈı©ye\=¼ÖËqÊóÁ$+<ãİç†Ó(“k0É·BÔİpà	ß‡ÍÈ³®ŠX6Á' $ë~1»°®2ß’À×TÛû·zFÛíDkå•ùÇtc&¬[S—	bË3 h{ë5è£kZöS3öÄÙÒı8/à¦ô~qK(ŞÔK¢û:‹’,|h`Y;¯FUÖw9Álæ+Ò1Ñ–Êœ¯…BI–ı”hİ®Æ]L9d·§|Qö:ÊP5zrëY¨x•PıMªü©W¹Î‡º3’_OİÕ¸ıIC0‡ÕPÙè'°„£å0\	LLOgÓà›óõÎáÇ¾)Òš‹»G—eC°hÑw¤m'•0Ö­¹¡¿¹lA®ÏOãÔ9IÛÊ§›vçA‰
+eáÉå$`ø“~-ÛÍ)p¢P®«ï­¹•
+AN;j%6Mì®ü7ı´(1–:ÀzAœ!DÓúÈãk9C)Ã–kôA™ÄQuInÖ·©?t2¡Ãw÷Â&"Õğ,§é´(=]Bœå¶,{ë1xrºò	ÕÔm}åñ7úˆ·©ã‚7›ÉÃ­:ïÚdù8~ŸĞX 8C‘zÁ§~B‚®¸¯Ùx÷NÇŒ^ÅòîH7V1¦¡Êv e1	jûÅ§’¬šœg€mê|c|fÏ,*vÊ‡gø¹ªìİ/\Ô]æ¶Éäˆ¾¦Í%(ä‘S~<–úü®dÆ…şPD\p×A…å ½*¼PÎ?F¹Ÿ‰uÇj÷¢?pcrÁhìÔüûòãÀ@ºüí_r(EãîˆgÕÓjzBYÕ¢Ç3Wk@oõ—!Ğ°k 0Tå»aã]­ä ›üÏQ³“xA=œØ}§îŠ›gGÄ¹¢Lˆ'Ÿ$¶V_ş;X"ÖÚ´İÍËĞòÍ¾ÏôÜ8Óõñ&·ÒİZ”`ïËÀ¾æRcº>§@lºßA½ÁY¨(ş”R%Cõö·¦•âÅªğF5>Šª
+y.º;¡„æépB/ñò^tdôDÀÎÏGü¸ıJê"%Õ¦1p[3&)BŠs$Ù‹ánBìë% ›½ƒKPd·(x	l…ÆÜA'«Å:)\Z~çÜSØåó¸®ÒÅHÑ­ÃÆ€g.è²ó?­~Âèğ‚i½®kO'Ùz_°îX8sàz]šş-Ï`Ó¨ğƒ #<BàïÔ0…VV…+æù•bŠW§œ£ÉM’úUés_8¤aqé?–>|ÉR˜¸´Lf^#Î½or¡Okå9Ù9-¶>¨Ôi×ş ]l:¢üªI±ÛîŒAr¶ô‹Íµ7ÅÅÃ¦CIJñèN§ÎÛåÓÍCòÓãG9C¦½C¡mó²…Ìƒ–,/JÅ|£´…ûŒsÌP½‰›Õ)¿)|£˜;©iA:£İ“>TËL©y…B¾:UšÒ€;J("/}[eËL@rÓ\t¯è)÷’©tto‘®¿O‚ÁVG’v 0úK™üŒ{*‹MúÓw¤
+ñômS2‘vÃ‡>Î(J"ß¤Ì¾L3W&«J—Ö{ëB`š¶I
+½õòÕÛ‹è‰"ş¸ø—wgÛÚë=JÑGI!û³ŸAÏó»Ô´nÃ¬’ÉâÆ²©Sûüaœ$Éu§š)a)Z/ ¨–˜âãš›}Ÿ³lÅ@}ı¤ŸüÁ'•3˜–P#‰ØĞ,>…@¥u@Ãrue–Ğ†/Vö¨ %‚øöe±n¦´¥	Sn—[íıø(òÿöŠvÂT¡±p8>à¯'ò©ãy`j&[åRÓú&ä‚´s¢ÀéRŞ	ıİ©ˆìÜ³©Ğ‹tÜ ğ` Z‚\–à_¡¦¦ƒ¡–*Zªhï ?Ä²ó½õ·'qñ9™s}¹%£Ròt|™b¬;¸ñtˆ\[:jiiòËŒ!Ü=½©‹ò25ûñMÆ"ô´Ø-ãŸ·Èœœı]Ù¶±o}fMï
+ùI*ãD–e²€‰aAT0?Üuë4Qò!V;ööVrGù´”!TGz-#ÜWõ»ú†VêrÏ8Œ€´ª˜¿²’~Ø¿dıvA¿›’u”ßÜ¤­j@£€Hîo ã±4L¸¯	"À!(íKœqşÉËP¾ÍÏçsLq1|x¡ƒ„3®4ÁÎj‹Ñ—Æ4T`§·Æ…h*V²d!RáÓ\;Z[Ÿ®qaÌ¾àD_¶i+ùÃÖ¾z¼ÈT˜,lrbJ1/œîØÃxa´Rxt‡ao•E2ßÔm‚QµiÀÿl#3PÂT#™:…@‡€À_ÇƒS+tB¹Ãiú'ŒRõDdWOÔ×šÄk[ºu'G™`iÛ¹YZî¼gĞâgTÿ €óè5Š±ìP´¹2ï’B‡3ûÈúº“¿CO±8‚ªŠ^/ºi½1`£Ûag´u%KBÂ’¡4Z0Ê‚i¿³†%ı2)|DÌ$w0‘[—kk—/)8sÓTÓ« bõ,ş¤İì`oÿcŠº!”M
+~o=9ôÍìÛ	P‘™¯Åjà“c‚+((Ê>Ûô-	ÎÊ!pÕe×;+æİ]¬%k£™d&v=3mË²I²ÙmŒÇùğ—ÈùÎ´*èÈµW-°¸{ÙÿcüvJl=B-ıûiëEmô‰Ôg&=áÑ¼oh(¤ë¢ 1IQh.øå!‡ü_ÎŞ˜ÃÓ‹å¦G.”‹Ë³ß`OY,½­£‡üÖ¾Îr’À ó•To>*ÆjA´üFƒ©yè1Úlb­tŞÌ†L²Ìm½i3U{Ô­¡í.ğò;S†B™1ŒÁ¯û._ËŠ”ÌsãújÉÎgBhXÄ£#möcåÊŸ|ò#İyíÚœG!>>Æ8°ü‡ı5ı)Çêw˜ÖØ=(Êß¦{Qğ·Á˜CQ'Ì)0»`|,ı8fn¡Úyp9Ù-òéiD®Rş8GcB¯>)o”şüïÙU‚Ôƒ‰à£.Kƒ#b‡E–"ápJewÅçé‘‰ò‰xXT+Æ‘¾¦í%2•×	FØf<
+\6‡ßŸá~h‹Èùråc÷F^zÂïB©ÅI ÷şV+¹»Œ~æ.»päC”„Uö/öEmkë9#G.—¡‡¬ÎØi•{}íVjKøğğÍÕñ÷Ó3‘Š&Ó™YoN°()–gÏ‰áÅüÏ9rØªŸæ« ©±`˜ŠªËã<S÷8b¢³…íÉÔÂ™/{ÖbÂwíNiÇıY^ T@<½w“öA~»BjUŠMĞ‹Tnjı0ÁÃ~ø"Í.6wî&jî³­òK\SëŸ¥jéô 
+wóR/®v_$˜j8ùƒóé*ä3«UP°cXŸäkÆ §ä^Éw”†.§sû©°²æmP¶—úiHÚÇè"V’?Ò;·ãà¡Æ\süVÛ‡9¬—5¶Ç*½ãbÌ«¨WÄÈµ;~ÖÜ6b•’ùÔK‚A	<´lˆÑŒŒâÀ‡£%hm¸ô@X7mÿ}eÑaœe¯;Õ¦yJwË^/`œC£úE¸ªwl4ªÊÓÄ‡ws{ğ’ÃÏ³İŒ>òş˜òâ*crÑKK_ÿöäF°F×/+RÓ+ùœK,°:úaˆ¯˜‘É¨¹ú+xKSÌùÒ©×Ÿ%œ±}A’#È Å90"wfÀMC‹;…(*ÉæÅİOÚJWz5£ï$ıx¯¹§¯ÄÀL7ø·şD€ùoØ ØÓ­ñ—%[kæJ"Èô1m_)Ï¤7®8˜ô@‰@hBŠeÀovD)ƒ»xwµpEÎ[¡èQ­§<š|‹éñu]×Û¬ğVÇWZğHgg&ÌÚm·h¨ğŸÅÎˆ.l_áKoÃ_×²¸5Z®ÚrµíÌÏ8ˆŠÊÜ„VìêÑí9,TzÆ®ÿ¶1ŸY„‘×{q5Pùµl¾rÔüà|~¾ÜÅ KL8îfùª_’EF"KoÁ†”,ıäX¢kaİOc#MÄ-`v"?çõå¯úŸn4d:ooõšáˆW`URÎœ$
+¯Uõ!›ƒñ¼k™ˆŒİQİ×<°ó¦ƒ5Ñ*M¿é†¨Ôá3Mû3?u¤Ÿ’w¡
+É¢v§üNÃMâˆ¡ãŞ…Ã~4Ç³,úö–¿õN?âƒP€RøûŞrYx¥I³Š±e„©ğ!êw·Hˆ	éËÿQf‘^! ËÆÉõÜÍ	DÔÒì@^^¡±i~ĞÖû»ò+¢› ¸­ñ<B™Ñd²ë™_É>†‚”ÇåB–× ¨ëÒT_X¯æ$DégåPšÍË>’nrK¾E‰Sñèj–°£®£¹Á~-º;UıJxhK9Ğ¦³/E:µÆ‡’ëöM¸ï;ó û’8ÅPíº’¨)>¿Ğ!Æ°Ë2Ôòª0xìŒÓâ$›ßN¨dmÀ5§Ê}wÃh‚¿ )YØ~©f…ûR%[óââœşOÖ•	›+©1—P¬\Ñ`'mÏ<>?ï±)qãah¼ãLÁ>©!±.1\?wT@Ù} ö
+}r*íñä#3ql*,JÿÀƒp«U‚^ı<X=û}aK]f™Âı‘^LH6IË­‡”ÁÄØÊ¢¢:hícßÄšñ–Š‚â&²“.ÉS¢f4¡0Õªµ«=±ŞĞp]¾•üã¯Ù™ºiÅå3¯€› z	•8	$j`Ñ²<‰ßFƒ4ÙÙ>Hûã=`Õ1ŠÃï
+M¢ır~#ÒfAŞÁWø¿àrëìA‘…Ó–pd¸ä‹›{Ü‡lÀÓ”O.wäe´X·º´b!p4U”§èèÅ²<-¥ˆõ"Ó§…%‰Üa>WE&ğ_ò÷—´T·i·>d/)‡¢}Ø£½.fjó/«´RZĞ:C·"ş~0?Øşy¼âå¼ ;‰Ú¬|¾ŠP`õÒ%t>‚¡]dË³Šª‡½½”âyèşuñlø³J–ÒáÙI¯š’R4¬z„úF¬Äê4cõbšô¢±Víµ<ÕN(h³£zc$o2oM 4‚Eõ3Ì^Z l9Àé77õ¼]´ävlŸMö™ŠØL#ŞX·½Uk€yğ€èmÁ·ä@6>=ªıÕ-ÚŒ…UÑŸ…œ$AÑ¡ã;PÜµP–/‚\'Q¹ëúÜğÿŒ&ÇPEÊœê·x 2g×ÂÎd\e×Á‹¾´ëí±	X??-;qógšä¹¶g›ıê¨³Èjµ»1g[iLŞ[‹j£Ğ5‡óc'¸ö‘/éUGoê7ŒT’e'r‡öò¸¢¸¢Çˆ××(;ø Bê¸dp}›d’ó¤Úè÷„Y‹(r·}©«]|2m¼^ó.H(Ö˜·Ù¡uÓÜPÖ€„1šLWØ—UÅQ¥$|mÇĞK T_¡"7"ÏI€Á±Áã Kå€tRˆLmHğwMUPî¦
+uhhB!! &@¤\“´	­‰Fy‘$N”2¡ÜÿzÍ\U
+†¥ÊGHéãX¹9âÃ/ÙPL¥çÍÒÏK‡Ç h´;?$JVõ&RÿÜWC­bØoê.İÚêİîj'lkè­cYşÀq¥vn6ÏÁ-d–¸Š™èØèÏ øpUî6ùßŞ§#øÂr¡¸,X%°ş}ÅáÅî
+g@:q‡ÇŸC¯Uá×üËI&jHÎ) hÑûk~:îæ<«®/×®-J€YV¸¾Q$³½Æºy‘:ê>aè¶µÎµpW)Hª‡Â4)œ0‰:‡çÄ)¤ÚÍ°»õ¹šñƒ~•óC–@¤ğw”F8ÄÕÍ©ğÏp:¦$zŞQnkt§gxî/°²ş&ÂĞwË*Ş}ÕÚcŠm8ÅÜoñqE³ Rı_·€º°¤;³t­ƒ1¢k§×(€r¾Álo)øáî'Xó”ÔTÊT]±Ó]V‰HN«Üå»ê4f©œŞõäî©1‹Ê‚™gK%é©rò.„’häUğõøVG^’9W´Ïa™ôšÂË ÀkM÷2XË9{f¡ô1t~àÙ¼2M?T)QfPr¬)[iÊAÛ°Fed¾¼S¤¢Îj¢›^ü³tØ)÷ÎĞ¨ƒMo„§rÀ§ÈaîÜ9·Nejªx´‡6„š•›‰EĞB‚ÀÉÀ¨]DZ]àå>	Î½‚œ¼Ùí(€fêåøìm <Ï^– 3«Rğ»µÔw»Ê"—£HË –5TJÚ™h«U™áWrÙŞy§.Ó¿˜p¤ÌW—ğ	ŒÈï“ÉÚ¨ÓítÄOó©‚¬“Œ¢]ß"ô RqE·Ä[„z²/–¨»fw1³…MZyy;û5êµæ+VaîÉ§D˜B	×aÄÈí$Ş$Å’J2'¹ªèş*~ËAÌm“û(Ñ3?´6	Æº5¸vI#Šós\ĞùXƒíÓÇè&şU1bÈŠôİPûç_:ÈPÂåÑ-õÒG¨9¨û™Şà­øºğ ÖÎğş°’O×ú›‘˜Éõ9(a™¯GDÓ™ÜûS Äá2›	Ş~)ëË\ÛWvW'Š„‹ûÿs¬Udú»şÄº…™Aqï4zì-Ä`ãq|£JniXU:Ğ¿V×e§6ù´¨z-P#Ë9.ZïDTVU¼óW¤ùš_ #²Å/?TœO¶w~zø
+ŠÖ6¥M·Üí9kmK‰#©ÊĞ;oë  ıÕÁe¸§
+Ñ„R< Ğ> æ
+Z={@ |%îw’¯o½p—ŸS¬¹	àç,3ìï\­`ÇãÅ½	-- ­K|“ÿRF”w*ÇÑ
+ÉÍgÇ‘Dq$Ÿñ¢VMÿ`ˆÌ®ÄLõœ}™‘XàØ´{º=ÆÖ–b&CèRi?òú›"¬½mÖe_‡a…CBc¹¿:¢Ú‚·ázIòx]P>ëui¢º(³ÌôÃù¾˜îAªÅ kSD=ÀY2=JZ,{ÅT¢q]ç× Âm{LÂé4w„-Ë+Íõ²Q=¨ÒÎ
+g©½®.G¶áßPl‘KoÈv18HÀ¿K*U	Bß5$óè+Ø[ØËóò‡–i'™1ı¿ï'Á0GŒÿ6pŠØ×EÇi)¶9šØ*°AåÍâ0´‡Û¸:¯Ñ_ˆÓnÓ uR¸*ƒ_½ŸÅÆ•u¹e†®Î£¯˜‘à®Ì…ËaùÃağÎCZÑVO7\N, çZ±.¸Ä/]ËÎƒWz²ä˜j<-­;|(^eÅâVJ.İ×@S!&?ì2Á`“xû¦ã%¼çyˆÉ,Dõ¹\´ïÿ?ÏŞÌ…µ®€–ğ¦ÀØN8¹¬¢ÎQ÷dº‰¾lƒÍšÊº¢òz˜İÌÿ6
+ÆîBŸ@å¿fe*T8Í5àááìõ}`DÒEà‡‚c	Ìe·¦8çàOØM³Ş˜æ;¢æ™ƒ‹Ó¸ÏØ‡¬"U¸†ƒïöê«{†öò­<Íµ„¨;ôPƒG«‘öú-®{DÖBmÎ¼P¬ák±pßõ,f3X)Û·„°z‰Åj#çšŒUjÚ¹™,U©!ë¼õ¼e7¤ÒC…ë3œ Ş,ÀmyÈ¥¸~B8Q®®l/u•‚\p´PÃ+ëåö'ÌV3…½¾ú²ÎÊQó'/i¼‘xz†]+Y¯t ÛŸÙã3µÈJ_½É'*Úzé(\(MÊÈ^mş{;N{~vªKäk6ñ¿NG‘²kßòÜ«a-3xMê)'Ü¯	 æxõSN=Ç,3§Tß3âE°EêınQ*ü$Áãe&ésrŒVà*¥Y›X‡<„›Ä«‡rr®SÎ²>voN‰yÛ%µay‹½€;t}hşSQÈ‚–£êc)}”G 	Ò”"ğˆ¶?ôtk|‹ò0/ª3ï”œ>’EŒ+\«Ì_7ÂdèüOÅQL@·Êôıxê6Oe‘"@èX`æ’Y°°w`BKÔp‡2nŸÔKÊõŒ/`‘aKê™_[n¥÷¹˜ÚEzšÍzC^¸¥Éºàí˜ÀJ£^’WÍ…{\üv$Õ´øPèw2Õµ·K:›æs?:èk¬Æ`õn?»r{JJV¯å2^ßş-’ az`Oi¥t]«HŞÏÇèVóºó‹Ï·Ìf¤N0æ^1…+•‹5ü%.»DÅlš!ÉjZc);¼âÖ;ÚØ3á¸¹¯z©¼Êòİ8Å›ïçòŸŞàÕäQK­†§º-ÄìñEôjª¯-Ö2BQõÄòDäd—,¿ 	á°Ï~_+&îØb¨†­‡X/ Ûœ½Âµp'|ŸM‹‘UTÅÁ½k®¯×õFsšÍ¹ıC"‘«\ÌˆF	+ÈtÇôFB/pJúg(³$‘é•¡¹„ß«o	±6˜ib.EY‹ªµ;şA„ÆîvGâøúDZ“>™BÕi!Tuï,Œt·òØ|÷1Ì³âh~+/¼ªÄòåG±B0IÜ_¿štÇ¢D¾»¥Éq62šˆÅ:âf.…ã¯&‘4|-?+ì™ËGãwç«|¬c˜ÛMsè$SrÜ³3Ôğ^ÀÃ,r*	åÂ—Ãyú†Rt¼0O	’çÚBÚÔ*²{X[üÄ§Õƒ‰ûÆ'ğÇŸ/°d@À(KW™êã\õfá<>›Ö+iùÌA=E½¨´¼šANĞiïş>qç„~ïÕÓ[ ¿Q	è¸P{W¶=_·ßºNLMeË¬ŞH^× R/›pBÆ]ä±ŠÌNÛßéáÕîµ.Ş˜R_¤C{’B/í=rt¯à´ˆLén ¼Æ¨¡\¾ü~€Yåüy:ÚÇØ6NñäYåëi”ï~~G—Éú¶ÓH‘È¡qÕ²øÓF‘TÖù„·ãÉà]#Æ$Bœƒêkb¥Ìsèx'±v&¹>ñÍÕ?\Ñ“®ÑJèÎåF\ŸŞ1ã0`c9~:jeù5$ì¾˜‹ÙâX;²oÍşG”UTyOj,áœ{ñ¬ÈIq· 2YŠû–¹ƒ8sÍ²õ¡Æ!z´ätgÁ)ĞtúwF„§äôH¶4â(Ø·€¦{_¿qôÂ¶ÀN ˜¸Ø¬Ñìb9œnjÎO]BRÏ<ıç& QŸİZµícü1Ÿ¨O 5$ÄFì¿vª§Iî­?Ÿå†ª˜Û~ÈÒáh<ÓrÀştâÙ’rcE}ˆ#&+àg-¨¡²H‘½ù6l-\üèº‚|¾\qœC&®B¶KéÂŞ§‚f'-·-’¦‡ö{Ğ²£n± ½è‹‹k3³;¾ šı…Æ
+ŸÉ8…™KCœâv†xíÊ¥Â*HÛt’íê¡ò¬ŞZ`Î’TJß%ÉÃ³ºl£÷`…ÉT¥õç^¯4˜ó²§Ü/*8µæ³§çã5ÁsM«õ ÷ö¨pç‘Á ñ3T•û+SÕ´jğ´ÖJìb'ÁQ9Ã¯%´÷+geüêéÍª…¼ã‘ş!k«\¶IÎh#-¥lĞı†Èş)ëñYâ½PD/VÉ!]¥ƒ¢ù ãšŠ£41p\L        À      F›        /cÇÇ HW gÇ X	>ĞÃé'                     ƒ PàOĞ ê:i¢Ø +00 /C:\                   4 1     ì4A| data      ï¾ì4A|{5 ¨   d a t a    \ 1     y5Z FROM-P~1  D   ï¾y5Z{5 ¨   f r o m - P s k o v - o l d - m a c h i n e    B 1     y5M™ MY_BAC~1  *   ï¾y5M™{5 ¨   M y _ b a c k u p    : 1     y5M™ BACKUP  $   ï¾y5M™{5 ¨   B a c k U p    D 1     y5M™ DATABA~1  ,   ï¾y5M™{5 ¨   D a t a B a c k U p    @ 1     y5› unsorted  (   ï¾y5›{5 ¨   u n s o r t e d    B 1     y5› DOWNLO~1  *   ï¾y5›{5 ¨   D o w n l o a d s    : 1     y5› MOBILE  $   ï¾y5›x5 ¨   M o b i l e    H 2 é'  !0  ELECTRA.JPG .   ï¾y5›x5 ¨   E l e c t r a . j p g      “            1       ’         2   ACER C:\data\from-Pskov-old-machine\My_backup\BackUp\DataBackUp\unsorted\Downloads\Mobile\Electra.jpg  f . . \ . . \ . . \ d a t a \ f r o m - P s k o v - o l d - m a c h i n e \ M y _ b a c k u p \ B a c k U p \ D a t a B a c k U p \ u n s o r t e d \ D o w n l o a d s \ M o b i l e \ E l e c t r a . j p g T C : \ d a t a \ f r o m - P s k o v - o l d - m a c h i n e \ M y _ b a c k u p \ B a c k U p \ D a t a B a c k U p \ u n s o r t e d \ D o w n l o a d s \ M o b i l e                                                                                                                                                                                                                                                                                                     es" opcode="create" >
+          <node name="Format" opcode="create" type="string" value="x-asf-pf" />
+          <node name="Protocol" opcode="create" type="string" value="RTP/AVP" />
+        </node> <!-- Properties -->
+
+      </node> <!-- RTP -->
+
+      <node name="RTP/ASF" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{149a44be-dc14-4e94-9cb0-c0268e77df9e}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Format" opcode="create" type="string" value="x-asfv2-pf,x-asfv2-grp-pf,x-asfv2-frag-pf" />
+          <node name="Protocol" opcode="create" type="string" value="RTP/AVP" />
+        </node> <!-- Properties -->
+
+      </node> <!-- RTP/ASF -->
+
+      <node name="RTP/AVP" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{d7335e2e-62eb-4ad0-96cd-b31c9d0f9f85}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Format" opcode="create" type="string" value="PCMU,L8,L16,MPA,G726-24,G726-40" />
+          <node name="Protocol" opcode="create" type="string" value="RTP/AVP" />
+        </node> <!-- Properties -->
+
+      </node> <!-- RTP/AVP -->
+
+      <node name="RTP/FEC" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{02DEFE42-F8FC-11d2-8670-00C04F6890ED}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Format" opcode="create" type="string" value="parityfec" />
+          <node name="Protocol" opcode="create" type="string" value="RTP/AVP" />
+        </node> <!-- Properties -->
+
+      </node> <!-- RTP/FEC -->
+
+      <node name="RTP/WMS-FEC" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{EDAB8E6B-746C-40db-A885-9E4A9EEF27A2}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Format" opcode="create" type="string" value="wms-fec" />
+          <node name="Protocol" opcode="create" type="string" value="RTP/AVP" />
+        </node> <!-- Properties -->
+
+      </node> <!-- RTP/WMS-FEC -->
+
+    </node> <!-- Object Store -->
+
+    <node name="Shared Properties" opcode="create" />
+  </node> <!-- Data Protocol -->
+
+  <node name="Feedback Protocol" opcode="create" >
+    <node name="Object Store" opcode="create" >
+      <node name="RTCP" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{ecfddc81-184e-11d3-ae84-00a0c95ec3f0}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Format" opcode="create" type="string" value="x-wms-rtx" />
+          <node name="Protocol" opcode="create" type="string" value="RTP/AVP" />
+        </node> <!-- Properties -->
+
+      </node> <!-- RTCP -->
+
+    </node> <!-- Object Store -->
+
+    <node name="Shared Properties" opcode="create" />
+  </node> <!-- Feedback Protocol -->
+
+  <node name="Network Source" opcode="create" >
+    <node name="Object Store" opcode="create" >
+      <node name="WMS Http Network Source" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{566A2EFF-5651-4020-AC1A-EB48E4571EA3}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Source Type" opcode="create" type="string" value="HTTP" />
+          <node name="DefaultHttpServerPort" opcode="create" type="int32" value="0x50" />
+          <node name="DefaultHttpServerSSLPort" opcode="create" type="int32" value="0x1bb" />
+          <node name="PacketBuffers" opcode="create" type="int32" value="0x8" />
+          <node name="EnableHTTP1_1" opcode="create" type="int32" value="0x1" />
+          <node name="OpenTimeout" opcode="create" type="int32" value="0x1e" />
+          <node name="SecondSegmentTimeout" opcode="create" type="int32" value="0x64" />
+          <node name="ControlAdapter" opcode="create" type="string" value="" />
+          <node name="PercentBWUsageForAccelStreaming" opcode="create" type="int32" value="0x55" />
+          <node name="Proxy Setting" opcode="create" type="int32" value="0x3" />
+          <node name="ProxyHostName" opcode="create" type="string" value="" />
+          <node name="ProxyPort" opcode="create" type="int32" value="0x50" />
+          <node name="ProxyBypassForLocal" opcode="create" type="int32" value="0x0" />
+        </node> <!-- Properties -->
+
+      </node> <!-- WMS Http Network Source -->
+
+      <node name="WMS Mms Network Source" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{DCF6C8B2-F6C0-461b-82DA-35945EADF54A}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Source Type" opcode="create" type="string" value="MMS,MMST,MMSU" />
+          <node name="DefaultServerPort" opcode="create" type="int32" value="0x6db" />
+          <node name="MaxReadHeaderRetries" opcode="create" type="int32" value="0x4" />
+          <node name="PacketBuffers" opcode="create" type="int32" value="0x8" />
+          <node name="DropProb" opcode="create" type="int32" value="0x0" />
+          <node name="DropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="FirstDropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="DropBurstDuration" opcode="create" type="int32" value="0x0" />
+          <node name="PacketPairDropProb" opcode="create" type="int32" value="0x0" />
+          <node name="NackAlgorithm" opcode="create" type="int32" value="0x2" />
+          <node name="NackRateMultiplier" opcode="create" type="int32" value="0x1" />
+          <node name="NackBurst" opcode="create" type="int32" value="0x5dc" />
+          <node name="NackTraceInterval" opcode="create" type="int32" value="0x3e8" />
+          <node name="NackRetry" opcode="create" type="int32" value="0x1" />
+          <node name="IgnoreServerVersion" opcode="create" type="int32" value="0x0" />
+          <node name="EnableMmsDistribution" opcode="create" type="int32" value="0x0" />
+          <node name="AssertStrangeErrors" opcode="create" type="int32" value="0x0" />
+          <node name="InactivityTimeout" opcode="create" type="int32" value="0x5a" />
+          <node name="OpenTimeout" opcode="create" type="int32" value="0x20" />
+          <node name="PercentBWUsageForAccelStreaming" opcode="create" type="int32" value="0x55" />
+          <node name="FunnelAdapter" opcode="create" type="string" value="" />
+          <node name="ControlAdapter" opcode="create" type="string" value="" />
+          <node name="Proxy Setting" opcode="create" type="int32" value="0x0" />
+          <node name="ProxyHostName" opcode="create" type="string" value="" />
+          <node name="ProxyPort" opcode="create" type="int32" value="0x6db" />
+          <node name="ProxyBypassForLocal" opcode="create" type="int32" value="0x0" />
+        </node> <!-- Properties -->
+
+      </node> <!-- WMS Mms Network Source -->
+
+      <node name="WMS Msbd Network Source" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{FB74F625-7D25-4455-B840-7B870B5B9322}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Source Type" opcode="create" type="string" value="ASFM" />
+          <node name="PacketBuffers" opcode="create" type="int32" value="0x8" />
+          <node name="DropProb" opcode="create" type="int32" value="0x0" />
+          <node name="DropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="FirstDropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="DropBurstDuration" opcode="create" type="int32" value="0x0" />
+          <node name="McastTimeout" opcode="create" type="int32" value="0x3a98" />
+          <node name="EnableIGMPv3" opcode="create" type="int32" value="0x1" />
+        </node> <!-- Properties -->
+
+      </node> <!-- WMS Msbd Network Source -->
+
+      <node name="WMS Network Source" opcode="create" >
+        <node name="CLSID" opcode="create" type="string" value="{ad763fa6-3b90-41ab-bd44-4f832beee55f}" />
+        <node name="Enabled" opcode="create" type="int32" value="0x1" />
+        <node name="Properties" opcode="create" >
+          <node name="Source Type" opcode="create" type="string" value="RTSP,XSDP,RTP,RTSPA,RTSPT,RTSPU,RTSPM" />
+          <node name="EnableATM" opcode="create" type="int32" value="0x1" />
+          <node name="MaximumMTU" opcode="create" type="int32" value="0x0" />
+          <node name="FirewallTimeout" opcode="create" type="int32" value="0x14" />
+          <node name="OpenTimeout" opcode="create" type="int32" value="0x1e" />
+          <node name="RtxDropProb" opcode="create" type="int32" value="0x0" />
+          <node name="DropProb" opcode="create" type="int32" value="0x0" />
+          <node name="DropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="FirstDropGracePeriod" opcode="create" type="int32" value="0x0" />
+          <node name="DropBurstDuration" opcode="create" type="int32" value="0x0" />
+          <node name="PacketPairDropProb" opcode="create" type="int32" value="0x0" />
+          <node name="NackAlgorithm" opcode="create" type="int32" value="0x2" />
+          <node name="NackRateMultiplier" opcode="create" type="int32" value="0x1" />
+          <node name="NackBurst" opcode="create" type="int32" value="0x5dc" />
+          <node name="NackTraceInterval" opcode="create" type="int32" value="0x3e8" />
+          <node name="NackRetry" opcode="create" type="int32" value="0x1" />
+          <node name="BurstProtection" opcode="create" type="int32" value="0x0" />
+          <node name="EmulateNetworkDisconnect" opcode="create" type="int32" value="0x0" />
+          <node name="AssertStrangeErrors" opcode="create" type="int32" value="0x0" />
+          <node name="PercentBWUsageForAccelStreaming" opcode="create" type="int32" value="0x55" />
+          <node name="Proxy Setting" opcode="create" type="int32" value="0x0" />
+          <node name="ProxyHostName" opcode="create" type="string" value="" />
+          <node name="ProxyPort" opcode="create" type="int32" value="0x22a" />
+          <node name="ProxyBypassForLocal" opcode="create" type="int32" value="0x0" />
+          <node name="PktGracePeriodAtEOSForBPP" opcode="create" type="int32" value="0x3e8" />
+          <node name="PktGracePeriodAtEOSForODP" opcode="create" type="int32" value="0x9c4" />
+        </node> <!-- Properties -->
+
+      </node> <!-- WMS Network Source -->
+
+    </node> <!-- Object Store -->
+
+    <node name="Shared Properties" opcode="create" >
+      <node name="Local" opcode="create" />
+      <node name="Bandwidth_2" opcode="create" type="int32" value="0x595296e" />
+      <node name="Bandwidth_1" opcode="create" type="int32" value="0x2516d07" />
+      <node name="IP Address" opcode="create" type="string" value="213.248.29.3" />
+      <node name="Bandwidth_3" opcode="create" type="int32" value="0x0" />
+      <node name="Bandwidth_4" opcode="create" type="int32" value="0x7c5fa15" />
+      <node name="Bandwidth_5" opcode="create" type="int32" value="0x34f6e1f" />
+      <node name="Bandwidth_6" opcode="create" type="int32" value="0x910713f" />
+      <node name="Bandwidth_7" opcode="create" type="int32" value="0x2218bf0" />
+      <node name="Bandwidth_8" opcode="create" type="int32" value="0x5dd7cab" />
+      <node name="Bandwidth_9" opcode="create" type="int32" value="0x406c4b6" />
+      <node name="Bandwidth_10" opcode="create" type="int32" value="0x7361c" />
+      <node name="Bandwidth_11" opcode="create" type="int32" value="0x0" />
+    </node> <!-- Shared Properties -->
+
+  </node> <!-- Network Source -->
+
+</document>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        O G Y   d ¨- €C : \ P R O G R A M   F I L E S \ C O M M O N   F I L E S \ L O G I T E C H \ L V M V F M   P ¨# €C : \ P R O G R A M   F I L E S \ I N T E L \ W I R E L E S S \ B I N    ¨
+ €C : \ S Y S P R E P   0 ¨ €C : \ W I N D O W S \ S Y S T E M 3 2   2 ¨ €\ S Y S T E M R O O T \ S Y S T E M 3 2   
+ ¨  €  N ¨" >€C : \ P R O G R A M   F I L E S \ I N T E R N E T   E X P L O R E R   R ¨$ B€C : \ W I N D O W S \ P C H E A L T H \ H E L P C T R \ B I N A R I E S   < ¨ F€C : \ P R O G R A M   F I L E S \ J E T A U D I O   ª ¨P I€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ E E 4 E 3 F 5 3 2 6 3 4 1 3 E 4 5 E 8 C 3 1 0 6 1 D E C 8 5 F 9 \ U P D A T E   ª ¨P K€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ 6 6 8 0 C D 1 B F 1 D 3 C C 4 6 B 2 F A D 1 4 A C B 8 0 6 B 1 D \ U P D A T E   ¼ ¨Y N€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 4 4 B B A 2 4 B 8 A C B 5 A F D B 2 F A 1 A 4 2 5 8 0 6 3 9 6 8 \ U P D A T E   ¼ ¨Y P€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ E 3 F 4 5 C 9 F 5 7 9 B 8 D E 3 E 9 9 6 4 5 3 9 D A 2 6 0 D B C \ U P D A T E   ¼ ¨Y R€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 2 C A F C 8 6 B 5 D E 1 8 1 C 6 2 7 7 C 9 C B 7 F 4 8 1 8 C 3 1 \ U P D A T E   ¼ ¨Y T€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ F A 6 7 7 C 1 E 0 2 D 8 E A 3 1 A 6 1 2 3 7 0 1 2 D 6 7 5 5 6 6 \ U P D A T E   ¼ ¨Y V€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 5 9 F 9 8 3 A 8 D 5 B 4 D 6 4 0 5 4 A E D 3 0 1 D E E 8 7 E A 7 \ U P D A T E   ¼ ¨Y X€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 8 3 F 2 1 A 3 6 8 D 9 4 0 C 7 2 9 4 5 1 D A 8 A 3 1 D B 9 0 A 0 \ U P D A T E   ¼ ¨Y Z€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ B 3 4 B 8 5 F B 9 4 6 8 7 2 9 F A 9 B 7 7 4 0 C 8 7 6 1 3 7 7 D \ U P D A T E   ¼ ¨Y \€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ D F B A 3 F F F 1 9 4 F E 0 5 B 7 F 2 B 3 3 2 B 4 5 4 6 F 0 5 9 \ U P D A T E   ¼ ¨Y ^€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 0 9 9 B 3 1 F D 5 D F 4 C 9 6 3 D 3 3 8 1 C 9 5 5 0 8 4 8 7 1 7 \ U P D A T E   ¼ ¨Y `€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 5 F 5 1 7 0 2 6 B 5 C 7 5 B 6 F 4 7 9 F 7 B E D E C 6 D E 6 8 7 \ U P D A T E   ¼ ¨Y b€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 5 D 3 8 4 C 2 0 6 6 F A 8 4 D 1 5 E A 5 A C D 8 8 B 7 8 1 7 C E \ U P D A T E   ¼ ¨Y d€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 8 A A 7 7 8 F A 6 9 5 8 1 E 9 F 4 A F A 8 8 2 5 9 D 5 8 3 7 5 B \ U P D A T E   ¼ ¨Y f€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 2 C 6 3 6 F 1 6 5 7 C 0 4 0 B 6 6 F 7 0 5 5 C A 8 E 3 1 E 5 4 7 \ U P D A T E   ¼ ¨Y h€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 5 0 8 F C 1 E 8 2 D 6 3 9 B F 7 4 8 D 5 5 A D F 2 F E 5 9 5 D B \ U P D A T E   ¼ ¨Y j€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 3 B 6 3 C 8 1 3 0 3 2 F 9 8 D 0 4 2 5 8 B B 6 1 3 E D C D 5 2 A \ U P D A T E   ¼ ¨Y l€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 3 E 3 E 3 0 5 9 2 2 6 9 E 1 2 2 1 6 7 8 6 F 8 0 B 0 A 8 B 6 9 3 \ U P D A T E   ¼ ¨Y n€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ E 0 A E 0 3 8 D 3 F 0 B 8 1 5 0 7 0 A C C E 1 5 E 1 7 8 1 2 E B \ U P D A T E   ¼ ¨Y p€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ D 0 C 1 C F C F A A F 2 1 8 6 E 7 5 2 5 2 6 4 1 3 5 E 4 1 2 A D \ U P D A T E   ¼ ¨Y r€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ D 7 C 1 D B C F 4 9 9 8 9 8 7 1 9 F 0 3 D 3 A 2 B C D A 7 6 9 D \ U P D A T E   ¼ ¨Y t€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 8 4 0 5 6 E 9 8 3 A 8 D 0 F 0 B 3 F 8 2 0 B 5 8 7 0 9 A A C 2 7 \ U P D A T E   ¼ ¨Y v€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 5 7 E E E 3 C F D 5 4 0 1 C 6 8 1 5 9 5 5 8 B B 1 F E E 9 A A 3 \ U P D A T E   ¼ ¨Y x€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ E 6 5 9 E 1 4 9 5 2 E 5 F 2 F 8 8 2 7 1 A 5 2 9 5 A 6 9 C 8 F 5 \ U P D A T E   ¼ ¨Y z€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ A 9 9 6 7 5 2 1 8 4 C 4 7 1 0 6 2 1 8 F 0 4 3 5 9 D 1 D 4 5 9 F \ U P D A T E   ¼ ¨Y |€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 0 5 0 2 2 2 0 C 8 1 4 B 6 9 1 C C 6 4 F 6 1 5 4 7 D C E 8 3 F C \ U P D A T E   ¼ ¨Y ~€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 7 F 5 2 9 B A F 4 C D 1 C 3 1 E C E 3 B 5 B B 8 6 A 7 2 B 7 7 5 \ U P D A T E   ¼ ¨Y €€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 7 9 3 8 9 D 6 F D E F 0 7 A 1 8 2 5 6 2 0 7 E 4 4 B 4 8 7 7 F B \ U P D A T E   ¼ ¨Y ‚€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 8 F 9 1 7 1 D 6 7 2 D 5 3 C 1 B 0 C 9 B 8 2 4 2 C 0 A E 1 7 A B \ U P D A T E   ¼ ¨Y „€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 4 8 2 2 F E 2 4 2 F 5 9 E 9 B F 0 D 1 2 8 D B F 2 8 8 6 5 C 8 5 \ U P D A T E   ¼ ¨Y †€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 6 9 E 4 4 F 4 1 E 4 7 7 B 1 3 7 8 2 D 1 8 9 B 1 C 3 0 7 1 6 A E \ U P D A T E   ¼ ¨Y ˆ€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 0 A B 4 E D 4 1 5 6 1 E D A 2 0 D D A 0 E 6 0 4 F C F C 4 6 8 9 \ U P D A T E   ¼ ¨Y Š€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ C C 3 4 6 6 B 3 F D 4 E 2 7 5 3 3 7 B 3 A 5 1 4 9 6 2 A D 0 0 1 \ U P D A T E   ¼ ¨Y Œ€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 3 7 8 0 D D 3 8 2 3 9 3 1 7 A 1 1 C A 6 7 C 8 B C 5 C D E 4 7 D \ U P D A T E   ¼ ¨Y €C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 9 4 9 E 1 5 5 9 C 6 B 8 7 A E A F 7 2 1 2 3 B 2 D 3 2 3 B 8 9 E \ U P D A T E   ¼ ¨Y €C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 8 5 8 D E 0 3 2 A C 6 5 0 0 A B 9 9 E 5 3 3 0 4 B B 4 6 6 3 3 C \ U P D A T E   ¼ ¨Y ’€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ F A D F 9 5 C D E 5 F F E 4 A B B 9 F 5 6 2 3 8 3 4 0 0 0 4 0 D \ U P D A T E   ¼ ¨Y ”€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ D A 9 6 F F A 5 A 9 2 D F C 4 F 8 F 4 B C F 1 1 8 1 C C 6 2 4 E \ U P D A T E   ¼ ¨Y –€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 3 D 1 2 1 3 F B 5 4 C 7 E 4 3 C 3 C 3 9 E B 8 D 7 0 A F 3 8 3 B \ U P D A T E   ¼ ¨Y ˜€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ C D 9 F 8 2 E B E B 6 5 5 E E 2 E 1 E 0 A 5 5 1 E 7 9 3 A D 2 2 \ U P D A T E   ¼ ¨Y š€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 5 2 8 3 8 2 7 8 E 0 B 6 E 3 2 0 B A D 3 6 D 9 3 9 C 7 D 7 B 2 C \ U P D A T E   ¼ ¨Y œ€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 2 5 C A A C D 3 D F 1 D 5 1 7 C 9 4 E C 2 9 6 1 C 2 9 F 4 4 7 4 \ U P D A T E   ¼ ¨Y €C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ B C C B 7 2 3 B 6 D 5 7 5 2 E E 3 4 0 3 C 4 9 A A 8 4 4 D 3 F 2 \ U P D A T E   ¼ ¨Y  €C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 2 1 A F 7 1 F 6 2 1 3 9 F 6 5 B 1 5 5 1 3 3 1 0 3 7 6 4 A 8 7 4 \ U P D A T E   ¼ ¨Y ¢€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ D C 1 F 3 C B 2 6 C D 6 1 6 1 E 7 8 A 8 E 1 5 B 3 F F 3 B 2 0 F \ U P D A T E   ¼ ¨Y ¤€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 2 4 F 5 E 9 7 0 7 4 2 A 1 D 6 3 9 E E 4 0 5 7 8 F E 2 0 F 6 F D \ U P D A T E   ¼ ¨Y ¦€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 1 9 4 F 5 B 9 A F 8 6 9 C 3 2 F 2 D 6 5 D 6 1 7 8 9 5 F 5 7 3 3 \ U P D A T E   ¼ ¨Y ¨€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 8 D 4 C 8 2 7 F E 5 E 2 B C D 2 6 5 5 3 1 1 A 0 4 9 5 F C D 4 4 \ U P D A T E   ¼ ¨Y ª€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 4 6 5 F 1 A 0 3 5 8 4 0 0 0 B 3 F A 7 1 C 8 F 4 C D 5 F E 8 C 0 \ U P D A T E   ¼ ¨Y ¬€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 8 E C 2 A B 5 C 4 A 1 4 B C A 8 8 4 A C 1 0 0 E A 2 7 F C 4 D 4 \ U P D A T E   ¼ ¨Y ®€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 4 F B 0 7 A F F F 9 C 8 9 C 7 C A A D F 7 2 7 A A E 1 1 8 9 E D \ U P D A T E   ¼ ¨Y °€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ F 1 0 7 D 8 3 0 D 7 C 5 3 B 0 0 B 7 6 6 E A 1 0 7 7 0 9 9 A 2 2 \ U P D A T E   ¼ ¨Y ²€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ 6 1 1 4 4 5 1 5 2 5 D C 8 F 2 6 C 7 8 1 4 9 7 8 6 A 2 7 4 E 9 0 \ U P D A T E   ¼ ¨Y ´€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ D 0 D 9 4 3 6 8 C B 5 F 8 5 E 0 D 9 D 5 D 4 6 6 C 1 B 1 9 7 8 3 \ U P D A T E   ¼ ¨Y ¶€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ D 7 F B B 3 1 3 E B A 3 A 5 3 3 C 1 7 3 4 F 5 F 6 7 9 D A 0 5 9 \ U P D A T E   ¼ ¨Y ¸€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ S - 1 - 5 - 1 8 \ E A A 5 A D 0 5 1 A F 1 A 6 6 D 4 3 A 1 7 3 E 5 A 5 8 2 1 4 3 0 \ U P D A T E   ª ¨P º€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ 3 8 2 D 8 1 C B B 0 B 6 E B 0 D B 6 3 C 9 A 4 8 7 C F 0 A 1 3 8 \ U P D A T E   ª ¨P ¼€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ 7 D 8 B 0 8 9 6 8 7 1 A 2 C 6 2 E C C 1 B C 9 7 F B 2 2 7 5 C 7 \ U P D A T E   ª ¨P ¾€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ 6 5 B 9 7 4 C 5 6 F D 8 C 2 4 0 F 7 D A 5 3 A 8 1 1 6 D A 8 5 1 \ U P D A T E   ª ¨P À€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ D D E 9 1 1 B 5 9 2 7 9 A 6 4 C D 3 D 6 7 A E 0 C B E D F F 0 6 \ U P D A T E   ª ¨P Â€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ 1 5 1 9 1 B D 7 3 E 1 1 7 E 5 5 C C A F 5 8 5 2 5 1 A 5 1 E F F \ U P D A T E   ª ¨P Ä€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ 0 F C 0 F E A E C 0 8 8 9 D 5 6 A D 9 4 1 1 9 8 5 4 5 F 8 C 0 8 \ U P D A T E   ª ¨P Æ€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ D B 1 6 E B B 6 0 2 8 D 7 2 E D 6 2 3 9 8 B 0 3 4 E C C 1 7 5 9 \ U P D A T E   ª ¨P È€C : \ W I N D O W S \ S O F T W A R E D I S T R     hbin  U  @                       ÀÿÿI B U T I O N \ D O W N L O A D \ 8 C D 4 0 C E 1 6 0 5 1 2 7 2 D 5 D A 3 E E 1 8 8 7 0 5 F 6 8 C \ U P D A T E   ª ¨P Ê€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ 5 8 A 4 3 5 5 B A D E 3 3 9 0 2 9 0 1 4 4 C 3 2 1 9 6 9 0 D 5 3 \ U P D A T E   ª ¨P Ì€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ F 4 1 3 5 A D A 5 B 7 8 3 4 B A 5 3 2 F C B B 7 2 5 D F B C D D \ U P D A T E   ª ¨P Î€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ A 9 B 0 5 A 4 D 6 5 5 0 F D 7 8 F A 3 F 5 4 D 8 5 1 D 2 D 2 3 0 \ U P D A T E   ª ¨P Ğ€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ 8 6 F B C C 5 4 B F C 6 B 0 E B E 5 4 F D 4 4 E 9 C 1 E 4 8 3 8 \ U P D A T E   ª ¨P Ò€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ B 5 C 2 1 E 9 B A F 6 3 C 8 F 0 4 F 2 4 B 2 9 D 8 0 5 D 6 A A 8 \ U P D A T E   ª ¨P Õ€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ 8 A 4 4 4 2 3 E 3 6 0 E 7 B 9 B 3 3 6 1 1 0 8 7 D 3 9 D D B A C \ U P D A T E   ª ¨P Ø€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ F C 9 3 B C D D 8 F 6 2 5 7 4 D 8 8 9 D 6 E 6 6 2 9 7 3 0 B 7 D \ U P D A T E   ª ¨P Û€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ E 7 3 4 5 1 6 2 D 5 F 9 8 D 5 E 3 3 D E D 6 4 E 5 D 1 F 0 B B B \ U P D A T E   j ¨0 Ş€C : \ W I N D O W S \ S O F T W A R E D I S T R I B U T I O N \ D O W N L O A D \ I N S T A L L   v ¨6 à€C : \ D O C U M E N T S   A N D   S E T T I N G S \ &\ L O C A L   S E T T I N G S \ T E M P   x ¨7 €C : \ P R O G R A M   F I L E S \ C O M M O N   F I L E S \ M I C R O S O F T   S H A R E D \ V S 7 D E B U G   ^ ¨* W€C : \ P R O G R A M   F I L E S \ M O Z I L L A   F I R E F O X \ U P D A T E S \ 0   < ¨ e€C : \ P R O G R A M   F I L E S \ D E M O P L A Y   L ¨! ‹€D : \ A E 2 6 5 7 F 3 F 0 C F 4 4 D E 5 E D A 5 5 F 8 E D 4 1 8 A   4 ô          ÿÿ‰ ‹      !  ò   øÿÿÿ        ÿÿÿÿ    4 ô        ‰ ‹   ÿÿ     !  ò   øÿÿÿ        ÿÿÿÿ    4 ô        ‰ Š   ÿÿ     "  ò   øÿÿÿ        ÿÿÿÿ    4 ô          ÿÿ‰ Š      "  ò   øÿÿÿ        ÿÿÿÿ    4 ô        ½½  ÿÿ     !  ò   øÿÿÿ        ÿÿÿÿ    4 ô          ÿÿ½½     !  ò   øÿÿÿ        ÿÿÿÿ    4 ô          ÿÿ  ÿÿ     ¯     ıÿÿÿ        ÿÿÿÿ    4 ô          ÿÿ  ÿÿ     /    ıÿÿÿ        ÿÿÿÿ    4 ô          ÿÿ  ÿÿ     ¯     ğÿÿÿ                4 ô          ÿÿ  ÿÿ     ¯    Õÿÿÿ                4 ô                         ùÿÿÿ                4 ô                 „    ùÿÿÿ                4 ô                 „     ùÿÿÿ                4 ô        
+ 
+ 
+ 
+      „    ùÿÿÿ                4 ô                     ùÿÿÿ                4 ô          ÿÿ  ÿÿ     ¤    ùÿÿÿ                4 ô
+ ÿÿÿ   ÿÿ‰ ‹        ó   v          ÿÿÿÿ    4 ô
+ ÿÿÿ ‰ ‹   ÿÿ       ó   v          ÿÿÿÿ    4 ô
+ ÿÿÿ ‰ Š   ÿÿ       ó   v          ÿÿÿÿ    4 ô
+ ÿÿÿ   ÿÿ‰ Š        ó   v          ÿÿÿÿ    4 ô
+ ÿÿÿ ½½  ÿÿ       ó   v          ÿÿÿÿ    4 ô
+ ÿÿÿ   ÿÿ½½       ó   v          ÿÿÿÿ    4 ô©ş  ÿÿ    ÿÿ‰ ‹        ó   Û
+          ÿÿÿÿ    4 ô©ş  ÿÿ  ‰ ‹   ÿÿ       ó   Û
+          ÿÿÿÿ    4 ô©ş  ÿÿ  ‰ Š   ÿÿ       ó   Û
+          ÿÿÿÿ    4 ô©ş  ÿÿ    ÿÿ‰ Š        ó   Û
+          ÿÿÿÿ    4 ô©ş  ÿÿ  ½½  ÿÿ       ó   Û
+          ÿÿÿÿ    4 ô©ş  ÿÿ    ÿÿ½½       ó   Û
+          ÿÿÿÿ    4 ôÀ¨  ÿÿÿ   ÿÿ‰ ‹        ó              ÿÿÿÿ    4 ôÀ¨  ÿÿÿ ‰ ‹   ÿÿ       ó              ÿÿÿÿ    4 ôÀ¨  ÿÿÿ ‰ Š   ÿÿ       ó              ÿÿÿÿ    4 ôÀ¨  ÿÿÿ   ÿÿ‰ Š        ó              ÿÿÿÿ    4 ôÀ¨  ÿÿÿ ½½  ÿÿ       ó              ÿÿÿÿ    4 ôÀ¨  ÿÿÿ   ÿÿ½½       ó              ÿÿÿÿ    t ø          ÿÿ       ! €   x          H €A L G . E X E                                x              ÿÿÿÿt ø          ÿÿ  ÿÿ         y          D €A L G . E X E          ÿÿÿÿ  ÿÿ           ‚   y          ÿÿÿÿ    H ø
+¯ÿÿÿÿmm  ÿÿ     ‚ €   j            €S V C H O S T . E X E   H ø
+¯ÿÿÿÿ¨&¨&  ÿÿ     ‚    `            €S V C H O S T . E X E   H ø          ÿÿ»»     ! ‚              €S V C H O S T . E X E   H ø          ÿÿP S      ! ƒ              €S V C H O S T . E X E   H ø
+¯ÿÿÿÿ‡f‡f  ÿÿ     ‚ „   z            €S V C H O S T . E X E   H ø
+¯ÿÿÿÿ $ $  ÿÿ     ‚ …   {            €S V C H O S T . E X E   H ø
+ÿÿÿÿrr  ÿÿ     ‚ †   |            €S V C H O S T . E X E   H ø
+¯ÿÿÿÿrr  ÿÿ     ‚ ‡   }            €S V C H O S T . E X E   H ø
+ÿÿÿÿDD  ÿÿ     ‚ ˆ   ~            €S V C H O S T . E X E   H ø
+¯ÿÿÿÿDD  ÿÿ     ‚ ‰               €S V C H O S T . E X E   H ø          ÿÿ     " Š   €            €S V C H O S T . E X E   † ø         ÿÿ5 5      ‚  ‹             €S V C H O S T . E X E          ÿÿÿÿ  ÿÿ  ÿÿ       Œ  @              ÿÿÿÿd d d     H ø        5 5   ÿÿ     ‚ Œ   ‚            €S V C H O S T . E X E   H ø        C C C C      ‚    ƒ            €S V C H O S T . E X E   H ø        D D C C      ‚    ƒ            €S V C H O S T . E X E   H ø        ""C C      ‚    ƒ            €S V C H O S T . E X E   H ø        ##C C      ‚    ƒ            €S V C H O S T . E X E   H ø        C C D D      ‚    ƒ            €S V C H O S T . E X E   H ø        D D D D      ‚    ƒ            €S V C H O S T . E X E   H ø        ""D D      ‚    ƒ            €S V C H O S T . E X E   H ø        ##D D      ‚    ƒ            €S V C H O S T . E X E   H ø        C C ""     ‚    ƒ            €S V C H O S T . E X E   H ø        D D ""     ‚    ƒ            €S V C H O S T . E X E   H ø        """"     ‚    ƒ            €S V C H O S T . E X E   H ø        ##""     ‚    ƒ            €S V C H O S T . E X E   H ø        C C ##     ‚    ƒ            €S V C H O S T . E X E   H ø        D D ##     ‚    ƒ            €S V C H O S T . E X E   H ø        ""##     ‚    ƒ            €S V C \¹Ï/cbÅpwq¤aë¦¤ŞGìŒ—dë"•¢35¶Ïëg[3 ó:&)nêÒJbj¶EĞÂûÑz&ö„ qBËåx{_\ õlÅ=PAmêB¬oı|šÙÃ#óR!¼&iº0Z©ÙX»utY$‘ñº#ææ'hÍ¸³@ÿñA¯‘"šñRPNXOaÑ"t	*¿N\0eF„ïGğöåÈ% 1V¼§×•‡ï‘Â*éå?|§š ÿÂB*%â½Cd.àÿs ÈânÅœ– k5ú$»eFIw°7­—ß
+¸,î¶'TJ†˜Ñ0’Zëº°1=D‚ÑFœñOUäh¹Æ¨ÓÁùBÙ"ÕlavVıñıˆ6)âC5“Æ3Cãÿ¡E£¢ š|¦Ê_ƒÊë¦jÕåE<xŒæÒO#Ú˜:mÖå‘¦DÛâ†LĞœÂdœåƒbßv":„Õıñ|óî\Õ¾Æ°à°rX$ãŠ «Í®V¨Öâ){\Jå.˜Å¼;¨¹x4d®6OsxUSD=Ğ6íÍÛ‘ ¤rV1Pë×ÑˆH²æE]ZÀèh†ÿñî+¹³Ò)ŸòúiÙËÚ,¹eÎ‘6Ô$é}¸‡Í‚ïÉ3hÌ˜§jDÊPsˆ5VØ‰ ìfƒ‹úeÙxMË‘Ò4âNš–MöÕn?iÖ‹¶.
+Ğt«g–92Êa¶ŞŸ2kX‚äe½8O0²š°8Àÿ½¢zÎíCUĞ9­m­vFC ­4¼nà(­.¿ÛGğëI%½¢‚Á1i‹$(d£(œLĞ÷]G¬\«Ís_¨Ë„_Q³/`fÏ¯a“¹ãFQn¾Ò6:€‚¹æ¸’ÀáG ¦:™O™Ø,VT]‘[€Ù”	WL|_:Td¸ÉUYag£a”Vf	ß«/0–âÕ6‚ç‰®õâl±:&‰P¦¿•w+wm]NdÊäSû¶)Y@•ÍN^7QBÎU}[¶An)úV
+
+QâÂq¶#Ò]¼¿bŒ(”¹³ã4¹}ŠA`]=ì~<Ğï½æØ[¡¨Dc¹÷±£Í’›æ>ÍE-­”#?‘ ¹y‡Øõ“à¬çG¶›ªåĞ–¦	ˆ!7}kZ…°*fğŞûŒ„qı’­\+8Q³áˆ`¾‰À‡J£²+\TŠ‚ô"#–úöã€aë3­äİ~y¿ƒ	EÜ‘µÈøóºvºÊ.]¯K«¶'éKßµšn.YŸß†jĞ2ÈyÊªQqÌ¥{(©Ñ^ñrRÍ´Z=”ñ:İz÷HòJÇÕ~¹¹Ğ¡¢<ßî8ÌRYòdÆ¢ˆåzØC¯4ı~ptÃn`î³é ¦ò×o@f+-äåH½Ì÷ğõ	Éz#%c6`Ù®£fTÒÙ^D/E 6x!ÿ»!;?6¤H@½v’wUúrì‹uÃ¸Ô|¶@`é™mW)!£ ¨iÅZòÆgi87Á×ïÙšÉÑÃ7°³hÎn@ËÄ§‰æú«&}ÜäkKDëªYÉM¸ò£fÏ®š²=8gÕ\M.géÁ”_Š˜›PH«»úîï_J“?Ï\7•ì;ªİiÛ¿äÎ+àá dªkOÊu¢eà^w–û&X™1ê‚\záNÄmŠEa’e)oßa¾½w&Â>Õ‡JİêS'p=‘¾şí°™ÀY‰¶;rà´jrÿ¨Òe^»wæp#ğ4ÙUEàóò±ºÄ²M};ÜS+pûN
+j­’½Óƒ"ÎÖ¯é¼P¢>m¼¦±q\xƒ”kÎtÛìÎg©³5·²İ>ÀÈsn¦ÏÎC½<Ğè26ÔiˆtÌX¨ÒvKóÙ»lº7:¿º/œ­Ù<¨Më×¹¾¥Id{.r³—û¥c`%ÁØÈÿ5á“t®¨3zjV|Ø:>s^á~š@‚ĞDUŠŠ$ÜáQ±­~™¹Zlê/f:ƒİX½4£s´ïó±F7·m‰Ñ}IôÃïyäÎÇè¦áEg3¯&Ó¹9°à
+Hµôbã–­ÚÔÍmÎ4iÎå6pdiMÑÔœ$Øâ2 $uYDQaÚ–Eh6œˆ†$¥nø|x^‰5ÔøûaNê÷œjõ©sĞäŞrÆbdx•>Ÿ¾
+åùÃ¸yZ4ÇäqéyÇ™?å¶†Tj™Mà›{X×£½s|ÎZŸİïı7øIO¾ˆò×ä@ê±òñÃQÜ_àe¾g ?>XœùA¬ŠObi+5-™C•NÂİ–føÉXœ‚e,şU’­ÚOû»ƒ‰<x‹É³æÇá¡ll¶PÇ½•wç½†¯•h”Ô±‡OÚ£t±Ì&Â Ÿ4˜`BÆãWRšMíZGóW‘àÒ½üÿ¼˜¨ƒ7+õ1[""R,MŸLB e»lÓ"-.[GğõY§èõ®ğ³wú˜)û¡ÇàôíŒç
+ägT\¦g†…rèê÷j(LçŠãò ğÏQFºô¾|¬f˜Œ85fã7‹fù‚°AO¶ü÷†&y×¨ùÚ\Û£²¬¦Ù˜/ÉÓ$¾ÛƒÅnmMãyv©Ùı($i2^,	9£;ü*ĞmÎ‘Ï†âK<ı$ònµÒªŠ“.k$8Íë}`Ä»©ì/²…Ñè‹c¹-±*˜còX˜ÈâÃÆ’¦ò­Úæl‹îN¯¯ª‘B…ZlWÅİˆÈ/ŞèªÃÊ0Ëõ1ÉZñÖŞ*˜˜ª¶­Ë´„AUBãœ8½qfY’bU¡«j“'#èš”˜‹û3ñ´ÄGŞ*†YJ¢V]bnJ®9ä‚º—ÿ’ùÚ%8 ¿QäUv@£QÌNX•¸£sÁ¸I7C?ë²ÅcbOœØZ¥-aûT§‹t:	»¶¡.|^ÅËZÌ+[7:ášnRİüH’&3FÄMQ<ÈxáA| „•tkS´ø ºÈÀPï¸¡Æ÷>óÿ"‚YqŞÎW#0mè8YSÿœvz»
+X}(¾|®Ö B¬«HŒ—r*j”&Ó×²¦sŒıŞGd1ÿ¢”!ÒÜlc(Q˜zX`ÿ|Èp±»²^yº91¶¶ì}\Ó71)½ó
+ €¤›J±›ÁKIÏHíÑ(æÃÕæ[ ì\*a«±a–C“œ(^½gB.““ÖÎèS2Id[’ñòÆ~ûµ@»¼	R5ç ¨ÈD9éï_æù{Hğ#€3Ò5FöZÜŠí…5ÉmÿóÆ`&;ô£t)JÛªÊTk<oÄòoµ{z\É~Úti×cx?B«ÍR»xûº¼Åôà}³È/Äõ÷›å‘rp_kãxtøÊfs&)Ò
+=Y/‰´BJÅãeÆ??‡X "˜¸‰——‘ÉäLù* 7Ñ»y8O³âáåDÀÏ³ÇÖÖùQ¯úä#É-Å^+mÇ&„‚¿ CgJ×£,°çS¯úÉ‚S}ÎïW2®ÊéÎN‚CwŸàA}ş`¢ù;–c“€Q:1<Ô€ja0!%8w+™¶@Œ—‚4÷Ä8r&XªäÔ¿ÇTW’X$TcÂkA *_#ß1ğ¦·IH,Ø³/l}n›•¾Z¨ÙW°‚¦Fû8c”±Ínjùç> Øoqƒ	tc7G¾‰Í•JY;»^è£Ğš}ÁGúºH”|*\âA„G	eIãK{—6hD¿Iò	½Ó›öc¡wµŸ—
+:áj{F4ñ.5²Œ²ùÓº#5U’‹Ù~Jv¤Ûæ†B‰ù#É´s®U>ñ+Æ\; y¨ÏóĞŸr°ÌCåŠJÉÀN8!Í `,˜jGDÔFN, u m40§RV†c+{ºeÆkAR†$ëî0Òsq•xãö?„,¸n×'=Ï”ºuR—-¸qøp­!„ÔƒC0õ¸Uˆ¦¶‚“3ÊQ*™Â*T.n? 0ËDàö¬?€“Şû æ+05«K±ëQI,o2}{èX-wa FH¢xaÅánëéBÊÛÊï-icGLàÄNÇÌ¢ü»K &åÿ=ø1?ù5wÄN—P¾İî@fêTšt7}gŠ¹#T¿Àbÿ†‹6µ€Ä°»æ3±TÅ”ë,jìS;ÿ.\‹Ì51ÈûK'Cƒ$°é+&M½ÂUú¨~]ŠF£Ş2©-óÎØe´m?jT0óşxäàÌçgíœ`<Ìåi+]="u	–eÆ&/¨€>	öê^V…¥{ŠÔ"V¿7jAt ¹³äÚu(¹çÀ¿sìTâÂìÿj!Åİ°}"ú¸j‹‡$fÁšn·ÇÆŞ\WQÛ™õ,­ê¿pÆ3 BrRÏw¯º¹úP=8Tâ·ê¸ e|x)h°Å©º¿§°Z¨ÀtÎId„8ö1~}Åñ˜$×¾ÿ–“`¶¢LPã<^1 Ä©9¨è[˜Ÿñ$vR"ÒÀVYè48Ÿ¬/ °ûp.èGÒ\ˆËÛtvr3òûĞ ¬e©Û—¥ŒicV³…1NÅÀ2z6V5ÑÏ÷ë¿ç¤Uöò?N—šÇÓtªd^?zŸÓÉß‡o*+Y2ô†\e{ße“@Æ5"v+Cü•GĞ#1U¾ø½D)Ä=Íî)F?Ä¡ˆø‚ô9“eH“LŸ p+}Ïÿxÿ 
+\ØıË»ûÉˆ¥ÿKRZ‘h£x"­èì‘¤ƒ!ïòS)ÊŠ©í›wwŠOÌüÂ•0@éCò8ıæ’^ä°½¿€ïõt"åŸXLœ½¸İF<6CAŒ°Ó([p ùÑ5Œ@bŒ,H)C_MuL°Po½–[ôRÊx)¸C¶Éñç‹´Æ©*F.êæNòám­s3À„Õ–t.“ÂÖî&µê”»¢L57‰YÙwÂâ…9¤¹P?”|PÃ°‘®ãé+¼Ñoy(–h!ps™uÆ}ÔêkÊÑ×´wQ
+Wª	mØ\ÕØúSÂÔÅ§Ş] ó«ºáñi$j”ª%ºê;
+Ù.fsc¬ÍJ“úÃX­ñğRu±¢´ú[¡§ĞL¶bx¡¶İ16q½WüD¯ÓÜ<[ƒ55İ]QåØÔòä*sã¶u¦3ÇKC!ä•vòY.†êïµ:½Ö@a§ìÙ²Ãª:Åá“,QV[aè'ìË~Ğõ0èK!ƒØk¨ß]ß¦ÃÚÆ^	Ş¸87t–ó=Á6ú\ÁPùmeU?’&´+ÔÖ">Û…ºÉÙå„íñüêN!ÔÍX -Îı÷IÓ,7•‹•âõQoÄiƒRñÄgwŞrëÚ¶×”»~ÖÂÑ€?K_Éb­*Pçlù„D„¥Zë.+KéVg ¾6O,~%î'Q@Çy;dsÄº§ìÏ¦Ú¥IH€G_hõƒ6uÕ/©út4–r;ï«.o •ÁFÆÜã‰&¢‹Ã#Ú‹®ÅÇCS‘ğ ´RùhwÚ·€{ú·ÆÈ
+„Õd=¢{ø„‹#«»pí€¯î•­Í "<co
+Í4´£éôm:W)üRĞ(~¤~•µ:éäTAª€` ¿2BÂ‡äšÂOó±BÇh$§Ugõ
+ÏÒ¯ƒËÃßÎFnÖîD!Èõ}3…r¥f!yäaÿ—ƒF´UºÉ†…$Eİh9áş‰=Ñé‡ºêz“?ú’VBBâí
+<w3dÏÍG
+×KARVU<öh2'!÷~ ëØŸîÙ¤×:ç|…òÏ#^QU1ç$Z
+è’y¸%×-¥ŠÆ:g²)©{«¢ĞbğÎ1ˆ<>ï+5ê}×EÇĞ63†~Ş‘-bOÅF$’R¼?q~ÿÎ¸k§ŸˆÖ ºvµ)ªó`ŞÆ21<ßg²ãÏ‹¬QäÈp¥Ñ›İ£åvågñ_[Ùõ{¾gß¶ƒ^d@ÊîÁR¾³¥h²KO•å qÓ[Ñ¶¾ª‚ÃpoÓ–;Ñ#=Kn‹ËÊR#v'æn2¸y×àqY¹}…¢éŞtJÜµ?ækêÉ¼õYøŒœ›«c“ıfAÃ’ì‚Ğº#ğË‰]%=òˆÄ34
+[CaZWÕò÷—¢n¢‡qß ˜oAC–±¤\<¦"~T	f.T„ve£X¯…«µ¡—4fÃÄt<,ˆ{,aó˜¤Q¶…îÑ•0›6Ğâò^¢2Ê»÷~ÿ-òÈ˜”¯ˆ¿3yï©úÂs6Şöª¡3ÆaîinÏiy™$XzHiµ¢Å N‰qlqQô@RòÊ±yNºTÛ÷ KVš(¿ŞJrÂÍxPšçÂ„p,@úá	jmèO'¡úV‡5‚údE-ä“¼[£ƒ—KJ;H%ˆ›×};|¸y!qı‹±ô¶¿(«çÑ5E©ÒwdÓ‹¾½téxô¥©£Skı½7)±;»?kğœbúI|ƒ©F(»`Äqv­ªİTH)Ò—¬Ø‹2QÚ¾ıCèÓhõöÜnù6]O·Œã…»C'>NÖW5—‘64-è«Pêü5‘Ğêğß²ıØ“Ğ_ï­D6¢ÛZˆây ÇíÒF2\hÎD?ì÷k0¨úLqÜÑûšJ•ĞÄ¢:¦éÅšçØ%TÉ?ĞúÂ‚t´íû;R”"«f%°0-ˆQsbÇÁU³¶W•¿N¦§Š;‡Şy¦\[Ynq%#¸“^OëÖ&øæL‹ÍMÙĞZd³ ÏŞ&Ã,ğ5€ºĞ?›Ç¸¯¼… ¯}#3p}Ÿ¡BÍ5z|Qnhö­Vª©òØµÊèº¾E½QÆ9Ç¢j'#]^pqBÿ¸íü¥·úÂ7µI¿¥ò‘ËÎHd{¶ˆÔDl8É’É_˜õ`ş=í[Âã7÷@ŞëÕL&s<¸Û7î„X³Êtíú¼D#Sô°¥¶èJ±%C	mµÀ•v©Ã;q/)îÒ%dÚï‹V‚BJ U9Ó"æ÷®óëNU#Íó;Šğ8^š(è·ÎrEö"mĞQVËDÇÖÏlÖï`¿(îe¿sGË~¥Dsû¥á#w@àéó°µ Â. 4¬Ğr¸[5-Á9xw­[´ŠqÒÿCGH›.i‘á‰dŸñ[[³+ÁgP‡Ìu­{‰rÜ¡BT]Sl÷ıÊ†çÚBÒYƒv$ƒf¨‡$¿áİëCïÚ§fß…‘²R¯óJµ45úuGà¢(=‘`¼Qäs^~ÔÔél]×¶7ã!ôŞX %¹aO\-tå.×ÜgÀ¤Æ‡°û¼Ò-Î~rP$óÔ2ÊƒíâáF‹ü×‹Ø6­»C¡5HÅBÿ¶sçÑLú¾6¹¢ˆ*ğ9!ª!N(¥ïß¾ÔÆúfó³ÀàGpgb…{¤šFFrV¬Èá.Ú`|>g›Ù>"¯[PÊë{Àò€UÂ_-‹‹h¥2Úbo¾m™öÇJ™#¬šÕñm+aŸÌoZ3§Ì,O›³¼6¡¨¶ˆ¶LB§©lDÚÏ´üK;–cyÑ*Áb"D!ªŞÜƒoÏ&¦•Úq¬Š*b?r™.<à[[q6^>ÍÎÑvcpd¯Ö wm“v›²Š(ÔTÅƒÈ1N€jWyÿ	Öo4—Ì§ƒ¬F­N¯Eş(Z.öPZÇY»Œ~}\àóÚ±æÅä¡óÌ¨ËÒ)rğ§‚(2Š@#"·µÍR|+Š2ü ×_‚…)²İ”–P¤+Ë:”µbrL!j}Œ!áİQVï“#=ÕÒZÓÜ]AŠ¡ş˜5+2^»Äú_ºdz4>ĞiåïQ¹\ˆnë›vŸ0İœÖ¶lÌ7bÇzÕ¿‘Ïµ]:ÁÍ–%V,ò‡Xo™_¦(×õna`Ñi)K¨!|BZ¸´äàÌ<(+>`Y¿7p£«Ø™­&2~3_5	şné–{ŒfRsş¬qÜA1Æô¸,rËR$z£,zs?†!Š1à|VIÚóş~©|íËìšíÖ}-@"~éN~÷L–Çüšâ	Ğ{	£”¼…#¤µ„Vˆİ¸¶3¢²j7ò·”Æ¹ ;ó6¹“3¢¿>Œ‘Rk‹ÑBzÒµªBJ/¡D>4.:ÆŞN÷}ßAF‹ŒGQÜòÎß¥6r=ÜeË:pgØl]ÄìWûÿ«Û4<fŒMrÒÛ£;0”ö·6È’._ç˜ó#âÕ¡ ¯œ€^Lˆ­#1I)YìwyŒmæX¬şs,	—0„Fi!¤ï4N‰oi=Xrs¡8%)Bê—<àcòÓÃ¥…0zÆ5`É`›áWAV¢”È3‚$
+h ğ\m³´‡ğ…S’)tÚ¿b@‹p»ğÀÊ
+3ËŒërŞ¯Á=+¶->J/VX|T>ÃâÀü‚ğù×ğ	6°I•Ì{,·hLØ×Ç1omˆßR°Ëîó¼ĞWBô³á%2‘CfpàØ°4YÙ¬+ï²,Qñä/øá;|díâT¹Ö0×M÷˜Au<ı¤Ê;Ñ1W+(îW ¼Ğ³?
+<Ÿ‡Û‹{²(?¨$H÷ü£Æİl’qÖ®µDÒ@8s AŞŠUŒ+%’f°-èr©-,~vAšîNê&åŞtA ¦§>ÍÇW­€nÔ‡R#GĞ7·aùæØDJàŞüÂw—Õõîë¢Ü±eG©yl&•²Â"&¥l;æ¾O\KtQTAÔ7³”jöÿOÚG+a
+aSµ%µ‘GÇû	B8ô”)÷á”;è¸ÿš¨Ò…µw-ò¤‰i¸!)Zì„½«–¡Ab¯H^g´w^Å¾cK¹Èl^eYèËf´«ë¬~šbË F]gÌˆJ–Ÿ ’fD$åñv4ÿ#¦xÔ^°û ·ƒ/VZ•È*L[]>¾Å®ÿãß,YNKÛ¡‹¬ÅéZÃˆÑŠ¶…ĞñKÆEB-f…M·•á{V’9ù8İtÉ´mµ)d‹ïWÅÜ˜x®äÅ¾Å!A`V4>5$‡8Ñ¸M3Sü3ã©»¢+d/®`šDªtz°'<lÒy™3úé˜^Póí\xªÒ<±`¥	òì…Ç•©b*şYë`œïLÃ!R‰Öñzzé¡¨y¥w
+æ´¼ Ÿ^´`’“ÁÛºº!Æ-£[p™[»&Íô:I+p+\xUˆ‚:E0ŸR§eõy(\•›ª>ÌŸB+Ñ’vŠ‹5¹WÛëmÏ)Æ¯ú„‘G ‰z¹åI™O{ÖÜh$(ŸàŸ&­ÛTø×wQÇéSq ‡¾¤^µVÔšmh£`úëĞo—›jd×ˆp1aG Ê}H~wNa šÄ¯¯ âÁŸ´×§¢Ÿ4û6Ç¤à`„gµ\bè_Øé(HOú Ÿ#2U|’òTT²FÑ³aa6(‹‰{ÇDàxôÕ™Ûõ0DU+•W^ÑÂ¤ Æø&"¦2µ–"“[ß?tªTc×Ñ¢m*^Ğ(T”ƒ¦öËLë¯¹í9wm)G³9z‹H†·,ŸËdöıÒû†1F‡VŒbµ]"7Å§ŒÉä ´•ÊğKèªû0§‡¨d–‹±µ¾_tsXô€s~Øì‹á-ĞqŒ“œ»3W³hÕbaJ®7e5D&åiDÌâD¦ÊŞ©Ñ[Q`4‘­ÖúF.ú·+G†ø“ŞCÚƒ¦à;nû¬á,H+ñÙˆÙqòragâ§O¥¢ş"jò75!‹å¯­^5ª·W©‘R’»û Ô¦!ıq< ÓqËŸÃó¦+É…â4È[Ó	'õ:sñlta~):‹~ôM«KèêbÀVmÈÅúT¡Šû¸4İì@$'£‘¶Ä:ân¯©æìÆ?j¬vÉ•°eG2ĞÃ–ş:pvDØAãd—YBb¥“Å1?‘*ú¨Lt°­mc:”rìz÷úÚd/¡‚fná‘—ÊÈÎ6~«èBG¿^@Ÿ”#ÊöËú“ìuƒ„¯|óA-®u_Wk´ğŞººtQ\ß§i0@³¨÷#4>ª(|	$öŸ›N1JBY(RÏÈ"RCâd˜¶›ˆø€½m=‘½·çôƒñÂİ/À>KÕásÊeÕû$V¡‰˜0Ãb[¼{Á»…L»°À|)$©PAÓ{‚Òâà#Ô›W{Ô˜ê³®d8éo¸|úÊ³åCätÈ+/Æüä&o˜çI4°‰rŸ0bÄ"èî²<2N(ì–ƒtä©¨&Sf_í…Ï2áú9~QGè€Ú˜Mšcg"g?ºw9›ğÖåIAÇ…+gô&Rİ¶¦‹'‹”[y$¼9óíì}Æ8_"?Ê$r0È­fX—×È#é¿Ãlæ]Ì«wşüL£wô+„òÏ‚¾o½r‹ÎKµz‰’òXDÍ/;ƒ3ˆ“Ö:ú6PõLÏÛ®EI0"p¢bÔªYè>píIg
+'šfÔg¤‘~`Ÿâé>5<™—àÄ<,Ö0Ğ™27ºk#‘³b×ÔyÒzôPªÁ%ù…!ŠlË
+{rÁg®gÆ±;Àÿ©ÑĞˆc…±º,‡Çşö¡WªN¯>“½b{#i–>lÖ •Xßñ÷Ò5±bgİ	—ökÕ²ÀSÄ•³××%Ş
+N¸ÙI¸ùS¬Şwë(¨KN•_3C	JóeÓ…2lkë®v¾¬…YO”SØ 6ş®ŸëÕˆ«ßS>AnNÁ¤ö{ª¿2ÆÀÇ+T¿DìWï¼—²ô7×R`“ŠAñö¾õØ\¥-¥Pğ¸ü-Ğ|Ú¿<øcä÷-QèX'È@Ô ¹òL	w¼­T? %jë1¥vÍ|y§¿u3‰µ3suïõòTÊe"†R¬ùÜô‡Émk¤vT¥?Ÿeåér¼B::W`H(ÔÄ2Ò6ÀS#!Ã€ë]&³A1~—KœûéæKi’ø¤]9Uñq"bå4ò6U ã`œ*sV×ô¶pq9ğÀTF„¾?Íónß`“w61Ø#ò5ÒÒÕ×a÷ŠG:˜î·Ö˜£zÃ¸d=Õ…jŠ+õË7šÊ1µ>£V6Ãå¼[¹ÄÿE…éd¶Üˆ!@e2,dğšy/äÜa®&œM‘{^«æRgû§·¡?ÓL¤õcFF•üıOÿ¨İ³Táô?Xbn“¹£C3ó,Ò=sµ‚¹® #é;‚Zó¬dJ^q^Ú”{äŸDëİÒx‰Ï¯¹
+D§¨ªj|úĞ\~(ïÎó ö„sÎ”À#¤Ì EMfwTê¹êÔ’Å¸²DR¨>s¿›+§-?Ù	hh¼j«3§†}~ê,”>ñGYÖ†5d÷rùF`‘ÿû¶¿@,thSNmö·Tİ‡9¯Øyåûl>Zsse]Ãğ¤ıâş‰v<Aü³‰õyìOAªháóFxû1î6Xy¶/B—´}çÇ‰ŠDÈM×È)OÈ™8BƒSŠ>~ˆÃ€NÎØËàÕ\;äR’•ä›ò,+Ñİw[ëzLpŒGîş~ª‰¿û@şJ÷›‘OcéÛ¼®'{ÍDäêÑ×OAú×ù4¯ø*£¶áa¬..ÖÛE¦à)²ô4ƒÜ† ÂXŸø€¿i,9uº]«_ö>µwïBO
+ŠRáÀ§Q£Ç’³Vfú˜ÿ,Àió—¥54Aİ~ªR³LI¬sã|éâSœ3ù,p–`É ßš&GÏ÷ŸHˆ5(}Æ8g¯ôâ>ÑVgECÚ)o¾ÉKª"­€üæSkú/AWßOİ>{D´²Ô+W¬¯ÆÛ¸Gl8VÌ€xñ©TâxâtJûWS%c„¾ø€êü‚GY."9MŞ×Ü¼ØQ·_I;Z­6Ó‘•<øˆ¬‘5 ®ÌÃèˆˆ¬4/·¿’€@[ãpğ<¬Z¶›hİĞIm}?È¤Ğ¥ÅŸræ–Ë¦fÃİÙ_êß¡ÃÇMÿ™’Uü:'ş:2Ñjİ0$B#¦sÉwÔ>€ñóefÊ?”è­<‚€TÖ•‹¥,ÂŠú¾ã·¥F2‘TŠ»éç¥Æs× –És,UE¿kgÇ²ÈÄçGŒTM¨=I„Ş¡š¨„ ÜiìÏ¶†SãBH!î{›A§ºÆg»î‘|‚±h3ˆ5bîfª»ÈÛ(—_é"ø)‡”»oR¼8Š	ŸóÂs‡ÇB}0ÿK¤ñÏ\å›®—©ZNòr¸òAæß‘©¬ÙÎ_!ßİ™ä²f†¹ëm 6³¡ñ¹ ´§×%¥/G{«ëß«Õ4­9øB4Gí‚k”@);âá'}0“°•¡EØ˜®fsË­Ó¶}çıéãJµ}ˆ2€Ky
+ÓxÂõnÃF<ª´­{e…èÙÕzv~áC¼EÀQEò‡[Ü$=ıL±µœíqZÇd4¥&J¾.ÙR®™vÿ>€Ác	8o´hvrv…Xi4QøúMÄö‚H¸âçP`ÉŒlÕÃ¸l£²øå‚`d¥û½İöœ§f©c¥¶@b6×ZAIÀHÚın£J\Êi-K‹¸§Wƒ7ğ»ÁUšß¨Ä#NÆÙ>n£"»‘Õ¬‰(ì¡Ş· ‰üµK€Ii8ê+nt©¸=¥>KSmëÁ Í|Üµ„5ó¬ÃîİæÂBì¾NYî•¢Î«ÇR3TƒÒÊïãv–”›3{$nÍĞİ¥ï1Ó€Á1-ã/ëM;~È Ë*>>ÕëVÇU·Üü@ŞBåÂ:T¶¡Šbå¯˜eİVU ‹Ÿyúÿ'z³|>2Ê$òäµ’êsÃöÒ#&»‚ı."OW´*»ìw/ŠîôÔK^¥£¹£ †áìq]ˆÒQıœ7f¤œ+V#Æ™ñ›
+GJp’&Ü’uàÑHO1Áôæ<Œ»ôê}pbï¤<ÿ1¼õ,8C¶fx[ß|‹ş|±GÒ`ñ«E5 zŒ6¡#–Í‰D=E‘óc_šL6oh¿‹&÷«ÎÛõ‘H·“?ğ¢LBShW3cÆsfŞih)ş“^µ:"%>Í¼6"è­A$pÃ—}O}{YŒRšbMc›Â5sĞå½Î2cí¹“”±äéÃDl—Z¡ ¬&d´±†ªÃ1o˜ª§½³€`COÁ~‘_‡À+ãG²®CÅ>Åa±jÙŒÿÂS^Üä^œ”±=pV…3#²òpäĞã9ÉµÇ¬u’O¾„;¤™ ¡¸RQ”İzN
+yvE}˜ ÎÜ†›ÎÓ4æ~ğ”¡ÜQ
+ô~³“İ„›h|§Êjáj.¶å|ê-RŞg$ı¨CğJN>yRB~xÒî­ÎĞÑîÀD?üñÈC·ÿ±ïd÷ö¾§Q@Í‚¢ëÕZ1ãJ”1ÇŒÉªÂ`]¥HÚJ(š"ëÅÏyÇ0#Q¥ÄÇË:qÏ°Ògÿ¢J:!ÀÙy”©x—ŞÊ$¶jÛª²•‡ä^¿k[Í`±zá¬ÀàşÄfYœˆõïÅÜX§ñp§v_ïÖ6×_B¿¬ÆVIÌÇşXËáJÂŸƒ¶‘a‡ÈÎcõÃ­Ñ°B)`~‚õØny;BÒ™§GëXú™Pö˜°fbŸ+Cß¡×Ş}éêqÚú]K—HbÍm¸²]ãğ¼™hF™ö4¥÷¥m¿|‹! v !2M
+9¨2çVüáÈ†Ë§Up»ìP¢ÙÛl\óóÁë;”_úŞÒO&Út†ÕÅ­œ¸ï®ó®„¶TĞàØ¼Ğ*¢Vsããyd•5#;ÏŞ4óEdëì©lë–S¦©¨#ªp(µ„ˆ8L²EGö5A!‘±&§’GÇĞd•`£ƒHN1˜ô—¾t4ZIô:
+M›
+8·æåŞ„XÛÒ|]cÂŠÃËåÖ&<ÎÁ.é|ûëã;ç­ğµ’„KLIÕìÂç,X½NĞ%6aŸÈ'ZÏ¿\³µaò_áxø¹Ü-ã	P'p(?¨ñ‘‹†}S™¢‹#hHQ0æÏ
+Afnìgøe\oõ
+O›Tä'Q;KÔwİ=SüRÆ5IæMYœHOÕgì7Ï¡pL¦³Ğíˆ£v¿g5İºĞH+İNìVâ_™×¢ı"\~îóA 47È¾Q”Ü™¶¢¬QŒ¬§·ŒÌœ±cwBNg¿w7†p—šM~ù—xE2qIcWæ°¢*U+v`Årß¸G[ì))¥‚úVbŞŒd“öú¹HÜ¿ òÕ– (aFÊê°‹'¬˜ğÈpŒí¬0Ë¿Æ~4¨Bò÷'ì‡¥ÉÜO,mBÒ‚¸"„ b”8ÿ•H‰{j’‹
+‡p—³u‘Š½á µ…´¼‹ÂåNæ5è·vC”±Ôsw	]°i®’C&N]ıFFWI‡ñgH³$@0”¨n·]à5®ª$ñËµÒµ(NÌòñ ¹ÊßAÒûjËƒÌŠ2í\k1Î@üŞ,¿ë2ûöc Şİ8`ËzÛ‘
+áÊlDØí–ñúÂWXt¿’¹2ˆ[ws`
+ÂEä?Gó°[v®‚¶lïjöéôãfØS‡î#ØˆGPB©¡F3—FÛPşLß^Æ@AÁ İW	µ=¿+­è]A¨·G‚ñ}oAX“–ãcZŞ®È6´œÃ‹:jÀ–Ût¿ã9|(ó;"QS¶¬‹qcÚğ–å¥¨4*¥•ºJ&üàŠĞéXİ›<l¸r„;(r5U-%$ÛŠV»xóºÑ‘ÚÎj¶\û$:PÏ¦@u|Î¥Åmü_ğë _¿c½ªßØ•w1P#vIf¢N›\ƒ¿ Æg‹ÖUÏ"Ï+ıuä¾yÛJê—j|šø_-ÉyÇ]ÆyQé*! ùÕ¾`ıÏÂ²RJV™ù …@‚8l­¼Jôœ^*]/[ ­ühĞ¬ôşÃL¼Ùx<LÍãÃµ÷%*¤,auÖA¥ß6Ì‰dÔŸa‚õpĞ­27éqàÍ¥±Ú ¥bíyÆ«˜8Ş¦*a·J°÷ ”Ã÷´§Çaè¡I›²’ôû·Á³ù†Ê‚°G@hëôSÔÀª–LnHÉüpu'ıªuİR³ùi?I„»Ğ»1‰tÃ_•C];™Ã˜/ÇJâë\i_Ä F(Dº0yqwCn9c*óSòûjã Ï™Pj£Çzô*ŸÁ	÷/XÅs8Âú:sİfSõNÇ<ÎjYpÿ™{6ÿ¡Î;ş?‹3âã²¥>%ïrâëƒr(+yÆ–¸ì^(î<#—.Jn=½Ò"¬­{*óÆòşRŠÏÑCå›p”›A0_ö´¶3¼&³İ¬Óˆ²µÀuÃ{H­Ûş;šÖÃ3trª·ëÇ§ş!îò€K~–ìõgMj‹4Çf´o†©4v$Äé§sè%ı7
+-6¨Ä¤ƒ ¡¸r„8…”‚k^¶½Kå2·u£øÛÁc :8…ÊÑ_òhLÀáëÙÅË†@Ìüî%Ê¼€ö_mˆ~¥¼ÍíænìÊ‹Áî«Qj_Øè6±ŠKXyĞNê IB³àm”ÅœÙÛÀ ´èûÙàMÁŞé";Kj/‰út­D”zÛ ãÀÎ©Ûm6R‡µé'äû¢CR=óˆ.ò"nèÙ©»ôÃ	K:l?{Ö à¢o%pŒ²£Æûk˜¨‹ª`]˜…c	Â@KûıÖwñ<ë\Ñ,ŸTiÒg¯´+°¤-M .î²!B#={8Ï²Ìõ›}üóôxyoLUS'‚*{.Á!Øè+ó´Z1s‰NÑ;šÎ¿j¬¹p”r_øDlPß@	‘>GÍôÑxùKfREå—=EºŒ~É6eáYğZjÕ¹o%MPÈRwnìJ­<3eBLÚù£J½Æ¡ş¶¿à<Á“WĞIïæ#¸/E)øÚF+ñæ$[Ú=³]gU6º—Œ}CoBû`/Êí3¼’¦æ¿îGæ?]Ì}BÃÆ4Çõ¹wê'ˆl¿5hâg°»üWA:±Zöš,‹—‘B!yÁmÂcÔá65“-!„Ğ ›A—®a+µ¹wñ„_”@Ë¤ Ô\ù(—=— PÛ…ÁnÓ}À#¹~h	à%Ü–°?0¬¤ŞÍÓÃ›œmvZ³F×ÏüˆgKd®b»yO3önÆÇUœêÙºÆ©F’ı¹fÜi–×ºlù³•èaÈllÉ¢ ´<aè>Àğ—”C‡_<_/)Xè-ñ×€¸dÏÖ^©‚z2çøŞ
+À7ƒu”²ÏVcĞ´bÜä.”)ÛÒDœ>š¿£–e…Ât_F-¨&³½­së£5¬œßauc2y;‚'«yUóÚ.ß'r—bDœ‹×‰wq˜Z2ò¨¦ÒR¸á§ÛZ®Ö]‚ï¡„¤Zù^8à3ImöwøÓ‡h‹^Àq»¾_T%5h³½÷áŞÏ¡Âc#1¹©ÅŞ:Õ'h øŞ7õqõöÏŒO¤a)oÍ>·X§ÓOµ…ÙY¾¸»ğ —3¾Ln]Ãq.i}>‘¢~‚“İŸĞóªËNE
+Wò9œ áŒsµœgèÅYö˜Ç´ó~gƒ–bé3’Û©#Â…øR	½86fÁDXlS]‹ ĞÇ%Dÿ©¿-ßùácd˜ùmKë3›Á²X”z×Dæ9¬¹0Gä °Nõ¾S…!HÕ¼­˜
+XxMieÅ./·öñq¢èÒà¤·òªÙVHŞ«)”æÿ\­Ê.óˆQuSD6ûøê|9«˜ÄÓz±ğ]!	ÚíÏ‰ `¬¹>ÚøW/Á¸Mº¥ßÎşŠö§Xu:&ú‘To®şÆ2¡)3Ë1Sx:ìÜ•Ü•f¿zqÖêM·]})ø¹Vät,p¹
+[Ïå×¬ëP…#U¿Åp§ÖbqøÉÉ`‡¥íªá;*(d.Ñùˆ"BÈ—‘o\3³+ôRõº÷E7<¦`gG»&Š[ùÙØN©†\²ÉçÒW;š}løoj­l‰ìKÌ G”Å=•3]V[@İƒê÷ğ÷6˜”E¤Ïêµ<0Äuu¡8Ò©#W.NRŸ4«Hİ¤êi¬óÇ¯…l "%2«Õµè ü‹tbf¯Ï<1î&BªRjÇ"A\ÏªNƒ³ôÔ½&HÑF’”V¶6
+$KŞ"ì±ÂÿU¤ƒõÍN1Ğzg uK+ÁAÿJx.V¶t»^ï‡Ô_Ë¨,esé…B™¯>ñĞD7qúb¼9"¾ƒÏöú2•€÷TÁzM¢|TmƒÄe”]ÎÍzìü4›ç‡œ ºi›››¸ì4ä}d×àSøÀue—"¤ÃÍÀùbè*‡ÍY>À+Ö×^À„#‚…«›û|%ùìM—`QĞ­ÕÖÜ=ç#ÙM‹Ê|R8ÊØ¡ø@(ÑnùÔ-7¥œö®Öôºö‡Öõøã†
+oS¼¦âre…À¨’L÷z‰ü©ÂtLç¥“¬ÿÓÜ…dÜB“ÕºÁg5¨sv\À@Œ€ş¦{èçò×& á‡6‹¢± óg	°¥LD˜6JI†µÀí @ÒètÙvı{LÉd5ÇıÜBIuÚm+Á—æ%Æx6‡4IóŞ¨ÚÕNÊõÔµÂ±œGVªÀLî‹“M·öaWèuÉ9BÛ	 Xìİ×n“"ÓíÀm—…Â’ H;	ËGL8$zQ½Nçûßú×²ÎóÖWb\ÆñN§©@p­•=0Òù~¨TP•àÊŒİ”‘ãëÇz[ÅNÔf2äIaf¯Õk½ø<‹h½°»=Lq¬ş´Q‹Ë¡DukE8‚
+­D}Òs*Æ “àšùÑRK*ÇL°pµ‹ÄøEŞ“*ş	âGy÷—@ÆŞP
+º£C¬¢í#ÎsÒ³pèøIxdòĞB›¹ Ë‚¥'«.w‡5yh™UW„¡æ~*>úõ°"–=@¤…=áÍŒó¾~<µpÀ˜Í†¡tZY`¬Ó²Y¦)Êğû’º9‹õ˜KP!Æsl†â˜İ	ÅA…ŞŒ¦„¨+ŠÛ—{Ğì¿òÜÙ&ŠR¥m|d¥ƒÇ©Xæ§6!SÎ[DÎ¹ÍŸÛeN­c§Í-E¥ì†Xw~J¸CP¤ğüìG!ûÂğkş…›ïëHn$UÅ˜£¡c)LÎÔ`ÖL@xÆú¨=àpl=Í DéõxœÉˆÆıc´‚ß[ğêK8àl€ğ4òÀ…¬ÜöæQáõÃó‰Œ‚ç×` ôl!|å¤‰¦İšiÿ¼/—¼Óª/ãÀvÖíqê IBt €•;)LË)äßŸoÇ-Y›ú*†ÁbxEº‚‰‡'Ä¡ù˜4OëvuLU›´¯è±"æÈ“¡¦»ök²^h“P|t¸‚ß¥±+b8·%[Š¥ÄÑmÄeä“«¦øÑ¬QíÆ©¨ÅïÿvTı°ÔK_CµÉ×s§’j(óq’Øª¾„[y“}¬iÔ¸,EÔñ%DÚ^şøA»L‚%m1½äªƒ¹1ñRo|¬Ro F4æÓ–‡±ş#ƒ:ãnÆiØAµí6ĞVÛş¶´
+\©Q.Ù“˜}:9À¥p{Y©åNwĞfÅ¦b…qV»ø|²êâì€¾pĞIöËĞˆîQcÎb_v„úİ*V]œï^V“ÀÓêğ-ç˜g4Ã¦.z|ÑÉÍÊ&Tåfü0{å©Ç¸ğp„5º½"»ÊÚ:¸ø†ŒØ_ÙJaÑ7 SY;2ù p‚Û„ÅûâuÈa™ætë`ç£>°€ĞT†H“—áˆ4÷÷BK…:åu«½>âĞš-Yli‚·À©ÌU‡''»-A7nÃ§lƒOIôÅKÊtLŒ«­f<Xò­õWLúõMóâĞ´ymÌùK7%ò)wË8¼ÒNÃõĞrĞº[Ø4E›û–à´Ko±	ä}²©óçiæ½Bûö3H¥×%gŠò…1BßWñİRÇE¾ÔĞŒ·>–ÙZl'í¤•ØúL"ëNz;¬¾'¶³şéuEJ’ˆ¼llI(`%äK¦]“y(Dğ{Ä3Šõ„>œêŸRvt²ÙÏš}ïë[=—¤{ÛÎô,K'gîİŠsWîòGû%õÎÏ
+R8ËØ=}‹¤»‘íEÚ#ÆŸô{ä]Vª¡ˆâ8ÑœoBõ„nqÌŒƒG~ˆ„œL–¹ûºßY[æ íÒéŒİ´A‡ˆùÉF´kÍ¡g›Àg||ÙËÙ¸UrŒ¢¥ÌJ»¼xn˜ã‰µ¿g+ß	v ½óí	NåÁêÑßüW¼ß»ÃxBÊÆÃŠõÒÒ¤o¶@râ}!¾ÚŒ‰X1ñ[v6¡Ê+û3e€uˆ›P¨ıh±®ÒZt4„ÖíèZÌUÒÍVc[x_¹mLõ¿Åa.üµ;j•jÎÆ¨O…âN,-ÌÀÿÃË£_B¼|Ï¥‹qÓ½ñ7G¬ÉÕY}sğ2à§VC‘¿»-†>ë3/J ?œ©§†•jh$8üÕ±m±ÄY¬»5mê]Y‚ Bu¦Ê{‘<oùTPëøZ¦­;PHWßö|¦eXhoú©š•-7àHÖ˜Y–	HkaŸ¶¾wÈÓè/`}[ÕÉ*xI6d @½c‚S=ÃòÂe;ÙÖ8í®›–êı4¡ÌÃT/¨ÚaŸŞ­Ğ‰?İ“[’ŸÔ"¶à¥Çx\ïT¢ŞW9nx[ª¦, \XÿVb*'LŒú~Ij,[#…a›BçÚTÔ$ƒ•Ù'ö!ªn.ÿFR=`-õØŒ–ÎÜÍz"kô•×´ìø¾%ŸèËÑq;’6ÏDsrKò 7¯¨“Ò6iãŒñæÂ4áƒí©s1ªÊ„är:D}oûĞîlzj¶ÊsÚ^²j”ùrTîDkù¤ğä¯ÇBfa^ı«‰lïv9şÇ
+Ì!—|O—îèüî!ÀÙÅNJpÇ+ÓÓ§˜8L6é3œ¨1›jò9TĞYÇ\ÔÏ3#Lî"´&BHŸ0Ï}®’ ·jı±¿Kµ¹ïwBÇ A.÷¢—6WZ_:SB"ÀÎy“Ş˜Øèo%t`}´üÜçœGæe!×~$9'È¼ƒ¬‚µJ9^<˜"÷Jt_CÚ—ÅùşºçŠY£iu}ßrÜÔÒf×=ÎkÅX—ZÁõéE’DqTû.İòá;<ëfí?üjTşŒ-GTR`-š\.ócŒ±NTĞÿ]§2Æs¬e‚kØ½2+›#M°¼+À×¾ç4şVåCà¸¢ä’–Ñu.Èù´˜	H˜§¾Áï¶²Ü‹übı;÷ºog~[™4C²_èÆEY$Ò*½äİ<Øİ!?]E ­–ç¶ã…ğ¹IJÿ77³êh™’ŸWKƒ O	â|Kã‹çH¨aıúKo=ÓëÉrõ';MğfÃ€ğj»U²qY3‘j/İv€RC™kšïXhã_³eÃïèN:dß±9—Â[ò"ĞÕcÃåEå!·¹CÍuÙÁ ˆö’E-NÛÄõĞ]XÒ¤?ê¶¯²aÉIÆZ»š×§Q¾°°Ãá”‰NôS6£³sš*ÛOº´ÅV3Rfv£åüàÔ©úò,øPØ{dª*†YH1áÛ·t:ß…HÁµ;
+	™ä=;Ê>i€ã‡¢ 5üïy¾[¥ZÉ9jt@I†/šá ëNø¶¾å«35´—¸‰ß†C!œ/,eeêÜ²¯35AÛc8üõÄ'ÿçTgö—dbY°ËÑ–È2 )Bq¾
+ÊºB¯û4óƒˆÂ‹‰Wt\ĞMZFè	ÑÓ®À ¾é`ï(ì  iR¦Œ¥ñk0‹üoĞ¦x/&À–<´`G¤³}™›şîıÓäÍßFá®ä+õNo§wZ#”_ø´eL/¡˜Ş2×.C6»2ÒîZ ÚíÄ—r2=cp»2‰<)œI‚fÒáT…k'/Š;Ãñ0–01ä „r¸gzzõ·Ûw™¬hâó8áqæµ!ÊoCúd%¸ú¤‰"Š šeK
+	Ä‚É¾âsO‘«Y;ER¹9Î“¶«5Zzc¯jï›#ÿÚÙ£Ÿ^Ÿæ•}*ÂÏ›®äWˆtLa¿ĞŠ´a›ÆJ7…Yæ½İ”<ØÊÒUè§×¨'>&VòV¾=Ì0× à]ôLUÀh­_¢#mJâ†J%UùÀœDİ£şÔRÛê6ªe/d0"~„á\öŸ$%š­ì‡cèK/õÚ²
+T˜«Ü	rx?üW“grË%[jhœ‡1kJ¢”Ù—¯§¤—…•·-løy?Qœ¸DÏ–Îım9İĞß=fxf|¹üŠ=›ëïkÊã“ïÇZ|ü»x½„ŠÎyNz)“	\­¾CèØËÍ†ğqË½$¼[	™¬Q8a-íìoÛÑŸIV÷#‰š8¶Q›y„
+Jú~7Ü½ï<òÏ4şe)c:ë‚¥‘(¶“'”*-öI)	™|`^Ï&Ci“Œ* â¬½ÛÁ…¤áñ¨°DâI&b*…cWÊš«ÛníĞ¨TZıÍ4²ªºånÉ=-Á È;ü×j¼áX¡ğ?âÊ¦Ò]›’Ğ„|J'ô›ÿçıízF&tğ—"8ÔU½-Ôud÷íu%ì”¦—ähÃ®m^Óˆï@Q°!ÿé:¹Ö5°2£04j¢éÅ‡¬‚°‡X’oUy¿›1›Jİ÷4İNÉoäìNöÄn«Ê<%lp¹†gCã>Nô7à¯„'Şø1ø¯†rÕ68‡îş§Ù’º~çXE|—_‹á_ºR0OPÒKºPkâ4¶NFp*YÊ!C1×XÂ` „ñau*1¶ñÍ&"@g›àrñ”¢ÚÛT
+yfÍ°,ÑÑ^rø}~ìíAèòúß1A7Ò´ÿŒñ[kgCŸùŸ–è”á>ÿ«ç«˜tVË·‘Ôd£3Tª÷y{]¶µ¶² "ßRôËuîÙNÚİ=/Dq!Ô7ó,¿ÚÕÇ¨‚’Şj!{|ÚVÂ]‘Òy‰—æX%pn5©lêşùI#Æ¥ÙÆ¡Ùñ¦G‹íË8ùŒÔ,/æç8tú0˜…@¬cˆÉ2óKÜ¾«'Är¦DkTf~ 6ˆ_“Ó¡yùg«zVkŒ4Rf«:–˜ÀAé·µ6êĞ6Äş‰·à]éäH›91[bh0/¯-É$ÊSúÃBµÙIIwPW1c×ÜfŒä/ïiÉ 8®¸òjb'#™¿N¥g œkØ‚ ]!èCÒÙØMßšgoş‘B–ü&l­IÔ=
+iŞıG0@f”v7ğ³:+³C¦lšáü	UX.¢Õ®6âe· n0Îe×jÁÓ_T·k[é•/à˜EÒÍSıp¼*¦ÄNôaÜA§Ğ7è Èª2H9Då5æì±;Ïïíş¬õ:ÿ2S|ÊB»û™kÄ'iœ¸ig&/L£¨œŒ},ŒZq:½¡©b|¾·Â‹ÍıcyŒ§f‹„xğ9âb¢Ï¯%–{söğ6‚‰9Ø™ï«oİüËKUßP/cÙí†˜0’9eÛµÔŸÿîş­Lk#ÀGËYŸ’*6±´.:qÈ]TÔ(dSQéÕş§ŠV«¹ëJ* ÛQø‚–((uìÀÕMø<†*t¡9Vékªi„VÛç»‡èß®õàó~3PhÕ|šÊˆ•ÊA—MKÑ«gÂø4Ï÷9Ù!1ÁÓ:ßãµÒ
+•è'¼«¶ƒ‘©œÌMÍ&İÒ¨Nöµ%&·ra2gÎzĞjĞDşĞ
+Ì­Æ¼Ô0ã^@ğê
+]H3ª—ïU+9ePÒ
+-CZy2¿\À¿M )Ï7FNx[B¨™h\‡Ó%ÉĞvÒ‡;ùº%¡-ô1ó›:Oø”ØœS·ÇVú³a›ôL¢´Pl…¬¯Ä"L›JÎíw±V…t4³ÒS8¬8yÙTì1ÅÁ”ı'^¨x«BEˆx[ôôåg»oëÑP]õÓ–8Ê–#M³êÏ/D¾h¬ÆÎìŞZRãÀ7ŠJ‹×èT*<Pƒ¿HkÂ©C2©3x€BúÿIL×çÄ	€mßt»¿˜@^Ü$6ªíXbäwlï«I÷’L¬~º¤â	/„/«ìD?7I&ş!Rè§ß¨ÿÎ4Ødß0Hr@ú”ÖN Ø5Á¥y¶Ìô°N² yÙ7~(ôİz½¡¯nAŒmÚó»:µæ‚6¤/´>¿*Dsx5R,„ñjÌ†¦ú±k]šÉ%z'Qb…ä#n.pN6Ï°~€‹Í$^êgMúĞ‹îÎK/3O\´{Šg‡Ú™œSâ—-Yu1}ñ¾âtäÔ^„@Ç†M°ş¤Ô½EGÛ¼Š511ñFt(«15€OÛfm±ßÊÒƒú®$lY6?2x^²8nt1SB¹Rö³ ¦q9´î¨›ó5"HÃ½1—Ö+^!mÛçn| à¤éˆêÇºG.ÊiÙİàŒ.î­PîÃÄ%±&³©Ó+D²³^üôš 9×Õ'È†‘=VŸÏÛ›Ü5Z[©b‹EîíÁ8e>è¸@¬ä¡*_åúF¹-_1j?¢À!ÕØiP9U¶›&s*æG<Ê×Jä¡Ì[éË«‰`Ú¼b‘N07§’6µã™ğ®ZO¯q®k`Â†7 Âğ0#`W¨¸ÎS9íşá&tW}EâiO¡U#VÒÚüÿ§±rÇ­ÙËÃpHü¶[M…oÚ‹³RyppĞ‹ï,è¿‡ï•¢¢	ÚzágZÂw$“¶Á=şZ˜®Yv¢ø
+‰Iøx½õåcá—„gye âíÁuå•è/7³âËõQªdz•ïiªR;b¤Şù¡÷ì—6Æñ@o%>ÛJíÆ5µª¼[ŠûtÏ ›r³¿jø0c;æ¸Ãrè¼‹ŸwîzdŒ]“§kƒd–7”v=/>k­ÎÑ›ë«+Xk\ı†.‘“@o,ĞHĞıšW©Cç¯ˆC÷ÎúsĞº¦±RG¢îÂ;ãGù^š¹&³Œ1#÷)™p™—1àvş"JYøk&úÖ/jP‚ø‚3³Czüs•tËÜ
+8!ºZ ôº1E„å=3§ğ.ú¤ÈÙ¼
+®†K¡j¡tˆXC`pánã Ã8Àš>Y)¢¨Jİ>"ißK‘$ú
+Å„;ûEyîm,¹ÛÖ‡ú
+]!hµ¦2OxÿáÈ5É©Ò
+Öü}0äìÍY±ƒ MËŸÒ³K«Ì£ù†.|zqv@åÇÀòµÉï w‡©Ãº¥ş2‹˜3K¸a×V_÷xIF;Ñ«y*@è+Ò{E:*?A˜Ì	è/©ö_Ì@z7ë€š-®ÑÌîâ›?(7‚F+‡¶bJ}~%ÇÍCŸãKp‰ xìÄ÷ºåûv£ûò6À„«ògQé¬¹›éšIû§Uô(I"Rmè Œ7Ä$2Ë˜Ø~‡¨öşæåù‹%Î¯è„wõŸ1ªs1©|™G§L¥¶şßC¨ıÔbœÕ.’èÿ#Öle!Ó?Óß³Õ}›:÷Û(Ï‡‹Æ­¾Í³ŒÕOÊ;Ú:Œ§œJıî¤Ğ‹JÒ¢ÛÖK¯£vÕ(ÔşCKÓº…tR·8h(íœRs¬&*!„.ğéf­{3»ÈL»A×ÔW_~õójş"ºÉê<|XùBòÇÓõ`Ç‰Š"ï£IN‰Iãp¨uQNê]¿$.°d=>9öIFÎ%ÓÉf¸Š“ ­27JÄ^x‘ÃdØL\õP6é:ÏøÕ}ç"Ñ¡Îò:÷Fİí/Ãû“`©é]çğMBG]ıï€Wç+Ûb0ğÚBMµ«ªğM±J@ïÙJq´6¬ãÊÏ:vó—,@ ìÍ¶é½©»¿üY]¸Ùîê£9>2w‚Ïš?I6R…RIjO!ºEå¢²6«|²xÖÛIi¤Ë<ó/;ÔŒïÚÀIìpÀnFø•¼§obDÌ€h­2”~Œ––äLš3ÉL;Rï“—Ø¶Fiİxg\›´§XĞI{jñÆM6u|I˜Úø%}õnñûC(z,é	Š¯~ÖèŠE]h¿ıí‡’: ËğZz‘›"¶€Y9˜&0MH+`"±é9£Ğiñ¿j,ä›¶Ø²„Ù&ù¨¯Gh:çÌo]²†Q1pn«gÎY·?g
+iÑ÷I°0„³?DGÅ¿ä-Û…EÃ¢²YB/‚ÓÓË››F@P9©l,¬—úQ©©èÔ-ÛI†“æq0Û‚[sŠ\Aš· •’\Æ“Â‹ß³¨Â²¹s!*6ßPÖè÷óù|	çÚD-I¶½À!ÀÑHóæ’o¦úÖõİÎßgÕ‚N„®[ëşg¨ œĞ™©zˆ‚Ï’Ñ¢W÷½–7Æbà¤¢;ÇúïÅ§9è'>+ª"î…VÌĞãøµÈ÷¶.óÇD‰4< Ê¿ƒ`úkín^#MaÉÏX›Z˜âê{.¶9+Znr£ÃPso2Dåó<p_œ«¦Z8ñx¹0Ì“/ûä·]÷Ïmò¡Í7iJS™Àø§(¼OÊ
+2†’–ªŞ„#rS§õDË›X>&#ÖG$^Xå‹}øT·ÓGÎqúı9ÈØ2Bà:ßù«•¶|÷1ğnñ
+9cİæĞ•Ïå¨a
+‘ûgJ‡‹ß|È­æaÎ”C	¬²`#ÍÆw~¯uf²ÊÙ>{m¢Y½‚¨)àºx‘–µ2ZÑzæÔÒ÷8”èKo»h¡[™ Oê+ç–÷	Ğ„}E®N¹Yèçõ¯í}F˜í²uªeYïÎuEøæÍÅÅ>‚E:Q$¥©E«=õìvÒìäÜIF“n®$L¶
+IIN7öÂ_¦<Ä­Q…á0Ë«G¯Û‘ÜjëâÀO¶’ˆõıûæ˜Úe^¦#ƒ©í@öH°nÜ«b_\çF:o#»P£RÊ\qZD¡†SÈä]é’7,P‚‚•u³ÈŒüTÅ³É±ìÊ±o•`ï´\hÍ4
+£¶­êÇÇy¬nşî¦KmQ<­3Á²…|öÏ+j¼¤¶Ù7K,P½
+Ts”lš³&ºL¢ñB+RÁ4¤ç—¡¹âÌj´ğû›ƒkì(Œ*¶Ôò-É=^Àt?·06“AÇ›Å“c|æ¡ë­ÍRIWÂßêÎ.<:p<JdS¼#p³-ˆ(™ˆS’Î„(ŠDÍ„âŞÿĞôÉ¦Vıtª7îy¡yÓÉN°Æ’ˆô	rÃO‡V ªâŠÙËïÍÜÕ"óR2ƒKWh†ù9_5´|’O,OI¶VKºN–b8<qñîf,Ğ·ºC#Yd°n¢Ps{÷öAj“Ûa]‰íyòèïVêtb\DZÚS4ÕËÄ.ìN†µ‹‚ÓéRûcáyÑm|«@¯­+.¼ZÄ)ÏQšÃÄê2!·FS[auÌ[Eé.ZG'Ë+cÕ‰{h•».Hdx9fS5/Î¼¢ÑÈÑÿa#’QsÍõUkcÜ‹jTŠ?xlfÕU†¦õåqû ¯6¾² “±NŠz$3teó ÍR±#±/"5o2/­ÜÏ˜5?ï‰Bræ¯İ(–ÎÈmØ½huÓ Ó–ØºÕÇ)²?èF|{MÎ3“ŸhÏ¶+yyš$M7ÌÿrO "’”Ä.ñ¿ã÷N8è2‘)T`ÇmçMšÌõUXKí“ñ $U³_Ù~:¯šî¨
+Èep2QĞ f„…LˆóÎXæÂƒøbN ¸á\<éİĞà}Ø#,<œµ@{êÊ(äjÅŞ7kXÜÊm·Ÿ“ùfÀòÇø6Š?ÖbæÎ{)…MÕQ´É–]Ñûd
+‰µõÜ¤ørì˜SñMë µâ7ÈÒ¾d×Ä7»~»‡àd•ğÕĞ‚Â5×ÉBPó`¾¨eG—wTîœÔ ‡Ê<PcÿÄ9!ƒ-ëYØÇŞ™
+¢0àz¦èæÕˆ&ºH¥›Í¨ª/¶k$ï\àHAç•GáB:/)ñ×ÛHé‘€{–@!;Ç,ÿŠİö0n¸¡	´4çíXqW(AO±[í@Kb´7#yÖ ¾Ğ¤4ïh-quÎ…DõOM¢L N-Ç‹Wİì] 0âÕK~}º›š”úãÅ¨Sä*+Š˜1Š÷n¢3øj_3Ç-¢2¦ÿ@‰Šñ™È5| SgkéøõpÁïZz1søÎÃ?F'T(T½¹­‰À³T¾e]«äVƒQÑv	Õ ¢*ü†:’Ë’­9ÖçÜ6í:òÜA7Ü‹£ xaPe~æ²>À#]Ãh5–Y‚=	0k:[×^Â©ıT‚¥-éûCû‘z¶\«Yºš¢ıbI©:ºOPÉRæÆnÁt–€-ğÃ>Y+Ñc§fÕÂE‡\Ï!’#¢@àjé´´ ¹e:¨{Ğ„{8şÖæ‘|: îŠóÑó¼Ò-^Ê–…å42NSá©/®SKïÉcöØc¢¬º¾‹¶ö±WVËV)ÒÜYÒPºğÁšˆƒı½m×zAcÕğäËnã	óBQÃo¸Á¬5¡ë4tÖr>Ö_+·ëşb‘Œ×~–©òñ£	Ih€áğõŞ˜8s†/o4ş& ¬AkÑœ¸…¯ØÊ0Æ½))i!ytºİ³µõK¸ıÎ•ï^«å`¿Ù´RLØ¬\ma‰ÒJĞ1(¹»˜Ò—Ğ	O3r::rxEP7ÔŠ§¹kDusÊ¸®WÖ³${ìÆ3ı–Ïò¼0N'"`ÜIlE–\Cl·©¼8õåıô9L:ÔQ ÕYé}¡|éù|k–/Ók- Ê=A|‰+±e)õ,÷S…è
+ô¯•QEşI¨4!}œh–à¾ìœ!d(Œ½¾è³­Z>» Z"“èÈÊÃ²,LEÕÖ+ 6Wäèı€µó`±O2¨ákĞÁŞú%åb©ròdF±÷§Ê+y¤R©æBÍ)ØbÖÜ5ù¹ÍJ×Ÿ;ÂŒ­‹ÿ0.éä(àŞ©ºƒÊ¯ïğŞpë Î…>£ØZÃÇS?>-~šzr\ıÏk­£©`óla´¯•|Ñ«ÄR5p-¶¼W×ƒ@âbƒİÎ°RJ€k’°l¥\
+¯ —Ğ4Çr`ÛÉä@x•ü¨šèªõ¤÷î™Õİø£ÜÍÉ ;Æ‘Ê$§cåU“³«û!óª&]`6¸ÉBX´¸ª§¹KïŒºP	N…õÎÄ¿h€óßˆµU¥BÍk.*ûº²7ó®„^Oá'|úƒç·I¶Ç÷Ìù)ó_M>GëjÈ¡”:FOÊ·e¹pºß {`_Å=ÕÓ÷óx]™&µl‰hšëğ»1SQÏQOç÷áhµ»†—{Í¶ì+ÙJˆMo,5¿LÏmîÊP¹È¾w—ƒc“9ãd!_İPûy¬î)0Æ²Nµ6©Ğ¤‡vAøYğÄ‹d{°¡~úJ„´¥ğÄ²ö TNØ»7Èu¢İ8İé­qÕ¼™*°ävÁüb„
+ËaÇqï‡É/@¢¡©,gNé[’æòunş:ÂbYÂô;Å°¢Ò|Öñt’ {_Á”›†scñPˆUıxŠQ‹ZŒ}ÕU|ò4¢ç{˜	–	©Ï»ŸıcÎJ;´–ù^¸Ê¿t ÖO“ÓÍYfôÇA"úˆêcşc@½|®·®Av™	aÈ=Áx.ù8ğ©z´&uÚ£yç|¾m.ßjeüi*Ğ©á-4”™¶Ş°Uòe‹V‰_]U>1Ÿ“j$k†‰ãP6€˜SäFöîZoì¢¬>
+Ænİs¼ı^¦¯{úófw.m‘g§.ÕWmà™W„kˆ±¥Èı{Q\/­kofê¥R7¹£nÄr”ƒl”qĞLªV‰Æ'2ÛÜó¤–sbúm_Ìï@¦zü™*P;dcbÅ´ÆíçpÊçÕL–\ÚÕŸÜ{ò'w™¬QF}á¬~ñÆ¿‡2uHrà@í{&£Pü~½Fwè9Rê”—ó¥¶å»rÍ”Ø…âgŞLç  âÅU,©q‹8Ğ•B×Û›™§İŒgùbt¤_7«§vÏ	çÒ|ë“äûÙc| ÉkzCJÆÜr,²‹®‰µë„ş5Q^¢Ê•-idÖAM©Ô1ŠüÅá^Õ8‚~Îí5	´X‚.Í~ºænJY”SÇàml‰ë¬‘ß’KÄ¢ş0*Öw¡9†Óx²¿¸Œ'×<®ù
+8Ú÷¤ÆìHDf~C‰ß™æ»¼dÄq 7!|=ö?ºKÛ¨.¶©?¿t‹qkÁ'8æ!ƒaıü¼AÊâ½Œ_`òRÆ$‚(Ô{—í¨ãˆQúgñ4úm—æşLôêx—ò¸€ìŞ~a¦JçXÆ}„è;º½ÔOR?¡ÙÁ“8­aiÖZŞ´ó‘—È<Ô}*ö÷Tz‘hr¶¿œ¦É@[ã¯Wr›GÉvàË[hjÇÇ>6F¸bbÊÛ€ÁƒÛ¼Z_JänÀoÓ~Ê715„È¯`pè^·>7>‚¶RDÌKA[æ{à&ÑU(‘Ë„ëÓûÜòÉÏ^#|³_‘—dS{÷|¦M7E›J¡Ñ›CƒOrBZ†^j€BÇU®ŒT¸:Î^¸dÔ›´<äúûxÍë=p"‹s»©R<÷öZÏåAÆ­kTä AíÔóu€,CvŒ¶´Œ1™ÜTdYZ¢³l‘=ÉdAxŸwHó(¶s­¯ògÀË–€n`ÓÛjj&¸`ók¦Ë<Maaù·ÑÇÒÕ ¿²ÄœÌÃ3ê¡xœT“¥~1t!xê(êÙ%,ÅL¨;‰#ºj
+ãp${˜İ}_ˆ­Ã?•¨{•×­PwA[Ó=ûWççŠÉ,Hª=¨ ã›$iöFØ©Jkéûø@ÑÌ­³Kb—ÿ´X(Œ¨bïı*û—’½à#8ß2ot)ØOJ%NûÛ÷Ï¼×ô #…øE½¹ÉÃÏ?r{Á‰C¦³p^_h±	hWzûk2×^[7ìxÀÊÕeõU˜şC”ò …d›¸w¹¨„ıwŒ[›$"æªXu“An :J!ƒÍ+Z#w«ÜQF¥ÉX0©¬EI çWŠÃªôgO¾âe“Ô±`Ÿ0y)wÕFÓÎ˜åW¬
+G–#‡¶øİãk½U5Û!º’8›J±²šİ5;é{âN7X$ağÈG¡•`8~èÚb]Nazq_ÓÑºŒi öÕ™,‘ÁVğ…jj;´C§-²eĞWÀ„n=Vú^Š /=.XÒxc_6‡< ş%˜Ø=Š$ø¶0—r §ã½'’a%»a¹_’‡Îı=Š¿zûn€Í5—ˆÕÑšÚ“ù)Ú Ú]›Ë*gZM1ÂÏj@¨ˆôüÇiÕÍ¤åô]a™¤şE«}ÚàÒº”$oƒrÂ×–èRg¹n–ÈtTÛõRµ8árô 5,Ñ‰<Äa³}¥>É>QÚ6µ-E“¼‘<)%Ïs|8Ö”ærœ‡¶ÎqmŸßİ3ƒ¤uÃ#ê8Ë"—´ş¨ÇIö“ÔÉ/á8%vcğ4x0jèƒ0œó~h¶);UŒ[™)©ğÚP‡(Oî)öÏ*1ĞíAf¨ L¨9M"o‚á‹Y‡ Ò’³‚©î}Oÿ€ÕÆ¥Ô<¹)‘¿vJİv»4rĞú°¤,•Âë–.LÄPÈ•]n"òöªÈgRù~ xñ0T‘‹S¶[–ÁD7á§uÜDtUŠñùdªn¼DJîÕ¿¯dEIog#ìë rØÏmñlù )°åœú7Ú§óóĞ	ÈeîêO½/{QœŸ•*×—Æ.Ïäf‰ÉP>ÌÇ–N]õGÑäî+nû“ç2ğŞ"î¨usa©†‘(;’c™ºcæ‚¿(SŠ
+ÀÔÈ|s¡nµ¦OmÊoVÿ«¼jT7˜‰ h—ü ÙW]1 ÿ×şhl×bKE{¡ì0çC[Š»îFPÎEÏÊ±ì´3Ïƒ‰4‰u3ˆƒ+ô"ÑÀª&/¾§Ë
+OMwŒ4«Uâm%–-Îû{Ë§ª:—ëe;™uœß¿ŸXY|”JÛıKÉ¸	B)ÖƒgP#ÇôWCuËN@–	bïœR_T|iËÉ`ê¢(uY\¾(Š-jiï…P¨„1lSèã%ÎnM|„|ß@é-m‘Ò43ß¤ŸõêL²­AğÏ"Œò—¦œCãˆ½6¸”É£x·ëÈb³VáxÇÙÂÙ—™µ.ÎS7ÜU…VeºfÊôsÃÍvr’ô÷qƒ7¹@`.WÃwvr²ßèıÉMjİÈxoÑ5˜ŠRn"ƒ¿â[ÃH·ˆÇ~(šñ´oØm.¡Öñ`ºB$dT…#“à¬<“‹l¡ıP(asµˆü´`&TêÜ8©ƒkHFí7õáı¢ÀÛ¿.Õîğ@ühû¢î§Œi$v¦	çjK´¥Æ99TíĞ½1Ö×€=–™501óSñ^tEşéNÇó‰n'LW~Š¦&ÀL²ƒâC½--Ôã.ŞÛU+9-ØøUìûÎÒ`«Aëñù`:h
+]¯û¯1š,pP%ï/û—Ç,	¡s&Õ¼Ï —K#xAêrGî£ƒ/¨ÁgÛ±ş!›üêóT²ŠüÖüLî-ÖÇ’ÑYñĞÓÆ0æŸÓ¿JT.½eÑÁ÷æL·—ÙïjÀ/½Û¨SÑ U¤ÎÛEŸdºİ ‘B=¡*³‘¤Çğ±PÛê—ÀõÔ´Ò_czãŠ!l¨‚nì5zÍÃTwÆyçÃ;e:ºwÈoè†/î¸šêá%Ç Íºsä*²Ş•)†$bor„ÚVtN–%–±C:º¾û„4ß‰Ú·¡Ò;]Å®l*~X¥Â6yä ŞkÿêòPÀÈL‚’×5D%¬œåp3QJ>ú`ÏzV­÷Ô®|Ê))#/4Ïâ* ’¦Ôà¯qòYCD
+‰#E^¹O•YºpïØÆ%Üˆ»{Ÿs˜ô3~O—Ë$Ë‰rEÕà]¥7§éşq|¼ç‚ï˜g96Û{úÕĞ"ŠtŠß”@¸f-‹À½{ˆ¾,Ï„“Ÿ&YQ_ãuªàŸ1¨7%î«·ı¸ Y½€!®?WãjN3¢p®©¯h7 í¤å30¡ÛCó™EX,'“íù«½
+aJ..¸Ï´5uCw¢Õ
+®¿‘—«ûw~)Î”É_«çhÉ>6ğ”T»Ä®îsN¶ÀYq@n©gj }JÿËwÄŒ½#G;}¼è8ï£ r\ş£Z-{šy‘^&Ş'.à<28K”¶7õÎWÑİâÕv)ç^“Fÿ	Qô¡ë20Cñ }Jd„ËØúŒDŸ˜Ğ™ú¹ŠƒfrÄœˆ‘Øy7ğŒ%#-tƒÿ Nï Œ*fC(	¶=½j/,#ÅğJ4‚äg‡‡üŒ88:k€§Ü¿1Ê@:¨¼‰¨òó/À_\>ÉÈVHñ±Ò‡ç°õXÔÿ*ñnn,ÙjûÏ`p·ƒÎ)¶õÿz-*]ˆG?E¼WösS•è+h8+`°õgšÔF¡€T¡lğµˆ¼¤#F±ÛãŞÍ½¹É;
+vÉ)±ñuéeí9f0Ö¡¾ §‰ğ@c÷*6hí%X$OZ<›Ş‘ óÀÿÇ_ùOƒëMûå¨İ•™µÓÚ+_8cjÛå|1˜„Î•&’³‰Píí¿<UAËT«ËR­öÇÆ°U˜¶_¨şñ$,!<Ûiáş€ŞYˆŒ£‚éÅ†]Nù»´næ´ãÌd2¿g›àGSÍø×Lg«¯ÌŒ$'n²7Qï•Ó¾4N¶®ºTY-aÙ¦¯ƒÏfÆ¸Ét«ø¼íòARÃ£
+Œİó,+ªğ‚e¨†Ğm|ÛUŠĞN‚ç"7U¢¿›„
+-ûö$IÂ	gÿ9¤‡(š	ç&<®”èÂŞİ	_à5¹y‡ÓXr…Œ–“¥P7¤…û»@N&¿çcùên¥mä¼¦ğH%ŒÇÜä1FÙ=­«TfM`‘‡`é=¨ÚÍ­°$[/'’´Ê…õáÚ Ö¨oV§£ç]¿>5û`Ç‘—ÛØÚ¾Nv{éµKö8ÎÕ±+ñâƒPJÂ[@Î¬ßNÇ§_$*+T¯º9nåÀtq˜uEùv¶r¸ÀÿÎaú/^MY|‡VÔG¡¶åòÕó„ {^ñÆäuuÚ²ke½4¥ÆJùà–:ùNı)ILábı(7ºÏ2™]¬JÕs…×/îÚ/q7²ap÷ñ‚˜†Ì–­Î/zk}@ã±(NtğXL¸ä“º KßæñWÒø´…9ïş Å^i›¨{Ç]opZ¼,¸+U?vXY:÷3=Â_š—ÑthšßTÄ¨ Zâ—NA®»Q+Iûüe®@h[q¦¦¯µƒ3DÛIèo‘×fhá]Ç+ÌÃ÷bÒ_¨7İşÖ:G‚/TıTö»=PKzYg‡×b°³Ú„€½qÄkĞş›OR_Š’„ºi9Éş.PóâXîeiãiMQ™ªc³Ú¯=Cù~‹0‰¦“÷ öúısTé’äR©V^sàÀî¹áç‡šó±ë¸½8¤Y	oçÖû •ÔÕÚ9Ç'~Ø.g›àÜÚë'Ôa—3€íøuLáZàvnI`L?Í¿ıNÄRŸä³Ş‚§Öà|yßyxÓ.¥­Âšë+C‰Ù­éÀŠÓğ1+·4oúöòmÕ62©tAj´.yIÓûB*óİÑâûg¿š4$„2zLÔÛö‚ØÃ´µL\"6 ­ê9¢QÏ©Ae’B¢U¢à/ĞyEğYêiy2‚{0—j‘`N~v}6'CgÆxlûeO£Şæ
+5*6Èº…ï«ùş‰§XÈD/,|£š¬]„Œ¯¾8¿® :¢µ¹1–V6W­7y¨g®H3|æcaÎ!½ŠV‚=If.F6ö%V0JFp8FÅ'z5ˆ,Ì2İÒ€EıO×ıâ`ûŠÎÊ†x‡	>ÎÈf”XŒ¯¨İi%ä·©jœ<n{*juäÀ”çÑI­³+[çûW» ëwòNµ|\Wœ˜*YØyÇUò½Ñîn²,,³ÊÆüöŸGém÷£k¿·ñ~tâ|­KšÌQ’²šnäÕ‹àN¸Òï€íóÊ˜Ÿóİi£u ’›M&¶+£]]¶×úä˜«ãÄŞ2eÿ5 G¦ˆBJP­j·!<òxÒq‚*ë8†A´ó½ÄÒÄX¯OšêV‹ÄôhL6²Ş–vˆ™—T­ûV¾‚I.’¢xlÄıeÉd½T™äé-k8~8ª²KìQ)E_<RhnÛ÷®©ş‡ş‘FÙ‡ò9ñÏ‹è˜ÚŠ²†°ú"›İiŠ4—°";†"á´¹¢ù…İv‹æjÉ£Ò7N£ÍÛ{"—ÚSÚf«¸BVìØvnüªw±A Eª2ò¡_É³†/‰æ[—ŒGS¬xÿ‘øÌ¨»¹:ˆ£‰¨ëªß¦ÇiPAGÀ*&3X~rPÒ9ñXü³);VŒ5û+Y•ş^4Õtî‚€fvÜ-}*°¡JğÑ`#J·˜K¢ö
+rçbwy]Ÿªöª>^\•ÑÚyËM f‰õĞ{Ë
+Ø~8ú²ÌÈÄ—•'¯ŞOˆ¶Âˆ°éï.§õ´ğº™ˆ#¥^@t¡§Ôú;*€£=Áf¢ºxXnF‘õZzÃŠpIÈ§f¦òæ_“Ú­ŸuŞòZÆÑ¦ÓÇ¶ cÆuqYâ‹VoƒÂgLCP‘ÖF¸¦6«Ã¹©*YÍ,Š•ÇØ!ƒ›	ƒˆ‚®ÅOüGª®Óâ—ó#xSN£)|\ÃÔ#!vr
+ÊƒŞÂœàô]L¡º¼çº¶SÙz®÷‡¿.«‰1NÂ®DPX/Şl¹ÔWÓ^u_¸¦´ïÎÖİlíOº£öŒzá!4³R¦<õQp=/Áv%ušRzpÅøğ3@ÿ\5«vò¿¤¡c0²"2Z°‚—<²1,ã5şa÷£HºbÎ?š9ø»Z³d)G4HÜĞ$N\ÃÖ½2Ä•bK ñËÌš$
+1"2 —EÑ0MÔSÑoÅ3÷i¶T. ÿ~§kQµƒÖŞnYaÇ¨·NÓ7;~™û™9Ë×Î-N‹˜ôY_B$ï(Te¬°,ïdHO»ËÜêî˜·,ıÀ\á1°ÆõÉ­ß;p1_Å]¹†bYDìÆ>ËW“D§{äröG½f1vĞÏ•\Â}&>G½¼f¬>Û/gôæ‡Ã…iÔ¸Q-éÎy@xUír¤kq›K„^áÅß$`DÿÀS8È^”‹£m¥@"j^ĞDÆæXÕ@¾m?b8UÏ›Eª7,lT‹¼‘:;HÚK¾“¨–T‡s¤5ç
+Œş!AE\qÉe‘©"ªØ¾eÜxÚó4ü¤#	«·—n°‰œ@ÒX!Ì•z&wŞˆ/üQøoSB‘íš+ÎGVOí$@zŞ*Œ©¹ìQù±S>;Cs¨;œë,#xú’S.Bş xp*•àÎİ,j–b‚Ö%h;Gò|+Ò¸€Bìğ~T%h(Š!½Ñ®Pl`]Îà¤´ÅŞÆy‚®3;Õ»ÕÄ<$:·-P·ì_?y§|èÃKnäec±]”i±Ô
+GÆ‹1éºÉµÂVÛhºJ[ÏSV@;{õÉ,„/1#dI%®Z‹õ³vsk¤‹¡Æ›8£O¶¯a^¤€MEIµ…4à_ïbEóK4w¨eöêĞh#—oõæòHKè›´;6¢ùû¬?"¼&üµE8înXÅÃ^âÃ$ÊipQ*„š®§„EZ´ÃáîGŸ•z8q|d•Õ¡q²\ 0Àÿbûh¬Š~qs±j‰Ãgô…ËÂ3]»ù•`ÇW¯"R5FğÄÎ¨ŠÛˆ¯dìêèPM¨(QÎ~g–¸˜Ğ†vú	`<Üöü
+‚j 	¯
+i´ôR¦bêa„ÕX'(;Zì“Ìz=Şˆğêf¡½UÑ<-´jZÑ³ûëûlÓÑ]!÷¼lò·TŠ~/„¨Ú7+çŠ(‹»Ë+/cT7&×ğé²HEFõL‰Æº´ ¬áæÈ6ÑkÍÈbeñÎ!_™Ä©ë<`GKÙfî¢ù3CpoéÛ×nùK[Oi1Ø×Å[iKÎÅ­vê ˆ§wÿ_$é2»ŠÓÍülfª5VI*
+/z^)ëºh¨}€í­R-I»Ği$àµ÷¤^†IÂu´Ñ¤ÿº`>*ƒcÉ»×{´Ô›wÊy6ôÑ¾OmBMSvó3È¸ëâuŒCóKRÄT‡ú¨æbs¼ÕÀ³$Ğ|` ¯÷¾ÏGqD(¤??^¿>Ô|}ùÚ²ëP3h»zRIUR\B=vãïµ¹ŞZ<m^‘vì„õ÷¹ÉqH¦ô€e2d_[a˜¾ÁoE?5diÏVş LK>
+tˆ‘Ya\ÂÃ„]š®·ÚŠP×€˜üW¾\Ê‹˜M×ºå¤­1€„¸KÌÄåD‹|$qÆAE<CGúÛ±¼Î<7ÅĞçåB;‰Zçş¡9CÙ_ÌáxòµkbWüÇĞouc¶u†.ªĞo.á¨Üã­lÕÀ½l§Èa†Ù†5ÖâòzŞ´à Úü}ÿn3ïjy‹j9ŞW‹?™WÕn'@\¿¯ÌÏ\¬Ú
+ÇPœ‰R¤ìÁƒ£v]F,®wİ:}v¢0IÛzå«˜ê2Û+©_ŠÂ˜0N• "Š”<G-¼¶¨‰¹'òjÎ¯Z¥á£nÇº·AŒ‘f“n€µsß êör²ÆÕtŞeG+‰tÊ'Œÿ-58»bê8Õ:³gÛ=Á*4Œ6ì_èëö¼Z éş{TCFG¢Û”f»GÛó½¾X›p¡÷ëÜƒ»ßû¤»2ÊûsO%§'Ü\õ«-w·¦ùÎæÔÙõ½]¬ t¤Ó;–çå8´v”RT´ëBm ,ğæŞp%±Øû8€6Ø‚SŒ—5°
+/!ît¦1YÊ9`ıå¸?Û˜èÒaC©f®‡~î49ˆÊÂÄÒ£MÂcÊ%¨&4„ ˆsàÒ×„ò<…û¾^Ãá¤û¦òa^ş¸ü%[j×²~!ìˆIú^è¼êÉŞkşŠ7®Spš¸N$ñr?1 ß	Îİ»úÅk/Ô£wŒŒMµ9@¹NÙæšËö¾åöÓaƒÉëŒH]G^®ö]²ñ`ao]³Å©âV­öòvÏ'šÎ}ieı6 v(ä´y<1Oq²‘×VºşŸhQ=¡Ê¢D’	¹_‡ÂÕµ½òp ŒUš{mƒ¯/Ğæ„"qØÛ¹&P¶f„€¥Âöë¶Ín=\-<Ø6°†È·#û‡èËº5øR¯N7Ê/¯ÇYƒ ²Ò›ô¦ë” ¢Gš·SLÌ8í/·ëíóâÖ_8BhT6~,œœg¾#1ºªIÑùâÖ LòÊÂj4gƒèÚRìxIB%p·[°²„È¢ğ}á£ãzßèn×dß¯ù4aûÂÜVÒá«¯DßNí?÷G™ˆñºvD}¯©#mgéÇx4Êèı¡â.‹œÂ´$‹b»õœdÌ¦Ìó–½™ğ»ÄƒÀF£¨Qò;UIº/¬V¸«'6ÊQ×Ø©™%m÷»ˆ7â}wòCO¼YG.×x}bÇ³·üxVÍ¶x‡?ªj+<Xs‚=Gê¶Úå_\¤èÂ—š]Ÿs2Á‡ïL_ÔÃoÈ}¯v|jÛ…ôkM˜Ş†YaÛt3±jÉüÜidÒ8³ıTîNqƒ¬!KSGí«ˆ}åz;8%/4XÚÓZ›róaxtŒbôe$ì¬ıëõ$èÔ˜…önÎ¾Wáé7NLVÕˆÅ1	ÀÌRz†œo4†N;ÀRÅÓ"@Ùê±5ç'k ÉcˆüJ©1ŞÕ¬J/š´("ªqÄ>4ùÊ¢<Äi9=ŠN¿t°Ê@ªµZÒüğSº_ÍFõß@ŒAÔÛïÀ›ÙÔZ”L¤ &OƒüuĞÉÈ2¤ÊeËo>§Ï5Gş>Ú0"æAF® vm,í]“¹’yË®mnHƒÖÇ”Ú`"‰,¿á¿ùÍİİg‹«²İu­$x0»ĞgÊ7›¦O•hëWHğdi‚ÊüÈU3z1šÃ´¤ø	æá}*íxuı~›B‰á½_ºÕo‚RìäFléçnƒË3\­ê²œÏlDÓ;ûàK[é¸ä ÁÂ™­Ñ-¹yj{ËdôŠzèVßV ö©OîW	ôeåî–³–êÍU,A‡`‘Î"òáú}±¦M)¸3(á†Ò¥múx¦KÄ#JÑlp—¿ô7œÆÁ¸—È±İ©ït,€ËU¬‹T8ìá›¨C‡-Â¿UºÍxú~\œÊ jöwE ¾"£5CòG¥×¯5µşVÌ=ÂİNü”¸ƒh]›<à*¥{_r©"w£1§ì"C‡$‡FŸ×ïÔíO’³íÖo{AºyèyÓê0Bà2Ñ×å§6‘5@ƒTt ‚*¡WAn3ËÅÅ'ùgv®RÒo±¡&l|Êİó==2ÒÜÕ<]˜(æFØã”©®»çö4&¸€‚sÖ—àé­–”!ƒ/¼†èÛÒ¤_í_Af‹'ò]f=dåV=ÖQV8.%/£i™°Ëş-‚¨SZ¿Ïvõi	tVK’CÜH~SëÎ±–û•ôæ³¯üçf9Zw"“´İnÁßUİw¤LÔ[²p…iŒM4ˆDùYÕ_Ûº5Ãí½uá\¸YüÅ¦¦7â<Q­NÇ?ùÒıX¸¢xîJµK~Çyïì‹\(`€¦PXßq4}˜ß’è#íê"ÈÙªbg‡äÿA­T\;çrÁè;—ëó!,ø½U•ÿ0C´y÷CUlC#¾_KPõÈ˜x
+[DLÏ+pPÙw!t—2B²eêy·q}3fÀMBâzèø@ŸîD.:x€vĞñ¹ZLğİ3Ûìe_+§mß¹EhD¦?ùûb¬>ÈZ£J‚N-dÊÑ©uúŠ1]ğ7³p“+<Ñh[‘¸ÇâÜt[–¹VÇaÛšKŒèü¶ƒwÇŠş–ƒ!©*ıy1ñzp3¸{€Ğ´^À.Uœ-çŸ.¸+ƒV5õBã•Ë>R‰…iÍí‡Ñ#ç¡€µHiQ³Å²vPÑò%å[-]cøÇ´¬ÂÁ¢Z&AkÂƒâ-eÌ°Ow„‡IµÀÕÃ•Æè*O¹Ñí— Ÿ’ vXÃ±R„‰ :¯ Âeznl›$æ;ñø`h¶â™X‚|¿Î‚¢Ñø.‡ÉéJq•1`çx~ÚÅw_v[fÿmÎæÀ£©¾!Cöyİ}sù”V4xOæ²Y aBÍ¡£Í¶k7º²2„î›©p¶äE¿ö=ƒDmxÉˆÿ½ğc]ğóÈ½¶vïwK°v<´L…!é]¥ôš^ÿª'¼Øb3yWÚŸ/oÁSêDŠA}J¯¤$i˜0ä³±=ÊNÛƒuæVsV‡Ô2§S%:Å­9#‘-jâä«s(‡…rt¨ı±N$Œ8WHFSÌk¬pè°®¢mø °¥BÈ$ÓÆ•>ğa¦ó`B¨Õ§º°áÄ®=	Ö·@€rÜ/PÈ¶Ú„à»FêÍé¹ªZMGqÑ‚œŸ¬ÌhObÑT‘·ïsÃr^QÏÆÆü÷ÌTÖH’ctDzÃ$È{ìª“\ÓdkÉ*„ZX²ópO2(K“VÚ*)´¯¦l×Wñ%õ»bä¶À¤""­Aª`a&øwA¬€oÿ…'¾‘ânµ4îAá¢EF\_¢_’Şù—í(Èß#Õ,Ì¸İ¦K¹;âà+ôÜ`*[™	—^Cşmßçœú>eÎÆå‘bÁEc nI^«-››ŠµJ%Öïe‰xzû¤2ÿ{¨•.LYE@s1îêã„ÇJÊõ0ÒAÒo¸ßôéï\-c6"L
+^N3½‹¸ñ“%f”Ôôº%YÅNÜP9obÌ.mßŸçòEò•9vÓGŞ/ø¯¿'HjKî‰¦ÃíLÄuÇPªÊÁc/é®çğ¢¥‡UK!±‰9(Ô.® èLse‘r[,§"/wùÛ›»«2òIÕ¿–5>pÀâø8IÌ¯Ø£ÑªOHÂ
+>=<nd»Œ„ ıUÙ]ª »]›z'“D£‚:ù`%	–ayR¹Wbm†ä}½‚·9ÛlğÖ<ğ*‰
+É×ıŸöµÜ{CÜÁ‘ş+‡‡ÚêÛ&+"AjòY¼µ˜ØŸñ^bxÚ@Î7‹–º>(U/ö´ ÕègJr£&¯Úg§–õÓ™8¶G
+Ş³Xœ¹"w­¹3§(óaız»,ßaã …€ôøÅ
+e<]kÁ;~Yšñ˜*XîÜˆ¦œfKŠ-††u;•Çb¦+Å8¯EÕX!ô}¢ÿÓ€Å>>q[â&¡(›hÏ<¿Œh¾0‹°2&6:•x/âcZÿ-+÷êøõ›†…¾ğmJƒ›È><tâJX EYÆ :Æ4Ópœ ŞjÓ^¨æF¨·h BH/¬>Ä6£Ó+ä“ö-Êî®­¹°Í×¾Õ÷…|¡Rqıû€_©D…¯)„M²³^½¬ïáã›*&	¥#n„'ì…ÿi8¶ğ˜ºm–{–Å“zğkõâ¼”íÄş\…-göò%˜sÒSDL=¼„²²\vZáL%ú@Qd`Sç°z¢©$Ço¡îù«e+£™&-¦¸tÃ³ƒô÷7ĞBmh
+Ë,Ş'¨­…‚½Èí"¼á“Êk²1nU@XòtO³’–ÑD˜Ò’Êù¿‘Hºz´)I¥µ}9ÃÁ¸Àr£°şéû²OkËy@ÿ·2QŸN¹UõK¦¥‚±)ßa6*­­>(½ä“l“{ê_—G$ìW¦÷Í½£­À…7å~4ü$DÑ’rË¡·A	³ø›üı¯&}¯·z¡¬O¿È›rÜ6‹v¹#WüÈğîf1Æ@BûF‚ù;,ÎVŞ¹T×òÄú‰D»ößØcùÉ46NPÄ'ğÁRa¸õ9­VNAAšIìá_“”„Ï"%{A ôJ¿é1°*A0+ªK¬íX$C§ Vòş~Ê;‰9ÅFákI—óìQƒAÕå*9ãşŒ8?Í¦üê¬.´Ÿ‰O ‚ÅÎ¬·osÈİó.k†×$Uğ=6A¡3²ÖÁĞm…ëgphuw~Ûƒ|s¢<;’
+™‰HúçYy2¿§‹ö(²ğˆêr¿ÿï½T1¸(œºÅQJ0éI¦Jy’š''ßERƒmµ$ióP=×‚>¤í “Í¹VxhüĞÁ|è7í©1p€ct^T66Ó…qZƒŸã/@}úÃuÉL‹øô[$iÎô×ÂŸvĞŠq&£±RŞÂÍËãÌÂÛ±ñ,=$Æ!ï•øÅÉÃ¶Ê¶Bî·ê>U=6®YäycŞMüÒ‚ãÓ` tñ;¦Ç¼ZÚõöÔhú2°W˜Lu¨>Q¸Ï\_Å¼Æ\ ©ˆe­³—S{¹7 Æw³9Enğÿ[j80Æ{«äøó«Û_o»˜)n¾·šCs.©BFvŞL*¯Ã•,ÈÛ€$Ú½.4In×ëÍ¤ZÃ¼²ön+eªhm/*?À C©ÚÄâÚ´×–@ ìéÔv;wªƒ²f]‡ºt»ng6Evªò6Ö‹¸/í¿Œ«Ä F5¥Z•½€åqˆìXQXiÔ¾Ku¸#Ô2ÉÊfâÂgÖ*kaöšÖ3d¶2h\îÂaÀÈ¼“§×®šAïµ¸D®Ú¤Èâ†Ñ5İsÁŒCC‰È´²)ÒÕ#JÌ­kËéà\ïğÙÛÙè¥Ä¢…Ú {£í+oÂº*à¤Ğ/f<ãm)®f6S+÷ÀeBÎYm 7ñÇÑùÊÙD?oúûJÔî¦TĞ®ış4@ÒDÃû.}êñ9ÕÛ¼G+ÆÌ¸Ì˜rMµ$£›Xã¢S¡vÒß‘ÚIÉ[Aõ5ç;\)’~ˆÔÄÕx]_+&< byû²P­ùGæpnãìªÚúÍËXÃ©3vby±!c¹­ğB oQ¼×N’âzÎå°§ß•¥BûÿJĞÉ‘7\ŒC"ÜÍÔªì“iÿƒ{ù•¯A®^‰é°¶w  F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ T E X T C O N V \  
+ P r o p e r t y ( S ) :   S h a r e d F o l d e r   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \  
+ P r o p e r t y ( S ) :   W e b C o m p o n e n t s 1 0 I n t l _ 1 0 4 9   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ W e b   C o m p o n e n t s \ 1 0 \ 1 0 4 9 \  
+ P r o p e r t y ( S ) :   W e b C o m p o n e n t s 1 1 I n t l _ 1 0 4 9   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ W e b   C o m p o n e n t s \ 1 1 \ 1 0 4 9 \  
+ P r o p e r t y ( S ) :   V B A 6 F o l d e r   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ V B A \ V B A 6 \  
+ P r o p e r t y ( S ) :   S h a r e d D e s i g n e r s F o l d e r   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ D E S I G N E R \  
+ P r o p e r t y ( S ) :   W e b C o m p o n e n t s 1 0   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ W e b   C o m p o n e n t s \ 1 0 \  
+ P r o p e r t y ( S ) :   W e b C o m p o n e n t s 1 1   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ W e b   C o m p o n e n t s \ 1 1 \  
+ P r o p e r t y ( S ) :   W e b F o l d e r s I n t l F o l d e r _ 1 0 3 3   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ W e b   F o l d e r s \ 1 0 3 3 \  
+ P r o p e r t y ( S ) :   W e b F o l d e r s I n t l F o l d e r _ 1 0 4 9   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ W e b   F o l d e r s \ 1 0 4 9 \  
+ P r o p e r t y ( S ) :   W e b F o l d e r s F o l d e r   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ W e b   F o l d e r s \  
+ P r o p e r t y ( S ) :   S h a r e d P r o o f I n t l F o l d e r _ 1 0 4 9 . D 0 D F 3 4 5 8 _ A 8 4 5 _ 1 1 D 3 _ 8 D 0 A _ 0 0 5 0 0 4 6 4 1 6 B 9   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ P R O O F \ 1 0 4 9 \  
+ P r o p e r t y ( S ) :   I n f o r m a t i o n F o l d e r   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ I n f o r m a t i o n   R e t r i e v a l \  
+ P r o p e r t y ( S ) :   I N S T A L L D I R . 8 F 0 2 A 4 B 3 _ A 7 D 7 _ 4 F 8 C _ 8 7 B E _ F A F 0 6 9 9 9 D 9 A 2   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ I N K \  
+ P r o p e r t y ( S ) :   I N S T A L L D I R . A 8 B A 8 7 6 1 _ E 6 1 9 _ 1 1 D 3 _ 8 F 5 D _ 0 0 C 0 4 F 9 C F 4 A C   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ T R A N S L A T \ E N G E \  
+ P r o p e r t y ( S ) :   I N S T A L L D I R . F A D 4 7 3 D 7 _ E 5 6 4 _ 1 1 D 3 _ 8 F 5 D _ 0 0 C 0 4 F 9 C F 4 A C   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ T R A N S L A T \ G E E N \  
+ P r o p e r t y ( S ) :   M e r g e D i r   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ O F F I C E 1 1 \  
+ P r o p e r t y ( S ) :   R e s L a n g I D F o l d e r 1 0 3 3 . D 1 7 9 C D 0 8 _ 6 9 1 D _ 4 F 4 9 _ 8 9 6 B _ 9 D 5 B D 8 4 3 A C 8 A   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ O F F I C E 1 1 \ 1 0 3 3 \  
+ P r o p e r t y ( S ) :   G A C _ P I A . 3 6 4 3 2 3 6 F _ F C 7 0 _ 1 1 D 3 _ A 5 3 6 _ 0 0 9 0 2 7 8 A 1 B B 8   =   C : \ P r o g r a m   F i l e s \ M i c r o s o f t . N E T \ P r i m a r y   I n t e r o p   A s s e m b l i e s \ G A C \  
+ P r o p e r t y ( S ) :   P r i m a r y _ I n t e r o p _ A s s e m b l i e s . 3 6 4 3 2 3 6 F _ F C 7 0 _ 1 1 D 3 _ A 5 3 6 _ 0 0 9 0 2 7 8 A 1 B B 8   =   C : \ P r o g r a m   F i l e s \ M i c r o s o f t . N E T \ P r i m a r y   I n t e r o p   A s s e m b l i e s \  
+ P r o p e r t y ( S ) :   P o r t a l . F 6 D F 4 9 A 7 _ A 2 E A _ 4 1 5 3 _ 8 E B 5 _ D D F 1 C 7 6 7 5 2 F 9   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ P o r t a l \  
+ P r o p e r t y ( S ) :   C o m m o n B i n R e s L a n g I D F o l d e r 1 0 3 3 . 0 F C E A F 1 4 _ 5 2 1 7 _ 4 5 9 C _ 9 1 4 B _ 6 7 E 2 1 0 7 0 9 C 1 D   =   C : \ P r o g r a m   F i l e s \ C o m m o n   F i l e s \ M i c r o s o f t   S h a r e d \ O F F I C E 1 1 \ 1 0 3 3 \  
+ P r o p e r t y ( S ) :   D e f U s e r A p p D a t a O f f l i n e F o l d e r . E 8 D 7 1 C 4 B _ 6 2 C 9 _ 4 D 1 B _ A 0 2 F _ C 9 1 6 C A E 5 0 3 3 1   =   C : \ D o c u m e n t s   a n d   S e t t i n g s \ A l l   U s e r s \ A p p l i c a t i o n   D a t a \ M i c r o s o f t \ M S D A I P P \ O F F L I N E \  
+ P r o p e r t y ( S ) :   I M E F o l d e r . 0 5 5 F 7 2 C 8 _ E F 7 9 _ 4 C C 6 _ B 5 B 5 _ 9 A 6 C 5 5 B 1 3 C D 0   =   C : \ W I N D O W S \ I M E \  
+ P r o p e r t y ( S ) :   I D 0 4 1 9 . 5 D 4 E 5 1 4 6 _ 0 D 7 A _ 4 8 D 1 _ 8 D C C _ 4 0 1 1 8 D 3 5 1 D 5 9   =   C : \ W I N D O W S \ M U I \ F A L L B A C K \ 0 4 1 9 \  
+ P r o p e r t y ( S ) :   H E L P . 9 0 B 9 2 7 1 1 _ 7 0 7 E _ 4 B 8 F _ B C 7 5 _ 2 D 5 1 7 1 F 9 C 3 4 0   =   C : \ W I N D O W S \ H E L P \  
+ P r o p e r t y ( S ) :   C O M P A N Y N A M E   =   A c e r  
+ P r o p e r t y ( S ) :   P I D K E Y   =   * * * * * * * * * *  
+ P r o p e r t y ( S ) :   _ B r o w s e P r o p e r t y   =   I N S T A L L L O C A T I O N  
+ P r o p e r t y ( S ) :   N e w F o l d e r   =   N e w F o l d e r - N O T U S E D  
+ P r o p e r t y ( S ) :   E r r o r D i a l o g   =   E r r o r D i a l o g  
+ P r o p e r t y ( S ) :   U S E R N A M E   =   V a l u e d   A c e r   C u s t o m e r  
+ P r o p e r t y ( S ) :   M M o d e T y p e   =   A d d R e m o v e  
+ P r o p e r t y ( S ) :   I n s t a l l M o d e   =   C o m p l e t e  
+ P r o p e r t y ( S ) :   R e I n s t a l l R e p a i r   =   - 1  
+ P r o p e r t y ( S ) :   O P C R E M O V E B U T T O N 0   =   T R U E  
+ P r o p e r t y ( S ) :   O P C R E M O V E B U T T O N 1   =   T R U E  
+ P r o p e r t y ( S ) :   O P C R E M O V E B U T T O N 2   =   T R U E  
+ P r o p e r t y ( S ) :   O P C R E M O V E B U T T O N 3   =   T R U E  
+ P r o p e r t y ( S ) :   O P C R E M O V E B U T T O N 4   =   T R U E  
+ P r o p e r t y ( S ) :   O P C R E M O V E B U T T O N 5   =   T R U E 

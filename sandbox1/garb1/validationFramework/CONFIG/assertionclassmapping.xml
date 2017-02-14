@@ -1,0 +1,7 @@
+<assertionmappings>
+  <assertionmapping>
+     <name>ExistenceAssertion</name>
+     <ceclass>org.apache.jmeter.assertions.ExistenceAssertion</ceclass>
+     <fwclass>ExistenceAssertion</fwclass>
+  </assertionmapping>
+</assertionmappings>

@@ -1,0 +1,23 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="reqmappings" type="mappingstype"/>
+<xsd:complexType name="mappingstype">
+  <xsd:sequence>
+  <xsd:element name="requirementmapping" type="maptype" minOccurs="0" maxOccurs="unbounded"/>
+  </xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="maptype">
+<xsd:sequence>
+	<xsd:element name="mappingname" type="xsd:string"/>
+	<xsd:element name="filename" type="xsd:string"/>
+	<xsd:element name="worksheet" type="xsd:string"/>
+	<xsd:element name="firstrequirementX" type="xsd:string"/>
+	<xsd:element name="firstrequirementY" type="xsd:string"/>
+	<xsd:element name="lefttestplanX" type="xsd:string"/>
+	<xsd:element name="lefttestplanY" type="xsd:string"/>
+	<xsd:element name="righttestplanX" type="xsd:string"/>
+	<xsd:element name="righttestplanY" type="xsd:string"/>
+	<xsd:element name="presentcolumn" type="xsd:string"/>
+	</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>

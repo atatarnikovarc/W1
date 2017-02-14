@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<Dictionary Type="GoodsDictionary">
+    <Good Code="000008" Name="Консультационные услуги" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Консультационные усл" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000009" Name="Неисключительные права" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Неисключительные пра" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000011" Name="Абонентская плата 1С" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Абон.плата 1С" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000012" Name="Электроэнергия" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Эл.Энергия" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000013" Name="Комиссия банка (с НДС)" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Комиссия банка (с НД" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000014" Name="Комиссия банка (без НДС)" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Ком. банка без НДС" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000015" Name="Гос. пошлина" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Гос. пошлина" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000017" Name="Поджарка свиная охлажденная лоток 600г" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Поджарка свиная охлажденная лоток 600г" Category="100.13.11.13. Свинина охлажденная б/к" BestBefore="10" BestBeforeRest="8" WeightedGood="0" IsAlcohol="0" WMSLocationId="1002" WMSLocationCheckText="27" DefaultPackageId="Кор4" Multiplicity="4.00" />
+        <Barcode Barcode="1000017010008" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000021" Name="Проездные билеты" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Проездные билеты" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000022" Name="Бланк проездного билета" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Бланк проездного билета" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000023" Name="Бланк проездного билета" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Бланк проездного билета" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000025" Name="Бутилированная вода" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Бутилированная вода" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000026" Name="Полотенца бумажные" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Полотенца бумажные" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000027" Name="Салфетки бумажные" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Салфетки бумажные" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000028" Name="Стакан одноразовый" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Стакан одноразовый" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000030" Name="Визитки" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Визитки" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000032" Name="Услуги по проживанию" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Услуги по проживанию" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000045" Name="Аренда сервера БД MS DAX srv_node_01" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда сервера БД MS DAX srv_node_01" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000046" Name="Администрирование MS SQL Server" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Администрирование MS SQL Server" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000047" Name="Ультрабук Toshiba Portege" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Ультрабук Toshiba Portege" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000050" Name="Аренда офиса с НДС" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда офиса с НДС" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000052" Name="Аренда офиса без НДС" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда офиса без НДС" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000053" Name="Водоснабжение" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Водоснабжение" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000054" Name="Теплоснабжение" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Теплоснабжение" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000056" Name="Аренда стоянки с НДС" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда стоянки с НДС" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000057" Name="Аренда стоянки без НДС" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда стоянки без НДС" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000060" Name="Администрирование ОС Windows" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Администрирование ОС Windows" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000061" Name="Аренда сервера БД MS DAX srv_node_02" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда сервера БД MS DAX srv_node_02" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000062" Name="Аренда сервера приложений app_srv_01" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда сервера приложений app_srv_01" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000063" Name="Аренда сервера OLAP olap_srv_01" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда сервера OLAP olap_srv_01" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000064" Name="Аренда тестового сервера test_srv_01" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда тестового сервера test_srv_01" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000065" Name="Аренда терминального сервера term_srv_01" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда терминального сервера term_srv_01" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000066" Name="Аренда сервера голосового подбора vcoll_srv_01" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда сервера голосового подбора vcoll_srv_01" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000067" Name="Аренда сервера retail_srv_01" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда сервера retail_srv_01" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000068" Name="Аренда дополнительного дискового пространства" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда дополнительного дискового пространства" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000071" Name="Получение выписок из ЕГРЮЛ" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Получение выписок из ЕГРЮЛ" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000072" Name="Уборка нежилых помещений" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Уборка нежилых помещений" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000073" Name="Мойка автомобилей с НДС" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Мойка автомобилей с НДС" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000074" Name="Трудовая книжка" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Трудовая книжка" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000075" Name="Вкладыш к трудовой книжке" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Вкладыш к трудовой книжке" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000076" Name="Бензин АИ-92" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Бензин АИ-92" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000077" Name="Бензин АИ-95" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Бензин АИ-95" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000078" Name="Топливо дизельное зимнее" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Топливо дизельное зимнее" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000079" Name="Аренда кулера" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда кулера" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000080" Name="Информационно-консультационные услуги" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Информационно-консультационные услуги" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000081" Name="Подключение интернета" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Подключение интернета" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000082" Name="Интернет трафик" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Интернет трафик" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000083" Name="Пассажирские перевозки" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Пассажирские перевозки" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000084" Name="т/о автомобилей" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="т/о автомобилей" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000085" Name="Телематические услуги" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Телематические услуги" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000086" Name="Поиск и подбор кандидатов" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Поиск и подбор кандидатов" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000087" Name="Услуги по тестированию" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Услуги по тестированию" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000088" Name="Обслуживание ковровых покрытий" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Обслуживание ковровых покрытий" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000089" Name="Аренда почтовой ячейки" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда почтовой ячейки" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000090" Name="Аренда городского номера" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда городского номера" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000091" Name="Проживание" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Проживание" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000092" Name="Сопровождение КонсультантПлюс" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Сопровождение КонсультантПлюс" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000093" Name="Неисключительные права на ПО" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Неисключительные права на ПО" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000094" Name="Субаренда части нежилого помещения" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Субаренда части нежилого помещения" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000095" Name="Консультационные услуги" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Консультационные услуги" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000096" Name="Технический надзор" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Технический надзор" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000097" Name="Настройка оборудования" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Настройка оборудования" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000098" Name="Хранение шин" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Хранение шин" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000099" Name="Услуги сотовой связи" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Услуги сотовой связи" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000100" Name="Бензин G-95" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Бензин G-95" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000101" Name="Бензин Супер-98" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Бензин Супер-98" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000102" Name="Электроэнергия без НДС" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Электроэнергия без НДС" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000103" Name="Теплоснабжение без НДС" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Теплоснабжение без НДС" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000104" Name="Водоснабжение без НДС" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Водоснабжение без НДС" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000105" Name="Почтовые услуги" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Почтовые услуги" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000108" Name="Шкаф холодильный" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Шкаф холодильный" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000110" Name="000110" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="000110" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000112" Name="товар" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="товар" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000122" Name="Филе грудки куриное замороженное 320г" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Филе грудки куриное замороженное 320г" Category="120.10.12.16. Полуфабрикаты из птицы шт" BestBefore="180" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="3001" WMSLocationCheckText="13" DefaultPackageId="Кор22" Multiplicity="22.00" />
+        <Barcode Barcode="1000022010000" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000129" Name="Морковь весовая" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Морковь весовая" Category="160.10.23.18. Морковь" BestBefore="21" BestBeforeRest="15" WeightedGood="2" IsAlcohol="0" WMSLocationId="6002" WMSLocationCheckText="1" DefaultPackageId="Паллет" Multiplicity="420.00" />
+    </Good>
+    <Good Code="000158" Name="Крупа гречневая фасованная п/пак 900г" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Крупа гречневая фасованная п/пак 900г" Category="175.10.14.12. Крупа гречневая фасованная" BestBefore="365" BestBeforeRest="180" WeightedGood="0" IsAlcohol="0" WMSLocationId="203" WMSLocationCheckText="42" DefaultPackageId="Кор12" Multiplicity="12.00" />
+        <Barcode Barcode="1000058010005" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000159" Name="Горох шлифованный п/пак 900г" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Горох шлифованный п/пак 900г" Category="175.10.15.12. Горох" BestBefore="365" BestBeforeRest="180" WeightedGood="0" IsAlcohol="0" WMSLocationId="204" WMSLocationCheckText="82" DefaultPackageId="Кор12" Multiplicity="12.00" />
+        <Barcode Barcode="1000059010004" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000162" Name="Автомобиль MITSUBISHI OUTLANDER" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Автомобиль MITSUBISHI OUTLANDER" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000164" Name="Система кондиционирования" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Система кондиционирования" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000165" Name="Бананы Эквадор" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Бананы Эквадор" Category="162.10.23.12. Банан" BestBefore="10" BestBeforeRest="8" WeightedGood="2" IsAlcohol="0" WMSLocationId="1001" WMSLocationCheckText="33" DefaultPackageId="Кор19.5" Multiplicity="19.50" />
+    </Good>
+    <Good Code="000166" Name="Ремонт системы кондиционирования" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Ремонт системы кондиционирования" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000169" Name="Ремонт топливного насоса" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Ремонт топливного насоса" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000170" Name="Подписка на обновления" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Подписка на обновления" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000171" Name="Батон нарезной в/с 380г." Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Батон нарезной в/с 380г." Category="220.10.11.13. Батон поставщик" BestBefore="6" BestBeforeRest="5" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="лоток" Multiplicity="14.00" />
+    </Good>
+    <Good Code="000172" Name="Трудовая книжка" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Трудовая книжка" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000175" Name="Машина" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Машина" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000177" Name="Мафынка" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Мафынка" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000181" Name="Система требующая монтажа" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Система требующая монтажа" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000184" Name="Автомобиль Москвич 412" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Автомобиль Москвич 412" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000189" Name="Система кондиционирования 2" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Система кондиционирования 2" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000191" Name="Пиво Zipfer 0.5 нефильтрованное" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Пиво Zipfer 0.5 нефильтрованное" Category="234.10.20.12. Пиво импортное стекло" BestBefore="180" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="301" WMSLocationCheckText="87984" DefaultPackageId="ящик-20" Multiplicity="0.05" />
+        <Barcode Barcode="4004764841561" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000192" Name="Корочка тр. книжки" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Корочка тр. книжки" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000193" Name="Пуфик с вибромассажем" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Пуфик с вибромассажем" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000195" Name="Автомобиль MAZDA3" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Автомобиль MAZDA3" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000196" Name="Сейф" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Сейф" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000198" Name="Сейф" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Сейф" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000201" Name="Подписка" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Подписка" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000202" Name="Рекламная акция" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Рекламная акция" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000205" Name="Супербук Lenovo" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Супербук Lenovo" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000206" Name="Аренда нежилого помещения" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда нежилого помещения" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000207" Name="Аренда нежилого помещения" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда нежилого помещения" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000211" Name="Абновления ПО" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Абновления ПО" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000213" Name="Тур в Австрию" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Тур в Австрию" Category="Товары" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000214" Name="Горизонт, полка 1000х984" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Горизонт, полка 1000х984" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000215" Name="Бок 2500х600" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Бок 2500х600" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000216" Name="Пиво Goesser 3,5% светлое" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Пиво Goesser 3,5% светлое" Category="234.10.20.12. Пиво импортное стекло" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="6001" WMSLocationCheckText="13" DefaultPackageId="ящик-20" Multiplicity="20.00" />
+        <Barcode Barcode="4004764841585" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000217" Name="Задняя стенка ДСП 2500х1000" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Задняя стенка ДСП 2500х1000" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000218" Name=" Передняя стенка ДСП 2500х1500" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Передняя стенка ДСП 2500х1500" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000219" Name="Стенка ДВП" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Стенка ДВП" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000222" Name="Ремонт Аксапты" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Ремонт Аксапты" Category="Товары" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000223" Name="Аренда нежилого помещения" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда нежилого помещения" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000224" Name="000224" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="000224" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000225" Name="Пиво тёмное Dunkel" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Пиво тёмное Dunkel" Category="234.10.20.12. Пиво импортное стекло" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="4002" WMSLocationCheckText="11111" DefaultPackageId="ящик-20" Multiplicity="20.00" />
+        <Barcode Barcode="4603008992634" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000227" Name="Аренда нежилой недвижимости" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Аренда нежилой недвижимости" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000230" Name="Полка ДСП 2500х1000" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Полка ДСП 2500х1000" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000231" Name="Полка ДВП 2500х1000" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Полка ДВП 2500х1000" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000234" Name="Пиво &quot;Пражечка&quot; светлое" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Пиво &quot;Пражечка&quot; светлое" Category="234.10.20.12. Пиво импортное стекло" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="302" WMSLocationCheckText="32" DefaultPackageId="ящик-20" Multiplicity="20.00" />
+    </Good>
+    <Good Code="000235" Name="Небольшой магазинчик" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Небольшой магазинчик" Category="Товары" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000236" Name="Услуги по сборке мебели 2014" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Услуги по сборке мебели 2014" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000242" Name="Сахар песок 900г" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Сахар песок 900г" Category="197.22.17.12. Сахар песок" BestBefore="450" BestBeforeRest="400" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="5984535974751" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000243" Name="Сахарный песок 900г" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="песок 900г" Category="197.22.17.12. Сахар песок" BestBefore="450" BestBeforeRest="400" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4874268597581" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000245" Name="Индейка свежая" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Индейка свежая" Category="105.13.15.11. Индейка охлажденная" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="1000245010009" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000252" Name="Фасоль белая в томатном соусе 420г ЭКО" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Фасоль белая в томатном соусе 420г ЭКО" Category="190.16.15.18. Фасоль белая консервированная" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4607084411942" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000255" Name="Фасоль белая 425г Веселые овощи" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Фасоль белая 425г Веселые овощи" Category="190.16.15.18. Фасоль белая консервированная" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4620007390483" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000307" Name="Вода газированая 1л Шишкин Лес" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Вода газированая 1л Шишкин Лес" Category="225.10.14.15. Вода питьевая И МИНЕРАЛЬНАЯ БЕЗ ГАЗА от 1 л до 5 л" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4605490000217" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000308" Name="Ряженка 3,2% Домик в деревне" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Ряженка 3,2% Домик в деревне" Category="130.13.17.16. Ряженка" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4607025398462" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000309" Name="Напиток Кола 0,5 О!" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Напиток Кола 0,5 О!" Category="225.13.11.13. Лимонад кола-содержащий до 1 л" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4690363001538" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000310" Name="Напиток Цитрон 0,5 О!" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Напиток Цитрон 0,5 О!" Category="225.13.17.13. Лимонад до 1 л" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4690363001552" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000311" Name="Вода минеральная sport 0,5л О!" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Вода минеральная sport 0,5л О!" Category="225.10.14.12. Вода питьевая И МИНЕРАЛЬНАЯ БЕЗ ГАЗА до 1 л" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4690363002269" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000312" Name="Фасоль белая 420г Грядка Удачи" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Фасоль белая 420г Грядка Удачи" Category="190.16.15.18. Фасоль белая консервированная" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4607043103932" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000313" Name="Фасоль белая 400г ОКЕЙ" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Фасоль белая 400г ОКЕЙ" Category="190.16.15.18. Фасоль белая консервированная" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4607043458377" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000314" Name="Мыло Антибактериальное 90г La Fresh" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Мыло Антибактериальное 90г La Fresh" Category="272.10.14.19. Мыло туалетное детское" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="201" WMSLocationCheckText="57" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="2010000397428" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000315" Name="Ватные диски 80шт PUPI" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Ватные диски 80шт PUPI" Category="270.10.13.12. Вата, ватные диски и другая ватная продукция" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="202" WMSLocationCheckText="89" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4606038033827" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000316" Name="Влажные салфетки Зеленый чай 15шт La Fresh" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Влажные салфетки Зеленый чай 15шт La Fresh" Category="265.10.20.24. Влажные салфетки для очищения кожи д/пробл.кожи" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="205" WMSLocationCheckText="1484" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="2010199901161" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000317" Name="Влажные салфетки KLEENEX" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Влажные салфетки KLEENEX" Category="265.10.20.24. Влажные салфетки для очищения кожи д/пробл.кожи" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="206" WMSLocationCheckText="6974" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="5029053541259" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000318" Name="Пеленки одноразовые ОКЕЙ" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Пеленки одноразовые ОКЕЙ" Category="272.10.11.21. Впитывающие пеленки детские" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="5411416026273" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000319" Name="Пеленки одноразовые детские 5шт Каждый День" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Пеленки одноразовые детские 5шт Каждый День" Category="272.10.11.21. Впитывающие пеленки детские" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4690363024650" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000320" Name="Крем для рук увлаж 80мл Бархатные Ручки" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Крем для рук увлаж 80мл Бархатные Ручки" Category="265.10.26.30. Крема" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4600702025996" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000321" Name="Пакеты для мусора 30шт 30л" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Пакеты для мусора 30шт 30л" Category="290.13.17.27. Пакеты для мусора" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="2050179990051" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000323" Name="Фломастер синий" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Фломастер синий" Category="365.26.17. Офисные принадлежности мелкие" BestBefore="480" BestBeforeRest="120" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4004764841578" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000357" Name="Водка Белые ночи 0.5л" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Водка Белые ночи 0.5л" Category="230.10.12.12. Водка обычная до 0,5 л включительно" BestBefore="360" BestBeforeRest="180" WeightedGood="0" IsAlcohol="1" WMSLocationId="5001" WMSLocationCheckText="74" DefaultPackageId="ящик-20" Multiplicity="20.00" />
+        <Barcode Barcode="1000357010003" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000360" Name="Сахарный песок 900г" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="песок 900г" Category="197.22.17.12. Сахар песок" BestBefore="450" BestBeforeRest="400" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+        <Barcode Barcode="4874268597994" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000361" Name="Прокладка интернета" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Прокладка интернета" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000362" Name="Лицензия на Аксапту" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Лицензия на Аксапту" Category="" BestBefore="0" BestBeforeRest="0" WeightedGood="0" IsAlcohol="0" WMSLocationId="" WMSLocationCheckText="" DefaultPackageId="" Multiplicity="1.00" />
+    </Good>
+    <Good Code="000370" Name="Пиво Балтика №0 банка" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Пиво Балтика №0 банка" Category="234.10.23.15. Пиво безалкогольное ж/б" BestBefore="365" BestBeforeRest="180" WeightedGood="0" IsAlcohol="0" WMSLocationId="7001" WMSLocationCheckText="85416" DefaultPackageId="Кор24" Multiplicity="24.00" />
+        <Barcode Barcode="1000370010004" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="шт" />
+        </Barcode>
+    </Good>
+    <Good Code="000371" Name="Хеннеси VSOP 0.7 Подарочная" Price_1="0" Price_2="0" GoodsGroup="" Storage="" Template="">
+        <AddInfo ShortName="Хеннеси VSOP 0.7 Подарочная" Category="230.10.21.15. Коньяк французский" BestBefore="1825" BestBeforeRest="1095" WeightedGood="0" IsAlcohol="0" WMSLocationId="5002" WMSLocationCheckText="6248" DefaultPackageId="Кор6" Multiplicity="6.00" />
+        <Barcode Barcode="1000371010003" Multiplicity="1.00" Price="0">
+            <AddInfo PackageId="Бут 0.7" />
+        </Barcode>
+    </Good>
+</Dictionary>

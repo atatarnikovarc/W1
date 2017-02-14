@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?><log homepage="http://www.ieinspector.com" product="HttpAnalyzer" version="1">
+  <entry method="GET" url="https://bach.develop.office.stacksoft.ru/onyma/">
+    <timestart>2007-07-24T09:35:50.890Z</timestart>
+    <timeend>2007-07-24T09:35:50.890Z</timeend>
+    <duration>0,000 s</duration>
+    <processname>firefox.exe[3316]</processname>
+    <result>200</result>
+    <size>0</size>
+    <stage>REQUEST_CLOSE</stage>
+    <mimetype>text/html</mimetype>
+    <redirecturl/>
+    <requestCamefromCache>False</requestCamefromCache>
+    <responseCamefromCache>False</responseCamefromCache>
+    <requestobjectname>/onyma/</requestobjectname>
+    <winet_sr_result>True</winet_sr_result>
+    <winet_sr_errormessage/>
+    <bodySize>0</bodySize>
+    <headers>
+      <requestheaders>
+        <header>GET /onyma/ HTTP/1.1</header>
+        <header>Host: bach.develop.office.stacksoft.ru</header>
+        <header>User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.8.1.5) Gecko/20070713 Firefox/2.0.0.5</header>
+        <header>Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5</header>
+        <header>Accept-Language: ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3</header>
+        <header>Accept-Encoding: gzip,deflate</header>
+        <header>Accept-Charset: windows-1251,utf-8;q=0.7,*;q=0.7</header>
+        <header>Keep-Alive: 300</header>
+        <header>Connection: keep-alive</header>
+        <header>Cookie: ONYMA_LOGIN=atatarnikov; PHPSESSID=3229b245ea46ce054e98dfe4254ee1fa</header>
+      </requestheaders>
+      <responseheaders>
+        <header>HTTP/1.1 200 OK</header>
+        <header>Date: Tue, 24 Jul 2007 05:36:01 GMT</header>
+        <header>Server: Apache/2.2.3 (Unix) mod_ssl/2.2.3 OpenSSL/0.9.7k PHP/5.1.6</header>
+        <header>X-Powered-By: PHP/5.1.6</header>
+        <header>Content-Length: 1628</header>
+        <header>Connection: close</header>
+        <header>Content-Type: text/html</header>
+      </responseheaders>
+    </headers>
+    <content>
+      <contentLength>1628</contentLength>
+      <mimetype>text/html</mimetype>
+      <text>
+        <![CDATA[PGh0bWw+CjxoZWFkPgo8dGl0bGU+T05ZTUEgQmlsbGluZyBTeXN0ZW08L3RpdGxlPgo8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9InN0eWxlcy5jc3MiIHR5cGU9InRleHQvY3NzIj4KPG1ldGEgaHR0cC1lcXVpdj0iY29udGVudC10eXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7Y2hhcnNldD1rb2k4LXIiPgo8c2NyaXB0PgpmdW5jdGlvbiBzZXRGb2N1c09uTG9hZCgpIHsKCXZhciBsbG9nID0gZG9jdW1lbnQuZm9ybXNbJ21haW5fZm9ybSddLkxPR0lOLCBscGFzcyA9IGRvY3VtZW50LmZvcm1zWydtYWluX2Zvcm0nXS5QQVNTV0Q7CglpZihsbG9nICE9IG51bGwgJiYgbHBhc3MgIT0gbnVsbCkgeyBpZihsbG9nLnZhbHVlLmxlbmd0aCA+IDApIGxwYXNzLmZvY3VzKCk7IGVsc2UgbGxvZy5mb2N1cygpO30KfSAvLyBzZXRGb2N1c09uTG9hZCBmdW5jCjwvc2NyaXB0Pgo8L2hlYWQ+Cjxib2R5IGJnY29sb3I9IiNmZmZmZmYiIHRleHQ9IiMwMDAwMDAiIG9uTG9hZD0ic2V0Rm9jdXNPbkxvYWQoKSI+Cjx0YWJsZSBjZWxsc3BhY2luZz0wIGNlbGxwYWRkaW5nPTAgYm9yZGVyPTAgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+Cjx0cj4KPHRkIGhlaWdodD0iMTA1IiBiYWNrZ3JvdW5kPSIvb255bWEvaW1hZ2VzL3NoYXBrYTEuanBnIiBhbGlnbj1jZW50ZXIgdmFsaWduPXRvcD48aW1nIHNyYz0vb255bWEvaW1hZ2VzL29ueW1hLmpwZyBhbHQ9Ik9ueW1hIEJpbGxpbmcgU3lzdGVtIiBib3JkZXI9MD48L3RkPjwvdHI+Cjx0cj4KPHRkIGNsYXNzPSJtZXNzYWdlIj4KPGNlbnRlcj4KPGZvcm0gYWN0aW9uPWxvZ2luLmh0bXMgbWV0aG9kPXBvc3QgbmFtZT0ibWFpbl9mb3JtIj4KPHRhYmxlPgo8dHI+Cjx0ZCBhbGlnbj1yaWdodCBjbGFzcz0ibWFpbiI+TG9naW48L3RkPgo8dGQ+PGlucHV0IG5hbWU9J0xPR0lOJyBzaXplPTE2IHZhbHVlPSdhdGF0YXJuaWtvdic+PC90ZD4KPC90cj48dHI+Cjx0ZCBhbGlnbj1yaWdodCBjbGFzcz0ibWFpbiI+UGFzc3dvcmQ8L3RkPgo8dGQ+PGlucHV0IG5hbWU9UEFTU1dEIHNpemU9MTYgdHlwZT1wYXNzd29yZD48L3RkPgo8dHI+Cjx0ZCBjb2xzcGFuPTIgYWxpZ249cmlnaHQ+PGlucHV0IHR5cGU9c3VibWl0IG5hbWU9ZW50ZXIgdmFsdWU9J0VudGVyJz4mbmJzcDs8L3RkPgo8L3RyPgo8L3RhYmxlPgo8L2Zvcm0+CjwvY2VudGVyPgo8L3RkPjwvdHI+Cjx0cj48dGQgYWxpZ249Y2VudGVyIGNsYXNzPSJzbWFsbCI+Cjx0YWJsZSB3aWR0aD0iNDAwIiBoZWlnaHQ9IjEiIGNlbGxzcGFjaW5nPTAgY2VsbHBhZGRpbmc9MD48dHI+PHRkIGJnY29sb3I9IiNkMGQ3ZTMiPjxpbWcgc3JjPSIvb255bWEvaW1hZ2VzL2RvdC5naWYiIGJvcmRlcj0wPjwvdGQ+PC90cj48L3RhYmxlPgpPbnltYSBCaWxsaW5nIFN5c3RlbSwgdi4gMS4yPGJyPkNvcHlyaWdodCAmY29weTsgMjAwMS0yMDA3IFN0YWNrIFNvZnQ8L3RkPjwvdHI+Cjx0cj48dGQgaGVpZ2h0PSI1MCI+Jm5ic3A7PC90ZD48L3RyPgo8dHI+PHRkIHZhbGlnbj10b3AgaGVpZ2h0PSI1MiIgYmFja2dyb3VuZD0iL29ueW1hL2ltYWdlcy9uaXoxLmpwZyI+PGltZyBzcmM9Ii9vbnltYS9pbWFnZXMvbml6MS5qcGciIGhlaWdodD01Mj48L3RkPjwvdHI+CjwvdGFibGU+CjwvYm9keT4KPC9odG1sPgo=]]>
+      </text>
+    </content>
+    <cookies>
+      <sent>
+        <cookie name=" ONYMA_LOGIN">atatarnikov</cookie>
+        <cookie name=" PHPSESSID">3229b245ea46ce054e98dfe4254ee1fa</cookie>
+      </sent>
+      <received/>
+    </cookies>
+    <cache>
+      <BeforeRequest>
+        <UrlInCache>True</UrlInCache>
+        <EntryType>65</EntryType>
+        <UseCount>0</UseCount>
+        <SourceUrlName>https://bach.develop.office.stacksoft.ru/onyma/</SourceUrlName>
+        <LocalFilename>C:\Documents and Settings\user1\Local Settings\Temporary Internet Files\Content.IE5\I1DAB65C\onyma[1].htm</LocalFilename>
+        <LastSyncTime>2007-07-18T15:18:10.000Z</LastSyncTime>
+        <LastModifiedTime>1601-01-01T04:00:00.000Z</LastModifiedTime>
+        <LastAccessTime>2007-07-18T15:18:21.625Z</LastAccessTime>
+        <HitRate>10</HitRate>
+        <HeaderInfo>
+          <![CDATA[HTTP/1.1 200 OK
+X-Powered-By: PHP/5.1.6
+Content-Length: 1617
+Content-Type: text/html
+
+~U:atatarnikov
+]]>
+        </HeaderInfo>
+        <FileSize>1617</FileSize>
+        <FileExtension/>
+        <ExpireTime>1601-01-01T04:00:00.000Z</ExpireTime>
+        <ExemptDelta>0</ExemptDelta>
+      </BeforeRequest>
+      <AfterRequest>
+        <UrlInCache>False</UrlInCache>
+      </AfterRequest>
+    </cache>
+    <QueryString/>
+    <PostData/>
+    <stream>
+      <isencrypted>True</isencrypted>
+      <request>
+        <size>527</size>
+        <encryptedsize>0</encryptedsize>
+        <address>10.0.15.11:443</address>
+        <rawdata>
+          <![CDATA[R0VUIC9vbnltYS8gSFRUUC8xLjENCkhvc3Q6IGJhY2guZGV2ZWxvcC5vZmZpY2Uuc3RhY2tzb2Z0LnJ1DQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93czsgVTsgV2luZG93cyBOVCA1LjE7IHJ1OyBydjoxLjguMS41KSBHZWNrby8yMDA3MDcxMyBGaXJlZm94LzIuMC4wLjUNCkFjY2VwdDogdGV4dC94bWwsYXBwbGljYXRpb24veG1sLGFwcGxpY2F0aW9uL3hodG1sK3htbCx0ZXh0L2h0bWw7cT0wLjksdGV4dC9wbGFpbjtxPTAuOCxpbWFnZS9wbmcsKi8qO3E9MC41DQpBY2NlcHQtTGFuZ3VhZ2U6IHJ1LXJ1LHJ1O3E9MC44LGVuLXVzO3E9MC41LGVuO3E9MC4zDQpBY2NlcHQtRW5jb2Rpbmc6IGd6aXAsZGVmbGF0ZQ0KQWNjZXB0LUNoYXJzZXQ6IHdpbmRvd3MtMTI1MSx1dGYtODtxPTAuNywqO3E9MC43DQpLZWVwLUFsaXZlOiAzMDANCkNvbm5lY3Rpb246IGtlZXAtYWxpdmUNCkNvb2tpZTogT05ZTUFfTE9HSU49YXRhdGFybmlrb3Y7IFBIUFNFU1NJRD0zMjI5YjI0NWVhNDZjZTA1NGU5OGRmZTQyNTRlZTFmYQ0KDQo=]]>
+        </rawdata>
+      </request>
+      <response>
+        <size>1843</size>
+        <encryptedsize>0</encryptedsize>
+        <address>10.0.2.179:2538</address>
+        <rawdata>
+          <![CDATA[SFRUUC8xLjEgMjAwIE9LDQpEYXRlOiBUdWUsIDI0IEp1bCAyMDA3IDA1OjM2OjAxIEdNVA0KU2VydmVyOiBBcGFjaGUvMi4yLjMgKFVuaXgpIG1vZF9zc2wvMi4yLjMgT3BlblNTTC8wLjkuN2sgUEhQLzUuMS42DQpYLVBvd2VyZWQtQnk6IFBIUC81LjEuNg0KQ29udGVudC1MZW5ndGg6IDE2MjgNCkNvbm5lY3Rpb246IGNsb3NlDQpDb250ZW50LVR5cGU6IHRleHQvaHRtbA0KDQo8aHRtbD4KPGhlYWQ+Cjx0aXRsZT5PTllNQSBCaWxsaW5nIFN5c3RlbTwvdGl0bGU+CjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0ic3R5bGVzLmNzcyIgdHlwZT0idGV4dC9jc3MiPgo8bWV0YSBodHRwLWVxdWl2PSJjb250ZW50LXR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDtjaGFyc2V0PWtvaTgtciI+CjxzY3JpcHQ+CmZ1bmN0aW9uIHNldEZvY3VzT25Mb2FkKCkgewoJdmFyIGxsb2cgPSBkb2N1bWVudC5mb3Jtc1snbWFpbl9mb3JtJ10uTE9HSU4sIGxwYXNzID0gZG9jdW1lbnQuZm9ybXNbJ21haW5fZm9ybSddLlBBU1NXRDsKCWlmKGxsb2cgIT0gbnVsbCAmJiBscGFzcyAhPSBudWxsKSB7IGlmKGxsb2cudmFsdWUubGVuZ3RoID4gMCkgbHBhc3MuZm9jdXMoKTsgZWxzZSBsbG9nLmZvY3VzKCk7fQp9IC8vIHNldEZvY3VzT25Mb2FkIGZ1bmMKPC9zY3JpcHQ+CjwvaGVhZD4KPGJvZHkgYmdjb2xvcj0iI2ZmZmZmZiIgdGV4dD0iIzAwMDAwMCIgb25Mb2FkPSJzZXRGb2N1c09uTG9hZCgpIj4KPHRhYmxlIGNlbGxzcGFjaW5nPTAgY2VsbHBhZGRpbmc9MCBib3JkZXI9MCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KPHRyPgo8dGQgaGVpZ2h0PSIxMDUiIGJhY2tncm91bmQ9Ii9vbnltYS9pbWFnZXMvc2hhcGthMS5qcGciIGFsaWduPWNlbnRlciB2YWxpZ249dG9wPjxpbWcgc3JjPS9vbnltYS9pbWFnZXMvb255bWEuanBnIGFsdD0iT255bWEgQmlsbGluZyBTeXN0ZW0iIGJvcmRlcj0wPjwvdGQ+PC90cj4KPHRyPgo8dGQgY2xhc3M9Im1lc3NhZ2UiPgo8Y2VudGVyPgo8Zm9ybSBhY3Rpb249bG9naW4uaHRtcyBtZXRob2Q9cG9zdCBuYW1lPSJtYWluX2Zvcm0iPgo8dGFibGU+Cjx0cj4KPHRkIGFsaWduPXJpZ2h0IGNsYXNzPSJtYWluIj5Mb2dpbjwvdGQ+Cjx0ZD48aW5wdXQgbmFtZT0nTE9HSU4nIHNpemU9MTYgdmFsdWU9J2F0YXRhcm5pa292Jz48L3RkPgo8L3RyPjx0cj4KPHRkIGFsaWduPXJpZ2h0IGNsYXNzPSJtYWluIj5QYXNzd29yZDwvdGQ+Cjx0ZD48aW5wdXQgbmFtZT1QQVNTV0Qgc2l6ZT0xNiB0eXBlPXBhc3N3b3JkPjwvdGQ+Cjx0cj4KPHRkIGNvbHNwYW49MiBhbGlnbj1yaWdodD48aW5wdXQgdHlwZT1zdWJtaXQgbmFtZT1lbnRlciB2YWx1ZT0nRW50ZXInPiZuYnNwOzwvdGQ+CjwvdHI+CjwvdGFibGU+CjwvZm9ybT4KPC9jZW50ZXI+CjwvdGQ+PC90cj4KPHRyPjx0ZCBhbGlnbj1jZW50ZXIgY2xhc3M9InNtYWxsIj4KPHRhYmxlIHdpZHRoPSI0MDAiIGhlaWdodD0iMSIgY2VsbHNwYWNpbmc9MCBjZWxscGFkZGluZz0wPjx0cj48dGQgYmdjb2xvcj0iI2QwZDdlMyI+PGltZyBzcmM9Ii9vbnltYS9pbWFnZXMvZG90LmdpZiIgYm9yZGVyPTA+PC90ZD48L3RyPjwvdGFibGU+Ck9ueW1hIEJpbGxpbmcgU3lzdGVtLCB2LiAxLjI8YnI+Q29weXJpZ2h0ICZjb3B5OyAyMDAxLTIwMDcgU3RhY2sgU29mdDwvdGQ+PC90cj4KPHRyPjx0ZCBoZWlnaHQ9IjUwIj4mbmJzcDs8L3RkPjwvdHI+Cjx0cj48dGQgdmFsaWduPXRvcCBoZWlnaHQ9IjUyIiBiYWNrZ3JvdW5kPSIvb255bWEvaW1hZ2VzL25pejEuanBnIj48aW1nIHNyYz0iL29ueW1hL2ltYWdlcy9uaXoxLmpwZyIgaGVpZ2h0PTUyPjwvdGQ+PC90cj4KPC90YWJsZT4KPC9ib2R5Pgo8L2h0bWw+Cg==]]>
+        </rawdata>
+      </response>
+    </stream>
+  </entry>
+  <entry method="POST" url="https://bach.develop.office.stacksoft.ru/onyma/login.htms">
+    <timestart>2007-07-24T09:36:02.796Z</timestart>
+    <timeend>2007-07-24T09:36:03.000Z</timeend>
+    <duration>0,204 s</duration>
+    <processname>firefox.exe[3316]</processname>
+    <result>302</result>
+    <size>0</size>
+    <stage>REQUEST_CLOSE</stage>
+    <mimetype>text/html</mimetype>
+    <redirecturl> https://bach.develop.office.stacksoft.ru/onyma/main/main_menu.htms</redirecturl>
+    <requestCamefromCache>False</requestCamefromCache>
+    <responseCamefromCache>False</responseCamefromCache>
+    <requestobjectname>/onyma/login.htms</requestobjectname>
+    <winet_sr_result>True</winet_sr_result>
+    <winet_sr_errormessage/>
+    <bodySize>0</bodySize>
+    <headers>
+      <requestheaders>
+        <header>POST /onyma/login.htms HTTP/1.1</header>
+        <header>Host: bach.develop.office.stacksoft.ru</header>
+        <header>User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.8.1.5) Gecko/20070713 Firefox/2.0.0.5</header>
+        <header>Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5</header>
+        <header>Accept-Language: ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3</header>
+        <header>Accept-Encoding: gzip,deflate</header>
+        <header>Accept-Charset: windows-1251,utf-8;q=0.7,*;q=0.7</header>
+        <header>Keep-Alive: 300</header>
+        <header>Connection: keep-alive</header>
+        <header>Referer: https://bach.develop.office.stacksoft.ru/onyma/</header>
+        <header>Cookie: ONYMA_LOGIN=atatarnikov; PHPSESSID=3229b245ea46ce054e98dfe4254ee1fa</header>
+        <header>Content-Type: application/x-www-form-urlencoded</header>
+        <header>Content-Length: 45</header>
+      </requestheaders>
+      <responseheaders>
+        <header>HTTP/1.1 302 Found</header>
+        <header>Date: Tue, 24 Jul 2007 05:36:13 GMT</header>
+        <header>Server: Apache/2.2.3 (Unix) mod_ssl/2.2.3 OpenSSL/0.9.7k PHP/5.1.6</header>
+        <header>X-Powered-By: PHP/5.1.6</header>
+        <header>Set-Cookie: ONYMA_LOGIN=atatarnikov</header>
+        <header>Set-Cookie: ONYMA_OPERID=2703; path=/</header>
+        <header>Set-Cookie: ONYMA_SKEY=995015_9HV9XX7E3VPB2o85b5644Amj; path=/</header>
+        <header>Set-Cookie: ONYMA_SUSR=ow_develop; path=/</header>
+        <header>Location: https://bach.develop.office.stacksoft.ru/onyma/main/main_menu.htms</header>
+        <header>Content-Length: 0</header>
+        <header>Connection: close</header>
+        <header>Content-Type: text/html</header>
+      </responseheaders>
+    </headers>
+    <content>
+      <contentLength>0</contentLength>
+      <mimetype>text/html</mimetype>
+    </content>
+    <cookies>
+      <sent>
+        <cookie name=" ONYMA_LOGIN">atatarnikov</cookie>
+        <cookie name=" PHPSESSID">3229b245ea46ce054e98dfe4254ee1fa</cookie>
+      </sent>
+      <received>
+        <setcookie domain="" expires="" name="ONYMA_LOGIN" path="">atatarnikov</setcookie>
+        <setcookie domain="" expires="" name="ONYMA_OPERID" path="/">2703</setcookie>
+        <setcookie domain="" expires="" name="ONYMA_SKEY" path="/">995015_9HV9XX7E3VPB2o85b5644Amj</setcookie>
+        <setcookie domain="" expires="" name="ONYMA_SUSR" path="/">ow_develop</setcookie>
+      </received>
+    </cookies>
+    <cache>
+      <BeforeRequest>
+        <UrlInCache>False</UrlInCache>
+      </BeforeRequest>
+      <AfterRequest>
+        <UrlInCache>False</UrlInCache>
+      </AfterRequest>
+    </cache>
+    <QueryString/>
+    <PostData>
+      <mimetype>application/x-www-form-urlencoded</mimetype>
+      <size>45</size>
+      <params>
+        <param name="LOGIN">atatarnikov</param>
+        <param name="PASSWD">qwerty13</param>
+        <param name="enter">Enter</param>
+      </params>
+      <rawdata>
+        <![CDATA[TE9HSU49YXRhdGFybmlrb3YmUEFTU1dEPXF3ZXJ0eTEzJmVudGVyPUVudGVy]]>
+      </rawdata>
+    </PostData>
+    <stream>
+      <isencrypted>True</isencrypted>
+      <request>
+        <size>710</size>
+        <encryptedsize>0</encryptedsize>
+        <address>10.0.15.11:443</address>
+        <rawdata>
+          <![CDATA[UE9TVCAvb255bWEvbG9naW4uaHRtcyBIVFRQLzEuMQ0KSG9zdDogYmFjaC5kZXZlbG9wLm9mZmljZS5zdGFja3NvZnQucnUNClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzOyBVOyBXaW5kb3dzIE5UIDUuMTsgcnU7IHJ2OjEuOC4xLjUpIEdlY2tvLzIwMDcwNzEzIEZpcmVmb3gvMi4wLjAuNQ0KQWNjZXB0OiB0ZXh0L3htbCxhcHBsaWNhdGlvbi94bWwsYXBwbGljYXRpb24veGh0bWwreG1sLHRleHQvaHRtbDtxPTAuOSx0ZXh0L3BsYWluO3E9MC44LGltYWdlL3BuZywqLyo7cT0wLjUNCkFjY2VwdC1MYW5ndWFnZTogcnUtcnUscnU7cT0wLjgsZW4tdXM7cT0wLjUsZW47cT0wLjMNCkFjY2VwdC1FbmNvZGluZzogZ3ppcCxkZWZsYXRlDQpBY2NlcHQtQ2hhcnNldDogd2luZG93cy0xMjUxLHV0Zi04O3E9MC43LCo7cT0wLjcNCktlZXAtQWxpdmU6IDMwMA0KQ29ubmVjdGlvbjoga2VlcC1hbGl2ZQ0KUmVmZXJlcjogaHR0cHM6Ly9iYWNoLmRldmVsb3Aub2ZmaWNlLnN0YWNrc29mdC5ydS9vbnltYS8NCkNvb2tpZTogT05ZTUFfTE9HSU49YXRhdGFybmlrb3Y7IFBIUFNFU1NJRD0zMjI5YjI0NWVhNDZjZTA1NGU5OGRmZTQyNTRlZTFmYQ0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQNCkNvbnRlbnQtTGVuZ3RoOiA0NQ0KDQpMT0dJTj1hdGF0YXJuaWtvdiZQQVNTV0Q9cXdlcnR5MTMmZW50ZXI9RW50ZXI=]]>
+        </rawdata>
+      </request>
+      <response>
+        <size>476</size>
+        <encryptedsize>0</encryptedsize>
+        <address>10.0.2.179:2542</address>
+        <rawdata>
+          <![CDATA[SFRUUC8xLjEgMzAyIEZvdW5kDQpEYXRlOiBUdWUsIDI0IEp1bCAyMDA3IDA1OjM2OjEzIEdNVA0KU2VydmVyOiBBcGFjaGUvMi4yLjMgKFVuaXgpIG1vZF9zc2wvMi4yLjMgT3BlblNTTC8wLjkuN2sgUEhQLzUuMS42DQpYLVBvd2VyZWQtQnk6IFBIUC81LjEuNg0KU2V0LUNvb2tpZTogT05ZTUFfTE9HSU49YXRhdGFybmlrb3YNClNldC1Db29raWU6IE9OWU1BX09QRVJJRD0yNzAzOyBwYXRoPS8NClNldC1Db29raWU6IE9OWU1BX1NLRVk9OTk1MDE1XzlIVjlYWDdFM1ZQQjJvODViNTY0NEFtajsgcGF0aD0vDQpTZXQtQ29va2llOiBPTllNQV9TVVNSPW93X2RldmVsb3A7IHBhdGg9Lw0KTG9jYXRpb246IGh0dHBzOi8vYmFjaC5kZXZlbG9wLm9mZmljZS5zdGFja3NvZnQucnUvb255bWEvbWFpbi9tYWluX21lbnUuaHRtcw0KQ29udGVudC1MZW5ndGg6IDANCkNvbm5lY3Rpb246IGNsb3NlDQpDb250ZW50LVR5cGU6IHRleHQvaHRtbA0KDQo=]]>
+        </rawdata>
+      </response>
+    </stream>
+  </entry>
+  <entry method="GET" url="https://bach.develop.office.stacksoft.ru/onyma/main/main_menu.htms">
+    <timestart>2007-07-24T09:36:03.015Z</timestart>
+    <timeend>2007-07-24T09:36:03.265Z</timeend>
+    <duration>0,249 s</duration>
+    <processname>firefox.exe[3316]</processname>
+    <result>200</result>
+    <size>0</size>
+    <stage>REQUEST_CLOSE</stage>
+    <mimetype>text/html</mimetype>
+    <redirecturl/>
+    <requestCamefromCache>False</requestCamefromCache>
+    <responseCamefromCache>False</responseCamefromCache>
+    <requestobjectname>/onyma/main/main_menu.htms</requestobjectname>
+    <winet_sr_result>True</winet_sr_result>
+    <winet_sr_errormessage/>
+    <bodySize>0</bodySize>
+    <headers>
+      <requestheaders>
+        <header>GET /onyma/main/main_menu.htms HTTP/1.1</header>
+        <header>Host: bach.develop.office.stacksoft.ru</header>
+        <header>User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.8.1.5) Gecko/20070713 Firefox/2.0.0.5</header>
+        <header>Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5</header>
+        <header>Accept-Language: ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3</header>
+        <header>Accept-Encoding: gzip,deflate</header>
+        <header>Accept-Charset: windows-1251,utf-8;q=0.7,*;q=0.7</header>
+        <header>Keep-Alive: 300</header>
+        <header>Connection: keep-alive</header>
+        <header>Referer: https://bach.develop.office.stacksoft.ru/onyma/</header>
+        <header>Cookie: ONYMA_LOGIN=atatarnikov; PHPSESSID=3229b245ea46ce054e98dfe4254ee1fa; ONYMA_OPERID=2703; ONYMA_SKEY=995015_9HV9XX7E3VPB2o85b5644Amj; ONYMA_SUSR=ow_develop</header>
+      </requestheaders>
+      <responseheaders>
+        <header>HTTP/1.1 200 OK</header>
+        <header>Date: Tue, 24 Jul 2007 05:36:14 GMT</header>
+        <header>Server: Apache/2.2.3 (Unix) mod_ssl/2.2.3 OpenSSL/0.9.7k PHP/5.1.6</header>
+        <header>X-Powered-By: PHP/5.1.6</header>
+        <header>Expires: Thu, 19 Nov 1981 08:52:00 GMT</header>
+        <header>Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</header>
+        <header>Pragma: no-cache</header>
+        <header>Set-Cookie: ONYMA_OPERID=2703; path=/</header>
+        <header>Set-Cookie: ONYMA_SKEY=995015_9HV9XX7E3VPB2o85b5644Amj; path=/</header>
+        <header>Set-Cookie: ONYMA_SUSR=ow_develop; path=/</header>
+        <header>Content-Length: 2218</header>
+        <header>Connection: close</header>
+        <header>Content-Type: text/html</header>
+      </responseheaders>
+    </headers>
+    <content>
+      <contentLength>2218</contentLength>
+      <mimetype>text/html</mimetype>
+      <text>
+        <![CDATA[PGh0bWw+CjxoZWFkPgo8bWV0YSBodHRwLWVxdWl2PSJjb250ZW50LXR5cGUiIGNvbnRlbnQ9InRleHQtaHRtbDtjaGFyc2V0PWtvaTgtciI+Cjx0aXRsZT5PTllNQSBCaWxsaW5nIFN5c3RlbTwvdGl0bGU+CjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0ic3R5bGVzLmNzcyIgdHlwZT0idGV4dC9jc3MiPgo8L2hlYWQ+Cjxib2R5IGJnY29sb3I9I2ZmZmZmZiB0ZXh0PSMwMDAwMDA+Cjx0YWJsZSBjZWxsc3BhY2luZz0wIGNlbGxwYWRkaW5nPTAgYm9yZGVyPTAgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+Cjx0cj4KPHRkIGhlaWdodD0iMTA1IiBiYWNrZ3JvdW5kPSIvb255bWEvaW1hZ2VzL3NoYXBrYTEuanBnIiBhbGlnbj1jZW50ZXIgdmFsaWduPXRvcD48aW1nIHNyYz0vb255bWEvaW1hZ2VzL29ueW1hLmpwZyBhbHQ9Ik9ueW1hIEJpbGxpbmcgU3lzdGVtIiBib3JkZXI9MD48L3RkPjwvdHI+Cjx0cj4KPHRkIGNsYXNzPSJtYWluIj4KPGNlbnRlcj4KPHRhYmxlIGJvcmRlcj0iMCIgYmdjb2xvcj0iI0VFRUVFRSIgYWxpZ249ImNlbnRlciIgaWQ9Im9ueW1hU3lzdGVtTWVudSIgY2VsbHNwYWNpbmc9IjAiIGNlbGxwYWRkaW5nPSIxIj48dHI+PHRkIGNsYXNzPSJtZW51Ij48YSB0aXRsZT0iIiBpZD0ibWVudTg0MSIgY2xhc3M9Im9fbWVudSIgdGFyZ2V0PSJfdG9wIiAgaHJlZj0iL29ueW1hL21haW4vbWFpbi5odG1zPyZhbXA7bWVudWl0ZW09ODQxJmFtcDtfY2M9MSI+PGltZyBhbHQ9IuHEzcnOydPU0sHUz9IiIHNyYz0iL29ueW1hL2ltYWdlcy9hZG1pbl9yLmpwZyIgYm9yZGVyPSIwIiB2c3BhY2U9IjIiPjwvYT48YnI+PGEgdGl0bGU9IiIgaWQ9Im1lbnU4NDIiIGNsYXNzPSJvX21lbnUiIHRhcmdldD0iX3RvcCIgIGhyZWY9Ii9vbnltYS9tYWluL21haW5fb3Blci5odG1zPyZhbXA7bWVudWl0ZW09ODQyJmFtcDtfY2M9MSI+PGltZyBhbHQ9Iu/QxdLB1M/SIiBzcmM9Ii9vbnltYS9pbWFnZXMvb3BlcmF0b3Jfci5qcGciIGJvcmRlcj0iMCIgdnNwYWNlPSIyIj48L2E+PGJyPjxhIHRpdGxlPSIiIGlkPSJtZW51MTI0MSIgY2xhc3M9Im9fbWVudSIgdGFyZ2V0PSJfdG9wIiAgaHJlZj0iL29ueW1hL21haW4vbWFpbi5odG1zPyZhbXA7bWVudWl0ZW09MTI0MSZhbXA7X2NjPTEiPjxpbWcgYWx0PSLhzsHMydTJyyIgc3JjPSIvb255bWEvaW1hZ2VzL2FuYWx5c3Rfci5qcGciIGJvcmRlcj0iMCIgdnNwYWNlPSIyIj48L2E+PGJyPjxhIHRpdGxlPSIiIGlkPSJtZW51ODQzIiBjbGFzcz0ib19tZW51IiB0YXJnZXQ9Il90b3AiICBocmVmPSIvb255bWEvbWFpbi9tYWluLmh0bXM/JmFtcDttZW51aXRlbT04NDMmYW1wO19jYz0xIj48aW1nIGFsdD0i8sHa0sHCz9TeycsiIHNyYz0iL29ueW1hL2ltYWdlcy9kZXZlbG9wX3IuanBnIiBib3JkZXI9IjAiIHZzcGFjZT0iMiI+PC9hPjxicj48YSB0aXRsZT0iIiBpZD0ibWVudTI4NjIiIGNsYXNzPSJvX21lbnUiIHRhcmdldD0iX3RvcCIgIGhyZWY9Ii9vbnltYV9vc3Mvd29ya2Zsb3cvPyZhbXA7bWVudWl0ZW09Mjg2MiZhbXA7X2NjPTEiPjxpbWcgYWx0PSLz8O8iIHNyYz0iL29ueW1hL2ltYWdlcy9zcG9fci5qcGciIGJvcmRlcj0iMCIgdnNwYWNlPSIyIj48L2E+PGJyPjxhIHRpdGxlPSIiIGlkPSJtZW51OCIgY2xhc3M9Im9fbWVudSIgdGFyZ2V0PSJfdG9wIiAgaHJlZj0iL29ueW1hL2xvZ291dC5odG1zPyZhbXA7bWVudWl0ZW09OCZhbXA7X2NjPTEiPjxpbWcgYWx0PSL32cjPxCIgc3JjPSIvb255bWEvaW1hZ2VzL2V4aXRfci5qcGciIGJvcmRlcj0iMCIgdnNwYWNlPSIyIj48L2E+PC90ZD48L3RyPjwvdGFibGU+PC9jZW50ZXI+CjwvdGQ+PC90cj4KPHRyPjx0ZCBhbGlnbj1jZW50ZXIgY2xhc3M9Im5jc21hbGwiPgo8dGFibGUgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxIiBjZWxsc3BhY2luZz0wIGNlbGxwYWRkaW5nPTA+PHRyPjx0ZCBjbGFzcz0icGFnZWZvb3RlciIgYmdjb2xvcj0iI2QwZDdlMyI+PGltZyBzcmM9Ii9vbnltYS9pbWFnZXMvZG90LmdpZiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgYm9yZGVyPTA+PC90ZD48L3RyPjwvdGFibGU+CkNvcHlyaWdodCAmY29weTsgMjAwMS0yMDA3IFN0YWNrIFNvZnQ8L3RkPjwvdHI+Cjx0cj48dGQgaGVpZ2h0PSI1MCI+Jm5ic3A7PC90ZD48L3RyPgo8dHI+PHRkIGhlaWdodD0iNTIiIGJhY2tncm91bmQ9Ii9vbnltYS9pbWFnZXMvbml6MS5qcGciPjwvdGQ+PC90cj4KPC90YWJsZT4KPC9ib2R5Pgo8L2h0bWw+Cg==]]>
+      </text>
+    </content>
+    <cookies>
+      <sent>
+        <cookie name=" ONYMA_LOGIN">atatarnikov</cookie>
+        <cookie name=" PHPSESSID">3229b245ea46ce054e98dfe4254ee1fa</cookie>
+        <cookie name=" ONYMA_OPERID">2703</cookie>
+        <cookie name=" ONYMA_SKEY">995015_9HV9XX7E3VPB2o85b5644Amj</cookie>
+        <cookie name=" ONYMA_SUSR">ow_develop</cookie>
+      </sent>
+      <received>
+        <setcookie domain="" expires="" name="ONYMA_OPERID" path="/">2703</setcookie>
+        <setcookie domain="" expires="" name="ONYMA_SKEY" path="/">995015_9HV9XX7E3VPB2o85b5644Amj</setcookie>
+        <setcookie domain="" expires="" name="ONYMA_SUSR" path="/">ow_develop</setcookie>
+      </received>
+    </cookies>
+    <cache>
+      <BeforeRequest>
+        <UrlInCache>False</UrlInCache>
+      </BeforeRequest>
+      <AfterRequest>
+        <UrlInCache>False</UrlInCache>
+      </AfterRequest>
+    </cache>
+    <QueryString/>
+    <PostData/>
+    <stream>
+      <isencrypted>True</isencrypted>
+      <request>
+        <size>690</size>
+        <encryptedsize>0</encryptedsize>
+        <address>10.0.15.11:443</address>
+        <rawdata>
+          <![CDATA[R0VUIC9vbnltYS9tYWluL21haW5fbWVudS5odG1zIEhUVFAvMS4xDQpIb3N0OiBiYWNoLmRldmVsb3Aub2ZmaWNlLnN0YWNrc29mdC5ydQ0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3M7IFU7IFdpbmRvd3MgTlQgNS4xOyBydTsgcnY6MS44LjEuNSkgR2Vja28vMjAwNzA3MTMgRmlyZWZveC8yLjAuMC41DQpBY2NlcHQ6IHRleHQveG1sLGFwcGxpY2F0aW9uL3htbCxhcHBsaWNhdGlvbi94aHRtbCt4bWwsdGV4dC9odG1sO3E9MC45LHRleHQvcGxhaW47cT0wLjgsaW1hZ2UvcG5nLCovKjtxPTAuNQ0KQWNjZXB0LUxhbmd1YWdlOiBydS1ydSxydTtxPTAuOCxlbi11cztxPTAuNSxlbjtxPTAuMw0KQWNjZXB0LUVuY29kaW5nOiBnemlwLGRlZmxhdGUNCkFjY2VwdC1DaGFyc2V0OiB3aW5kb3dzLTEyNTEsdXRmLTg7cT0wLjcsKjtxPTAuNw0KS2VlcC1BbGl2ZTogMzAwDQpDb25uZWN0aW9uOiBrZWVwLWFsaXZlDQpSZWZlcmVyOiBodHRwczovL2JhY2guZGV2ZWxvcC5vZmZpY2Uuc3RhY2tzb2Z0LnJ1L29ueW1hLw0KQ29va2llOiBPTllNQV9MT0dJTj1hdGF0YXJuaWtvdjsgUEhQU0VTU0lEPTMyMjliMjQ1ZWE0NmNlMDU0ZTk4ZGZlNDI1NGVlMWZhOyBPTllNQV9PUEVSSUQ9MjcwMzsgT05ZTUFfU0tFWT05OTUwMTVfOUhWOVhYN0UzVlBCMm84NWI1NjQ0QW1qOyBPTllNQV9TVVNSPW93X2RldmVsb3ANCg0K]]>
+        </rawdata>
+      </request>
+      <response>
+        <size>2716</size>
+        <encryptedsize>0</encryptedsize>
+        <address>10.0.2.179:2543</address>
+        <rawdata>
+          <![CDATA[SFRUUC8xLjEgMjAwIE9LDQpEYXRlOiBUdWUsIDI0IEp1bCAyMDA3IDA1OjM2OjE0IEdNVA0KU2VydmVyOiBBcGFjaGUvMi4yLjMgKFVuaXgpIG1vZF9zc2wvMi4yLjMgT3BlblNTTC8wLjkuN2sgUEhQLzUuMS42DQpYLVBvd2VyZWQtQnk6IFBIUC81LjEuNg0KRXhwaXJlczogVGh1LCAxOSBOb3YgMTk4MSAwODo1MjowMCBHTVQNCkNhY2hlLUNvbnRyb2w6IG5vLXN0b3JlLCBuby1jYWNoZSwgbXVzdC1yZXZhbGlkYXRlLCBwb3N0LWNoZWNrPTAsIHByZS1jaGVjaz0wDQpQcmFnbWE6IG5vLWNhY2hlDQpTZXQtQ29va2llOiBPTllNQV9PUEVSSUQ9MjcwMzsgcGF0aD0vDQpTZXQtQ29va2llOiBPTllNQV9TS0VZPTk5NTAxNV85SFY5WFg3RTNWUEIybzg1YjU2NDRBbWo7IHBhdGg9Lw0KU2V0LUNvb2tpZTogT05ZTUFfU1VTUj1vd19kZXZlbG9wOyBwYXRoPS8NCkNvbnRlbnQtTGVuZ3RoOiAyMjE4DQpDb25uZWN0aW9uOiBjbG9zZQ0KQ29udGVudC1UeXBlOiB0ZXh0L2h0bWwNCg0KPGh0bWw+CjxoZWFkPgo8bWV0YSBodHRwLWVxdWl2PSJjb250ZW50LXR5cGUiIGNvbnRlbnQ9InRleHQtaHRtbDtjaGFyc2V0PWtvaTgtciI+Cjx0aXRsZT5PTllNQSBCaWxsaW5nIFN5c3RlbTwvdGl0bGU+CjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0ic3R5bGVzLmNzcyIgdHlwZT0idGV4dC9jc3MiPgo8L2hlYWQ+Cjxib2R5IGJnY29sb3I9I2ZmZmZmZiB0ZXh0PSMwMDAwMDA+Cjx0YWJsZSBjZWxsc3BhY2luZz0wIGNlbGxwYWRkaW5nPTAgYm9yZGVyPTAgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+Cjx0cj4KPHRkIGhlaWdodD0iMTA1IiBiYWNrZ3JvdW5kPSIvb255bWEvaW1hZ2VzL3NoYXBrYTEuanBnIiBhbGlnbj1jZW50ZXIgdmFsaWduPXRvcD48aW1nIHNyYz0vb255bWEvaW1hZ2VzL29ueW1hLmpwZyBhbHQ9Ik9ueW1hIEJpbGxpbmcgU3lzdGVtIiBib3JkZXI9MD48L3RkPjwvdHI+Cjx0cj4KPHRkIGNsYXNzPSJtYWluIj4KPGNlbnRlcj4KPHRhYmxlIGJvcmRlcj0iMCIgYmdjb2xvcj0iI0VFRUVFRSIgYWxpZ249ImNlbnRlciIgaWQ9Im9ueW1hU3lzdGVtTWVudSIgY2VsbHNwYWNpbmc9IjAiIGNlbGxwYWRkaW5nPSIxIj48dHI+PHRkIGNsYXNzPSJtZW51Ij48YSB0aXRsZT0iIiBpZD0ibWVudTg0MSIgY2xhc3M9Im9fbWVudSIgdGFyZ2V0PSJfdG9wIiAgaHJlZj0iL29ueW1hL21haW4vbWFpbi5odG1zPyZhbXA7bWVudWl0ZW09ODQxJmFtcDtfY2M9MSI+PGltZyBhbHQ9IuHEzcnOydPU0sHUz9IiIHNyYz0iL29ueW1hL2ltYWdlcy9hZG1pbl9yLmpwZyIgYm9yZGVyPSIwIiB2c3BhY2U9IjIiPjwvYT48YnI+PGEgdGl0bGU9IiIgaWQ9Im1lbnU4NDIiIGNsYXNzPSJvX21lbnUiIHRhcmdldD0iX3RvcCIgIGhyZWY9Ii9vbnltYS9tYWluL21haW5fb3Blci5odG1zPyZhbXA7bWVudWl0ZW09ODQyJmFtcDtfY2M9MSI+PGltZyBhbHQ9Iu/QxdLB1M/SIiBzcmM9Ii9vbnltYS9pbWFnZXMvb3BlcmF0b3Jfci5qcGciIGJvcmRlcj0iMCIgdnNwYWNlPSIyIj48L2E+PGJyPjxhIHRpdGxlPSIiIGlkPSJtZW51MTI0MSIgY2xhc3M9Im9fbWVudSIgdGFyZ2V0PSJfdG9wIiAgaHJlZj0iL29ueW1hL21haW4vbWFpbi5odG1zPyZhbXA7bWVudWl0ZW09MTI0MSZhbXA7X2NjPTEiPjxpbWcgYWx0PSLhzsHMydTJyyIgc3JjPSIvb255bWEvaW1hZ2VzL2FuYWx5c3Rfci5qcGciIGJvcmRlcj0iMCIgdnNwYWNlPSIyIj48L2E+PGJyPjxhIHRpdGxlPSIiIGlkPSJtZW51ODQzIiBjbGFzcz0ib19tZW51IiB0YXJnZXQ9Il90b3AiICBocmVmPSIvb255bWEvbWFpbi9tYWluLmh0bXM/JmFtcDttZW51aXRlbT04NDMmYW1wO19jYz0xIj48aW1nIGFsdD0i8sHa0sHCz9TeycsiIHNyYz0iL29ueW1hL2ltYWdlcy9kZXZlbG9wX3IuanBnIiBib3JkZXI9IjAiIHZzcGFjZT0iMiI+PC9hPjxicj48YSB0aXRsZT0iIiBpZD0ibWVudTI4NjIiIGNsYXNzPSJvX21lbnUiIHRhcmdldD0iX3RvcCIgIGhyZWY9Ii9vbnltYV9vc3Mvd29ya2Zsb3cvPyZhbXA7bWVudWl0ZW09Mjg2MiZhbXA7X2NjPTEiPjxpbWcgYWx0PSLz8O8iIHNyYz0iL29ueW1hL2ltYWdlcy9zcG9fci5qcGciIGJvcmRlcj0iMCIgdnNwYWNlPSIyIj48L2E+PGJyPjxhIHRpdGxlPSIiIGlkPSJtZW51OCIgY2xhc3M9Im9fbWVudSIgdGFyZ2V0PSJfdG9wIiAgaHJlZj0iL29ueW1hL2xvZ291dC5odG1zPyZhbXA7bWVudWl0ZW09OCZhbXA7X2NjPTEiPjxpbWcgYWx0PSL32cjPxCIgc3JjPSIvb255bWEvaW1hZ2VzL2V4aXRfci5qcGciIGJvcmRlcj0iMCIgdnNwYWNlPSIyIj48L2E+PC90ZD48L3RyPjwvdGFibGU+PC9jZW50ZXI+CjwvdGQ+PC90cj4KPHRyPjx0ZCBhbGlnbj1jZW50ZXIgY2xhc3M9Im5jc21hbGwiPgo8dGFibGUgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxIiBjZWxsc3BhY2luZz0wIGNlbGxwYWRkaW5nPTA+PHRyPjx0ZCBjbGFzcz0icGFnZWZvb3RlciIgYmdjb2xvcj0iI2QwZDdlMyI+PGltZyBzcmM9Ii9vbnltYS9pbWFnZXMvZG90LmdpZiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgYm9yZGVyPTA+PC90ZD48L3RyPjwvdGFibGU+CkNvcHlyaWdodCAmY29weTsgMjAwMS0yMDA3IFN0YWNrIFNvZnQ8L3RkPjwvdHI+Cjx0cj48dGQgaGVpZ2h0PSI1MCI+Jm5ic3A7PC90ZD48L3RyPgo8dHI+PHRkIGhlaWdodD0iNTIiIGJhY2tncm91bmQ9Ii9vbnltYS9pbWFnZXMvbml6MS5qcGciPjwvdGQ+PC90cj4KPC90YWJsZT4KPC9ib2R5Pgo8L2h0bWw+Cg==]]>
+        </rawdata>
+      </response>
+    </stream>
+  </entry>
+  <entry method="GET" url="https://bach.develop.office.stacksoft.ru/onyma/logout.htms?&amp;menuitem=8&amp;_cc=1">
+    <timestart>2007-07-24T09:36:05.375Z</timestart>
+    <timeend>2007-07-24T09:36:05.468Z</timeend>
+    <duration>0,093 s</duration>
+    <processname>firefox.exe[3316]</processname>
+    <result>302</result>
+    <size>0</size>
+    <stage>REQUEST_CLOSE</stage>
+    <mimetype>text/html</mimetype>
+    <redirecturl> https://bach.develop.office.stacksoft.ru/onyma/index.htms?AUTH_ERR=OUT</redirecturl>
+    <requestCamefromCache>False</requestCamefromCache>
+    <responseCamefromCache>False</responseCamefromCache>
+    <requestobjectname>/onyma/logout.htms?&amp;menuitem=8&amp;_cc=1</requestobjectname>
+    <winet_sr_result>True</winet_sr_result>
+    <winet_sr_errormessage/>
+    <bodySize>0</bodySize>
+    <headers>
+      <requestheaders>
+        <header>GET /onyma/logout.htms?&amp;menuitem=8&amp;_cc=1 HTTP/1.1</header>
+        <header>Host: bach.develop.office.stacksoft.ru</header>
+        <header>User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.8.1.5) Gecko/20070713 Firefox/2.0.0.5</header>
+        <header>Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5</header>
+        <header>Accept-Language: ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3</header>
+        <header>Accept-Encoding: gzip,deflate</header>
+        <header>Accept-Charset: windows-1251,utf-8;q=0.7,*;q=0.7</header>
+        <header>Keep-Alive: 300</header>
+        <header>Connection: keep-alive</header>
+        <header>Referer: https://bach.develop.office.stacksoft.ru/onyma/main/main_menu.htms</header>
+        <header>Cookie: ONYMA_LOGIN=atatarnikov; PHPSESSID=3229b245ea46ce054e98dfe4254ee1fa; ONYMA_OPERID=2703; ONYMA_SKEY=995015_9HV9XX7E3VPB2o85b5644Amj; ONYMA_SUSR=ow_develop</header>
+      </requestheaders>
+      <responseheaders>
+        <header>HTTP/1.1 302 Found</header>
+        <header>Date: Tue, 24 Jul 2007 05:36:16 GMT</header>
+        <header>Server: Apache/2.2.3 (Unix) mod_ssl/2.2.3 OpenSSL/0.9.7k PHP/5.1.6</header>
+        <header>X-Powered-By: PHP/5.1.6</header>
+        <header>Expires: Thu, 19 Nov 1981 08:52:00 GMT</header>
+        <header>Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0</header>
+        <header>Pragma: no-cache</header>
+        <header>Set-Cookie: ONYMA_OPERID=2703; path=/</header>
+        <header>Set-Cookie: ONYMA_SKEY=995015_9HV9XX7E3VPB2o85b5644Amj; path=/</header>
+        <header>Set-Cookie: ONYMA_SUSR=ow_develop; path=/</header>
+        <header>Set-Cookie: ONYMA_OPERID=deleted; expires=Mon, 24-Jul-2006 05:36:15 GMT; path=/</header>
+        <header>Set-Cookie: ONYMA_SKEY=deleted; expires=Mon, 24-Jul-2006 05:36:15 GMT; path=/</header>
+        <header>Set-Cookie: ONYMA_SUSR=deleted; expires=Mon, 24-Jul-2006 05:36:15 GMT; path=/</header>
+        <header>Location: https://bach.develop.office.stacksoft.ru/onyma/index.htms?AUTH_ERR=OUT</header>
+        <header>Content-Length: 0</header>
+        <header>Connection: close</header>
+        <header>Content-Type: text/html</header>
+      </responseheaders>
+    </headers>
+    <content>
+      <contentLength>0</contentLength>
+      <mimetype>text/html</mimetype>
+    </content>
+    <cookies>
+      <sent>
+        <cookie name=" ONYMA_LOGIN">atatarnikov</cookie>
+        <cookie name=" PHPSESSID">3229b245ea46ce054e98dfe4254ee1fa</cookie>
+        <cookie name=" ONYMA_OPERID">2703</cookie>
+        <cookie name=" ONYMA_SKEY">995015_9HV9XX7E3VPB2o85b5644Amj</cookie>
+        <cookie name=" ONYMA_SUSR">ow_develop</cookie>
+      </sent>
+      <received>
+        <setcookie domain="" expires="" name="ONYMA_OPERID" path="/">2703</setcookie>
+        <setcookie domain="" expires="" name="ONYMA_SKEY" path="/">995015_9HV9XX7E3VPB2o85b5644Amj</setcookie>
+        <setcookie domain="" expires="" name="ONYMA_SUSR" path="/">ow_develop</setcookie>
+        <setcookie domain="" expires="Mon, 24-Jul-2006 05:36:15 GMT" name="ONYMA_OPERID" path="/">deleted</setcookie>
+        <setcookie domain="" expires="Mon, 24-Jul-2006 05:36:15 GMT" name="ONYMA_SKEY" path="/">deleted</setcookie>
+        <setcookie domain="" expires="Mon, 24-Jul-2006 05:36:15 GMT" name="ONYMA_SUSR" path="/">deleted</setcookie>
+      </received>
+    </cookies>
+    <cache>
+      <BeforeRequest>
+        <UrlInCache>True</UrlInCache>
+        <EntryType>4161</EntryType>
+        <UseCount>0</UseCount>
+        <SourceUrlName>https://bach.develop.office.stacksoft.ru/onyma/index.htms?AUTH_ERR=OUT</SourceUrlName>
+        <LocalFilename>C:\Documents and Settings\user1\Local Settings\Temporary Internet Files\Content.IE5\CJ8OYKFA\index[1].htm</LocalFilename>
+        <LastSyncTime>2007-07-09T16:02:22.000Z</LastSyncTime>
+        <LastModifiedTime>1601-01-01T04:00:00.000Z</LastModifiedTime>
+        <LastAccessTime>2007-07-09T16:02:21.328Z</LastAccessTime>
+        <HitRate>5</HitRate>
+        <HeaderInfo>
+          <![CDATA[HTTP/1.1 200 OK
+X-Powered-By: PHP/5.1.6
+Content-Length: 1651
+Content-Type: text/html
+
+~U:atatarnikov
+]]>
+        </HeaderInfo>
+        <FileSize>1651</FileSize>
+        <FileExtension/>
+        <ExpireTime>1601-01-01T04:00:00.000Z</ExpireTime>
+        <ExemptDelta>0</ExemptDelta>
+      </BeforeRequest>
+      <AfterRequest>
+        <UrlInCache>False</UrlInCache>
+      </AfterRequest>
+    </cache>
+    <QueryString>
+      <param name="menuitem">8</param>
+      <param name="_cc">1</param>
+    </QueryString>
+    <PostData/>
+    <stream>
+      <isencrypted>True</isencrypted>
+      <request>
+        <size>719</size>
+        <encryptedsize>0</encryptedsize>
+        <address>10.0.15.11:443</address>
+        <rawdata>
+          <![CDATA[R0VUIC9vbnltYS9sb2dvdXQuaHRtcz8mbWVudWl0ZW09OCZfY2M9MSBIVFRQLzEuMQ0KSG9zdDogYmFjaC5kZXZlbG9wLm9mZmljZS5zdGFja3NvZnQucnUNClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzOyBVOyBXaW5kb3dzIE5UIDUuMTsgcnU7IHJ2OjEuOC4xLjUpIEdlY2tvLzIwMDcwNzEzIEZpcmVmb3gvMi4wLjAuNQ0KQWNjZXB0OiB0ZXh0L3htbCxhcHBsaWNhdGlvbi94bWwsYXBwbGljYXRpb24veGh0bWwreG1sLHRleHQvaHRtbDtxPTAuOSx0ZXh0L3BsYWluO3E9MC44LGltYWdlL3BuZywqLyo7cT0wLjUNCkFjY2VwdC1MYW5ndWFnZTogcnUtcnUscnU7cT0wLjgsZW4tdXM7cT0wLjUsZW47cT0wLjMNCkFjY2VwdC1FbmNvZGluZzogZ3ppcCxkZWZsYXRlDQpBY2NlcHQtQ2hhcnNldDogd2luZG93cy0xMjUxLHV0Zi04O3E9MC43LCo7cT0wLjcNCktlZXAtQWxpdmU6IDMwMA0KQ29ubmVjdGlvbjoga2VlcC1hbGl2ZQ0KUmVmZXJlcjogaHR0cHM6Ly9iYWNoLmRldmVsb3Aub2ZmaWNlLnN0YWNrc29mdC5ydS9vbnltYS9tYWluL21haW5fbWVudS5odG1zDQpDb29raWU6IE9OWU1BX0xPR0lOPWF0YXRhcm5pa292OyBQSFBTRVNTSUQ9MzIyOWIyNDVlYTQ2Y2UwNTRlOThkZmU0MjU0ZWUxZmE7IE9OWU1BX09QRVJJRD0yNzAzOyBPTllNQV9TS0VZPTk5NTAxNV85SFY5WFg3RTNWUEIybzg1YjU2NDRBbWo7IE9OWU1BX1NVU1I9b3dfZGV2ZWxvcA0KDQo=]]>
+        </rawdata>
+      </request>
+      <response>
+        <size>819</size>
+        <encryptedsize>0</encryptedsize>
+        <address>10.0.2.179:2544</address>
+        <rawdata>
+          <![CDATA[SFRUUC8xLjEgMzAyIEZvdW5kDQpEYXRlOiBUdWUsIDI0IEp1bCAyMDA3IDA1OjM2OjE2IEdNVA0KU2VydmVyOiBBcGFjaGUvMi4yLjMgKFVuaXgpIG1vZF9zc2wvMi4yLjMgT3BlblNTTC8wLjkuN2sgUEhQLzUuMS42DQpYLVBvd2VyZWQtQnk6IFBIUC81LjEuNg0KRXhwaXJlczogVGh1LCAxOSBOb3YgMTk4MSAwODo1MjowMCBHTVQNCkNhY2hlLUNvbnRyb2w6IG5vLXN0b3JlLCBuby1jYWNoZSwgbXVzdC1yZXZhbGlkYXRlLCBwb3N0LWNoZWNrPTAsIHByZS1jaGVjaz0wDQpQcmFnbWE6IG5vLWNhY2hlDQpTZXQtQ29va2llOiBPTllNQV9PUEVSSUQ9MjcwMzsgcGF0aD0vDQpTZXQtQ29va2llOiBPTllNQV9TS0VZPTk5NTAxNV85SFY5WFg3RTNWUEIybzg1YjU2NDRBbWo7IHBhdGg9Lw0KU2V0LUNvb2tpZTogT05ZTUFfU1VTUj1vd19kZXZlbG9wOyBwYXRoPS8NClNldC1Db29raWU6IE9OWU1BX09QRVJJRD1kZWxldGVkOyBleHBpcmVzPU1vbiwgMjQtSnVsLTIwMDYgMDU6MzY6MTUgR01UOyBwYXRoPS8NClNldC1Db29raWU6IE9OWU1BX1NLRVk9ZGVsZXRlZDsgZXhwaXJlcz1Nb24sIDI0LUp1bC0yMDA2IDA1OjM2OjE1IEdNVDsgcGF0aD0vDQpTZXQtQ29va2llOiBPTllNQV9TVVNSPWRlbGV0ZWQ7IGV4cGlyZXM9TW9uLCAyNC1KdWwtMjAwNiAwNTozNjoxNSBHTVQ7IHBhdGg9Lw0KTG9jYXRpb246IGh0dHBzOi8vYmFjaC5kZXZlbG9wLm9mZmljZS5zdGFja3NvZnQucnUvb255bWEvaW5kZXguaHRtcz9BVVRIX0VSUj1PVVQNCkNvbnRlbnQtTGVuZ3RoOiAwDQpDb25uZWN0aW9uOiBjbG9zZQ0KQ29udGVudC1UeXBlOiB0ZXh0L2h0bWwNCg0K]]>
+        </rawdata>
+      </response>
+    </stream>
+  </entry>
+  <entry method="GET" url="https://bach.develop.office.stacksoft.ru/onyma/index.htms?AUTH_ERR=OUT">
+    <timestart>2007-07-24T09:36:05.484Z</timestart>
+    <timeend>2007-07-24T09:36:05.500Z</timeend>
+    <duration>0,015 s</duration>
+    <processname>firefox.exe[3316]</processname>
+    <result>200</result>
+    <size>0</size>
+    <stage>REQUEST_CLOSE</stage>
+    <mimetype>text/html</mimetype>
+    <redirecturl/>
+    <requestCamefromCache>False</requestCamefromCache>
+    <responseCamefromCache>False</responseCamefromCache>
+    <requestobjectname>/onyma/index.htms?AUTH_ERR=OUT</requestobjectname>
+    <winet_sr_result>True</winet_sr_result>
+    <winet_sr_errormessage/>
+    <bodySize>0</bodySize>
+    <headers>
+      <requestheaders>
+        <header>GET /onyma/index.htms?AUTH_ERR=OUT HTTP/1.1</header>
+        <header>Host: bach.develop.office.stacksoft.ru</header>
+        <header>User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.8.1.5) Gecko/20070713 Firefox/2.0.0.5</header>
+        <header>Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5</header>
+        <header>Accept-Language: ru-ru,ru;q=0.8,en-us;q=0.5,en;q=0.3</header>
+        <header>Accept-Encoding: gzip,deflate</header>
+        <header>Accept-Charset: windows-1251,utf-8;q=0.7,*;q=0.7</header>
+        <header>Keep-Alive: 300</header>
+        <header>Connection: keep-alive</header>
+        <header>Referer: https://bach.develop.office.stacksoft.ru/onyma/main/main_menu.htms</header>
+        <header>Cookie: ONYMA_LOGIN=atatarnikov; PHPSESSID=3229b245ea46ce054e98dfe4254ee1fa</header>
+      </requestheaders>
+      <responseheaders>
+        <header>HTTP/1.1 200 OK</header>
+        <header>Date: Tue, 24 Jul 2007 05:36:16 GMT</header>
+        <header>Server: Apache/2.2.3 (Unix) mod_ssl/2.2.3 OpenSSL/0.9.7k PHP/5.1.6</header>
+        <header>X-Powered-By: PHP/5.1.6</header>
+        <header>Content-Length: 1651</header>
+        <header>Connection: close</header>
+        <header>Content-Type: text/html</header>
+      </responseheaders>
+    </headers>
+    <content>
+      <contentLength>1651</contentLength>
+      <mimetype>text/html</mimetype>
+      <text>
+        <![CDATA[PGh0bWw+CjxoZWFkPgo8dGl0bGU+T05ZTUEgQmlsbGluZyBTeXN0ZW08L3RpdGxlPgo8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9InN0eWxlcy5jc3MiIHR5cGU9InRleHQvY3NzIj4KPG1ldGEgaHR0cC1lcXVpdj0iY29udGVudC10eXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7Y2hhcnNldD1rb2k4LXIiPgo8c2NyaXB0PgpmdW5jdGlvbiBzZXRGb2N1c09uTG9hZCgpIHsKCXZhciBsbG9nID0gZG9jdW1lbnQuZm9ybXNbJ21haW5fZm9ybSddLkxPR0lOLCBscGFzcyA9IGRvY3VtZW50LmZvcm1zWydtYWluX2Zvcm0nXS5QQVNTV0Q7CglpZihsbG9nICE9IG51bGwgJiYgbHBhc3MgIT0gbnVsbCkgeyBpZihsbG9nLnZhbHVlLmxlbmd0aCA+IDApIGxwYXNzLmZvY3VzKCk7IGVsc2UgbGxvZy5mb2N1cygpO30KfSAvLyBzZXRGb2N1c09uTG9hZCBmdW5jCjwvc2NyaXB0Pgo8L2hlYWQ+Cjxib2R5IGJnY29sb3I9IiNmZmZmZmYiIHRleHQ9IiMwMDAwMDAiIG9uTG9hZD0ic2V0Rm9jdXNPbkxvYWQoKSI+Cjx0YWJsZSBjZWxsc3BhY2luZz0wIGNlbGxwYWRkaW5nPTAgYm9yZGVyPTAgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+Cjx0cj4KPHRkIGhlaWdodD0iMTA1IiBiYWNrZ3JvdW5kPSIvb255bWEvaW1hZ2VzL3NoYXBrYTEuanBnIiBhbGlnbj1jZW50ZXIgdmFsaWduPXRvcD48aW1nIHNyYz0vb255bWEvaW1hZ2VzL29ueW1hLmpwZyBhbHQ9Ik9ueW1hIEJpbGxpbmcgU3lzdGVtIiBib3JkZXI9MD48L3RkPjwvdHI+Cjx0cj4KPHRkIGNsYXNzPSJtZXNzYWdlIj4KPGNlbnRlcj4KWW91ciBhcmUgbG9nZ2VkIG91dDxicj48Zm9ybSBhY3Rpb249bG9naW4uaHRtcyBtZXRob2Q9cG9zdCBuYW1lPSJtYWluX2Zvcm0iPgo8dGFibGU+Cjx0cj4KPHRkIGFsaWduPXJpZ2h0IGNsYXNzPSJtYWluIj5Mb2dpbjwvdGQ+Cjx0ZD48aW5wdXQgbmFtZT0nTE9HSU4nIHNpemU9MTYgdmFsdWU9J2F0YXRhcm5pa292Jz48L3RkPgo8L3RyPjx0cj4KPHRkIGFsaWduPXJpZ2h0IGNsYXNzPSJtYWluIj5QYXNzd29yZDwvdGQ+Cjx0ZD48aW5wdXQgbmFtZT1QQVNTV0Qgc2l6ZT0xNiB0eXBlPXBhc3N3b3JkPjwvdGQ+Cjx0cj4KPHRkIGNvbHNwYW49MiBhbGlnbj1yaWdodD48aW5wdXQgdHlwZT1zdWJtaXQgbmFtZT1lbnRlciB2YWx1ZT0nRW50ZXInPiZuYnNwOzwvdGQ+CjwvdHI+CjwvdGFibGU+CjwvZm9ybT4KPC9jZW50ZXI+CjwvdGQ+PC90cj4KPHRyPjx0ZCBhbGlnbj1jZW50ZXIgY2xhc3M9InNtYWxsIj4KPHRhYmxlIHdpZHRoPSI0MDAiIGhlaWdodD0iMSIgY2VsbHNwYWNpbmc9MCBjZWxscGFkZGluZz0wPjx0cj48dGQgYmdjb2xvcj0iI2QwZDdlMyI+PGltZyBzcmM9Ii9vbnltYS9pbWFnZXMvZG90LmdpZiIgYm9yZGVyPTA+PC90ZD48L3RyPjwvdGFibGU+Ck9ueW1hIEJpbGxpbmcgU3lzdGVtLCB2LiAxLjI8YnI+Q29weXJpZ2h0ICZjb3B5OyAyMDAxLTIwMDcgU3RhY2sgU29mdDwvdGQ+PC90cj4KPHRyPjx0ZCBoZWlnaHQ9IjUwIj4mbmJzcDs8L3RkPjwvdHI+Cjx0cj48dGQgdmFsaWduPXRvcCBoZWlnaHQ9IjUyIiBiYWNrZ3JvdW5kPSIvb255bWEvaW1hZ2VzL25pejEuanBnIj48aW1nIHNyYz0iL29ueW1hL2ltYWdlcy9uaXoxLmpwZyIgaGVpZ2h0PTUyPjwvdGQ+PC90cj4KPC90YWJsZT4KPC9ib2R5Pgo8L2h0bWw+Cg==]]>
+      </text>
+    </content>
+    <cookies>
+      <sent>
+        <cookie name=" ONYMA_LOGIN">atatarnikov</cookie>
+        <cookie name=" PHPSESSID">3229b245ea46ce054e98dfe4254ee1fa</cookie>
+      </sent>
+      <received/>
+    </cookies>
+    <cache>
+      <BeforeRequest>
+        <UrlInCache>True</UrlInCache>
+        <EntryType>4161</EntryType>
+        <UseCount>0</UseCount>
+        <SourceUrlName>https://bach.develop.office.stacksoft.ru/onyma/index.htms?AUTH_ERR=OUT</SourceUrlName>
+        <LocalFilename>C:\Documents and Settings\user1\Local Settings\Temporary Internet Files\Content.IE5\CJ8OYKFA\index[1].htm</LocalFilename>
+        <LastSyncTime>2007-07-09T16:02:22.000Z</LastSyncTime>
+        <LastModifiedTime>1601-01-01T04:00:00.000Z</LastModifiedTime>
+        <LastAccessTime>2007-07-09T16:02:21.328Z</LastAccessTime>
+        <HitRate>5</HitRate>
+        <HeaderInfo>
+          <![CDATA[HTTP/1.1 200 OK
+X-Powered-By: PHP/5.1.6
+Content-Length: 1651
+Content-Type: text/html
+
+~U:atatarnikov
+]]>
+        </HeaderInfo>
+        <FileSize>1651</FileSize>
+        <FileExtension/>
+        <ExpireTime>1601-01-01T04:00:00.000Z</ExpireTime>
+        <ExemptDelta>0</ExemptDelta>
+      </BeforeRequest>
+      <AfterRequest>
+        <UrlInCache>False</UrlInCache>
+      </AfterRequest>
+    </cache>
+    <QueryString>
+      <param name="AUTH_ERR">OUT</param>
+    </QueryString>
+    <PostData/>
+    <stream>
+      <isencrypted>True</isencrypted>
+      <request>
+        <size>627</size>
+        <encryptedsize>0</encryptedsize>
+        <address>10.0.15.11:443</address>
+        <rawdata>
+          <![CDATA[R0VUIC9vbnltYS9pbmRleC5odG1zP0FVVEhfRVJSPU9VVCBIVFRQLzEuMQ0KSG9zdDogYmFjaC5kZXZlbG9wLm9mZmljZS5zdGFja3NvZnQucnUNClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzOyBVOyBXaW5kb3dzIE5UIDUuMTsgcnU7IHJ2OjEuOC4xLjUpIEdlY2tvLzIwMDcwNzEzIEZpcmVmb3gvMi4wLjAuNQ0KQWNjZXB0OiB0ZXh0L3htbCxhcHBsaWNhdGlvbi94bWwsYXBwbGljYXRpb24veGh0bWwreG1sLHRleHQvaHRtbDtxPTAuOSx0ZXh0L3BsYWluO3E9MC44LGltYWdlL3BuZywqLyo7cT0wLjUNCkFjY2VwdC1MYW5ndWFnZTogcnUtcnUscnU7cT0wLjgsZW4tdXM7cT0wLjUsZW47cT0wLjMNCkFjY2VwdC1FbmNvZGluZzogZ3ppcCxkZWZsYXRlDQpBY2NlcHQtQ2hhcnNldDogd2luZG93cy0xMjUxLHV0Zi04O3E9MC43LCo7cT0wLjcNCktlZXAtQWxpdmU6IDMwMA0KQ29ubmVjdGlvbjoga2VlcC1hbGl2ZQ0KUmVmZXJlcjogaHR0cHM6Ly9iYWNoLmRldmVsb3Aub2ZmaWNlLnN0YWNrc29mdC5ydS9vbnltYS9tYWluL21haW5fbWVudS5odG1zDQpDb29raWU6IE9OWU1BX0xPR0lOPWF0YXRhcm5pa292OyBQSFBTRVNTSUQ9MzIyOWIyNDVlYTQ2Y2UwNTRlOThkZmU0MjU0ZWUxZmENCg0K]]>
+        </rawdata>
+      </request>
+      <response>
+        <size>1866</size>
+        <encryptedsize>0</encryptedsize>
+        <address>10.0.2.179:2545</address>
+        <rawdata>
+          <![CDATA[SFRUUC8xLjEgMjAwIE9LDQpEYXRlOiBUdWUsIDI0IEp1bCAyMDA3IDA1OjM2OjE2IEdNVA0KU2VydmVyOiBBcGFjaGUvMi4yLjMgKFVuaXgpIG1vZF9zc2wvMi4yLjMgT3BlblNTTC8wLjkuN2sgUEhQLzUuMS42DQpYLVBvd2VyZWQtQnk6IFBIUC81LjEuNg0KQ29udGVudC1MZW5ndGg6IDE2NTENCkNvbm5lY3Rpb246IGNsb3NlDQpDb250ZW50LVR5cGU6IHRleHQvaHRtbA0KDQo8aHRtbD4KPGhlYWQ+Cjx0aXRsZT5PTllNQSBCaWxsaW5nIFN5c3RlbTwvdGl0bGU+CjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0ic3R5bGVzLmNzcyIgdHlwZT0idGV4dC9jc3MiPgo8bWV0YSBodHRwLWVxdWl2PSJjb250ZW50LXR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDtjaGFyc2V0PWtvaTgtciI+CjxzY3JpcHQ+CmZ1bmN0aW9uIHNldEZvY3VzT25Mb2FkKCkgewoJdmFyIGxsb2cgPSBkb2N1bWVudC5mb3Jtc1snbWFpbl9mb3JtJ10uTE9HSU4sIGxwYXNzID0gZG9jdW1lbnQuZm9ybXNbJ21haW5fZm9ybSddLlBBU1NXRDsKCWlmKGxsb2cgIT0gbnVsbCAmJiBscGFzcyAhPSBudWxsKSB7IGlmKGxsb2cudmFsdWUubGVuZ3RoID4gMCkgbHBhc3MuZm9jdXMoKTsgZWxzZSBsbG9nLmZvY3VzKCk7fQp9IC8vIHNldEZvY3VzT25Mb2FkIGZ1bmMKPC9zY3JpcHQ+CjwvaGVhZD4KPGJvZHkgYmdjb2xvcj0iI2ZmZmZmZiIgdGV4dD0iIzAwMDAwMCIgb25Mb2FkPSJzZXRGb2N1c09uTG9hZCgpIj4KPHRhYmxlIGNlbGxzcGFjaW5nPTAgY2VsbHBhZGRpbmc9MCBib3JkZXI9MCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KPHRyPgo8dGQgaGVpZ2h0PSIxMDUiIGJhY2tncm91bmQ9Ii9vbnltYS9pbWFnZXMvc2hhcGthMS5qcGciIGFsaWduPWNlbnRlciB2YWxpZ249dG9wPjxpbWcgc3JjPS9vbnltYS9pbWFnZXMvb255bWEuanBnIGFsdD0iT255bWEgQmlsbGluZyBTeXN0ZW0iIGJvcmRlcj0wPjwvdGQ+PC90cj4KPHRyPgo8dGQgY2xhc3M9Im1lc3NhZ2UiPgo8Y2VudGVyPgpZb3VyIGFyZSBsb2dnZWQgb3V0PGJyPjxmb3JtIGFjdGlvbj1sb2dpbi5odG1zIG1ldGhvZD1wb3N0IG5hbWU9Im1haW5fZm9ybSI+Cjx0YWJsZT4KPHRyPgo8dGQgYWxpZ249cmlnaHQgY2xhc3M9Im1haW4iPkxvZ2luPC90ZD4KPHRkPjxpbnB1dCBuYW1lPSdMT0dJTicgc2l6ZT0xNiB2YWx1ZT0nYXRhdGFybmlrb3YnPjwvdGQ+CjwvdHI+PHRyPgo8dGQgYWxpZ249cmlnaHQgY2xhc3M9Im1haW4iPlBhc3N3b3JkPC90ZD4KPHRkPjxpbnB1dCBuYW1lPVBBU1NXRCBzaXplPTE2IHR5cGU9cGFzc3dvcmQ+PC90ZD4KPHRyPgo8dGQgY29sc3Bhbj0yIGFsaWduPXJpZ2h0PjxpbnB1dCB0eXBlPXN1Ym1pdCBuYW1lPWVudGVyIHZhbHVlPSdFbnRlcic+Jm5ic3A7PC90ZD4KPC90cj4KPC90YWJsZT4KPC9mb3JtPgo8L2NlbnRlcj4KPC90ZD48L3RyPgo8dHI+PHRkIGFsaWduPWNlbnRlciBjbGFzcz0ic21hbGwiPgo8dGFibGUgd2lkdGg9IjQwMCIgaGVpZ2h0PSIxIiBjZWxsc3BhY2luZz0wIGNlbGxwYWRkaW5nPTA+PHRyPjx0ZCBiZ2NvbG9yPSIjZDBkN2UzIj48aW1nIHNyYz0iL29ueW1hL2ltYWdlcy9kb3QuZ2lmIiBib3JkZXI9MD48L3RkPjwvdHI+PC90YWJsZT4KT255bWEgQmlsbGluZyBTeXN0ZW0sIHYuIDEuMjxicj5Db3B5cmlnaHQgJmNvcHk7IDIwMDEtMjAwNyBTdGFjayBTb2Z0PC90ZD48L3RyPgo8dHI+PHRkIGhlaWdodD0iNTAiPiZuYnNwOzwvdGQ+PC90cj4KPHRyPjx0ZCB2YWxpZ249dG9wIGhlaWdodD0iNTIiIGJhY2tncm91bmQ9Ii9vbnltYS9pbWFnZXMvbml6MS5qcGciPjxpbWcgc3JjPSIvb255bWEvaW1hZ2VzL25pejEuanBnIiBoZWlnaHQ9NTI+PC90ZD48L3RyPgo8L3RhYmxlPgo8L2JvZHk+CjwvaHRtbD4K]]>
+        </rawdata>
+      </response>
+    </stream>
+  </entry>
+</log>

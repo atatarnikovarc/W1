@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Validation framework" default="buildFramework">
+    <!--
+        Paths
+    -->
+    <property name="root.dir" location="1/"/>
+	<property environment="env"/>
+	<property name="jwsdp.home" value="${env.JWSDP_HOME}"/>
+
+    <!-- to build framework itself -->
+    <property name="lib.dir" location="${root.dir}/lib/"/>
+    <property name="config.dir" location="${root.dir}/config/"/>
+    <property name="src.dir" location="${root.dir}/src/"/>
+    <property name="dest.dir" location="${root.dir}/build/framework"/>
+    <property name="deploy.dir" location="${root.dir}/dist/"/>
+
+    <!--
+        Classpath
+    -->
+	
+	<path id="all.libs">
+	  <pathelement path="${config.dir}"/>	
+	  <pathelement path="${dest.dir}"/>	
+	  <fileset dir="${lib.dir}">
+	  	<include name="**/*.jar"/>
+	  </fileset>
+	</path>
+    
+	<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+      <classpath refid="all.libs" />
+    </taskdef>
+	
+    <!--
+        Framework
+    -->
+    <target name="init">
+        <delete dir="${dest.dir}"/>
+        <mkdir dir="${dest.dir}"/>
+        <delete dir="${deploy.dir}"/>
+        <mkdir dir="${deploy.dir}"/>
+    	<!--mkdir dir="${deploy.dir}/mappinglist"/-->
+    </target>
+
+    <target name="buildFramework" depends="init">
+        <xjc schema="${root.dir}/data/xsd/mappinglist.xsd" package="mappinglist" target="${dest.dir}">
+          <produces dir="${dest.dir}/mappinglist" includes="**/*.java"/>
+        </xjc>
+    	<xjc schema="${root.dir}/data/xsd/assertionlist.xsd" package="assertionlist" target="${dest.dir}">
+    		<produces dir="${dest.dir}/assertionlist" includes="**/*.java"/>
+    	</xjc>
+        <javac destdir="${dest.dir}" srcdir="${src.dir}">
+        	<src path="${dest.dir}"/>
+        	<src path="${src.dir}"/>
+            <classpath refid="all.libs"/>
+        </javac>
+        <jar jarfile="${deploy.dir}/framework.jar" basedir="${dest.dir}"
+        	manifest="${config.dir}/MANIFEST.MF" update="false">
+        </jar>
+    </target>
+
+    <target name="run" depends="buildFramework">
+      <echo message="Running the validation framework" />
+      <java classname="core.MainValidator" fork="true">
+        <classpath>
+          <path refid="all.libs"/>
+        	 <fileset dir="${deploy.dir}">
+        	 	<include name="*.jar"/>
+        	 </fileset>
+        </classpath>	
+      </java>
+    </target>
+</project>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="Windows-1251" ?>
+<!DOCTYPE Inventory SYSTEM "inventory.dtd">
+<Inventory>
+	<melody>
+		<id>0594</id>
+		<mnem></mnem>
+		<title>Test0000</title>
+		<author>7954</author>
+		<textauthor>7955</textauthor>
+		<musicauthor>7956</musicauthor>
+		<genre>2</genre>
+		<copyr>303</copyr>
+		<quality>5</quality>
+		<bestgenre>0</bestgenre>
+		<expdate>31.12.2012</expdate>
+    </melody>
+		<melody>
+		<id>0595</id>
+		<mnem></mnem>
+		<title>Test0001</title>
+		<author>7954</author>
+		<textauthor>7955</textauthor>
+		<musicauthor>7956</musicauthor>
+		<genre>2</genre>
+		<copyr>303</copyr>
+		<quality>5</quality>
+		<bestgenre>0</bestgenre>
+		<expdate>31.12.2013</expdate>
+    </melody>
+		<melody>
+		<id>0596</id>
+		<mnem></mnem>
+		<title>Test0002</title>
+		<author>7954</author>
+		<textauthor>7955</textauthor>
+		<musicauthor>7956</musicauthor>
+		<genre>2</genre>
+		<copyr>303</copyr>
+		<quality>5</quality>
+		<bestgenre>0</bestgenre>
+		<expdate>31.12.2014</expdate>
+    </melody>
+
+
+
+
+</Inventory>
