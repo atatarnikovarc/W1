@@ -7,7 +7,7 @@
 3. Open in browser - http://localhost:3500/index.html
 
 
-******Задачки чтоб спасти попу и нарастить скорость
+******Задачки
 
 3. upload is disabled util a file is not selected
 -disabled attr way
