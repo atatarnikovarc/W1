@@ -1,6 +1,8 @@
-install django
-create django project: django-admin startproject mysite
-start django dev server: python manage.py runserver
+1. install django
+
+2.create django project: django-admin startproject mysite
+
+3. start django dev server: python manage.py runserver
 create app: python manage.py startapp polls
 
 django application has views
@@ -57,13 +59,11 @@ when designing django app - one should decide - do we use generic views system o
 3. tests make your code more attractive
 4. tests help teams work together
 
-before starting django based(and not only) development, one should care of how test automation
+before starting django based(and not only) development,
+one should care of how test automation
 will work(test coverage, unit testing, in browser testing)
 
-=====tutorial knowledge
-====real web-site reqs
-====impl
-(use some samples at inet)
+
 
 пожелания\требования
 
@@ -73,19 +73,10 @@ will work(test coverage, unit testing, in browser testing)
 
 2. писать интерфейс сразу с поддержкой для всех устройств(адаптивный лэйаут?)
 
-3. выделить место в гите
-
-4. настроить проект сайта
-
-5. убрать проект из веб-шторма
 
 
----не забыть еще такой момент - что пидарас хотел доп. отчет по скайп чату
----поговорить про жирного
----может сменить гузя на Баклушина
 
-
-===требования\задачи к моим двум сайтам
+-===требования\задачи к моим двум сайтам
 1. сделать джанго приложение с одним view, чтобы оно отображало то, что есть сейчас
 -фаст, бантик
 2. сделать деплой приложений на хостинге
