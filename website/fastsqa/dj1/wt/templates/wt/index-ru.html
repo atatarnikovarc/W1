@@ -1,0 +1,36 @@
+{% load static %}
+<title>FastSQA - Консалтинг</title>
+<script src="{% static 'wt/js/jquery-3.1.1.min.js' %}"></script>
+<script>
+    $(function () {
+        $("#google-analytics-counter").load("{% static 'wt/counter/google-analytics.txt'%}");
+    });
+</script>
+<script>
+    $(function () {
+        $("#yandex-counter").load("{% static 'wt/counter/yandex-counter.txt' %}");
+    });
+</script>
+<link rel="shortcut icon" href="{% static 'wt/img/favicon.ico' %}" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="test automation, software development process consulting, услуги по тестированию программного
+обеспечения"/>
+<meta name="keywords" content="qa, test automation, software, continious integration, outsorcing, outstaffing, автоматизация тестирования
+тестирование по, протестировать сайт, протестировать программу,москва,санкт-петербург,спб,мск"/>
+<meta name="robots" content="index,nofollow"/>
+
+
+<center>Сайт находится в разработке.<br>
+Компания FastSQA занимается:<br>
+    <ul>
+    <li><b>Автоматизацией тестирования</b>(веб-приложения, серверная часть, мобильные приложения)</li><br>
+    <li><b>Установкой CI</b>(continiuos integration)</li><br>
+    <li>Консультированием по повышению <b>эффективности процессов разработки</b></li><br>
+    </ul>
+    Хорошего дня!<br>
+
+Для связи используйте<br>
+    почту: <b>contact@fastsqa.com</b><br>
+    skype: <b>fastsqa</b><br>
+    <div id="google-analytics-counter"></div>
+    <div id="yandex-counter"></div></center>

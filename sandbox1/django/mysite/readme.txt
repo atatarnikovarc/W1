@@ -1,57 +1,53 @@
+=================
 1. install django
 
-2.create django project: django-admin startproject mysite
+2. create django project: "django-admin startproject mysite"
 
-3. start django dev server: python manage.py runserver
-create app: python manage.py startapp polls
+3. start django dev server: "python manage.py runserver"
 
-django application has views
+4. create app: "python manage.py startapp polls"
 
-add simplest view
-add app urlconf
-add ref to 'polls' app urlconf at root urlconf
+5. django application has views
 
-setting up database - sqlite as default
-set timezone if needed
-python manage.py migrate (apps -> database)
+A view in it's starter look - just has to respond with something like
+HttpReponse()
 
-define data model
-add 2 classes(models) - Question and Choice, define their fields
-add poll app into settings.py apps list
-python manage.py makemigrations polls (activate models)
-django has 'migration' term - is a changes to database, stored at a file at disk
-python manage.py sqlmigrate polls 0001 - 'sqlmigrate' command to manage migrations
-python manage.py check - checks the project for any issues
-developer able to change database over time, not loosing any data - it is due to
-migrations
+(it is for predefined views)
+-add view class
+-add view template
+-add to 'urls.py' ref to a view(+name to share among templates)
 
-3 steps making model changes:
+6. db, timezone
+-use "settings.py"
+-make sure to create database if it's not the sqlite
 
-changes models(models.py)
-python manage.py makemigrations - to create migrations
-python manage.py migrate - to apply migrations to database
+7. add "poll" app into "settings.py" apps list
 
-we can work with database via django api
+8. defining data model
 
-python manage.py shell
-django has good api to work with database via models
+-add classes, defining their fields
+-"python manage.py makemigrations polls" (activate models)
+-django has 'migration' term - is a changes to database, stored at a file at disk
+-"python manage.py sqlmigrate polls 0001" - 'sqlmigrate' shows SQL code produced
+by the migration
 
-?timezone to gmt+3
-?apply change in models
+9. 3 steps making model changes:
 
-python manage.py createsuperuser
+-changes models(models.py)
+-"python manage.py makemigrations" - to create migrations
+-"python manage.py migrate" - to apply migrations to database
 
-add Question model to admin.py to have it adminable at admin site
+10. python manage.py check - checks the project for any issues
 
-===overviews
+11. we can work with database via django api
 
-view - page - function - template
+-"python manage.py shell"
+-from polls.models import Question, Choice
+-Question.objects.all()
 
-a view can use template to change page's design not in python
-views, mapping urls, render etc....
+12. "python manage.py createsuperuser"
 
-when design multiuser system - think of race condition
-when designing django app - one should decide - do we use generic views system or not
+13. add Question model to admin.py to have it adminable at admin site
 
 ==tests
 1. tests will save you time
@@ -62,17 +58,6 @@ when designing django app - one should decide - do we use generic views system o
 before starting django based(and not only) development,
 one should care of how test automation
 will work(test coverage, unit testing, in browser testing)
-
-
-
-пожелания\требования
-
-1. сопровождать свой код тестами
--юнит - через темповую базу
--фантом
-
-2. писать интерфейс сразу с поддержкой для всех устройств(адаптивный лэйаут?)
-
 
 
 

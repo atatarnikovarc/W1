@@ -1,5 +1,5 @@
 ==todo
-replace js libs with their minified versions
+prod site to open with no /vb or /wt
 
 ===dev cycle
 1. define reqs
