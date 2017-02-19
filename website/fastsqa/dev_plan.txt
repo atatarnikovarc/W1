@@ -1,0 +1,20 @@
+==todo
+replace js libs with their minified versions
+
+===dev cycle
+1. define reqs
+2. define data model
+3. define views
+4. implement required functions
+5. code tests
+
+===deployment
+1. commit at git repo
+2. copy to hosting
+3. run migrations update if necessary
+
+
+===Wheather app
+
+An ability to view the wheather from different pages.
+Support both for mobile and desktop devices. Maximum useability
