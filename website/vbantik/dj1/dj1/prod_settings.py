@@ -24,9 +24,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SECRET_KEY = 'f0-mas^5e*0kp=z#$hs7dog!!#8y08d^^afd*26bl#3(sp0ikw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["www.vbantik.ru"]
 
 
 # Application definition

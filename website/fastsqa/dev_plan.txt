@@ -1,4 +1,40 @@
 ==todo
+
+1. using virtualenv setup my hosting env to python and django verions 2.7.6, 1.9.5 - seems fine - not
+sure it will work
+
+2. using virtual env setup local environment and re-code it in 1.6 django - don't like it
+
+3. get VPS and set it up as I want - most likely
+---------------------------------------------------------
+
+move vbantik to ROR + angular
+move fastsqa to Django + React
+add database support for both sites
+implement simple start pages with menu for each site
+
+setup simple j2ee app
+move it to hosting
+implement autodeploy for it
+decide what is the functions of the app
+
+-backup server - one click
+
+-setup docker - check how it works
+-setup VPS
+--do I need hostings I've already bought
+--is it possible to use my VPS for several domains?
+
+-choose new hosting for my django projects(try do deploy(db support, static), price, easy to use)
+-nginx error log
+-try to catch that exception(index view)
+-can I use python env mechanism at reg.ru
+
+-find out how good to use django\python versions - different at hosting and local env
+-try to deploy django apps to google engine, openshift, aws , heroku, azure
+-add logging to django app
+-try to find out exact error - where is the log of web server
+prod site is failed to open app
 prod site to open with no /vb or /wt
 
 ===dev cycle

@@ -16,23 +16,22 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'f0-mas^5e*0kp=z#$hs7dog!!#8y08d^^afd*26bl#3(sp0ikw'
+SECRET_KEY = 'ip=@yswm-d9j-j5kz7!!8jcnl17gjavx9=cswqbe)a@qle&@jq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["www.fastsqa.com"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'vb.apps.VbConfig',
+    'wt.apps.WtConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
