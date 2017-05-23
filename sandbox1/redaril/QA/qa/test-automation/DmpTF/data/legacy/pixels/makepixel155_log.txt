@@ -1,0 +1,680 @@
+
+-------------------------------------------------------------------------------
+MAKE DATA PIXEL.
+id= 100001;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= N;
+dataPixelIsDataConsumer= N;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= ;
+campaignPixelFormat= ;
+campaignPixelNDLNDR= ;
+
+
+-------------------------------------------------------------------------------
+MAKE DATA PIXEL.
+id= 100002;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= N;
+dataPixelIsDataConsumer= N;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= ;
+campaignPixelFormat= ;
+campaignPixelNDLNDR= ;
+
+
+-------------------------------------------------------------------------------
+MAKE DATA PIXEL.
+id= 100003;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= N;
+dataPixelIsDataConsumer= N;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= ;
+campaignPixelFormat= ;
+campaignPixelNDLNDR= ;
+
+
+-------------------------------------------------------------------------------
+MAKE DATA PIXEL.
+id= 100004;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= N;
+dataPixelIsDataConsumer= N;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= ;
+campaignPixelFormat= ;
+campaignPixelNDLNDR= ;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100005;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100006;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100007;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100008;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100009;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100010;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100011;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100012;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100013;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100014;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100015;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100016;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100017;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100018;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100019;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100020;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE DATA PIXEL.
+id= 100001;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= N;
+dataPixelIsDataConsumer= N;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= ;
+campaignPixelFormat= ;
+campaignPixelNDLNDR= ;
+
+
+-------------------------------------------------------------------------------
+MAKE DATA PIXEL.
+id= 100002;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= N;
+dataPixelIsDataConsumer= N;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= ;
+campaignPixelFormat= ;
+campaignPixelNDLNDR= ;
+
+
+-------------------------------------------------------------------------------
+MAKE DATA PIXEL.
+id= 100003;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= N;
+dataPixelIsDataConsumer= N;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= ;
+campaignPixelFormat= ;
+campaignPixelNDLNDR= ;
+
+
+-------------------------------------------------------------------------------
+MAKE DATA PIXEL.
+id= 100004;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= N;
+dataPixelIsDataConsumer= N;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= ;
+campaignPixelFormat= ;
+campaignPixelNDLNDR= ;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100005;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100006;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100007;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100008;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100009;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100010;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100011;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100012;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= S;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100013;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100014;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100015;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100016;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= Y;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100017;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100018;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= Y;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100019;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Piggyback;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= N;
+
+
+-------------------------------------------------------------------------------
+MAKE CAMPAIGN PIXEL.
+id= 100020;
+pixel params:
+dataPlatform= 3;
+isActive= Y;
+isHttps= N;
+maxPiggybacks= 5;
+ruleSelection= Retargeting;
+dataPixelIsDataEnabler= ;
+dataPixelIsDataConsumer= ;
+dataPixelServerURL= http://tsvetaev.narod.ru;
+campaignPixelType= T;
+campaignPixelFormat= I;
+campaignPixelNDLNDR= N;
+

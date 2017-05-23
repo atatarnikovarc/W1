@@ -1,0 +1,1 @@
+select COUNT(1) as count from nc_business_data

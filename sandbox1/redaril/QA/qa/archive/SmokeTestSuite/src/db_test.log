@@ -1,0 +1,8 @@
+[30 Nov 2007 14:20:25] INFO: ============================================================
+[30 Nov 2007 14:20:25] INFO: Starting DB Logging Testing Procedure
+[30 Nov 2007 14:20:33] INFO: Open nebuad.com/certertest.html in browserbot
+[30 Nov 2007 14:20:33] INFO: Time of page visit 2007-11-30 14:17:33.672000
+[30 Nov 2007 14:20:33] INFO: Wait for 1 until record is added to DB.
+[30 Nov 2007 14:20:39] INFO: The latest record in DB has such time: 2007-11-29 14:38:03
+[30 Nov 2007 14:20:41] INFO: The latest record in DB with such url has such time: 2007-11-29 03:03:24
+[30 Nov 2007 14:20:41] INFO: ============================================================

@@ -1,0 +1,1 @@
+select id, name from category where external_id = '{0}' and data_source = {1} and deleted = 0

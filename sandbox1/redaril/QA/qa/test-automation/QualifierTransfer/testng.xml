@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+<suite name="RED_ARIL_DMP_BROWSER">
+  <test name="RED_ARIL_DMP_BROWSER">
+    <classes>
+     <class name="com.redaril.dmptf.tests.RunAll" />
+    </classes>
+  </test>
+</suite>

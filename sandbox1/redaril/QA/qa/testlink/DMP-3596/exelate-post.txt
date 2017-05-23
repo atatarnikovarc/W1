@@ -1,0 +1,15 @@
+POST http://env1.west.dts.raasnet.com/dts/exelate
+Headers:
+Content-Type=application/json
+
+{
+    "pixelCount": 1,
+     "pixels": [
+          {
+             "xuid": "2918cde05d1a4e17175753f265053715",
+             "buid": 188089502793735,
+             "segments": [1327],
+             "timestamp": "Thu Feb 12 15:34:46 MSK 2013"
+          }
+     ]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<report name="Social Media Report">
+
+	<!-- Constraints -->
+		<fieldset name="Constraints">
+			<control name="Audience Group(s)" type="combobox" id="app-id-701-constraint101" />
+			<control name="US Users Only" type="checkbox" id="app-id-701-constraint102" />
+		</fieldset>
+
+	<!-- Dimensions -->
+		<fieldset name="Dimensions">
+			<control name="Audience Group" type="checkbox" id="app-id-701-dimensions602" />
+			<control name="Audience Category" type="checkbox" id="app-id-701-dimensions101" />
+			<control name="Data Source" type="checkbox" id="app-id-701-dimensions102" />
+		</fieldset>
+
+	<!-- Metrics -->
+		<fieldset name="Metrics">
+			<control name="Unique Users" type="checkbox" id="app-id-701-metrics101" />
+			<control name="Page Views" type="checkbox" id="app-id-701-metrics102" />
+			<control name="Index" type="checkbox" id="app-id-701-metrics103" />
+		</fieldset>
+
+	<!-- Time Settings -->
+		<fieldset name="Time Settings">
+			<control name="Date Range" type="combobox" id="app-id-701-date-range-combo" />
+			<control name="Start Date" type="combobox" id="app-id-701-startDate" />
+			<control name="End Date" type="combobox" id="app-id-701-endDate" />
+			<control name="View (unit of time)" type="combobox" id="app-id-701-date-chunk-combo" />
+		</fieldset>
+
+	<!-- Save, Schedule and Email -->
+		<fieldset name="Save, Schedule and Email">
+			<control name="Report Name" type="textbox" id="ext-comp-1017" />
+			<control name="Email Report To" type="textbox" id="app-id-701-email" />
+			<control name="Run This Report" type="combobox" id="app-id-701-schedule-period-combo" />
+			<control name="Schedule Day" type="combobox" id="app-id-701-schedule-period-days-combo" />
+			<control name="attached as" type="combobox" id="app-id-701-attachment-type-combo" />
+		</fieldset>
+
+	</report>

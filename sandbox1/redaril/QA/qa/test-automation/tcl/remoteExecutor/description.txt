@@ -1,0 +1,47 @@
+Rme - Remote Executor
+
+It is used on unix starts a daemon which listens to port 7050
+
+It was created like auxiliary tool to simplify future work with remote ssh clients/console/computers
+Connected to this port and passed authorization it is possible to send any bash command
+And it will be executed on the computer where Rme is running
+Answer will be written to a socket(all stdout from command executions) as the result 
+
+
+NOTE:
+Please be careful,
+Also don't abuse the application,
+becase at the remote machine the command specified by you will be executed without restrictions
+
+
+example how to use:
+connect to socket:
+	use ip of computer and port 7050
+		step 1:
+			send to socket: rme 1.0
+			you will receive: rme 1.0 OK
+		step 2:
+			send to socket: auth_username rmeClient
+			you will receive: auth_username rmeClient OK
+		step 3:
+			now you can
+			send command to socket: sqlplus qacluster4_meta/qacluster4_meta@10.50.150.90:1521/qacluster @/root/QA/test.sql
+			you will receive: 
+					SQL*Plus: Release 10.2.0.4.0 - Production on Wed Feb 1 05:06:38 2012
+
+					Copyright (c) 1982, 2007, Oracle.  All Rights Reserved.
+
+
+					Connected to:
+					Oracle Database 10g Enterprise Edition Release 10.2.0.4.0 - 64bit Production
+					With the Partitioning, OLAP, Data Mining and Real Application Testing options
+
+
+					PL/SQL procedure successfully completed.
+
+
+					Commit complete.
+
+					Disconnected from Oracle Database 10g Enterprise Edition Release 10.2.0.4.0 - 64bit Production
+					With the Partitioning, OLAP, Data Mining and Real Application Testing options
+					You have new mail in /var/spool/mail/root

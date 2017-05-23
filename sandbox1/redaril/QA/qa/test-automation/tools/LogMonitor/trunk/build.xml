@@ -1,0 +1,47 @@
+<project name="LogMonitor" default="run" basedir=".">
+
+	<property name="root.dir" location="./" />
+
+	<property name="lib.dir" location="${root.dir}/lib/" />
+	<property name="config.dir" location="${root.dir}/config/" />
+	<property name="src.dir" location="${root.dir}/src/" />
+	<property name="dest.dir" location="${root.dir}/build/" />
+	<property name="deploy.dir" location="${root.dir}/dist/" />
+	<property name="report.dir" location="${root.dir}/result/" />
+    <property name="log.dir" location="${root.dir}/output/logs/" />
+		
+	<path id="all.libs">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${deploy.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<pathelement location="${config.dir}"/>
+	</path>
+
+	<target name="init">
+		<delete dir="${dest.dir}" />
+		<mkdir dir="${dest.dir}" />
+		<delete dir="${deploy.dir}" />
+		<mkdir dir="${deploy.dir}" />
+		<delete dir="${report.dir}" />
+		<mkdir dir="${report.dir}" />
+        <delete dir="${log.dir}" />
+        <mkdir dir="${log.dir}" />
+	</target>
+
+	<target name="build" depends="init">
+		<javac destdir="${dest.dir}" srcdir="${src.dir}">
+			<classpath refid="all.libs" />
+		</javac>
+		<jar jarfile="${deploy.dir}/framework.jar" basedir="${dest.dir}" update="false">
+		</jar>
+	</target>
+	
+	<target name="run" depends="build">
+		<java classname="com.redaril.logmonitor.RunMonitor" 
+			classpathref="all.libs"></java>
+	</target>
+		
+</project>

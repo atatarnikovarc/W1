@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+<h3>Test dfp(HTML)</h3>
+<script type="text/javascript" src="http://qa-10.qa.coreaudience.com/js/dfp.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+var rasegs='';
+//defaultKVP:'cas=X',
+radfp({ver:1, defaultKVP:'cas=X', id:85416, rnd: Math.random()});
+//]]>
+</script>
+<script>
+//<![CDATA[
+var div = document.createElement("div");
+div.innerHTML = rasegs;
+document.body.appendChild(div);
+//document.write("<div>" + rasegs + "</div>");
+//]]>
+</script>
+</body>
+</html>
+

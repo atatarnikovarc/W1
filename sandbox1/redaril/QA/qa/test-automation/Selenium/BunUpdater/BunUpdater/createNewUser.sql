@@ -1,0 +1,1 @@
+insert into nb_user (user_id, user_name, password, is_enabled, is_account_non_locked, expiration_date, first_name, last_name, salutation, email_address, phone_number) values (3, 'back-end root', 'aaa', 'N', 'N', '21-12-99', 'none', 'none', 'mr.', 'none', 'none');

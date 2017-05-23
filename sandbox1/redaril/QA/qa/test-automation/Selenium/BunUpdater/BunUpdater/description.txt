@@ -1,0 +1,11 @@
+createNewUser.sql - sql script to add new user to env db. allow to work with statistical qualifiers. because all statistical qualifiers was created by Vasiliy.
+
+updateDB.sql - sql script which copy all qualifiers from bun db to env db.
+
+USAGE:
+sqlplus env2_meta/env2_meta@10.50.150.90:1521/qacluster @newUser.sql
+sqlplus env2_meta/env2_meta@10.50.150.90:1521/qacluster @updateDB.sql
+
+*
+env1_meta/env1_meta - login/password for env1 test meta db
+env2_meta/env2_meta - login/password for env2 test meta db

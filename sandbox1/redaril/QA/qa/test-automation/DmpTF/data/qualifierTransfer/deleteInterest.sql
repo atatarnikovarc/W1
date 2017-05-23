@@ -1,0 +1,1 @@
+delete from NC_INTEREST where INTEREST_ID = {0}

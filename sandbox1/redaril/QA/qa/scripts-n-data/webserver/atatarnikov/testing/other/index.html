@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type='text/css' rel='stylesheet' href="style.css" media="all" />
+</head>
+<body>
+    <div id='main'>
+	<p>This is a div above an iframe</p>
+    </div>
+
+
+<!--
+	A stripped down version of our _ca.js, that creates whitespace
+-->
+
+<!--    
+<script type="text/javascript">
+(function () {
+try {
+var iframe = document.createElement("iframe");
+iframe.src = "javascript:false";
+(iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0; ";
+var scripts = document.getElementsByTagName('script');
+var fdoc = scripts[scripts.length-1].parentNode.appendChild(iframe).contentWindow.document;
+fdoc.open().c=function() {
+};
+fdoc.write("<body onload=document.c();>");
+fdoc.close();
+} catch (e) {}
+})();
+
+</script>  
+-->
+ 
+
+<script type="text/javascript">
+//<![CDATA[
+         var _ca_id = 84700;
+         // Additional request query data. Uncomment next line and change parameters if needed.
+         // var _ca_params={ oid:ORDERID, tp:1000, curr:"USD", accid:ACCOUNTID, gid:GOOGLEID };
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+    (function () {
+        var p, s;
+        p = document.createElement("script");
+        p.type = "text/javascript";
+        p.async = true;
+        p.src = (document.location.protocol != "https:" ? "http" : "https") + "://p0.raasnet.com:8688/js/_ca.js";
+        s = document.getElementsByTagName("script"); s[s.length - 1].parentNode.appendChild(p);
+    })();
+//]]>
+</script>
+
+
+
+
+
+<!--
+	A stripped down version of our _ca.js, that does not create whitespace
+
+-->
+
+<!--
+
+<script type="text/javascript">
+(function () {
+try {
+var iframe = document.createElement("iframe");
+iframe.src = "javascript:false";
+(iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0; display:none;";
+var scripts = document.getElementsByTagName('script');
+var fdoc = scripts[scripts.length-1].parentNode.appendChild(iframe).contentWindow.document;
+fdoc.open().c=function() {
+};
+fdoc.write("<body onload=document.c();>");
+fdoc.close();
+} catch (e) {}
+})();
+
+</script>  
+    
+-->
+
+
+
+    <div id='sub'>
+	<p>This is a div below an inframe</p>
+    </div>
+
+
+</body>
+</html>

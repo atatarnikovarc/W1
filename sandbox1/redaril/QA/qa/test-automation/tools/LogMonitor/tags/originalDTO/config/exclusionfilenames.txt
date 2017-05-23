@@ -1,0 +1,4 @@
+log.
+catalina
+gc.log
+ocalhost_access_log

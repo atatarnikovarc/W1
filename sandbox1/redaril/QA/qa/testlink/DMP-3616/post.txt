@@ -1,0 +1,27 @@
+==URL: http://envX.west.dts.raasnet.com/dts/data?exchange=ex_id
+
+==Request Headers:
+
+Content-Type = application/json
+
+==Body
+{ "pixels": [ 
+{ 
+"exUid": "2918cde05d1a4e17175753f265053715", 
+"raUid": U-1,
+"cats": "C-1|C-2|C-3",  
+"timestamp": "sysdate in a format: YYYYmmddhhmmss"
+},
+{ 
+"exUid": "asdfasdf1234124121234", 
+"raUid": U-2,
+"cats": "C-1|C-3",  
+"timestamp": "sysdate in a format: YYYYmmddhhmmss"
+},
+{ 
+"exUid": "asdfasdf1234124121234dd", 
+"raUid": U-3,
+"cats": "C-1|C-3",  
+"timestamp": "sysdate in a format: YYYYmmddhhmmss"
+}
+] }

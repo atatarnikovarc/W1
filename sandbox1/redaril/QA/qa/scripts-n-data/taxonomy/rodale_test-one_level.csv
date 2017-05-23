@@ -1,0 +1,4 @@
+ExternalId,Name,ParentExternalId,DataSource
+cat1,root,0,Rodale Test
+cat2,leaf 1,cat1,Rodale Test
+cat3,leaf 2,cat1,Rodale Test

@@ -1,0 +1,21 @@
+**Constraints
+-Site/Site group
+-Constraint Segment(s)
+-Crossed Segment(s)
+-US Users Only
+**Dimensions
+-Site/Site Group
+**Metrics
+-Overlapping UU
+-Overlapping PV
+-Overlapping IM
+-Non-Overlapping UU
+-Non-Overlapping PV
+-Non-Overlapping IM
+**Time Settings
+-Date Range
+-View (unit of time)
+**Save, Schedule And Email
+-Report Name
+-Run This Report
+-Email Report To

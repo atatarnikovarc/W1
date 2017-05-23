@@ -1,0 +1,28 @@
+sendRequest.sh - sends a request to google/api
+sendSnippetToMe.sh - sends a snippet file to user(ip into) using scp
+probability.py - performs requests, gather statistics
+
+Requirements to have Requester <--> RA Google RTB interaction working
+(i.e. RA Google RTB responds with a snippet to show AD):
+
+1. Pacing manager - PM_ALLOCATON table contains proper records for a campaign
+2. if no USER MODEL, then a campaign shouldn't be 'Retargeting'
+3. servlet.google.timeout = 2000
+4. rtb.response.time.threshold=5000
+5. the campaing is running 
+6. The protocol fields is_ping, is_test, experimental_deadline are set to false
+(see generator.py)
+
+**NOTES:
+
+1. Some times RA Google RTB doesn't respond with a snippet, googleintegration.log contains:
+-No available pacing data in RTB, default will be sent
+-No enough time to process
+it is just connection issues - google rtb can't connect to pacing manager
+
+**HOW TO
+
+1. New realtime-bidding.proto file
+--put realtime-bidding.proto to /home/csc/QA/RTB/google/2.4.1/distr/protobuf-2.4.1 (**)
+--run "protoc -I=. --python_out=. realtime-bidding.proto" from (**) folder
+--put realtime_bidding_pb2.py to all necessary requesters(requester, atatarnikov, yksenofontov, ...)

@@ -1,0 +1,10 @@
+WINDOWS/anonymous*
+WINDOWS/scoped*
+WINDOWS/unzip*
+WINDOWS/webdriver*
+WINDOWS/plugtmp*
+Documents*/root/anonymous*
+Documents*/root/scoped*
+Documents*/root/unzip*
+Documents*/root/webdriver*
+Documents*/root/plugtmp*

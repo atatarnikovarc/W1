@@ -1,0 +1,7 @@
+sockettimeoutexception
+connectiontimeoutexception
+connecttimeoutexception
+closedchannelexception
+bufferoverflowexception
+numberformatexception
+parseexception

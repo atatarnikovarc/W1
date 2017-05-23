@@ -1,0 +1,92 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<script language="javascript">
+  		ord=Math.random()*100000000000000000;
+  		tilenum=1;
+  		var rasegs='';
+	</script>
+
+	<script type="text/javascript">
+    	var target_base="http://ad.doubleclick.net/adj/mansueto.inc/homepage;"
+    	var target_spots= [
+        	";sz=1x1;pos=top;dcove=d;tile=1;dcopt=ist;lan=en;c_type=splash;cms=homepage;ord=",
+        	";sz=728x90;pos=top;dcove=d;tile=2;lan=en;c_type=splash;cms=homepage;ord=",
+        	";sz=970x250,970x90,970x60,964x30;pos=top;dcove=d;tile=3;lan=en;c_type=splash;cms=homepage;ord=",
+        	";sz=336x280,300x600,300x250;pos=top;dcove=d;tile=4;lan=en;c_type=splash;cms=homepage;ord=",
+        	";sz=336x150;pos=top;dcove=d;tile=5;lan=en;c_type=splash;cms=homepage;ord=",
+        	";sz=336x150;pos=bot;dcove=d;tile=6;lan=en;c_type=splash;cms=homepage;ord="
+        	];
+    </script>
+
+    <script type="text/javascript">
+
+        function replace_advt(id, url, loadTime ) {
+            var element = document.getElementById( id );
+            if( !element ) {
+                if (loadTime >= 2000) return;                   
+                setTimeout( "replace_advt('" + id + "','" + url + "', " + (loadTime + 50) + ")", 50 );
+                return;
+            }
+            var iframe = document.createElement("iframe");
+            iframe.scrolling="no";
+            iframe.marginHeight = 0;
+            iframe.marginWidth = 0;
+            iframe.src = "javascript:false";
+
+            (iframe.frameElement || iframe).style.cssText = "width: 0px; height: 0px; border: 0;";
+            var fdoc = element.appendChild(iframe).contentWindow.document;
+            fdoc = fdoc.open();
+            fdoc.c = function() {
+                var h = Math.max(Math.max(this.body.scrollHeight, this.documentElement.scrollHeight),Math.max(this.body.offsetHeight, this.documentElement.offsetHeight),Math.max(this.body.clientHeight, this.documentElement.clientHeight));
+                if( h > 0 ) {
+                    h = h + "px";
+                    if( (iframe.frameElement || iframe).style.height != h ) 
+                        (iframe.frameElement || iframe).style.height = h;
+                }
+                var w = Math.max(Math.max(this.body.scrollWidth, this.documentElement.scrollWidth),Math.max(this.body.offsetWidth, this.documentElement.offsetWidth),Math.max(this.body.clientWidth, this.documentElement.clientWidth));
+                if( w > 0 ) {
+                    w = w + "px";
+                    if( (iframe.frameElement || iframe).style.width != w ) 
+                        (iframe.frameElement || iframe).style.width = w;
+                }
+            }
+            fdoc.write('<style type=\"text/css\">img {border-style: none;}<\/style><script type=\"text/javascript\" src=\"' + url + '\"><\/script><script>var _cnt = 0; function a() { if(_cnt++ < 30 ) {if( document.body ) document.c();setTimeout(\"a();\",100);}}; a();<\/script>');
+
+        }
+
+        function target_me(kvp) {
+            window.target_me = function (kvp) {};                
+                for (var i = 0; i < target_spots.length; i++) {
+                    try {
+                        var tileId = "tile" + target_spots[i].substr(target_spots[i].indexOf("tile") + 5, 1);
+                        replace_advt( tileId, target_base + kvp + target_spots[i] + ord, 0 );                        
+                    }
+                    catch(e) {}
+                }
+        }
+    </script>
+
+    <script type="text/javascript" src="//p0.raasnet.com/partners/parts/dfp_async2.js"></script>
+    <script type="text/javascript">
+    	radfp( { id:85069, onload:"target_me(rasegs)", timeout:800 } );
+    	</script>
+</head>
+
+<body>
+<h3>Test dfp async(HTML)</h3>
+
+<div id="tile1">Tile1</div>
+<div id="tile2">Tile2</div>
+<div id="tile3">Tile3</div>
+<div id="tile4">Tile4</div>
+<div id="tile5">Tile5</div>
+<div id="tile6">Tile6</div>
+<div id="tile7">Tile7</div>
+<div id="tile8">Tile8</div>
+
+</body>
+</html>
+

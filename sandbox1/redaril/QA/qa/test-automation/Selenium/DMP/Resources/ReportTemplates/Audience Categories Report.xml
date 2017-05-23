@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<report name="Audience Categories Report">
+
+	<!-- Constraints -->
+		<fieldset name="Constraints">
+			<control name="Audience Group(s)" type="combobox" id="app-id-101-constraint101" />
+			<control name="US Users Only" type="checkbox" id="app-id-101-constraint102" />
+		</fieldset>
+
+	<!-- Dimensions -->
+		<fieldset name="Dimensions">
+			<control name="Audience Group" type="checkbox" id="app-id-101-dimensions602" />
+			<control name="Data Source" type="checkbox" id="app-id-101-dimensions102" />
+
+			<!-- unused control. always checked in dmp web ui.
+			<control name="Audience Category" type="checkbox" id="app-id-101-dimensions101" />
+			-->
+
+			<control name="Page URL" type="checkbox" id="app-id-101-dimensions103" />
+			<control name="Referrer" type="checkbox" id="app-id-101-dimensions104" />
+			<control name="DMA" type="checkbox" id="app-id-101-dimensions105" />
+			<control name="State" type="checkbox" id="app-id-101-dimensions106" />
+			<control name="Domain" type="checkbox" id="app-id-101-dimensions107" />
+		</fieldset>
+
+	<!-- Metrics -->
+		<fieldset name="Metrics">
+			<control name="Unique Users" type="checkbox" id="app-id-101-metrics101" />
+			<control name="Page Views" type="checkbox" id="app-id-101-metrics102" />
+			<control name="Index" type="checkbox" id="app-id-101-metrics103" />
+		</fieldset>
+
+	<!-- Time Settings -->
+		<fieldset name="Time Settings">
+			<control name="Date Range" type="combobox" id="app-id-101-date-range-combo" />
+			<control name="Start Date" type="combobox" id="app-id-101-startDate" />
+			<control name="End Date" type="combobox" id="app-id-101-endDate" />
+			<control name="View (unit of time)" type="combobox" id="app-id-101-date-chunk-combo" />
+		</fieldset>
+
+	<!-- Save, Schedule and Email -->
+		<fieldset name="Save, Schedule and Email">
+			<control name="Report Name" type="textbox" id="ext-comp-1016" />
+			<control name="Email Report To" type="textbox" id="app-id-101-email" />
+			<control name="Run This Report" type="combobox" id="app-id-101-schedule-period-combo" />
+			<control name="Schedule Day" type="combobox" id="app-id-101-schedule-period-days-combo" />
+			<control name="attached as" type="combobox" id="app-id-101-attachment-type-combo" />
+		</fieldset>
+
+	</report>

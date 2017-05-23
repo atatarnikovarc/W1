@@ -1,0 +1,25 @@
+#qacluster1 environment
+clustername = qacluster1
+databaseserver = 10.50.150.151
+certername = qacluster1UTA
+umserver = 10.50.150.150
+icserver = 10.50.150.151
+yieldmanager = 10.50.150.150
+adserver = qacluster1-1.nebuad.com
+virtualcerter = 10.50.150.150
+certer_id = 54
+buildversion = SR_160
+deviceid = 0000007
+testpageurl = http://www.a101tech.com/qa/chuck_blog/qacluster1.htm
+utacentralurl = http://10.50.150.150:8080/controlcenter/views/webcommon/login.jsp
+adcentralurl = http://10.50.150.151/adcentral/views/advertiserlist.jsf
+optouturl = http://qacluster1-1.nebuad.com/a?t=o&track=no&noads=all
+optinurl = http://qacluster1-1.nebuad.com/a?t=o&track=yes&noads=none
+ftpserver = 10.50.150.151
+dbh1 = DBI->connect( "dbi:mysql:database=logdb;host=$databaseserver;port=3306",'root', '901nebuad', { RaiseError => 1, AutoCommit => 1 })
+dbh2 = DBI->connect( "dbi:mysql:database=logdb;host=$databaseserver;port=3306",'root', '901nebuad', { RaiseError => 1, AutoCommit => 1 })
+dbh3 = DBI->connect( "dbi:mysql:database=logdb;host=$databaseserver;port=3306",'root', '901nebuad', { RaiseError => 1, AutoCommit => 1 })
+dbh4 = DBI->connect( "dbi:Oracle:host=10.50.200.11;sid=qa", "$clustername", "$clustername")
+dbh5 = DBI->connect( "dbi:Oracle:host=10.50.200.11;sid=qa", "$clustername", "$clustername")
+dbh6 = DBI->connect( "dbi:mysql:database=sanitytests;host=localhost;port=3306",'root', 'nebuad1', { RaiseError => 1, AutoCommit => 1 })
+dbh7 = DBI->connect( "dbi:mysql:database=sanitytests;host=localhost;port=3306",'root', 'nebuad1', { RaiseError => 1, AutoCommit => 1 })

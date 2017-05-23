@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userBusinessDataCall>
+    <record>
+        <name>created_date_time</name>
+        <number>1</number>
+        <type>Date</type>
+    </record>
+    <record>
+        <name>request_ip</name>
+        <number>2</number>
+        <type>String</type>
+    </record>
+    <record>
+        <name>business_name</name>
+        <number>5</number>
+        <type>String</type>
+    </record>
+    <record>
+        <name>business_industry_code</name>
+        <number>6</number>
+        <type>Integer</type>
+    </record>
+    <size>14</size>
+</userBusinessDataCall>

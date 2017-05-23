@@ -1,0 +1,1 @@
+delete from NT_QUALIFIER_PHRASE where QUALIFIER_PHRASE_ID = {0}

@@ -1,0 +1,1 @@
+select id from qualifier_type where name like '%{0}%'

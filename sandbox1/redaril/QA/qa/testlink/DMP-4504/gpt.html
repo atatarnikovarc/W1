@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html" />
+
+<script>
+	var CA = window.CA || {};
+	CA.cmd = CA.cmd || [];
+	CA.config = {id:40046, defaultKVP: "cas=123"};
+	CA.cmd.push(function() {
+		CA.doTargeting();
+	});
+	CA.getTargetKeyValues = function () {return CA.config.defaultKVP};
+
+	(function(){ 
+		var p = document.createElement("script");
+		p.type = "text/javascript"; p.async = true;
+		//p.src = "file:////C:/Projects/CURRENT_VERSION/Partners/www/parts/dfp_async1.js";
+		p.src = (document.location.protocol != "https:" ? "http" : "https") + "://p0.raasnet.com/parters/dfp_async1.js";
+		var s = document.getElementsByTagName("script"); s[s.length-1].parentNode.appendChild(p);
+	})();
+</script>
+
+<!-- Start: GPT Async -->
+<script>
+//	var sitecode = 'mv.inc';
+//	var testads   = window.location.href.toString().match("testpage") ? "1" : "0";
+//	if (testads == 1) {
+		var sitecode  = "mv.inctest";
+//	}
+	
+	var gptadslots=[];
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	googletag.debug_log = console;
+	(function(){ 
+		var gads = document.createElement('script');
+		gads.async = true; gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	})();	
+</script>
+
+<script>
+	googletag.cmd.push(function() {
+
+		//Adslot oop declaration
+		gptadslots[0] = googletag.defineOutOfPageSlot('/4160/sitecode/channel/subchannel/topic/author', 'div-gpt-ad-interstitial_oop').addService(googletag.pubads());
+
+		//Adslot 1 declaration
+		gptadslots[1]= googletag.defineSlot('/4160/sitecode/channel/subchannel/topic/author', [[1,1]],'div-gpt-ad-interstitial_trigger').addService(googletag.pubads());
+
+		//Adslot 2 declaration
+		gptadslots[2]= googletag.defineSlot('/4160/sitecode/channel/subchannel/topic/author', [[728,90]],'div-gpt-ad-leaderboard_abovenav').setTargeting('pos',['top']).addService(googletag.pubads());
+
+		//Adslot 3 declaration
+		gptadslots[3]= googletag.defineSlot('/4160/sitecode/channel/subchannel/topic/author', [[970,90],[970,60],[970,66]],'div-gpt-ad-pencil_belownav').setTargeting('pos',['top']).addService(googletag.pubads());
+
+		//Adslot 4 declaration
+		gptadslots[4]= googletag.defineSlot('/4160/sitecode/channel/subchannel/topic/author', [[88,31],[120,60],[120,90]],'div-gpt-ad-logo_belownav').setTargeting('pos',['top']).addService(googletag.pubads());
+
+		//Adslot 5 declaration
+		gptadslots[5]= googletag.defineSlot('/4160/sitecode/channel/subchannel/topic/author', [[300,1050],[300,600],[300,250]],'div-gpt-ad-box_abovethefold').setTargeting('pos',['top']).addService(googletag.pubads());
+
+		//Adslot 6 declaration
+		gptadslots[6]= googletag.defineSlot('/4160/sitecode/channel/subchannel/topic/author', [[336,150]],'div-gpt-ad-partnerpromo_belowthefold').setTargeting('pos',['bot']).addService(googletag.pubads());
+
+		//Adslot 7 declaration
+		gptadslots[7]= googletag.defineSlot('/4160/sitecode/channel/subchannel/topic/author', [[300,600],[300,250]],'div-gpt-ad-box_belowthefold').setTargeting('pos',['bot']).addService(googletag.pubads());
+
+		googletag.pubads().enableSingleRequest();
+		googletag.pubads().setTargeting('c_type',['content_type']).setTargeting('cms',['unique_value']).setTargeting('chn',['channel']).setTargeting('schn',['subchannel']).setTargeting('sschn',['topic']).setTargeting('video',['yes_no']).setTargeting('login',['yes_no']).setTargeting('aut',['author_name']);
+		
+		googletag.pubads().setTargeting.apply(googletag.pubads(), CA.getTargetKeyValues().split(',')[0].split("="));
+		CA.cmd.push(function() {
+			CA.setGPTTargeting(googletag.pubads());
+		});
+		
+		googletag.pubads().enableAsyncRendering();
+		googletag.enableServices();
+	});
+</script>
+<!-- End: GPT -->
+  </head>
+<body>
+<div id="div-gpt-ad-leaderboard_abovenav">
+	<script type="text/javascript">
+		googletag.cmd.push(function() {
+			googletag.display("div-gpt-ad-leaderboard_abovenav");
+		});
+	</script>
+</div>
+</body>
+</html>

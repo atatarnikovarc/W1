@@ -1,0 +1,304 @@
+ExternalId,Name,ParentExternalId,DataSource,Buyable
+120000,Automotive,,Datonics,TRUE
+120100,"Auto Parts, Accessories & Services",120000,Datonics,TRUE
+120200,Other Vehicles,120000,Datonics,TRUE
+120205,Motorcycles,120000,Datonics,TRUE
+121000,"Coupe, Sport & Convertible",120000,Datonics,TRUE
+121100,Hybrid & Green,120000,Datonics,TRUE
+121200,Luxury,120000,Datonics,TRUE
+121300,Pickup & Trucks,120000,Datonics,TRUE
+121400,"Passenger Cars (Sedan, Wagon, Hatchback, Compact)",120000,Datonics,TRUE
+121500,"SUV, Minivan, Van & Crossover",120000,Datonics,TRUE
+119000,Make & Model,120000,Datonics,FALSE
+123100,acura,119000,Datonics,TRUE
+123101,acura TL,119000,Datonics,TRUE
+123200,astonmartin,119000,Datonics,TRUE
+123300,audi,119000,Datonics,TRUE
+123301,audi A4,119000,Datonics,TRUE
+123302,audi S4,119000,Datonics,TRUE
+123400,bentley,119000,Datonics,TRUE
+123500,bmw,119000,Datonics,TRUE
+123501,bmw M3,119000,Datonics,TRUE
+123600,buick,119000,Datonics,TRUE
+123601,buick Regal,119000,Datonics,TRUE
+123700,cadillac,119000,Datonics,TRUE
+123701,cadillac CTS,119000,Datonics,TRUE
+123702,cadillac Escalade,119000,Datonics,TRUE
+123800,chevrolet,119000,Datonics,TRUE
+123801,chevrolet Aveo,119000,Datonics,TRUE
+123802,chevrolet Camaro,119000,Datonics,TRUE
+123803,chevrolet Cobalt,119000,Datonics,TRUE
+123804,chevrolet Corvette,119000,Datonics,TRUE
+123805,chevrolet Equinox,119000,Datonics,TRUE
+123806,chevrolet Impala,119000,Datonics,TRUE
+123807,chevrolet Malibu,119000,Datonics,TRUE
+123808,chevrolet Suburban,119000,Datonics,TRUE
+123809,chevrolet Tahoe,119000,Datonics,TRUE
+123900,chrysler,119000,Datonics,TRUE
+123901,chrysler 300,119000,Datonics,TRUE
+123902,chrysler Town & Country,119000,Datonics,TRUE
+124000,dodge,119000,Datonics,TRUE
+124001,dodge Avenger,119000,Datonics,TRUE
+124002,dodge Caliber,119000,Datonics,TRUE
+124003,dodge Challenger,119000,Datonics,TRUE
+124004,dodge Charger,119000,Datonics,TRUE
+124005,dodge Grand Caravan,119000,Datonics,TRUE
+124006,dodge Viper,119000,Datonics,TRUE
+124100,ferrari,119000,Datonics,TRUE
+124200,ford,119000,Datonics,TRUE
+124201,ford Edge,119000,Datonics,TRUE
+124202,ford Escape,119000,Datonics,TRUE
+124203,ford Expedition,119000,Datonics,TRUE
+124204,ford Explorer Sport Trac,119000,Datonics,TRUE
+124205,ford Fiesta,119000,Datonics,TRUE
+124206,ford Flex,119000,Datonics,TRUE
+124207,ford Focus,119000,Datonics,TRUE
+124208,ford Fusion,119000,Datonics,TRUE
+124209,ford Mustang,119000,Datonics,TRUE
+124210,ford Taurus,119000,Datonics,TRUE
+124300,freightliner,119000,Datonics,TRUE
+124400,gmc,119000,Datonics,TRUE
+124500,honda,119000,Datonics,TRUE
+124501,honda CR-V,119000,Datonics,TRUE
+124502,honda Odyssey,119000,Datonics,TRUE
+124503,honda Pilot,119000,Datonics,TRUE
+124600,hummer,119000,Datonics,TRUE
+124700,hyundai,119000,Datonics,TRUE
+124701,hyundai Elantra,119000,Datonics,TRUE
+124702,hyundai Genesis,119000,Datonics,TRUE
+124703,hyundai Santa Fe,119000,Datonics,TRUE
+124704,hyundai Sonata,119000,Datonics,TRUE
+124800,infiniti,119000,Datonics,TRUE
+124900,jaguar,119000,Datonics,TRUE
+125000,jeep,119000,Datonics,TRUE
+125001,jeep Grand Cherokee,119000,Datonics,TRUE
+125002,jeep Liberty,119000,Datonics,TRUE
+125003,jeep Wrangler,119000,Datonics,TRUE
+125100,kia,119000,Datonics,TRUE
+125200,lamborghini,119000,Datonics,TRUE
+125300,landrover,119000,Datonics,TRUE
+125400,lexus,119000,Datonics,TRUE
+125401,lexus IS,119000,Datonics,TRUE
+125500,lincoln,119000,Datonics,TRUE
+125501,lincoln Town Car,119000,Datonics,TRUE
+125600,lotus,119000,Datonics,TRUE
+125700,maserati,119000,Datonics,TRUE
+125800,maybach,119000,Datonics,TRUE
+125900,mazda,119000,Datonics,TRUE
+126000,mercedes-benz,119000,Datonics,TRUE
+126001,mercedes-benz S-Class,119000,Datonics,TRUE
+126100,mercury,119000,Datonics,TRUE
+126101,mercury Grand Marquis,119000,Datonics,TRUE
+126200,mini,119000,Datonics,TRUE
+126300,mitsubishi,119000,Datonics,TRUE
+126301,mitsubishi Eclipse,119000,Datonics,TRUE
+126302,mitsubishi Lancer,119000,Datonics,TRUE
+126400,nissan,119000,Datonics,TRUE
+126401,nissan Maxima,119000,Datonics,TRUE
+126402,nissan Murano,119000,Datonics,TRUE
+126403,nissan Pathfinder,119000,Datonics,TRUE
+126404,nissan Quest,119000,Datonics,TRUE
+126405,nissan Sentra,119000,Datonics,TRUE
+126406,nissan Xterra,119000,Datonics,TRUE
+126500,pontiac,119000,Datonics,TRUE
+126600,porsche,119000,Datonics,TRUE
+126700,rolls-royce,119000,Datonics,TRUE
+126800,saab,119000,Datonics,TRUE
+126900,scion,119000,Datonics,TRUE
+126901,scion tC,119000,Datonics,TRUE
+127000,smart,119000,Datonics,TRUE
+127100,subaru,119000,Datonics,TRUE
+127101,subaru Forester,119000,Datonics,TRUE
+127102,subaru Impreza,119000,Datonics,TRUE
+127103,subaru Outback,119000,Datonics,TRUE
+127200,suzuki,119000,Datonics,TRUE
+127300,tesla,119000,Datonics,TRUE
+127400,toyota,119000,Datonics,TRUE
+127401,toyota 4Runner,119000,Datonics,TRUE
+127402,toyota Avalon,119000,Datonics,TRUE
+127403,toyota Camry,119000,Datonics,TRUE
+127404,toyota Corolla,119000,Datonics,TRUE
+127405,toyota FJ Cruiser,119000,Datonics,TRUE
+127406,toyota Highlander,119000,Datonics,TRUE
+127407,toyota Land Cruiser,119000,Datonics,TRUE
+127408,toyota Prius,119000,Datonics,TRUE
+127409,toyota RAV4,119000,Datonics,TRUE
+127410,toyota Sienna,119000,Datonics,TRUE
+127500,volkswagen,119000,Datonics,TRUE
+127501,volkswagen Golf,119000,Datonics,TRUE
+127600,volvo,119000,Datonics,TRUE
+130000,Business & Industry,,Datonics,TRUE
+130300,Small Business,130000,Datonics,TRUE
+131000,Office and business electronics,130000,Datonics,TRUE
+131001,"Copiers, Fax Machines & Scanners",131000,Datonics,TRUE
+131002,Printers,131000,Datonics,TRUE
+131003,Office Supplies,131000,Datonics,TRUE
+131100,Transportation & Logistics,130000,Datonics,TRUE
+131200,Legal Services,130000,Datonics,TRUE
+140000,Careers & Employment,,Datonics,TRUE
+150000,Education,,Datonics,TRUE
+150100,College & Admissions,150000,Datonics,TRUE
+150400,Financial Aid & Scholarships,150000,Datonics,TRUE
+150800,Online Courses,150000,Datonics,TRUE
+151000,Learning Disabilities,150000,Datonics,TRUE
+151100,Preschools,150000,Datonics,TRUE
+151200,Elementary & Middle School,150000,Datonics,TRUE
+151300,High School,150000,Datonics,TRUE
+160000,Electronics,,Datonics,TRUE
+160100,Cameras,160000,Datonics,TRUE
+160200,Computers,160000,Datonics,TRUE
+160202,Desktops,160200,Datonics,TRUE
+160203,Laptops,160200,Datonics,TRUE
+160205,Tablets,160200,Datonics,TRUE
+160206,Netbooks,160200,Datonics,TRUE
+160240,Apple Computers,160200,Datonics,TRUE
+160241,Apple Desktops,160200,Datonics,TRUE
+160242,Apple Laptops,160200,Datonics,TRUE
+160300,Gaming & Video Games,160000,Datonics,TRUE
+160301,Computer Games,160300,Datonics,TRUE
+160303,GameCube,160300,Datonics,TRUE
+160305,Nintendo,160300,Datonics,TRUE
+160306,Online Games,160300,Datonics,TRUE
+160307,Playstation,160300,Datonics,TRUE
+160308,PSP,160300,Datonics,TRUE
+160310,Xbox,160300,Datonics,TRUE
+160311,Wii,160300,Datonics,TRUE
+160315,Hardcore Gamers,160300,Datonics,TRUE
+160400,Handhelds & Navigation,160000,Datonics,TRUE
+160401,GPS,160400,Datonics,TRUE
+160402,Palmtops & PDA's,160400,Datonics,TRUE
+160500,Home Electronics,160000,Datonics,TRUE
+160501,CD Players,160500,Datonics,TRUE
+160502,Dishwashers,160500,Datonics,TRUE
+160503,Home Cinema,160500,Datonics,TRUE
+160504,Refrigerator,160500,Datonics,TRUE
+160505,Audio,160500,Datonics,TRUE
+160506,TV's & HDTV's,160500,Datonics,TRUE
+160507,VCR & DVD,160500,Datonics,TRUE
+160508,Washing Machines & Dryers,160500,Datonics,TRUE
+160509,Women Electronics,160500,Datonics,TRUE
+160510,Coffee Machines,160500,Datonics,TRUE
+160511,Vacuum Cleaners,160500,Datonics,TRUE
+160600,Entertainment,160000,Datonics,TRUE
+160601,Ipod,160600,Datonics,TRUE
+160602,MP Players,160600,Datonics,TRUE
+170000,Finance & Money,,Datonics,TRUE
+170200,Credit & Credit Cards,170000,Datonics,TRUE
+170400,Mortgage,170000,Datonics,TRUE
+170500,Insurance,170000,Datonics,TRUE
+170501,Car & Motorcycle Insurance,170500,Datonics,TRUE
+170502,Home Insurance,170500,Datonics,TRUE
+170503,Life Insurance,170500,Datonics,TRUE
+170504,Health Insurance,170500,Datonics,TRUE
+171000,Credit Cards  ,170000,Datonics,TRUE
+171001,Prepaid Credit Cards ,171001,Datonics,TRUE
+171100,Trade ,170000,Datonics,TRUE
+171101,"Investments, Stocks, Bonds & funds ",171100,Datonics,TRUE
+171102,Forex ,171100,Datonics,TRUE
+171200,Loans ,170000,Datonics,TRUE
+171201,Mortgage Loan ,171200,Datonics,TRUE
+171202,Equity Loan ,171200,Datonics,TRUE
+171203,Refinance Loan ,171200,Datonics,TRUE
+171204,Auto Loan ,171200,Datonics,TRUE
+171205,Personal Loan ,171200,Datonics,TRUE
+171206,Student Loans ,171200,Datonics,TRUE
+171300,Financial Services ,170000,Datonics,TRUE
+171301,Banks & Bank services ,171300,Datonics,TRUE
+171302,Credit ,171300,Datonics,TRUE
+171303,Savings ,171300,Datonics,TRUE
+171304,Retirement / 401K  ,171300,Datonics,TRUE
+171400,Tax ,170000,Datonics,TRUE
+171500,eCommerce Services ,170000,Datonics,TRUE
+171501,PayPal ,171500,Datonics,TRUE
+180000,Family,,Datonics,TRUE
+180100,Baby Care,180000,Datonics,TRUE
+180300,Dating  & Relationships,180000,Datonics,TRUE
+180500,Family Toys & Games,180000,Datonics,TRUE
+180800,Seniors,180000,Datonics,TRUE
+181100,Wedding,180000,Datonics,TRUE
+181200,Parties & Celebrations,180000,Datonics,TRUE
+181300,Parents,180000,Datonics,TRUE
+181500,New Moms,180000,Datonics,TRUE
+190000,Health - Custom Segments,,Datonics,TRUE
+200000,Hobbies & Interest,,Datonics,TRUE
+200100,Books & Magazines,200000,Datonics,TRUE
+200200,Events & Tickets,200000,Datonics,TRUE
+200300,Movies,200000,Datonics,TRUE
+200400,Music,200000,Datonics,TRUE
+200401,Musical instruments,200400,Datonics,TRUE
+200500,TV,200000,Datonics,TRUE
+200700,Pets,200000,Datonics,TRUE
+200701,Fish & Aquariums,200700,Datonics,TRUE
+200702,Birds,200700,Datonics,TRUE
+200703,Cats,200700,Datonics,TRUE
+200704,Dogs,200700,Datonics,TRUE
+200800,"Restaurants, Food & Drinks",200000,Datonics,TRUE
+210000,Home & Garden,,Datonics,TRUE
+210200,"Furnishing, Houseware & Decorations",210000,Datonics,TRUE
+210300,Home Improvement & Construction,210000,Datonics,TRUE
+210500,Garden,210000,Datonics,TRUE
+220000,Internet & Software,,Datonics,TRUE
+220100,Anti-virus,220000,Datonics,TRUE
+220500,Social Networks & web 2.0,220000,Datonics,TRUE
+220700,Weblogs,220000,Datonics,TRUE
+220800,Web Search,220000,Datonics,TRUE
+221000,Webmail,220000,Datonics,TRUE
+221200,Downloaders,220000,Datonics,TRUE
+221500,Cable & Internet Services,220000,Datonics,TRUE
+250000,Real Estate,,Datonics,TRUE
+251000,Moving & Relocation,250000,Datonics,TRUE
+260000,Sports,,Datonics,TRUE
+261300,Fitness & Exercise,260000,Datonics,TRUE
+270000,Style & Fashion,,Datonics,TRUE
+270100,Accessories,270000,Datonics,TRUE
+270200,Beauty,270000,Datonics,TRUE
+270201,Hair Care,270200,Datonics,TRUE
+270203,Skin Care,270200,Datonics,TRUE
+270300,Clothing,270000,Datonics,TRUE
+270301,Children Wear,270300,Datonics,TRUE
+270302,Men's Wear,270300,Datonics,TRUE
+270303,Women's Wear,270300,Datonics,TRUE
+270400,Jewelry,270000,Datonics,TRUE
+270500,Shoes and Footwear,270000,Datonics,TRUE
+280000,Travel,,Datonics,TRUE
+280200,Camping,280000,Datonics,TRUE
+280300,Car rental,280000,Datonics,TRUE
+280400,Cruises,280000,Datonics,TRUE
+280500,Flights,280000,Datonics,TRUE
+280600,Hotels & Accommodations,280000,Datonics,TRUE
+280800,Other Transportation,280000,Datonics,TRUE
+280900,Spas,280000,Datonics,TRUE
+281100,Family Vacations,280000,Datonics,TRUE
+290000,Green Products,,Datonics,TRUE
+300000,Shopping Intent,,Datonics,TRUE
+300100,Etail,300000,Datonics,TRUE
+300200,Value Shoppers,300000,Datonics,TRUE
+300201,Coupon Shoppers,300000,Datonics,TRUE
+320000,Telecommunications ,,Datonics,TRUE
+320100,Cell Phone Accessories ,320000,Datonics,TRUE
+320200,Cell Phone Brands ,320000,Datonics,TRUE
+320201,BlackBerry ,320200,Datonics,TRUE
+320202,Google  ,320200,Datonics,TRUE
+320203,Iphone (Apple)  ,320200,Datonics,TRUE
+320204,LG ,320200,Datonics,TRUE
+320205,Microsoft / HTC,320200,Datonics,TRUE
+320206,Motorola ,320200,Datonics,TRUE
+320207,Nokia ,320200,Datonics,TRUE
+320208,PDA  ,320200,Datonics,TRUE
+320209,Samsung ,320200,Datonics,TRUE
+320210,Sony Ericsson  ,320200,Datonics,TRUE
+320300,Phone Carriers  ,320000,Datonics,TRUE
+320301,Alltel  ,320300,Datonics,TRUE
+320302,Cingular / AT & T  ,320300,Datonics,TRUE
+320303,Sprint & Nextel  ,320300,Datonics,TRUE
+320304,T mobile  ,320300,Datonics,TRUE
+320305,U.S. Cellular ,320300,Datonics,TRUE
+320306,Verizon ,320300,Datonics,TRUE
+330000,CPG,,Datonics,TRUE
+330100,Household & Kitchen Supplies,330000,Datonics,TRUE
+330200,Personal Care Supplies ,330000,Datonics,TRUE
+330300,Flowers,330000,Datonics,TRUE
+340000,Food & Beverages,,Datonics,TRUE
+340100,Restaurants,340000,Datonics,TRUE
+340200,Recipes,340000,Datonics,TRUE
+340300,Grocery Stores & Bakeries,340000,Datonics,TRUE

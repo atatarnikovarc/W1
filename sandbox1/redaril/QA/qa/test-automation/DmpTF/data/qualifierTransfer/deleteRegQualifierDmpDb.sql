@@ -1,0 +1,1 @@
+delete from regex_qualifier where ID = {0}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<report name="Active Audience Segments Report">
+
+	<!-- Constraints -->
+		<fieldset name="Constraints">
+			<control name="Audience Group(s)" type="combobox" id="app-id-201-constraint101" />
+			<control name="Audience Segment(s)" type="combobox" id="app-id-201-constraint201" />
+			<control name="US Users Only" type="checkbox" id="app-id-201-constraint102" />
+		</fieldset>
+
+	<!-- Dimensions -->
+		<fieldset name="Dimensions">
+			<control name="Audience Group" type="checkbox" id="app-id-201-dimensions602" />
+			<control name="DMA" type="checkbox" id="app-id-201-dimensions105" />
+			<control name="State" type="checkbox" id="app-id-201-dimensions106" />
+		</fieldset>
+
+	<!-- Metrics -->
+		<fieldset name="Metrics">
+			<control name="Unique Users" type="checkbox" id="app-id-201-metrics101" />
+			<control name="Page Views" type="checkbox" id="app-id-201-metrics102" />
+			<control name="Index" type="checkbox" id="app-id-201-metrics103" />
+		</fieldset>
+
+	<!-- Time Settings -->
+		<fieldset name="Time Settings">
+			<control name="Date Range" type="combobox" id="app-id-201-date-range-combo" />
+			<control name="View (unit of time)" type="combobox" id="app-id-201-date-chunk-combo" />
+		</fieldset>
+
+	<!-- Save, Schedule and Email -->
+		<fieldset name="Save, Schedule and Email">
+			<control name="Report Name" type="textbox" id="ext-comp-1017" />
+			<control name="Run This Report" type="combobox" id="app-id-201-schedule-period-combo" />
+			<control name="Email Report To" type="textbox" id="app-id-201-email" />
+			<control name="attached as" type="combobox" id="app-id-201-attachment-type" />
+		</fieldset>
+
+	</report>

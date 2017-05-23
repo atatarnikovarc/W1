@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<project name="DMP Browser Testing" default="run" basedir="."
+	xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+    <!--<artifact:pom id="mypom" file="pom.xml" />-->
+	<property name="root.dir" location="./" />
+	<property name="lib.dir" location="${root.dir}/lib/" />
+    <property name="lib-deps.dir" location="${root.dir}/lib-deps/" />
+	<property name="config.dir" location="${root.dir}/config/" />
+	<property name="src.dir" location="${root.dir}/src/" />
+	<property name="dest.dir" location="${root.dir}/build/" />
+	<property name="deploy.dir" location="${root.dir}/dist/" />
+	<property name="report.dir" location="${root.dir}/result/" />
+	<property name="testng.templates.dir" location="${root.dir}/data/templates/" />
+	<property name="tmp.dir" location="${root.dir}/output/tmp/" />
+    <property name="log.dir" location="${root.dir}/output/logs/" />
+	<!--<property file="config/runtime.properties"/>-->
+
+    <path id="all.libs">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+        <fileset dir="${lib-deps.dir}">
+            <include name="**/*.jar" />
+        </fileset>
+		<fileset dir="${deploy.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+
+		<pathelement location="${config.dir}"/>
+	</path>
+
+    <target name="init">
+        <delete dir="${dest.dir}" />
+        <mkdir dir="${dest.dir}" />
+        <delete dir="${deploy.dir}" />
+        <mkdir dir="${deploy.dir}" />
+        <delete dir="${report.dir}" />
+        <mkdir dir="${report.dir}" />
+        <delete dir="${tmp.dir}" />
+        <mkdir dir="${tmp.dir}" />
+        <delete dir="${log.dir}" />
+        <mkdir dir="${log.dir}" />
+        <mkdir dir="${lib-deps.dir}" />
+    </target>
+
+    <target name="build">
+
+		<javac destdir="${dest.dir}" srcdir="${src.dir}">
+			<classpath refid="all.libs" />
+		</javac>
+		<jar jarfile="${deploy.dir}/framework.jar" basedir="${dest.dir}" update="false">
+		</jar>
+
+	</target>
+
+	<path id="cpath">
+		<pathelement location="${lib.dir}/testng-5.14.1beta.jar" />
+	</path>
+
+	<taskdef name="testng" classpathref="cpath" classname="com.beust.testng.TestNGAntTask" />
+
+	<taskdef uri="antlib:org.apache.maven.artifact.ant"
+	           resource="org/apache/maven/artifact/ant/antlib.xml"
+	           classpathref="all.libs" />
+
+	
+	<target name="deps">
+	      <!-- Resolve dependencies -->
+	      <artifact:dependencies filesetId="dependency.fileset">
+	          <pom file="pom.xml" />
+	      </artifact:dependencies>
+	      <!-- Copy all dependencies to the correct location. -->
+	      <copy todir="${lib-deps.dir}">
+	          <fileset refid="dependency.fileset" />
+	          <!-- This mapper strips off all leading directory information -->
+	          <mapper type="flatten" />
+	      </copy>
+	  </target>
+
+	
+	<target name="run" depends="init,deps,build">
+		<testng classpathref="all.libs" outputDir="${report.dir}" haltOnfailure="false" junit="true"
+			useDefaultListeners="false" listeners="org.uncommons.reportng.HTMLReporter">
+			<xmlfileset dir="${root.dir}" includes="testng.xml" />
+		<sysproperty key="org.uncommons.reportng.title" value="DMP Browser TEST REPORT" />
+            <jvmarg value="-DproxySet=true" />
+            <jvmarg value="-Dhttp.proxyHost=127.0.0.1" />
+            <jvmarg value="-Dhttp.proxyPort=8888" />
+		</testng>
+		<sleep seconds="5"/>
+		
+		<!--junitreport todir="${report.dir}">
+			<fileset dir="${report.dir}/RED_ARIL_DMP_BROWSER">
+				<include name="DMP_BROWSER_ALL_TESTS.xml" />
+			</fileset>
+			<report format="noframes" todir="${report.dir}/html00" />
+		</junitreport-->
+		
+		<sleep seconds="5"/>
+		<!--<antcall target="stop-selenium"/>-->
+	</target>
+	
+	<!-- start \ stop Selenium RC -->
+	
+	<!--<target name="start-selenium" description="starts selenium server">-->
+	    <!--<echo>Starting selenium server</echo>-->
+		<!--<java jar="${lib.dir}/selenium-server-standalone-2.22.0.jar" fork="true" spawn="true" classpathref="all.libs">-->
+	        <!--<arg line="-port ${selenium.port} -singleWindow -trustAllSSLcertificates"/>-->
+	    <!--</java>-->
+	<!--</target>-->
+	 
+	<!--<target name="stop-selenium" description="stop selenium server">-->
+	    <!--<echo>Stopping selenium server</echo>-->
+		    <!--<get taskname="selenium-shutdown" dest="${report.dir}/selenium_shutdown.txt" ignoreerrors="true"-->
+		         <!--src="http://${selenium.host}:${selenium.port}/selenium-server/driver/?cmd=shutDownSeleniumServer"/>-->
+    <!--</target>-->
+		
+	<!-- single class run -->
+	<target name="run-class"
+			depends="init,deps,build"
+			description="run all methods in a specific test class. Requires class.name property to be set to fully qualified name of class">
+		<condition property="classNameSpecified">
+			<isset property="class.name" />
+		</condition>
+		<fail unless="classNameSpecified"
+			message="class.name property not specified. Don't know which test class to run."/>
+		<copy todir="${tmp.dir}" file="${testng.templates.dir}/class.xml" overwrite="true">
+			<filterset>
+				<filter token="CLASS" value="${class.name}"/>
+			</filterset>
+		</copy>
+	    <echo>Class name is: ${class.name}</echo>
+		<testng classpathref="all.libs"
+				outputDir="${report.dir}/${class.name}-class"
+				haltOnfailure="true"
+				junit="true"
+				useDefaultListeners="false"
+				listeners="org.uncommons.reportng.HTMLReporter">
+			<jvmarg value="-Xmx1024m"/>
+			<sysproperty key="org.uncommons.reportng.title" value="DMP Browser TEST REPORT" />
+			<xmlfileset dir="${tmp.dir}" includes="class.xml" />
+		</testng>
+		<!--<antcall target="stop-selenium"/>-->
+	</target>
+	
+</project>

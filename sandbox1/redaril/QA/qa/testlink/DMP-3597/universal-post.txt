@@ -1,0 +1,11 @@
+POST http://env1.west.dts.raasnet.com/dts/data?exchange=10
+Headers: Content-Type = application/json
+
+{"pixels": [
+  {
+    "exUid": "2918cde05d1a4e17175753f265053715",
+    "raUid": 180538950287361,
+    "cats": "149627",
+    "timestamp": "20121229082446"
+  }
+]}

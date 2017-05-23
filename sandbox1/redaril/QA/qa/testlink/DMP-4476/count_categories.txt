@@ -1,0 +1,10 @@
+select count(*) from category where data_source = '1006' and buyable = '1' and deleted = '0'; --Bizo, count = 315
+select count(*) from category where data_source = '1010' and buyable = '1' and deleted = '0'; --Datonics, count = 337
+select count(*) from category where data_source = '1004' and buyable = '1' and deleted = '0'; --DemandBase, count = 271
+select count(*) from category where data_source = '1009' and buyable = '1' and deleted = '0'; --Digital Envoy, count = 4708
+select count(*) from category where data_source = '1003' and buyable = '1' and deleted = '0'; --Exelate, count = 1860
+select count(*) from category where data_source = '1012' and buyable = '1' and deleted = '0'; --IXI Network, count = 124
+select count(*) from category where data_source = '1011' and buyable = '1' and deleted = '0'; --IXI Open Market, count = 228
+select count(*) from category where data_source = '1001' and buyable = '1' and deleted = '0'; --LiveRamp, count = 122
+select count(*) from category where data_source = '1005' and buyable = '1' and deleted = '0'; --Red Aril Interest, count = 1833
+select count(*) from category where data_source = '1007' and buyable = '1' and deleted = '0'; --TargusInfo, count = 263

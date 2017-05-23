@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<exchangeMappingCall>
+    <record>
+        <name>created_date_time</name>
+        <number>1</number>
+        <type>Date</type>
+    </record>
+    <record>
+        <name>cookie_user_id</name>
+        <number>2</number>
+        <type>Integer</type>
+    </record>
+    <record>
+        <name>exchange_id</name>
+        <number>3</number>
+        <type>Integer</type>
+    </record>
+    <record>
+        <name>exchange_user_id</name>
+        <number>4</number>
+        <type>String</type>
+    </record>
+    <size>10</size>
+</exchangeMappingCall>

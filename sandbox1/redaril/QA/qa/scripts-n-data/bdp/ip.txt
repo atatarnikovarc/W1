@@ -1,0 +1,15 @@
+#DE: 65.60.166.181 - ISP, company_name is not empty
+65.60.166.181
+#DB: non ISP, company_name is absent
+122.12.12.12
+#DB: non ISP,  company_name = Universidad De Antioquia, size = 0
+200.24.24.2
+#DB: non ISP;  company_name = US Department of Defense; size = 2768886; industry = Government; company-size = Over $5B
+11.4.4.50
+#DB: non ISP;  company_name = Bank of America;          size = 182284;  industry = Financial Services; company-size = Over $5B
+171.200.5.50
+#DB: non ISP; company_name = US Department of Defense; size = 2768886; industry = Government; company-size = Over $5B
+205.1.1.22
+
+#it also need to be added the following ips:
+#1. has sub-industry, sub-industry name contains spaces

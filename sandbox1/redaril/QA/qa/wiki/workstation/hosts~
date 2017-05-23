@@ -1,0 +1,63 @@
+#testing
+10.50.150.130 env1.webserver
+10.50.150.10 p.raasnet.com
+10.50.150.130 p0.raasnet.com
+10.50.150.130 a.raasnet.com
+#123.123.33.22 p.raasnet.com
+
+#prod
+10.50.150.178 adcentral.redaril.com
+10.50.150.178 rpt.redaril.com
+10.50.150.178 adc.redaril.com
+10.50.150.92  west.cst.raasnet.com
+10.118.56.31  east.cst.raasnet.com
+
+#env-1 
+
+#==backend
+10.50.150.130 env1.west.a.raasnet.com
+10.50.150.130 env1.west.cst.raasnet.com
+10.50.150.131 env1.east.cst.raasnet.com
+10.50.150.130 env1.west.dts.raasnet.com
+10.50.150.131 env1.east.dts.raasnet.com
+10.50.150.152 env1.west.p.raasnet.com
+10.50.150.131 env1.east.p.raasnet.com
+10.50.150.152 env1.west.rtb.raasnet.com
+
+#==UI
+10.50.150.130 env1.adcentral
+10.50.150.131 env1.dmpadmin
+10.50.150.131 env1.dmpui
+10.50.150.152 env1.testsite
+
+#env2
+
+#==backend
+10.50.150.154 env2.west.a.raasnet.com
+10.50.150.154 env2.west.cst.raasnet.com
+10.50.150.155 env2.east.cst.raasnet.com
+10.50.150.154 env2.west.dts.raasnet.com
+10.50.150.155 env2.east.dts.raasnet.com
+10.50.150.10 env2.west.p.raasnet.com
+10.50.150.155 env2.east.p.raasnet.com
+10.50.150.10 env2.west.rtb.raasnet.com
+
+#==UI   
+10.50.150.154 env2.adcentral
+10.50.150.155 env2.dmpadmin
+10.50.150.155 env2.dmpui
+10.50.150.10 env2.testsite
+
+#env3
+
+#==backend
+10.50.151.177 env3.west.p.raasnet.com
+10.50.151.177 env3.west.cst.raasnet.com
+
+#==UI
+10.50.151.177 env3.dmpadmin
+10.50.151.177 env3.dmpui
+
+#infractructure
+
+#local services

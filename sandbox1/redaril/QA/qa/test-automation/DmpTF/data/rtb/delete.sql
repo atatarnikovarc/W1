@@ -1,0 +1,1 @@
+delete from pm_allocation where campaign_id = {0} and hour_utc like TO_DATE('{1}','YYYY-MM-DD')

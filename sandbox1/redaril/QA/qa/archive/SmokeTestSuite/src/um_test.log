@@ -1,0 +1,23 @@
+[30 Nov 2007 14:18:37] INFO: ============================================================
+[30 Nov 2007 14:18:37] INFO: Starting UM Testing Procedure
+[30 Nov 2007 14:18:37] INFO: ============================================================
+[30 Nov 2007 14:18:37] INFO: Start Coarse profile Testing
+[30 Nov 2007 14:18:38] INFO: !Coarse profile of current user is not qualified
+[30 Nov 2007 14:18:38] INFO: Interests for Coarse Profile are reset
+[30 Nov 2007 14:18:38] INFO: Set coarse interest for current user: 1002
+[30 Nov 2007 14:19:10] INFO: User is qualified by coarse profile:  Certer_Test
+
+[30 Nov 2007 14:19:11] INFO: Interests for Coarse Profile are reset
+[30 Nov 2007 14:19:11] INFO: Coarse profile Test PASSED
+[30 Nov 2007 14:19:11] INFO: ============================================================
+[30 Nov 2007 14:19:11] INFO: ============================================================
+[30 Nov 2007 14:19:11] INFO: Start Fine profile Testing
+[30 Nov 2007 14:19:11] INFO: Interests for Fine profile of current user is  Certer_Test
+
+[30 Nov 2007 14:19:12] INFO: Interests for Fine Profile are reset
+[30 Nov 2007 14:19:12] INFO: Set fine interest for current user: 1002
+[30 Nov 2007 14:19:43] INFO: User is qualified by fine profile:  Certer_Test
+
+[30 Nov 2007 14:19:47] INFO: Interests for Fine Profile are reset
+[30 Nov 2007 14:19:47] INFO: Fine profile Test PASSED
+[30 Nov 2007 14:19:47] INFO: ============================================================

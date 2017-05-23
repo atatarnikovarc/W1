@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<project name="DMP Browser Testing" default="deps" basedir="."
+         xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+    <artifact:pom id="mypom" file="pom.xml"/>
+    <property name="root.dir" location="./"/>
+    <property name="lib.dir" location="${root.dir}/lib/"/>
+    <property name="lib-deps.dir" location="${root.dir}/lib-deps/"/>
+    <property name="config.dir" location="${root.dir}/config/"/>
+    <property name="src.dir" location="${root.dir}/src/"/>
+    <property name="dest.dir" location="${root.dir}/build/"/>
+    <property name="deploy.dir" location="${root.dir}/target/"/>
+    <property name="report.dir" location="${root.dir}/result/"/>
+    <property name="db.dir" location="${root.dir}/output/oraclewrapper/"/>
+    <property name="tmp.dir" location="${root.dir}/output/tmp/"/>
+    <property name="log.dir" location="${root.dir}/output/logs/"/>
+
+    <path id="all.libs">
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar"/>
+            <exclude name="maven-ant-tasks-2.1.3.jar"/>
+        </fileset>
+        <fileset dir="${lib-deps.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+        <fileset dir="${deploy.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+
+        <pathelement location="${config.dir}"/>
+    </path>
+
+    <target name="init">
+        <echo>Initialization</echo>
+        <delete dir="${report.dir}"/>
+        <mkdir dir="${report.dir}"/>
+        <delete dir="${tmp.dir}"/>
+        <mkdir dir="${tmp.dir}"/>
+        <mkdir dir="${db.dir}"/>
+        <delete dir="${lib-deps.dir}"/>
+        <mkdir dir="${lib-deps.dir}"/>
+        <delete dir="${log.dir}"/>
+        <mkdir dir="${log.dir}"/>
+    </target>
+
+    <!--<target name="build">-->
+    <!--<echo>Build</echo>-->
+    <!--<javac destdir="${dest.dir}" srcdir="${src.dir}">-->
+    <!--<classpath refid="all.libs" />-->
+    <!--</javac>-->
+    <!--<jar jarfile="${deploy.dir}/framework.jar" basedir="${dest.dir}" update="false">-->
+    <!--</jar>-->
+    <!--</target>-->
+
+    <taskdef uri="antlib:org.apache.maven.artifact.ant"
+             resource="org/apache/maven/artifact/ant/antlib.xml"
+             classpath="${lib.dir}/maven-ant-tasks-2.1.3.jar"/>
+
+
+    <target name="deps">
+        <echo>Resolve dependencies</echo>
+        <!-- Resolve dependencies -->
+        <artifact:dependencies filesetId="dependency.fileset">
+            <pom file="pom.xml"/>
+        </artifact:dependencies>
+        <!-- Copy all dependencies to the correct location. -->
+        <copy todir="${lib-deps.dir}">
+            <fileset refid="dependency.fileset"/>
+            <!-- This mapper strips off all leading directory information -->
+            <mapper type="flatten"/>
+        </copy>
+    </target>
+
+    <target name="run-class"
+            depends="init,deps"
+            description="run all methods in a specific test class. Requires class.name property to be set to fully qualified name of class">
+        <echo>Target: run-class</echo>
+        <condition property="classNameSpecified">
+            <isset property="class.name"/>
+        </condition>
+        <fail unless="classNameSpecified"
+              message="class.name property not specified. Don't know which test class to run."/>
+        <echo>Class name is: ${class.name}</echo>
+        <junit printsummary="yes" failureproperty="test.failed" maxmemory="1536m" fork="true">
+            <classpath refid="all.libs"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="${report.dir}">
+                <fileset dir="${src.dir}">
+                    <include name="${class.name}"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="${report.dir}">
+            <fileset dir="${report.dir}" includes="TEST-*.xml"/>
+            <report format="frames" todir="${report.dir}/html"/>
+        </junitreport>
+        <fail message="TEST FAILED" if="test.failed"/>
+        <condition property="classNameSpecified">
+            <isset property="class.name"/>
+        </condition>
+    </target>
+</project>

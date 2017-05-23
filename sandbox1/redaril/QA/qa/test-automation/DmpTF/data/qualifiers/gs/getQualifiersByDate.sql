@@ -1,0 +1,1 @@
+select id, parameter, external_id, regex, data_source, stemmed from general_search_qualifier where qualifier_type = {0} and version >= TO_DATE('{1}','dd.mm.yyyy') and version < TO_DATE('{2}','dd.mm.yyyy')

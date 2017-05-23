@@ -1,0 +1,267 @@
+[gcm]
+gcm = FYT4/YFMa2f9QsS5LJIg6wdMRX8XL2Yw1fny/1EviKk=
+
+[host 1]
+group = Env-3
+name = qa-09
+description = 
+host = qa-09.qa.coreaudience.com
+user = atatarnikov
+pass = wpH+9r7R7bu/SWbwKrsdCn+1sO+XVNYY/Z+Dj60i36I=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = sudo su - csc
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+
+[host 2]
+group = Env-2
+name = qa-05
+description = 
+host = qa-05.qa.coreaudience.com
+user = atatarnikov
+pass = 3dAXQTZTCMbFtjaAPoDqpqarTgfyr2ytkd0ed2exMuk=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = sudo su - csc
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+
+[host 3]
+group = Env-2
+name = qa-06
+description = 
+host = qa-06.qa.coreaudience.com
+user = atatarnikov
+pass = of+BG4Izu/AQo6K1ZgN2bKxiDiS0n00M6c8nfb37fkk=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = sudo su - csc
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+
+[host 4]
+group = Env-2
+name = qa-07
+description = 
+host = qa-07.qa.coreaudience.com
+user = atatarnikov
+pass = nH83Bf64kjnFc1gthM6/RPy/yoJGdqmwvmFLt3qjuwA=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = sudo su - csc
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+
+[host 5]
+group = Env-2
+name = qa-08
+description = 
+host = qa-08.qa.coreaudience.com
+user = atatarnikov
+pass = LxYMBNcLxyAD4PpoZTR3AWOw+w/YuHo8ThGA+QpJFiQ=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = sudo su - csc
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+
+[host 6]
+group = Env-1
+name = qa-01
+description = 
+host = qa-01.qa.coreaudience.com
+user = atatarnikov
+pass = GT8vS/WO+1EzPmYThrn3a1EXrg8REfwg3gndXg3erjM=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = sudo su - csc
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+
+[host 7]
+group = Env-1
+name = qa-02
+description = 
+host = qa-02.qa.coreaudience.com
+user = atatarnikov
+pass = kWfndDhG7Hm26tC0dVT0jrWPi5pNCfJBR9wdFOEMluQ=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = sudo su - csc
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+
+[host 8]
+group = Env-1
+name = qa-03
+description = 
+host = qa-03.qa.coreaudience.com
+user = atatarnikov
+pass = s+2H3TrXPcMRkgdzRa9U10Gruxy8Ze+8Vcbw8t9QHL0=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = sudo su - csc
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+
+[host 9]
+group = Env-1
+name = qa-04
+description = 
+host = qa-04.qa.coreaudience.com
+user = atatarnikov
+pass = byAlwJ3jIDq7pObItlPvdDXvPcwW26M9i7RT0Nx3XoQ=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = su - csc
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+
+[host 10]
+group = Other
+name = QA DB
+description = 
+host = qadb.qa.phsg.coreaudience.com
+user = atatarnikov
+pass = KEsSyecXvwXQ5G9X9eeigkonh1+8nCXYAxPiRCnop+8=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = cd /opt/QA/DbUpdate/
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+
+[host 11]
+group = Other
+name = qa-10  Buildmachine
+description = 
+host = qa-10.qa.coreaudience.com
+user = atatarnikov
+pass = yAWTb2YRCyQdtpNjcdZvQ7drQ4y3V3oz/kjAouOWFZw=
+private_key = 
+port = 22
+tunnel = 
+type = ssh
+commands = sudo su - csc
+keepalive = 120
+font-color = 
+back-color = 
+x11 = False
+agent = False
+compression = False
+compression-level = 6
+extra_params = 
+log = False
+backspace-key = 0
+delete-key = 0
+

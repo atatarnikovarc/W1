@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userdataCall>
+    <record>
+        <name>created_date_time</name>
+        <number>1</number>
+        <type>Date</type>
+    </record>
+    <record>
+        <name>cookie_user_id</name>
+        <number>2</number>
+        <type>String</type>
+    </record>
+    <record>
+        <name>data_owner_id</name>
+        <number>6</number>
+        <type>Integer</type>
+    </record>
+    <record>
+        <name>data_source_id</name>
+        <number>7</number>
+        <type>Integer</type>
+    </record>
+    <record>
+        <name>category_id</name>
+        <number>9</number>
+        <type>Integer</type>
+    </record>
+    <size>12</size>
+</userdataCall>

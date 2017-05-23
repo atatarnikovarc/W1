@@ -1,0 +1,32 @@
+---  User DMP User Model call ---------
+	SELECT * from RT_DMP_USER_MODEL 
+		WHERE created_date_time > TO_DATE('15.02.12','dd.mm.yy') 
+		ORDER BY  created_date_time desc;	
+----  end of DMP User Model call	---------
+
+---  User data call ---------
+	SELECT * from RT_USER_DATA_CALL 
+		WHERE created_date_time >  TO_DATE('15.02.12','dd.mm.yy') 
+		ORDER BY  created_date_time desc;	
+----  end of User data call	---------
+
+---  dfp or data out call ---------
+	SELECT * from RT_DMP_SUPPLIED_DATA
+		WHERE created_date_time >  TO_DATE('15.02.12','dd.mm.yy') 
+		ORDER BY  created_date_time desc;	
+----  end of dfp or data out call	---------
+
+----  userBusinessData	---------
+
+	SELECT * from RT_USER_BSNS_DATA_LOG 
+		WHERE created_date_time >  TO_DATE('15.02.12','dd.mm.yy')
+		ORDER BY  created_date_time desc;		
+----  end of userBusinessData	---------		
+
+----   exchangeMappingCall----   
+
+	SELECT * from RT_EXCHANGE_MAPPING_CALL 
+            WHERE created_date_time >  TO_DATE('15.02.12','dd.mm.yy')
+                   ORDER BY  created_date_time desc;
+----   end of exchangeMappingCall----   
+

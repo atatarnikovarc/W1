@@ -1,0 +1,1 @@
+delete from nc_business_data

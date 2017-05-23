@@ -1,0 +1,21 @@
+> >    1. Follow the instructions detailed here for getting yourself an apple
+> >    developer program cert :
+> >    http://code.google.com/p/selenium/wiki/SafariDriver#Getting_Started
+> >    2. Make sure that you have added your cert into Safari browser.
+> >    3. Now download the extension from here :
+> >    http://code.google.com/p/selenium/downloads/detail?name=SafariDriver....
+> >    4. Unzip this file to a directory.
+> >    5. Finally, install the extension by following steps (6 - 11).
+> >    6. Launch Safari.
+> >    7. Make Developer menu visible (if its not already) by clicking on the
+> >    wheel icon (on the top right corner of your screen), and choosing
+> >    Preferences > Advanced > "Show Develop menu in menu bar"
+> >    8. Now click on the menu icon (a page like icon right next to the
+> >    wheel icon)
+> >    9. Open the Extension Builder (Develop > Show Extension Builder)
+> >    10. Add a new extension: (By referring to the directory where you
+> >    unzipped the downloaded zip file)
+> >    11. Click Install
+> >    12. For Grid runs make sure you have configured your Grid and nodes as
+> >    detailed in this thread  :
+> >    http://groups.google.com/group/webdriver/browse_thread/thread/f1ebe93...

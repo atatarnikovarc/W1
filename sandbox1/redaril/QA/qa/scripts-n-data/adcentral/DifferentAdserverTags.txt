@@ -1,0 +1,114 @@
+Mediamind (Eyeblaster)
+
+<script src="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=rsb&c=28&z=&pli=1029890&PluID=0&w=120&h=600&ncu={CLICK}&ord=[timestamp]"></script>
+<noscript>
+<a href="{CLICK}http://bs.serving-sys.com/BurstingPipe/BannerRedirect.asp?FlightID=1029890&Page=&PluID=0&Pos=9346" target="_blank"><img src="http://bs.serving-sys.com/BurstingPipe/BannerSource.asp?FlightID=1029890&Page=&PluID=0&Pos=9346" border=0 width=120 height=600></a>
+</noscript>
+
+Click tracking macros: &ncu={CLICK} {CLICK}
+
+
+Doubleclick
+
+<IFRAME SRC="http://ad.doubleclick.net/adi/N4892.152848.5877222227421/B3671270.2;sz=300x250;click={URL}&ajlink=;ord=[timestamp]?" WIDTH=300 HEIGHT=250 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'>
+<SCRIPT language='JavaScript1.1' SRC="http://ad.doubleclick.net/adj/N4892.152848.5877222227421/B3671270.2;abr=!ie;sz=300x250;click={URL}&ajlink=;ord=[timestamp]?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://ad.doubleclick.net/jump/N4892.152848.5877222227421/B3671270.2;abr=!ie4;abr=!ie5;sz=300x250;click={URL}&ajlink=;ord=[timestamp]?">
+<IMG SRC="http://ad.doubleclick.net/ad/N4892.152848.5877222227421/B3671270.2;abr=!ie4;abr=!ie5;sz=300x250;ord=[timestamp]?" BORDER=0 WIDTH=300 HEIGHT=250 ALT="Click Here"></A>
+</NOSCRIPT>
+</IFRAME>
+
+Click tracking macro: click={URL}&ajlink=;
+
+
+Atlas
+
+<iframe src="http://view.atdmt.com/CAV/iview/158704774/direct/01?click={URL_ENC1}%26ajlink%3D" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="728" height="90">
+<script language="JavaScript" type="text/javascript">
+document.write('<a href="{URL_ENC1}%26ajlink%3Dhttp://clk.atdmt.com/CAV/go/158704774/direct/01/" target="_blank"><img src="http://view.atdmt.com/CAV/view/158704774/direct/01/"/></a>');
+</script><noscript><a href="{URL_ENC1}%26ajlink%3Dhttp://clk.atdmt.com/CAV/go/158704774/direct/01/" target="_blank"><img border="0" src="http://view.atdmt.com/CAV/view/158704774/direct/01/" /></a></noscript></iframe>
+
+Click tracking macro: {URL_ENC1}%26ajlink%3D or {URL}%26ajlink%3D
+
+
+Mediaplex (iFrame)
+
+<script language="JavaScript1.1" src="http://altfarm.mediaplex.com/ad/js/12548-77891-26532-0?mpt=[CACHEBUSTER]&mpvc={CLICK}">
+</script>
+<noscript>
+  <a href="{CLICK}http://altfarm.mediaplex.com/ad/ck/12548-77891-26532-0?mpt=[CACHEBUSTER]">
+    <img src="http://altfarm.mediaplex.com/ad/bn/12548-77891-26532-0?mpt=[CACHEBUSTER]"
+alt="Click Here" border="0">
+</a>
+</noscript> 
+
+Click tracking macro: {CLICK}
+
+
+Mediaplex (Standard Banner)
+
+<a target="_blank" href="{CLICK}http://altfarm.mediaplex.com/ad/ck/18387-130145-36986-1?mpt={cachebuster}"><img src="http://altfarm.mediaplex.com/ad/bn/18387-130145-36986-1?mpt={cachebuster}" alt="Click Here"></a>
+
+Click tracking macro: {CLICK}
+Cashebuster macro: {cachebuster}
+
+
+EyeWonder
+
+<script language="Javascript" type="text/javascript">
+var clickTagFramePrepend1367645="{CLICK}";
+</script>
+<script language="Javascript" type="text/javascript" id="ew1367645_wrapper" src="http://cdn.eyewonder.com/100125/765794/1367645/wrapper.js"></script>
+<noscript>
+<body><div style="position:relative; z-index:1" align="center">
+<a href="{CLICK}http://www.eyewonderlabs.com/ct.cfm?ewbust=0&guid=0&ewadid=124328&eid=1367645&file=http://cdn.eyewonder.com/100125/765794/1367645/NOSCRIPTfailover.gif&pnl=MainBanner&type=0&name=Clickthru-NOSCRIPT&num=1&time=0&diff=0&clkX=&clkY=&click=http://www.justmobile.ie" target="_blank">
+<img width="120" height="600" src="http://cdn.eyewonder.com/100125/765794/1367645/NOSCRIPTfailover.gif" border="0" alt="" />
+</a>
+<div style="position:absolute;top:0px;left:0px;z-index:2;display:none">
+<img src="http://cdn.eyewonder.com/100125/765794/1367645/ewtrack.gif?ewadid=124328" border="0" width="1" height="1" />
+</div>
+<div style="position:absolute;top:0px;left:0px;z-index:3;display:none">
+<img src="http://cdn.eyewonder.com/100125/765794/1367645/ewtrack_f.gif?ewadid=124328" border="0" width="1" height="1" />
+</div></div></body>
+</noscript>
+
+Click tracking macro: {CLICK}
+
+
+FlashTalking
+
+<script language="Javascript1.1" type="text/javascript">
+var ftClick = "{CLICK}";
+var ftX = "";
+var ftY = "";
+var ftZ = "";
+var ftContent = "";
+var ft120x600_OOBclickTrack = "";
+var ftRandom = Math.random()*1000000;
+var ftBuildTag1 = "<scr";
+var ftBuildTag2 = "</";
+var ftTag = ftBuildTag1 + 'ipt language="javascript1.1" type="text/javascript" ';
+ftTag += 'src="http://servedby.flashtalking.com/imp/14055;77782;201;js;CrimTan;RONSky/?click='+ftClick+'&ftx='+ftX+'&fty='+ftY+'&ftadz='+ftZ+'&ftscw='+ftContent+'&cachebuster='+ftRandom+'" id="ftscript_120x600" name="ftscript_120x600"';
+ftTag += '">' + ftBuildTag2 + 'script>';
+document.write(ftTag);
+</script>
+<noscript>
+<a href="{CLICK}http://servedby.flashtalking.com/click/14055;77782;0;209;0/?url=222408" target="_blank">
+<img border="0" src="http://servedby.flashtalking.com/imp/14055;77782;205;gif;CrimTan;RONSky/?"></a>
+</noscript>
+
+Click tracking macro: {CLICK}
+
+
+Adsfac
+
+<script type="text/javascript" language="javascript">
+var fd_clk = '{CLICK}http://adsfac.net/link.asp?cc=NEZ011.100596.0';
+</script>
+<script type="text/javascript" language="javascript" src="http://adsfac.net/ag.asp?cc=NEZ011.100596.0&source=js&ord=[timestamp]"></script>
+<noscript>
+<a href="{CLICK}http://adsfac.net/link.asp?cc=NEZ011.100596.0" target="_blank"><img src="http://adsfac.net/ag.asp?cc=NEZ011.100596.0&bk=1&ord=[timestamp]" width="728" height="90" border="0" alt=""></a>
+</noscript>
+
+Click tracking macro: {CLICK}

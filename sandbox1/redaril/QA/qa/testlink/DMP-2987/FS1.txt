@@ -1,0 +1,21 @@
+**Constraints
+-Site/Site group
+-Audience Segment(s)
+-US Users Only
+**Dimensions
+-Site/Site Group
+-DMA
+-State
+-Audience Category
+**Metrics
+-Unique Users
+-Page Views
+-Index
+-Impressions
+**Time Settings
+-Date Range
+-View (unit of time)
+**Save, Schedule And Email
+-Report Name
+-Run This Report
+-Email Report To

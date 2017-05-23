@@ -1,0 +1,16 @@
+ExternalId,Name,ParentExternalId,DataSource
+ext_id,top-level,0,gsn-ds-1
+c01-top,C01,ext_id,gsn-ds-1
+c01-top-visited,C011,c01-top,gsn-ds-1
+c01-top-bought,C012,c01-top,gsn-ds-1
+c11-top,C11,ext_id,gsn-ds-1
+c11-top-visited,C111,c11-top,gsn-ds-1
+c11-top-bought,C112,c11-top,gsn-ds-1
+c21-top,C21,ext_id,gsn-ds-1
+c21-top-visited,C211,c21-top,gsn-ds-1
+c21-top-bought,C212,c21-top,gsn-ds-1
+c31-top,C31,ext_id,gsn-ds-1
+total-order-amount,P1,0,gsn-ds-1
+<100,<100,total-order-amount,gsn-ds-1
+2000-4500,2000-4500,total-order-amount,gsn-ds-1
+>11000,>11000,total-order-amount,gsn-ds-1

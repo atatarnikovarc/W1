@@ -1,0 +1,11 @@
+#ip.txt description
+#DE: 65.60.166.181 - ISP, company_name is not empty
+#DB: 122.12.12.12 - non ISP, company_name is absent
+#DB: 200.24.24.2 - non ISP, company_name = , size = 0
+#DB: 11.4.4.50 - non ISP; company_name = US Department of Defense; size = 2768886; industry = Government
+#DB: 171.200.5.50 - non ISP; company_name = Bank of America; size = 182284; industry = Financial Services
+65.60.166.181
+122.12.12.12
+200.24.24.2
+11.4.4.50
+171.200.5.50

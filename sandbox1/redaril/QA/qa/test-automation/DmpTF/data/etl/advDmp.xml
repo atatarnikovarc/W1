@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<advDmp>
+    <record>
+        <name>created_date_time</name>
+        <number>1</number>
+        <type>Date</type>
+    </record>
+    <record>
+        <name>cookie_user_id</name>
+        <number>3</number>
+        <type>Integer</type>
+    </record>
+    <record>
+        <name>pixel_id</name>
+        <number>4</number>
+        <type>Integer</type>
+    </record>
+    <record>
+        <name>adv_dmp_json</name>
+        <number>19</number>
+        <type>JSON</type>
+    </record>
+    <record>
+        <name>extra_params_json</name>
+        <number>21</number>
+        <type>JSON</type>
+    </record>
+    <size>21</size>
+</advDmp>

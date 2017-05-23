@@ -1,0 +1,19 @@
+**Constraints
+-Data Campaign(s)
+-Data Source(s)
+**Dimensions
+-Data Campaign
+-Advertiser
+-Advertiser Campaign
+-Audience Segment
+-Data Source
+-Status
+**Metrics
+-Average CPM
+**Time Settings
+-Date Range
+-View (unit of time)
+**Save, Schedule And Email
+-Report Name
+-Run This Report
+-Email Report To

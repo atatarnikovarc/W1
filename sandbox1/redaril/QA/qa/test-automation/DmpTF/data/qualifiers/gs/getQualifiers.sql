@@ -1,0 +1,1 @@
+select id, parameter, external_id, regex, data_source, stemmed from general_search_qualifier where qualifier_type = {0}

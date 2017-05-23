@@ -1,0 +1,4 @@
+ExternalId,Name,ParentExternalId,DataSource
+100001,Parent,0,Sample Taxonomy
+100002,Child1,100001,Sample Taxonomy
+100003,Child2,100001,Sample Taxonomy

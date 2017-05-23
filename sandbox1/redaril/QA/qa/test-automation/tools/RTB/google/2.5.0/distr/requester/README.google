@@ -1,0 +1,28 @@
+This directory contains sample code sent to Ad Exchange Real Time Bidding
+partners.  This code allows them to run a simple test against their bidders
+as they develop them.
+
+This code is available to partners through the realtime bidding sites page at:
+https://sites.google.com/a/google.com/adx-rtb/real-time-bidder-documentation
+
+In order to test the application:
+1) Create a tar.gz archive of the necessary files in blaze-genfiles:
+blaze build contentads/adx/networkbid/sample/requester:export
+2) Unzip the archive to a standalone directory
+   (creates a sub-directory named 'requester'):
+tar -xz -f blaze-genfiles/contentads/adx/networkbid/sample/requester/requester.tar.gz -C ~/
+cd ~/requester
+3) Build the proto Python wrapper:
+make
+4) Run unit tests:
+make test
+5) Follow the instructions in the README file to run the application:
+less README
+6) For a hacky sanity test (ALERT: see NOTE below), run:
+python requester.py  --url=https://httpbin.org/post --max_qps=1 --requests=1
+It will fail with "Unparseable bid response", and you will be able to see the
+bid request that was sent in the invalid-* log that the application has
+generated.
+NOTE: This hack bounces the bid request off a public third-party server (see
+docs at http://httpbin.org ); NEVER use this if the bid request contains
+non-random data (e.g. you are using the --google_user_ids_file parameter)

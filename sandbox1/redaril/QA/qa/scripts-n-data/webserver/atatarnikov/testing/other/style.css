@@ -1,0 +1,36 @@
+body{
+    font-size:11px;
+    line-height:1.25;
+    margin:0px;
+}
+
+
+/*
+iframe{
+    position:absolute;
+    left:-6000px;
+}
+iframe{
+    height:0px;
+    width:0px;
+    border:0px;
+}
+
+*/
+
+p{
+    margin:0px;
+}
+#main,#sub{
+    height:150px;
+    width:100%;
+    margin:0px;
+}
+#main{
+    background-color:#33ccff;
+    color:#000000;
+}
+#sub{
+    background-color:#ffcc33;
+    color:#000000;
+}

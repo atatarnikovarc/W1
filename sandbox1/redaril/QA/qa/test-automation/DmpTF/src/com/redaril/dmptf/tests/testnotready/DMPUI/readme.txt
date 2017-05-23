@@ -1,0 +1,2 @@
+- Internal Tool - Taxonomies - problems with deleting taxonomies after uploading.
+- Internal Tool - Qualifiers - problems with selecting categories from dropdown.

@@ -1,0 +1,1 @@
+select general_search_domain.id, regex, domain_url,parent_domain,search_regex from general_search_domain inner join general_search_domain_url on general_search_domain.id=general_search_domain_url.child_domain_id where qualifier_type = {0} and parent_domain not like '%google%' and parent_domain not like '%yahoo%'

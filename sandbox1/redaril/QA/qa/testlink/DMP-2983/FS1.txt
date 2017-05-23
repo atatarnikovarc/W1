@@ -1,0 +1,27 @@
+**Constraints
+-Site/Site group
+-US Users Only
+**Dimensions
+-Site/Site Group
+-Page URL
+-Referrer
+-DMA
+-State
+-Domain
+-Audience Category
+-Data Source
+-Business Name
+-Company Size
+-Industry
+**Metrics
+-Unique Users
+-Page Views
+-Index
+-Impressions
+**Time Settings
+-Date Range
+-View (unit of time)
+**Save, Schedule And Email
+-Report Name
+-Run This Report
+-Email Report To

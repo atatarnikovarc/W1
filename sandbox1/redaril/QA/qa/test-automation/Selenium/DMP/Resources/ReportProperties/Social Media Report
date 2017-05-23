@@ -1,0 +1,9 @@
+Audience Group(s),US Users Only,Audience Group,Audience Category,Data Source,Unique Users,Page Views,Index,Date Range,Start Date,End Date,View (unit of time),Report Name,Email Report To,Run This Report,Schedule Day,attached as
+checkbox-all-custom-app-id-701-constraint101,true,true,true,true,true,true,true,Yesterday,,,Aggregate,_QA_SM_ALL_Y_A_O_r001,atsvetaev@redaril.com,Once,,CSV
+checkbox-all-custom-app-id-701-constraint101,true,true,false,true,true,false,false,Yesterday,,,Aggregate,_QA_SM_ALL_Y_A_O_r002,atsvetaev@redaril.com,Once,,CSV
+checkbox-all-custom-app-id-701-constraint101,true,true,false,true,true,false,false,This Week,,,Aggregate,_QA_SM_ALL_W_A_O_r003,atsvetaev@redaril.com,Once,,CSV
+checkbox-all-custom-app-id-701-constraint101,true,true,false,true,true,false,false,This Month,,,Aggregate,_QA_SM_ALL_M_A_O_r004,atsvetaev@redaril.com,Once,,CSV
+checkbox-all-custom-app-id-701-constraint101,true,true,false,true,true,false,false,This Quarter,,,Aggregate,_QA_SM_ALL_Q_A_O_r005,atsvetaev@redaril.com,Once,,CSV
+checkbox-all-custom-app-id-701-constraint101,true,true,true,true,true,true,true,Custom,2,18,Aggregate,_QA_SM_ALL_C_A_O_r006,atsvetaev@redaril.com,Once,,CSV
+checkbox-all-custom-app-id-701-constraint101,true,true,true,true,true,true,true,Yesterday,,,Aggregate,_QA_SM_ALL_C_A_WF_r007,atsvetaev@redaril.com,Weekly,Friday,CSV
+checkbox-all-custom-app-id-701-constraint101,true,true,true,true,true,true,true,Yesterday,,,Aggregate,_QA_SM_ALL_Y_A_M5_r008,atsvetaev@redaril.com,Monthly,5,CSV

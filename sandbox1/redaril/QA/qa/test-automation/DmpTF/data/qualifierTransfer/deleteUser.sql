@@ -1,0 +1,1 @@
+delete from NB_User where user_id = {0}

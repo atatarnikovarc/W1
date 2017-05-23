@@ -1,0 +1,1 @@
+select * from NT_QUALIFIER where QUALIFIER_ID = {0}

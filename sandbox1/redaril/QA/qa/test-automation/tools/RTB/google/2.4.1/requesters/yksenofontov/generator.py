@@ -1,0 +1,465 @@
+#!/usr/bin/python
+# Copyright 2009 Google Inc. All Rights Reserved.
+"""A class to generate random BidRequest protocol buffers."""
+
+import base64
+import hashlib
+import random
+import time
+
+import realtime_bidding_pb2
+
+PROTOCOL_VERSION = 1
+
+BID_REQUEST_ID_LENGTH = 16  # In bytes.
+COOKIE_LENGTH = 20  # In bytes.
+PUBLISHER_SETTINGS_ID_LENGTH = 20  # In bytes.
+COOKIE_VERSION = 1
+
+# Placement.
+CHANNELS = ['12345']
+
+BRANDED_URLS_AND_NAMES = [
+    ('http://www.youtube.com', 'Youtube'),
+    ('http://www.youtube.com/shows', 'Youtube'),
+    ('http://news.google.com', 'Google News'),
+    ('http://news.google.com/news?pz=1&ned=us&topic=b&ict=ln', 'Google News'),
+    ('http://www.google.com/finance?hl=en&ned=us&tab=ne', 'Google Finance'),
+    ('http://www.nytimes.com/pages/technology/index.html', 'New York Times'),
+    ('http://some.gcn.site.com', 'GCN'),
+
+]
+
+ANONYMOUS_URLS = [
+    'http://1.google.anonymous/',
+    'http://2.google.anonymous/',
+    'http://3.google.anonymous/',
+    'http://4.google.anonymous/',
+    'http://5.google.anonymous/',
+]
+
+MAX_ADGROUP_ID = 99999999
+MAX_MATCHING_ADGROUPS = 3
+
+DIMENSIONS = [
+ #   (300, 250),
+    (160, 600),
+ #   (120, 600),
+]
+    #(468, 60),
+    #(120, 600),
+    #(728, 90),
+    #(300, 250),
+    #(250, 250),
+    #(336, 280),
+    #(120, 240),
+    #(125, 125),
+    #(160, 600),
+    #(180, 150),
+    #(110, 32),
+    #(120, 60),
+    #(180, 60),
+    #(420, 600),
+    #(420, 200),
+    #(234, 60),
+    #(200, 200),
+#]
+
+MAX_SLOT_ID = 200
+
+# Verticals.
+MAX_NUM_VERTICALS = 5
+VERTICALS = [
+    66, 563, 607, 379, 380, 119, 570, 22, 355, 608, 540, 565, 474, 433, 609,
+    23, 24,
+]
+
+MAX_NUM_CONTENT_LABELS = 2
+CONTENT_LABELS = [
+    1, 2, 3, 4
+]
+
+# Geo.
+LANGUAGE_CODES = ['en']
+REGIONS = [
+    'US-NY', 'US-CA', 'US-FL',
+    'US-NC', 'US-AK', 'US-MA',
+    'CA-ON', 'CA-NS', 'CA-NB',
+    'AU-NSW', 'AU-ACT', 'AU-QLD', 'AU-VIC'
+]
+
+# Maps a region name to the following tuple:
+#   (metro code, city name, postal code, postal code prefix)
+# with the following restrictions:
+# * Metro region is only available in the US.
+# * Only one of postal code or postal code prefix will be set.
+# * Canada has only postal code prefixes available.
+REGION_TO_METRO_CITY_POSTAL_MAP = {
+    'US-NY': [(501, 'New York', '10116', None),
+              (514, 'Buffalo', '14241', None),
+              (501, 'Long Island City', '11102', None),],
+    'US-CA': [(807, 'Sunnyvale', '94087', None),
+              (807, 'Belmont', '94002', None),
+              (803, 'Los Angeles', '90001', None),],
+    'US-FL': [(539, 'Tampa', '33601', None),
+              (528, 'Ft Lauderdale', '33303', None),
+              (548, 'Boca Raton', '33429', None),],
+    'US-NC': [(560, 'Timberlake', '27583', None),
+              (518, 'Greensboro', '27401', None),
+              (545, 'Kinston', '28503', None),],
+    'US-AK': [(743, 'Anchorage', '99501', None),
+              (743, 'Wasilla', '99687', None),
+              (745, 'Healy', '99743', None),],
+    'US-MA': [(506, 'Burlington', '01803', None),
+              (506, 'Boston', '02102', None),
+              (543, 'Springfield', '01101', None),],
+# Metro information is defined only for the USA.
+    'CA-ON': [(0, 'Toronto', None, 'M4C'),
+              (0, 'Mississauga', None, 'L4Z'),
+              (0, 'Vaughan', None, 'L6A'),],
+    'CA-NS': [(0, 'Halifax', None, 'B3H'),
+              (0, 'Bridgewater', None, 'B4V'),
+              (0, 'Dartmouth', None, 'B2V'),],
+    'CA-NB': [(0, 'Moncton', None, 'E1B'),
+              (0, 'Fredricton', None, 'E3A'),
+              (0, 'St John', None, 'E2L'),],
+    'AU-NSW': [(0, 'Richmond', '2753', None),
+               (0, 'Orange', '2800', None),
+               (0, 'Albury', '2640', None),],
+    'AU-ACT': [(0, 'Canberra', '2600', None),],
+    'AU-QLD': [(0, 'Townsville', '4810', None),
+               (0, 'Cairns', '4870', None),
+               (0, 'Rockhampton', '4700', None)],
+    'AU-VIC': [(0, 'Melbourne', '3000', None),
+               (0, 'Shepparton', '3630', None),
+               (0, 'Sunbury', '3429', None),],
+}
+
+# User info.
+USER_AGENTS = [
+    'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.2) ',
+    'Gecko/2008092313 Ubuntu/8.04 (hardy) Firefox/3.1',
+    'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) ',
+    'Gecko/20070118 Firefox/2.0.0.2pre',
+    'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.7pre) Gecko/20070815 ',
+    'Firefox/2.0.0.6 Navigator/9.0b3',
+    'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; en) AppleWebKit/528.5+',
+    '(KHTML, like Gecko) Version/4.0 Safari/528.1',
+    'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; sv-se) AppleWebKit/419 ',
+    '(KHTML, like Gecko) Safari/419.3',
+    'Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)',
+    'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0;)',
+    'Mozilla/4.08 (compatible; MSIE 6.0; Windows NT 5.1)',
+]
+
+# Criteria.
+MAX_EXCLUDED_ATTRIBUTES = 3
+#CREATIVE_ATTRIBUTES = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+CREATIVE_ATTRIBUTES = [9]
+
+MAX_EXCLUDED_BUYER_NETWORKS = 2
+
+MAX_INCLUDED_VENDOR_TYPES = 4
+#VENDOR_TYPES = [
+#    1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 17, 18, 19, 26, 55, 57, 60, 65,
+#    69, 70, 92, 94, 96, 110, 113,
+#]
+
+VENDOR_TYPES = [0]
+
+MAX_EXCLUDED_CATEGORIES = 1 
+AD_CATEGORIES = [0, 3, 4, 5, 7, 8, 10, 18, 19, 23, 24, 25]
+
+
+MAX_TARGETABLE_CHANNELS = 5
+TARGETABLE_CHANNELS = [
+    'all top banner ads', 'right hand side banner',
+    'sports section', 'user generated comments',
+    'weather and news',
+]
+
+random.seed(time.time())
+
+
+class RandomBidGenerator(object):
+  """Generates random BidRequests."""
+
+  def __init__(self, google_id_list=None):
+    """Constructs a new RandomBidGenerator.
+
+    Args:
+      google_id_list: A list of Google IDs (as strings), or None to randomly
+      generate IDs.
+    """
+    self._google_id_list = google_id_list
+
+  def GenerateBidRequest(self):
+    """Generates a random BidRequest.
+
+    Returns:
+      An instance of realtime_bidding_pb2.BidRequest.
+    """
+    bid_request = realtime_bidding_pb2.BidRequest()
+    bid_request.DEPRECATED_protocol_version = PROTOCOL_VERSION
+    #bid_request.is_test = True
+    #bid_request.experimental_deadline = True
+    #bid_request.is_ping = True
+    bid_request.id = self._GenerateId(BID_REQUEST_ID_LENGTH)
+
+    self._GeneratePageInfo(bid_request)
+    self._GenerateUserInfo(bid_request)
+    self._GenerateAdSlot(bid_request)
+
+    return bid_request
+
+  def GeneratePingRequest(self):
+    """Generates a special ping request.
+
+    A ping request only has the deprecated_protocol_version, id and is_ping
+    fields set.
+
+    Returns:
+      An instance of realtime_bidding_pb2.BidRequest.
+    """
+    bid_request = realtime_bidding_pb2.BidRequest()
+    bid_request.DEPRECATED_protocol_version = PROTOCOL_VERSION
+    bid_request.id = self._GenerateId(BID_REQUEST_ID_LENGTH)
+    bid_request.is_ping = True
+    return bid_request
+
+  def _GenerateId(self, length):
+    """Generates a random ID.
+
+    The generated ID is not guaranteed to be unique.
+
+    Args:
+      length: Length of generated ID in bytes.
+    Returns:
+      A random ID of the given length."""
+    random_id = ''
+    for _ in range(length):
+      random_id += chr(random.randint(0, 255))
+    return random_id
+	
+  def _PrepareIP(self, arr):
+    random_id = ''
+    for _ in arr:
+      random_id += chr(_)
+    return random_id
+
+  def _GeneratePageInfo(self, bid_request):
+    """Generates page information for the given bid_request.
+
+    Args:
+      bid_request: a realtime_bidding_pb2.BidRequest instance"""
+    # 50% chance of anonymous ID/branded URL.
+    #if random.choice([True, False]):
+    if True:
+      #bid_request.seller_network = random.choice(
+       #   BRANDED_URLS_AND_NAMES)
+      bid_request.url = 'genealogy.com'
+      bid_request.anonymous_id = 'z100.com'
+      #bid_request.anonymous_id = 'sudburyrealestateblog.com'
+
+      #bid_request.publisher_settings_list_id = hashlib.sha1(
+       #   bid_request.seller_network).digest()
+    else:
+      bid_request.anonymous_id = random.choice(ANONYMOUS_URLS)
+      bid_request.publisher_settings_list_id = hashlib.sha1(
+          bid_request.anonymous_id).digest()
+
+    bid_request.detected_language = random.choice(LANGUAGE_CODES)
+    self._GenerateAdSlot(bid_request)
+    self._GenerateVerticals(bid_request)
+
+    labels = self._GenerateSet(CONTENT_LABELS, MAX_NUM_CONTENT_LABELS) 
+    for label in labels:
+      bid_request.detected_content_label.append(label)
+
+  def _GenerateAdSlot(self, bid_request):
+    """Generates a single ad slot with random data.
+
+    Args:
+      bid_request: a realtime_bidding_pb2.BidRequest instance"""
+    ad_slot = bid_request.adslot.add()
+    ad_slot.id = random.randint(1, MAX_SLOT_ID)
+    width, height = random.choice(DIMENSIONS)
+    #width = 160
+    #height = 600 
+    ad_slot.width.append(width)
+    ad_slot.height.append(height)
+
+    ad_slot.width.append(300)
+    ad_slot.height.append(250)
+
+    ad_slot.width.append(728)
+    ad_slot.height.append(90)
+
+    # Generate random allowed vendor types.
+    num_included_vendor_types = random.randint(1, MAX_INCLUDED_VENDOR_TYPES)
+    for allowed_vendor in self._GenerateSet(VENDOR_TYPES,
+                                            num_included_vendor_types):
+      ad_slot.allowed_vendor_type.append(allowed_vendor)
+
+    # Generate random excluded creative attributes.
+    num_excluded_creative_attributes = random.randint(1,
+                                                      MAX_EXCLUDED_ATTRIBUTES)
+    for creative_attribute in self._GenerateSet(
+        CREATIVE_ATTRIBUTES, num_excluded_creative_attributes):
+      ad_slot.excluded_attribute.append(creative_attribute)
+
+    # Generate excluded categories for 20% of requests.
+    #if random.random() < 0.2:
+    if 1 > 2:
+      num_excluded_categories = random.randint(1, MAX_EXCLUDED_CATEGORIES)
+      for excluded_category in self._GenerateSet(AD_CATEGORIES,
+                                                 num_excluded_categories):
+        ad_slot.excluded_sensitive_category.append(excluded_category)
+
+    # Generate a publisher settings list id based on publisher/anonymous id and
+    # slot id.
+    anon_id_or_publisher = bid_request.anonymous_id 
+    #(bid_request.HasField('seller_network') and bid_request.seller_network or 
+    #    bid_request.anonymous_id
+    #ad_slot.publisher_settings_list_id.append(hashlib.sha1(
+    #    anon_id_or_publisher + str(ad_slot.id)).digest())
+
+    # We generate channels only for branded sites, simplifying by using the
+    # same list of channels for all publishers.
+    #if bid_request.HasField('seller_network'):
+    if 1 > 2:
+      # Send only for 10% of bid requests, to simulate that few bid requests
+      # have targetable channels in reality.
+      #send_channels = True 
+      #if send_channels:
+      num_targetable_channels = random.randint(1, MAX_TARGETABLE_CHANNELS)
+      for channel in self._GenerateSet(TARGETABLE_CHANNELS, num_targetable_channels):
+        ad_slot.targetable_channel.append(channel)
+    #channel1 = self._GenerateSet(TARGETABLE_CHANNELS, num_targetable_channels)      
+    #ad_slot.targetable_channel.append(channel1)
+    # Generate random matching adgroup IDs.
+    num_matching_adgroups = 3
+    #my for generic - 11223344
+    #my for UM audience segment targeting - 11223343
+    adgroup_array = [1111111111, 14993957481, 14993957482]
+    #random.randint(1, MAX_MATCHING_ADGROUPS)
+    for _ in range(num_matching_adgroups):
+      ad_data = ad_slot.matching_ad_data.add()
+      #ad_data.adgroup_id = random.randint(1, MAX_ADGROUP_ID)
+      ad_data.adgroup_id = adgroup_array[_] 
+      #ad_data.campaign_id = 102935 
+
+  def _GenerateVerticals(self, bid_request):
+    """Populates bid_request with random verticals.
+
+    Args:
+      bid_request: a realtime_bidding_pb2.BidRequest instance.
+    """
+    verticals = self._GenerateSet(VERTICALS, MAX_NUM_VERTICALS)
+    for vertical in verticals:
+      vertical_pb = bid_request.detected_vertical.add()
+      vertical_pb.id = vertical
+      vertical_pb.weight = random.random()
+
+  def _GenerateGoogleID(self, bid_request):
+    """Generates the google id field.
+
+    If the RandomBidGenerator was initated with a list of Google IDs, one of
+    these is picked at random, otherwise a random ID is generated.
+
+    Args:
+      bid_request: A realtime_bidding_pb2.BidRequest instance.
+    """
+    if self._google_id_list:
+      bid_request.google_user_id = random.choice(self._google_id_list)
+    else:
+      hashed_cookie = self._GenerateId(COOKIE_LENGTH)
+      google_user_id = base64.urlsafe_b64encode(hashed_cookie)
+      # Remove padding, i.e. remove '='s off the end.
+      bid_request.google_user_id = '0000959D00000000000016'
+      #google_user_id[:google_user_id.find('=')]
+    # Cookie age of [1 second, 30 days).
+    bid_request.cookie_age_seconds = random.randint(1, 60*60*24*30)
+
+  def _GenerateUserInfo(self, bid_request):
+    """Generates random user inforamation.
+
+    Args:
+      bid_request: a realtime_bidding_pb2.BidRequest instance"""
+    #region = 'US-CA'
+    #region = 'RU-RU'
+    #region = 'UK-UK'
+    region = 'CA-ON'
+    #random.choice(REGIONS)
+    bid_request.DEPRECATED_region = region
+    bid_request.DEPRECATED_country = region[:2]
+    #metro, city, postal, postal_prefix = random.choice(
+    #    REGION_TO_METRO_CITY_POSTAL_MAP[region])
+    #bid_request.city = city
+    #if postal:
+    #  bid_request.postal_code = postal
+    #elif postal_prefix:
+    #  bid_request.postal_code_prefix = postal_prefix
+
+    # Ignore metro when it is set to 0.
+    #if metro:
+    #  bid_request.metro = metro
+
+    self._GenerateGoogleID(bid_request)
+    bid_request.cookie_version = COOKIE_VERSION
+
+    #'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.2) '
+    #'Gecko/2008092313 Ubuntu/8.04 (hardy) Firefox/3.1',
+    #'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) '
+    #'Gecko/20070118 Firefox/2.0.0.2pre',
+    #'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.7pre) Gecko/20070815 '
+    #'Firefox/2.0.0.6 Navigator/9.0b3',
+    #'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; en) AppleWebKit/528.5+'
+    #' (KHTML, like Gecko) Version/4.0 Safari/528.1',
+    #'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; sv-se) AppleWebKit/419 '
+    #'(KHTML, like Gecko) Safari/419.3',
+    #'Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)',
+    #'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0;)',
+    #'Mozilla/4.08 (compatible; MSIE 6.0; Windows NT 5.1)',
+    #bid_request.user_agent = random.choice(USER_AGENTS)
+    bid_request.user_agent = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0'
+    # 4 bytes in IPv4, but last byte is truncated giving an overall length of 3
+    # bytes.
+
+    #employee size\company name
+    #size = 2.768.886, company name= = US Department of Defense
+    ip = self._PrepareIP([11,4,4,50])
+    #size = 0
+    #ip = self._PrepareIP([200,24,24,2])
+
+    #country
+    #US
+    #ip = self._PrepareIP([137,254,16,113])
+    #CA
+    #ip = self._PrepareIP([64,40,98,141])
+    #UK
+    #ip = self._PrepareIP([212,58,241,131])
+    #RU
+    #ip = self._PrepareIP([213,180,204,3])
+
+    bid_request.ip = ip
+
+  def _GenerateSet(self, collection, set_size):
+    """Generates a set of randomly chosen elements from the given collection.
+
+    Args:
+      collection: a list-like collection of elements
+      set_size: the size of set to generate
+
+    Returns:
+      A set of randomly chosen elements from the given collection.
+    """
+    unique_collection = set(collection)
+    if len(unique_collection) < set_size:
+      return unique_collection
+
+    s = set()
+    while len(s) < set_size:
+      s.add(random.choice(collection))
+
+    return s
