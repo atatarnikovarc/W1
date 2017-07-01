@@ -1,0 +1,4 @@
+[main]
+a=z
+b=y
+c=x
