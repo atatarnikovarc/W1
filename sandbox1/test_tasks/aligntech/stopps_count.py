@@ -1,17 +1,17 @@
 __author__ = 'atatarnikov'
 
-from openpyxl import load_workbook
 from geopy.distance import vincenty
 import time
 from decimal import Decimal
+import xlrd
 
 data_path = './data/'
 
-subway = load_workbook(data_path + 'subway.xlsx', read_only=True)
-surface = load_workbook(data_path + 'surface.xlsx', read_only=True)
+sub_wb = xlrd.open_workbook(data_path + 'subway.xlsx', on_demand=True)
+surf_wb = xlrd.open_workbook(data_path + 'surface.xlsx', on_demand=True)
 
-subway_ws = subway.active
-surface_ws = surface.active
+sub_ws = sub_wb.sheet_by_index(0)
+surf_ws = surf_wb.sheet_by_index(0)
 
 # to speed the script up I'd consider the following
 # 1. improve the algorithm (somehow) or better surface coords narrowing
@@ -38,19 +38,20 @@ start = time.time()
 # form a list of surface coordinates
 
 surf_coord = []
-surf_idx1 = 2
+surf_idx1 = 1
 
 surf_time1 = time.time()
 
 while True:
-    str_surf_idx1 = str(surf_idx1)
-
-    if surface_ws['C' + str_surf_idx1].value is None:
+    try:
+        val_added = (Decimal(surf_ws.cell_value(surf_idx1, 2)),
+                     Decimal(surf_ws.cell_value(surf_idx1, 3)))
+    except IndexError:
         break
 
-    surf_coord.append((Decimal(surface_ws['C' + str_surf_idx1].value),
-                       Decimal(surface_ws['D' + str_surf_idx1].value)))
+    surf_coord.append(val_added)
     surf_idx1 += 1
+
 
 surf_time2 = time.time()
 
@@ -59,21 +60,19 @@ print 'Forming surf coords list taken: ' + str(surf_time2 - surf_time1)
 # kind of empiric value rather than calculated
 coords_delta = Decimal(0.01)
 freq_subway = []
-subway_idx = 2
+subway_idx = 1
 
 # the loop over all subway stations
 while True:
     curr_station_stop_count = 0
 
-    sub_idx = str(subway_idx)
+    print 'Current subway idx: ' + str(subway_idx)
 
-    if subway_ws['C' + sub_idx].value is None:
+    try:
+        subway_curr_coord_pair = (Decimal(sub_ws.cell_value(subway_idx, 2)),
+                                  Decimal(sub_ws.cell_value(subway_idx, 3)))
+    except IndexError:
         break
-
-    print 'Current subway idx: ' + sub_idx
-
-    subway_curr_coord_pair = (Decimal(subway_ws['C' + sub_idx].value),
-                              Decimal(subway_ws['D' + sub_idx].value))
 
     narrow_surf_coords = [x for x in surf_coord
                           if abs(x[0] - subway_curr_coord_pair[0]) < coords_delta
@@ -84,7 +83,7 @@ while True:
                     x[0], x[1]) <= 0.5:
             curr_station_stop_count += 1
 
-    freq_subway.append((curr_station_stop_count, subway_ws['B' + sub_idx].value))
+    freq_subway.append((curr_station_stop_count, sub_ws.cell_value(subway_idx, 1)))
     subway_idx += 1
 
 try:
@@ -98,7 +97,7 @@ try:
         if elm[0] != max_val:
             break
 
-        print elm
+        print str(elm[0]) + ' ' + elm[1]
 
 except IndexError:
     print 'Freq array is empty'
