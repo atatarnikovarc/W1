@@ -13,8 +13,10 @@ surface = load_workbook(data_path + 'surface.xlsx', read_only=True)
 subway_ws = subway.active
 surface_ws = surface.active
 
-# !! it is a pity - the script shows poor performance
-# no glue for the moment to speed it up ))=^
+# to speed the script up I'd consider the following
+# 1. improve the algorithm (somehow) or better surface coords narrowing
+# 2. add multi-thread processing
+# 3. move it to compute cloud =]
 
 # the algorithm considers each subway station exit as the station,
 # otherwise, additional post-processing required
@@ -31,11 +33,6 @@ surface_ws = surface.active
 def distance(d1, s1, d2, s2):
     return vincenty((d1, s1), (d2, s2)).kilometers
 
-
-freq_subway = []
-
-subway_idx = 2
-
 start = time.time()
 
 # form a list of surface coordinates
@@ -48,8 +45,7 @@ surf_time1 = time.time()
 while True:
     str_surf_idx1 = str(surf_idx1)
 
-    # TODO: remove second condition when get completed
-    if surface_ws['C' + str_surf_idx1].value is None or surf_idx1 > 200:
+    if surface_ws['C' + str_surf_idx1].value is None:
         break
 
     surf_coord.append((Decimal(surface_ws['C' + str_surf_idx1].value),
@@ -60,11 +56,13 @@ surf_time2 = time.time()
 
 print 'Forming surf coords list taken: ' + str(surf_time2 - surf_time1)
 
+# kind of empiric value rather than calculated
 coords_delta = Decimal(0.01)
+freq_subway = []
+subway_idx = 2
 
 # the loop over all subway stations
 while True:
-    surface_idx = 2
     curr_station_stop_count = 0
 
     sub_idx = str(subway_idx)
@@ -77,8 +75,6 @@ while True:
     subway_curr_coord_pair = (Decimal(subway_ws['C' + sub_idx].value),
                               Decimal(subway_ws['D' + sub_idx].value))
 
-    # filter surf_coord list in dependence of current subway station coords
-
     narrow_surf_coords = [x for x in surf_coord
                           if abs(x[0] - subway_curr_coord_pair[0]) < coords_delta
                           or abs(x[1] - subway_curr_coord_pair[1]) < coords_delta]
@@ -87,20 +83,6 @@ while True:
         if distance(subway_curr_coord_pair[0], subway_curr_coord_pair[1],
                     x[0], x[1]) <= 0.5:
             curr_station_stop_count += 1
-
-    # while True:
-    # sur_idx = str(surface_idx)
-    #
-    #     # print 'Current surface idx: ' + sur_idx
-    #
-    #     if surface_ws['C' + sur_idx].value is None:
-    #         break
-    #
-    #     if distance(subway_ws['C' + sub_idx].value, subway_ws['D' + sub_idx].value,
-    #                 surface_ws['C' + sur_idx].value, surface_ws['D' + sur_idx].value) <= 0.5:
-    #         curr_station_stop_count += 1
-    #
-    #     surface_idx += 1
 
     freq_subway.append((curr_station_stop_count, subway_ws['B' + sub_idx].value))
     subway_idx += 1
