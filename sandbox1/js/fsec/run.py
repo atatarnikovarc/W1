@@ -61,8 +61,6 @@ def run():
         # ex.: if it's empty
         curr_url = make_url(e.get('src'))
         img_links.append(curr_url)
-        # print e.get('src')
-        # print curr_url
 
     # !! in a case of much of images - it is nice idea to store them
     # by pre-created folders, say, 100 per folder

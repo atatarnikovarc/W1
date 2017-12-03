@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 home=/home/atatarnikov/work/git/github/W1/website/vbantik
-srv=134.0.113.42
+srv=151.248.126.57
 port=24244
 srv_path=/var/www/vbantik.ru/public_html
 user=atatarnikov

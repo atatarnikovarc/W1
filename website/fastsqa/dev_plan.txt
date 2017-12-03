@@ -1,16 +1,33 @@
-==todo
+поставить куки
+-if no cookie - set cookie
+-else - make background as red
+-change background - change template? logic inside template?
 
-1. using virtualenv setup my hosting env to python and django verions 2.7.6, 1.9.5 - seems fine - not
-sure it will work
+add-db support
+-move to pg-db(create db, put data source into settings, install python db pg package,
+setup scripts for migrations, run migration scripts)
+-store sessions there
+-idea adds django connections on startup
+-database backup scripts
+-auto backup at google disk
 
-2. using virtual env setup local environment and re-code it in 1.6 django - don't like it
-
-3. get VPS and set it up as I want - most likely
----------------------------------------------------------
+--session framework
+--create db(fast, vban)
+--write down db at settings.py
+--think of password at settings(os.environ.get())
+--do the same for secret token(what purpose?)
+--setup pg python package
+--make venv reqs list
+--deploy sites locally and at the prod
+--create and apply migrations
+--change prod db port
+--change local pg password
+--setup everyday db autobackup to goodle disk for an instance
 
 move vbantik to ROR + angular
 move fastsqa to Django + React
-add database support for both sites
+
+setup docker - check how it works
 implement simple start pages with menu for each site
 
 setup simple j2ee app
@@ -18,24 +35,13 @@ move it to hosting
 implement autodeploy for it
 decide what is the functions of the app
 
--backup server - one click
-
--setup docker - check how it works
--setup VPS
---do I need hostings I've already bought
---is it possible to use my VPS for several domains?
-
--choose new hosting for my django projects(try do deploy(db support, static), price, easy to use)
--nginx error log
 -try to catch that exception(index view)
--can I use python env mechanism at reg.ru
 
--find out how good to use django\python versions - different at hosting and local env
 -try to deploy django apps to google engine, openshift, aws , heroku, azure
--add logging to django app
--try to find out exact error - where is the log of web server
-prod site is failed to open app
-prod site to open with no /vb or /wt
+-add logging to django appqui
+
+-simple page of colit people
+
 
 ===dev cycle
 1. define reqs
@@ -54,3 +60,46 @@ prod site to open with no /vb or /wt
 
 An ability to view the wheather from different pages.
 Support both for mobile and desktop devices. Maximum useability
+
+===обмен книгами\нотами по запросу - анонимно - не видя почту - т.е. как посредник
+(анонимно залить на обменник)
+
+==новости сжато
+
+
+==прием больных по взк
+
+
+==сервис по оплате гос-пошлины - сделать это очень удобно
+
+
+
+
+========unprocessed links
+
+https://stackoverflow.com/questions/19256919/location-of-django-logs-and-errors
+https://docs.djangoproject.com/en/1.10/topics/logging/
+https://stackoverflow.com/questions/1925898/django-unhandled-exception
+https://stackoverflow.com/questions/2600212/why-would-django-fcgi-just-die-how-can-i-find-out
+https://djbook.ru/examples/75/
+https://docs.docker.com/
+https://docs.djangoproject.com/en/1.10/topics/http/sessions/#cookie-session-backend
+https://djbook.ru/examples/77/
+https://djbook.ru/examples/59/
+https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
+https://docs.djangoproject.com/en/1.10/ref/contrib/postgres/
+https://stackoverflow.com/questions/15327776/python-django-avoid-saving-passwords-in-source-code
+https://docs.djangoproject.com/en/1.11/ref/settings/
+https://stackoverflow.com/questions/18299322/mysql-password-in-django
+https://stackoverflow.com/questions/19071977/hiding-settings-py-passwords-for-heroku-django-deployment
+https://docs.djangoproject.com/en/1.11/ref/settings/#std:setting-SECRET_KEY
+https://stackoverflow.com/questions/14786072/keep-secret-keys-out-with-environment-variables
+https://httpd.apache.org/docs/2.4/env.html
+https://stackoverflow.com/questions/10902433/setting-environment-variables-for-accessing-in-php
+https://stackoverflow.com/questions/2378871/set-application-env-via-virtual-host-config-and-read-this-in-php
+https://stackoverflow.com/questions/19696230/how-to-set-global-environment-variables-for-php
+https://gist.github.com/GrahamDumpleton/b380652b768e81a7f60c
+https://stackoverflow.com/questions/26979579/django-mod-wsgi-set-os-environment-variable-from-apaches-setenv
+https://stackoverflow.com/questions/19754834/access-apache-setenv-variable-from-django-wsgi-py-file
+https://stackoverflow.com/questions/238081/how-do-you-log-server-errors-on-django-sites
+https://stackoverflow.com/questions/19256919/location-of-django-logs-and-errors/19257221

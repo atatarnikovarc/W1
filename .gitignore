@@ -1,2 +1,10 @@
 *.pyc
 *.iml
+**/alvion/target
+**/node_modules
+**/.vscode/
+**/.gradle
+**/.classpath
+**/.project
+**/.settings
+**/.vscode

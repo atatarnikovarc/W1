@@ -26,7 +26,7 @@ SECRET_KEY = 'f0-mas^5e*0kp=z#$hs7dog!!#8y08d^^afd*26bl#3(sp0ikw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["www.vbantik.ru"]
+ALLOWED_HOSTS = ["www.vbantik.ru", "vbantik.ru"]
 
 
 # Application definition
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
