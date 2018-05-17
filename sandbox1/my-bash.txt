@@ -1,3 +1,5 @@
 #removes all except 'dlp-arcadia-devenv'
 sudo find . -maxdepth 1 -mindepth 1 \! \( -name dlp-arcadia-devenv \) -exec rm -rf {} \;
 
+#the same as above =]]
+rm -rf !(mysql|init)
