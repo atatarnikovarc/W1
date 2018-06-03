@@ -3,6 +3,14 @@
 -else - make background as red
 -change background - change template? logic inside template?
 
+вцепиться в fastsqa
+перевод на базу пг с файловой базы
+спрятать секреты
+настроить деплоймент
+где сохранены настройки сервера
+внести реакт
+
+
 add-db support
 -move to pg-db(create db, put data source into settings, install python db pg package,
 setup scripts for migrations, run migration scripts)
